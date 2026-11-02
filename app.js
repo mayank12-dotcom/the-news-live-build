@@ -147,7 +147,7 @@
   function pointFor(op) {
     if (!op.draw) {
       const r = op.caret.getBoundingClientRect();
-      return r.height ? toPage(r.right + 5, r.top + r.height / 2) : null;
+      return r.height ? toPage(r.right + 3, r.top + r.height / 2) : null;
     }
     const r = op.el.getBoundingClientRect();
     return r.height ? toPage(r.left + r.width * op.p, r.top + r.height * op.p) : null;
@@ -271,8 +271,8 @@
       unit.idx++;
       startTravel(c, now);
     }
-    // Dragging: the hand is on the corner. Typing: the mouse rests and only drifts after the caret.
-    return { point: pointFor(op), mode: tool, sel: selectionFor(op), unit, exact: op.draw, drift: !op.draw };
+    // Hands on the layer: the crosshair sits on the dragging corner, the I-beam on the caret.
+    return { point: pointFor(op), mode: tool, sel: selectionFor(op), unit, exact: true };
   }
 
   function place(node, box) {
@@ -290,10 +290,6 @@
       c.x = target.x;
       c.y = target.y;
       c.vx = c.vy = 0;
-    } else if (job?.drift) {
-      const k = 1 - Math.exp(-dt * 2.5);
-      c.x += (job.point.x - c.x) * k;
-      c.y += (job.point.y - c.y) * k;
     } else {
       // Off duty: fly to the swarm with a springy chase and a buzz that fades as it lands.
       const target = swarmPoint(c, t);
