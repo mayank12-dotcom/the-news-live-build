@@ -3,10 +3,11 @@
   // claims a frame and builds its layers one by one, visible frames first) →
   // resting (the swarm buzzes in a tiny circle on the masthead).
   const CURSOR_COUNT = 8;
-  const TYPE_CPS = 10;           // average typing speed, characters per second
-  const DRAW_S = 0.9;            // average seconds to drag out a box
-  const AIM_MS = [140, 420];     // hover before clicking into a layer
-  const LINGER_MS = [220, 600];  // look at the result before moving on
+  const TYPE_CPS = 14;           // average typing speed, characters per second
+  const DRAW_S = 0.65;           // average seconds to drag out a box
+  const AIM_MS = [90, 260];      // hover before clicking into a layer
+  const LINGER_MS = [140, 380];  // look at the result before moving on
+  const QUICK_MS = [30, 90];     // aim/linger when going straight from a box to what's inside it
   const START_STAGGER_MS = 1400; // cursors peel off the loader one at a time
   const MIN_LOADER_MS = 1400;
   const MAX_LOADER_MS = 8000;
@@ -215,6 +216,7 @@
     if (!c.unit) {
       c.unit = claimUnit();
       if (!c.unit) return null;
+      c.quick = false;
       startTravel(c, now);
     }
     const unit = c.unit;
@@ -234,11 +236,14 @@
 
     if (c.phase === 'travel') {
       // Move time grows with distance, varies a little per move (Fitts-ish).
-      if (!c.travelMs) c.travelMs = Math.min(1300, 280 + Math.hypot(point.x - c.from.x, point.y - c.from.y) * 0.75) * rand(0.85, 1.2);
+      if (!c.travelMs) {
+        const dist = Math.hypot(point.x - c.from.x, point.y - c.from.y);
+        c.travelMs = Math.min(1000, (c.quick ? 120 : 220) + dist * 0.55) * rand(0.85, 1.2);
+      }
       const s = Math.min(1, (now - c.phaseAt) / c.travelMs);
       if (s >= 1) {
         setPhase(c, 'aim', now);
-        c.waitUntil = now + rand(...AIM_MS);
+        c.waitUntil = now + rand(...(c.quick ? QUICK_MS : AIM_MS));
       }
       return { point: along(c.from, point, c.bend, minJerk(s)), mode: s > 0.85 ? tool : 'pointer', unit, exact: true };
     }
@@ -263,8 +268,11 @@
       }
       render(op);
       if (finished) {
+        // A freshly drawn box gets filled right away; otherwise pause to look.
+        const next = unit.ops[unit.idx + 1];
+        c.quick = Boolean(next && op.draw && op.el.contains(next.el));
         setPhase(c, 'linger', now);
-        c.waitUntil = now + rand(...LINGER_MS);
+        c.waitUntil = now + rand(...(c.quick ? QUICK_MS : LINGER_MS));
       }
     } else if (now >= c.waitUntil) {
       op.done = true;
