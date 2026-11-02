@@ -231,20 +231,11 @@ h2 { font-size: var(--text-h2); font-weight: 500; line-height: 1.1; text-transfo
 .listing { padding-top: clamp(48px, 6vw, 96px); }
 .listing .cards { margin-top: 16px; }
 
-/* ---------- page turn between pages (curl.js) ----------
-   The leaving page is redrawn as a chain of hinged strips that bend over the left edge. */
-.turn-layer { position: fixed; inset: 0; z-index: 60; overflow: hidden; pointer-events: none; perspective: 2200px; }
-.turn-copy { position: absolute; left: 0; background: var(--bg); }
+/* ---------- page flip between pages (flip.js + StPageFlip) ---------- */
+.turn-layer { position: fixed; inset: 0; z-index: 60; overflow: hidden; pointer-events: none; }
+.turn-page { overflow: hidden; background: var(--bg); }
+.turn-copy { position: absolute; left: 0; }
 .turn-copy [data-draw] { clip-path: none; }
-.turn-strip { position: absolute; top: 0; height: 100%; transform-style: preserve-3d; transform-origin: left center; will-change: transform; }
-.turn-face { position: absolute; inset: 0; overflow: hidden; backface-visibility: hidden; background: var(--bg); }
-.turn-face > i { position: absolute; inset: 0; background: #000; opacity: 0; }
-.turn-back { transform: rotateY(180deg); background: #e9e6df; }
-.turn-back > i { background: linear-gradient(90deg, rgb(0 0 0 / 0.35), rgb(0 0 0 / 0.05)); }
-.turn-shadow {
-  position: absolute; top: 0; left: 0; width: 18vw; height: 100%; opacity: 0;
-  background: linear-gradient(90deg, rgb(0 0 0 / 0.28), transparent);
-}
 
 /* ---------- article ---------- */
 .article-page { padding-top: clamp(48px, 6vw, 96px); }
