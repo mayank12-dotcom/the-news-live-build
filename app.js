@@ -4,6 +4,7 @@
   // resting (the swarm buzzes in a tiny circle on the masthead).
   const CURSOR_COUNT = 8;
   const TYPE_CPS = 14;           // average typing speed, characters per second
+  const LONG_TEXT = 90;          // longer than this and the typist speeds up proportionally (article paragraphs)
   const DRAW_S = 0.65;           // average seconds to drag out a box
   const AIM_MS = [90, 260];      // hover before clicking into a layer
   const LINGER_MS = [140, 380];  // look at the result before moving on
@@ -29,6 +30,10 @@
     '.side',
     '.tech .card',
     '.pod',
+    '.article-hero',
+    '.byline',
+    '.article-title',
+    '.article-body > *',
     '.foot',
   ];
   const LAYER = '[data-t], [data-draw]';
@@ -43,10 +48,16 @@
   let state = 'loading';
   root.classList.add('ready');
 
-  if (reduceMotion) {
+  // The crew builds the paper once per visit; pages opened afterwards arrive printed.
+  const BUILT_KEY = 'paper-built';
+  let builtBefore = false;
+  try { builtBefore = sessionStorage.getItem(BUILT_KEY) === '1'; } catch { /* storage blocked: build every time */ }
+
+  if (reduceMotion || builtBefore) {
     for (const op of ops.values()) finishOp(op);
+    for (const unit of units) unit.state = 'done';
     finishBuild();
-    return;
+    if (reduceMotion) return;
   }
 
   const cursors = Array.from({ length: CURSOR_COUNT }, makeCursor);
@@ -64,7 +75,8 @@
     caret.setAttribute('aria-hidden', 'true');
     rest.className = 'ghost';
     el.replaceChildren(typed, caret, rest);
-    return { ...op, text, typed, caret, rest, k: 0, nextKeyAt: 0 };
+    const cps = TYPE_CPS * Math.min(8, Math.max(1, text.length / LONG_TEXT));
+    return { ...op, text, typed, caret, rest, cps, k: 0, nextKeyAt: 0 };
   }
 
   function buildUnits() {
@@ -90,7 +102,7 @@
       <svg class="ico ico-draw" width="20" height="20" viewBox="0 0 20 20"><path d="M10 1v18M1 10h18"/></svg>`);
     layerEl.append(sel, el);
     const angle = (i * Math.PI * 2) / CURSOR_COUNT;
-    const start = loaderPoint(angle, performance.now() / 1000);
+    const start = state === 'resting' ? swarmStart(angle) : loaderPoint(angle, performance.now() / 1000);
     return {
       el, sel, angle, phase: 'idle', phaseAt: 0, unit: null,
       // Each fly gets its own little orbit so the swarm doesn't move in lockstep.
@@ -125,6 +137,7 @@
 
   function finishBuild() {
     state = 'resting';
+    try { sessionStorage.setItem(BUILT_KEY, '1'); } catch { /* storage blocked */ }
     root.classList.add('loaded', 'built');
     document.body.setAttribute('aria-busy', 'false');
   }
@@ -166,6 +179,11 @@
     return toPage(innerWidth / 2 + Math.cos(a) * LOADER_RADIUS, innerHeight / 2 + Math.sin(a) * LOADER_RADIUS);
   }
 
+  function swarmStart(angle) {
+    const r = orbitEl.getBoundingClientRect();
+    return toPage(r.right - r.width * 0.04 + Math.cos(angle) * 14, r.top + r.height * 0.2 + Math.sin(angle) * 14);
+  }
+
   // Resting spot: a tiny swarm on the logo's asterisk.
   function swarmPoint(c, t) {
     const r = orbitEl.getBoundingClientRect();
@@ -187,8 +205,8 @@
   };
 
   // Human keystroke rhythm: uneven keys, a beat between words, longer after punctuation.
-  function keyDelay(ch) {
-    let ms = (1000 / TYPE_CPS) * rand(0.5, 1.5);
+  function keyDelay(ch, cps) {
+    let ms = (1000 / cps) * rand(0.5, 1.5);
     if (ch === ' ') ms += rand(20, 140);
     if (',.;:?!—'.includes(ch)) ms += rand(180, 420);
     if (Math.random() < 0.04) ms += rand(250, 650);
@@ -262,7 +280,7 @@
         op.p = s < 1 ? dragEase(s) : 1;
         finished = s >= 1;
       } else {
-        while (now >= op.nextKeyAt && op.k < op.text.length) op.nextKeyAt += keyDelay(op.text[op.k++]);
+        while (now >= op.nextKeyAt && op.k < op.text.length) op.nextKeyAt += keyDelay(op.text[op.k++], op.cps);
         op.p = op.k / op.text.length;
         finished = op.k >= op.text.length;
       }
@@ -329,7 +347,7 @@
     setTimeout(resolve, MAX_LOADER_MS);
   });
   const minShown = new Promise((resolve) => setTimeout(resolve, MIN_LOADER_MS));
-  Promise.all([loaded, minShown]).then(() => {
+  if (state !== 'resting') Promise.all([loaded, minShown]).then(() => {
     const now = performance.now();
     for (const c of cursors) c.readyAt = now + Math.random() * START_STAGGER_MS;
     state = 'building';

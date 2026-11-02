@@ -8,8 +8,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=16">
+  <link rel="stylesheet" href="styles.css?v=18">
   <script>document.documentElement.classList.add('js')</script>
+  <script src="turn.js?v=18"></script>
 </head>
 <body aria-busy="true">
   <!-- Build markup: data-t = typed text layer, data-draw = drawn box layer.
@@ -25,11 +26,11 @@
         </div>
       </div>
     </div>
-    <a class="logo" href="#top" aria-label="The News home" data-orbit><img data-draw src="assets/logo.svg" width="343" height="82" alt="The News"></a>
+    <a class="logo" href="index.html" aria-label="The News home" data-orbit><img data-draw src="assets/logo.svg" width="343" height="82" alt="The News"></a>
     <div class="navwrap">
       <span class="rule" data-draw></span>
       <nav id="menu" class="sections" aria-label="Sections">
-        <a href="#world" data-t>World News</a><a href="#latest" data-t>Politics</a><a href="#latest" data-t>Business</a><a href="#tech" data-t>Technology</a><a href="#latest" data-t>Health</a><a href="#latest" data-t>Sports</a><a href="#latest" data-t>Culture</a><a href="#podcasts" data-t>Podcast</a>
+        <a href="world.html" data-t>World News</a><a href="politics.html" data-t>Politics</a><a href="business.html" data-t>Business</a><a href="technology.html" data-t>Technology</a><a href="health.html" data-t>Health</a><a href="sports.html" data-t>Sports</a><a href="culture.html" data-t>Culture</a><a href="podcast.html" data-t>Podcast</a>
       </nav>
       <span class="rule" data-draw></span>
     </div>
@@ -37,15 +38,15 @@
 
   <main id="top" class="wrap">
     <ul class="topics" aria-label="Trending topics">
-      <li><div class="media" data-draw><img src="assets/topic-1.png" width="500" height="364" alt=""></div><div><h3 data-t>World News</h3><p data-t>Economic policies are shaping international markets</p></div></li>
-      <li><div class="media" data-draw><img src="assets/topic-2.png" width="860" height="484" alt=""></div><div><h3 data-t>Technology</h3><p data-t>The latest trends in AI and innovation</p></div></li>
-      <li><div class="media" data-draw><img src="assets/topic-3.png" width="500" height="364" alt=""></div><div><h3 data-t>Health</h3><p data-t>Analyzing the effects of global health policies</p></div></li>
-      <li><div class="media" data-draw><img src="assets/topic-4.png" width="500" height="364" alt=""></div><div><h3 data-t>Sports</h3><p data-t>Affect the integrity and future of professional sports</p></div></li>
+      <li><div class="media" data-draw><img src="assets/topic-1.jpg" width="500" height="364" alt=""></div><div><h3 data-t>World News</h3><p data-t>Economic policies are shaping international markets</p></div></li>
+      <li><div class="media" data-draw><img src="assets/topic-2.jpg" width="860" height="484" alt=""></div><div><h3 data-t>Technology</h3><p data-t>The latest trends in AI and innovation</p></div></li>
+      <li><div class="media" data-draw><img src="assets/topic-3.jpg" width="500" height="364" alt=""></div><div><h3 data-t>Health</h3><p data-t>Analyzing the effects of global health policies</p></div></li>
+      <li><div class="media" data-draw><img src="assets/topic-4.jpg" width="500" height="364" alt=""></div><div><h3 data-t>Sports</h3><p data-t>Affect the integrity and future of professional sports</p></div></li>
     </ul>
 
     <article class="lead">
       <div class="media lead-media" data-draw>
-        <img src="assets/hero.png" width="2000" height="889" alt="Ornate domed basilica under a cloudy sky" fetchpriority="high">
+        <img src="assets/hero.jpg" width="2000" height="889" alt="Ornate domed basilica under a cloudy sky" fetchpriority="high">
         <span class="live" data-draw><span data-t>Live Updates</span></span>
       </div>
       <div class="lead-body">
@@ -55,7 +56,7 @@
         </div>
         <div class="lead-aside">
           <p class="meta"><span data-t>Sep 9, 2024</span><img class="dash" data-draw src="assets/dash.svg" width="15" height="1" alt=""><span data-t>06 Minute</span></p>
-          <a class="more" href="#latest"><span data-t>Read Article</span><span class="ring-arrow" data-draw><img src="assets/ring.svg" width="20" height="20" alt=""><img src="assets/arrow.svg" width="10" height="8" alt=""></span></a>
+          <a class="more" href="article.html"><span data-t>Read Article</span><span class="ring-arrow" data-draw><img src="assets/ring.svg" width="20" height="20" alt=""><img src="assets/arrow.svg" width="10" height="8" alt=""></span></a>
         </div>
       </div>
     </article>
@@ -63,12 +64,12 @@
     <section id="latest" class="block" aria-labelledby="latest-title">
       <header class="block-head">
         <h2 id="latest-title" data-t>Latest News</h2>
-        <a class="more" href="#latest"><span data-t>View All</span><span class="ring-arrow" data-draw><img src="assets/ring.svg" width="20" height="20" alt=""><img src="assets/arrow.svg" width="10" height="8" alt=""></span></a>
+        <a class="more" href="world.html"><span data-t>View All</span><span class="ring-arrow" data-draw><img src="assets/ring.svg" width="20" height="20" alt=""><img src="assets/arrow.svg" width="10" height="8" alt=""></span></a>
         <span class="rule" data-draw></span>
       </header>
       <div class="latest">
-        <a class="feature" href="#latest">
-          <div class="media" data-draw><img src="assets/latest-main.png" width="640" height="800" alt="The US Capitol building" loading="lazy"></div>
+        <a class="feature" href="article.html">
+          <div class="media" data-draw><img src="assets/latest-main.jpg" width="640" height="800" alt="The US Capitol building" loading="lazy"></div>
           <span class="play" data-draw><img src="assets/play.svg" width="16" height="21" alt=""></span>
           <div class="feature-copy">
             <h3 data-t>Riding the tide of innovation and inspiration</h3>
@@ -76,31 +77,31 @@
           </div>
         </a>
         <div class="latest-list">
-          <a class="row" href="#latest">
+          <a class="row" href="article.html">
             <div><h3 data-t>The effects of geopolitical shifts on global security</h3>
             <p class="meta"><span data-t>World News</span><img class="dash" data-draw src="assets/dash.svg" width="15" height="1" alt=""><span data-t>Sep 9, 2024</span></p></div>
-            <div class="media" data-draw><img src="assets/latest-1.png" width="500" height="364" alt="Speaker at a podium" loading="lazy"></div>
+            <div class="media" data-draw><img src="assets/latest-1.jpg" width="500" height="364" alt="Speaker at a podium" loading="lazy"></div>
           </a>
-          <a class="row" href="#latest">
+          <a class="row" href="article.html">
             <div><h3 data-t>Affect the integrity and future of professional sports</h3>
             <p class="meta"><span data-t>Sports</span><img class="dash" data-draw src="assets/dash.svg" width="15" height="1" alt=""><span data-t>Sep 9, 2024</span></p></div>
-            <div class="media" data-draw><img src="assets/latest-2.png" width="800" height="583" alt="Rally driver beside a race car" loading="lazy"></div>
+            <div class="media" data-draw><img src="assets/latest-2.jpg" width="800" height="583" alt="Rally driver beside a race car" loading="lazy"></div>
           </a>
         </div>
       </div>
       <div class="cards">
-        <a class="card" href="#latest">
-          <div class="media" data-draw><img src="assets/card-1.png" width="800" height="583" alt="Container ship at sea" loading="lazy"></div>
+        <a class="card" href="article.html">
+          <div class="media" data-draw><img src="assets/card-1.jpg" width="800" height="583" alt="Container ship at sea" loading="lazy"></div>
           <h3 data-t>Strategies for success in a competitive landscape</h3>
           <p class="meta"><span data-t>Business</span><img class="dash" data-draw src="assets/dash.svg" width="15" height="1" alt=""><span data-t>Sep 9, 2024</span></p>
         </a>
-        <a class="card" href="#latest">
-          <div class="media" data-draw><img src="assets/card-2.png" width="800" height="583" alt="Expedition truck on a frozen plain" loading="lazy"></div>
+        <a class="card" href="article.html">
+          <div class="media" data-draw><img src="assets/card-2.jpg" width="800" height="583" alt="Expedition truck on a frozen plain" loading="lazy"></div>
           <h3 data-t>Innovation hubs are transforming traditional business models</h3>
           <p class="meta"><span data-t>Business</span><img class="dash" data-draw src="assets/dash.svg" width="15" height="1" alt=""><span data-t>Sep 9, 2024</span></p>
         </a>
-        <a class="card" href="#latest">
-          <div class="media" data-draw><img src="assets/card-3.png" width="800" height="583" alt="Surgeon at work in an operating room" loading="lazy"></div>
+        <a class="card" href="article.html">
+          <div class="media" data-draw><img src="assets/card-3.jpg" width="800" height="583" alt="Surgeon at work in an operating room" loading="lazy"></div>
           <h3 data-t>Tailoring treatments to individual genetic profiles</h3>
           <p class="meta"><span data-t>Health</span><img class="dash" data-draw src="assets/dash.svg" width="15" height="1" alt=""><span data-t>Sep 9, 2024</span></p>
         </a>
@@ -110,12 +111,12 @@
     <section id="world" class="block" aria-labelledby="world-title">
       <header class="block-head">
         <h2 id="world-title" data-t>World News</h2>
-        <a class="more" href="#world"><span data-t>View All</span><span class="ring-arrow" data-draw><img src="assets/ring.svg" width="20" height="20" alt=""><img src="assets/arrow.svg" width="10" height="8" alt=""></span></a>
+        <a class="more" href="world.html"><span data-t>View All</span><span class="ring-arrow" data-draw><img src="assets/ring.svg" width="20" height="20" alt=""><img src="assets/arrow.svg" width="10" height="8" alt=""></span></a>
         <span class="rule" data-draw></span>
       </header>
       <div class="world">
         <article class="world-main">
-          <div class="media" data-draw><img src="assets/world-main.png" width="960" height="760" alt="Soldiers handling equipment beside a flag" loading="lazy"></div>
+          <div class="media" data-draw><img src="assets/world-main.jpg" width="960" height="760" alt="Soldiers handling equipment beside a flag" loading="lazy"></div>
           <div class="world-card" data-draw>
             <span class="pill" data-draw><span data-t>Oct 14, 2024</span></span>
             <h3 data-t>Understanding the social movements reshaping our world today</h3>
@@ -123,18 +124,18 @@
           </div>
         </article>
         <div class="world-list">
-          <a class="side" href="#world">
-            <div class="media" data-draw><img src="assets/world-1.png" width="500" height="396" alt="Industrial chimneys" loading="lazy"></div>
+          <a class="side" href="article.html">
+            <div class="media" data-draw><img src="assets/world-1.jpg" width="500" height="396" alt="Industrial chimneys" loading="lazy"></div>
             <div><p class="meta"><span data-t>Guy Hawkins</span><img class="dash" data-draw src="assets/dash.svg" width="15" height="1" alt=""><span data-t>Sep 9, 2024</span></p>
             <h3 data-t>The global financial landscape and its implications for all</h3></div>
           </a>
-          <a class="side" href="#world">
-            <div class="media" data-draw><img src="assets/world-2.png" width="500" height="396" alt="Protesters holding signs" loading="lazy"></div>
+          <a class="side" href="article.html">
+            <div class="media" data-draw><img src="assets/world-2.jpg" width="500" height="396" alt="Protesters holding signs" loading="lazy"></div>
             <div><p class="meta"><span data-t>Guy Hawkins</span><img class="dash" data-draw src="assets/dash.svg" width="15" height="1" alt=""><span data-t>Sep 9, 2024</span></p>
             <h3 data-t>Examining the challenges and responses of nations</h3></div>
           </a>
-          <a class="side" href="#world">
-            <div class="media" data-draw><img src="assets/world-3.png" width="500" height="396" alt="Troops advancing through smoke" loading="lazy"></div>
+          <a class="side" href="article.html">
+            <div class="media" data-draw><img src="assets/world-3.jpg" width="500" height="396" alt="Troops advancing through smoke" loading="lazy"></div>
             <div><p class="meta"><span data-t>Guy Hawkins</span><img class="dash" data-draw src="assets/dash.svg" width="15" height="1" alt=""><span data-t>Sep 9, 2024</span></p>
             <h3 data-t>A comprehensive analysis of the state of global affairs</h3></div>
           </a>
@@ -145,27 +146,27 @@
     <section id="tech" class="block" aria-labelledby="tech-title">
       <header class="block-head">
         <h2 id="tech-title" data-t>Technology News</h2>
-        <a class="more" href="#tech"><span data-t>View All</span><span class="ring-arrow" data-draw><img src="assets/ring.svg" width="20" height="20" alt=""><img src="assets/arrow.svg" width="10" height="8" alt=""></span></a>
+        <a class="more" href="technology.html"><span data-t>View All</span><span class="ring-arrow" data-draw><img src="assets/ring.svg" width="20" height="20" alt=""><img src="assets/arrow.svg" width="10" height="8" alt=""></span></a>
         <span class="rule" data-draw></span>
       </header>
       <div class="tech">
-        <a class="card" href="#tech">
-          <div class="media tall" data-draw><img src="assets/tech-1.png" width="1024" height="680" alt="Headlight of a dark sports car" loading="lazy"></div>
+        <a class="card" href="article.html">
+          <div class="media tall" data-draw><img src="assets/tech-1.jpg" width="1024" height="680" alt="Headlight of a dark sports car" loading="lazy"></div>
           <p class="meta"><span data-t>Guy Hawkins</span><img class="dash" data-draw src="assets/dash.svg" width="15" height="1" alt=""><span data-t>Sep 9, 2024</span></p>
           <h3 data-t>Latest Innovations Pave the Way to a Sustainable Future</h3>
         </a>
-        <a class="card" href="#tech">
-          <div class="media tall" data-draw><img src="assets/tech-2.png" width="800" height="583" alt="Glowing GPT chip on a circuit board" loading="lazy"></div>
+        <a class="card" href="article.html">
+          <div class="media tall" data-draw><img src="assets/tech-2.jpg" width="800" height="583" alt="Glowing GPT chip on a circuit board" loading="lazy"></div>
           <p class="meta"><span data-t>Guy Hawkins</span><img class="dash" data-draw src="assets/dash.svg" width="15" height="1" alt=""><span data-t>Sep 9, 2024</span></p>
           <h3 data-t>Understanding the role of big data in driving technological</h3>
         </a>
-        <a class="card" href="#tech">
-          <div class="media tall" data-draw><img src="assets/tech-3.png" width="500" height="364" alt="Crowd at a tech event, one shirt reading AI" loading="lazy"></div>
+        <a class="card" href="article.html">
+          <div class="media tall" data-draw><img src="assets/tech-3.jpg" width="500" height="364" alt="Crowd at a tech event, one shirt reading AI" loading="lazy"></div>
           <p class="meta"><span data-t>Guy Hawkins</span><img class="dash" data-draw src="assets/dash.svg" width="15" height="1" alt=""><span data-t>Sep 9, 2024</span></p>
           <h3 data-t>Exploring the latest developments in AI, Robotics</h3>
         </a>
-        <a class="card" href="#tech">
-          <div class="media tall" data-draw><img src="assets/tech-4.png" width="412" height="300" alt="Hands with a wallet beside a keyboard" loading="lazy"></div>
+        <a class="card" href="article.html">
+          <div class="media tall" data-draw><img src="assets/tech-4.jpg" width="412" height="300" alt="Hands with a wallet beside a keyboard" loading="lazy"></div>
           <p class="meta"><span data-t>Guy Hawkins</span><img class="dash" data-draw src="assets/dash.svg" width="15" height="1" alt=""><span data-t>Sep 9, 2024</span></p>
           <h3 data-t>Future of computing and what it means for society</h3>
         </a>
@@ -175,37 +176,37 @@
     <section id="podcasts" class="block" aria-labelledby="pod-title">
       <header class="block-head">
         <h2 id="pod-title" data-t>Podcasts</h2>
-        <a class="more" href="#podcasts"><span data-t>View All</span><span class="ring-arrow" data-draw><img src="assets/ring.svg" width="20" height="20" alt=""><img src="assets/arrow.svg" width="10" height="8" alt=""></span></a>
+        <a class="more" href="podcast.html"><span data-t>View All</span><span class="ring-arrow" data-draw><img src="assets/ring.svg" width="20" height="20" alt=""><img src="assets/arrow.svg" width="10" height="8" alt=""></span></a>
         <span class="rule" data-draw></span>
       </header>
       <div class="pods">
-        <a class="pod" href="#podcasts">
-          <div class="media" data-draw><img src="assets/pod-1.png" width="500" height="625" alt="" loading="lazy"></div>
+        <a class="pod" href="article.html">
+          <div class="media" data-draw><img src="assets/pod-1.jpg" width="500" height="625" alt="" loading="lazy"></div>
           <div><h3 data-t>Riding the tide of innovation and inspiration</h3><p data-t>The latest trends, creative breakthroughs, and the visionary minds driving change</p>
           <p class="meta"><span data-t>10 Minutes</span><img class="dash" data-draw src="assets/dash.svg" width="15" height="1" alt=""><span data-t>Guy Hawkins</span></p></div>
         </a>
-        <a class="pod" href="#podcasts">
-          <div class="media" data-draw><img src="assets/pod-2.png" width="320" height="400" alt="" loading="lazy"></div>
+        <a class="pod" href="article.html">
+          <div class="media" data-draw><img src="assets/pod-2.jpg" width="320" height="400" alt="" loading="lazy"></div>
           <div><h3 data-t>Where ideas come alive and stories unfold</h3><p data-t>This podcast explores the journey from concept to creation, showcasing the stories.</p>
           <p class="meta"><span data-t>08 Minutes</span><img class="dash" data-draw src="assets/dash.svg" width="15" height="1" alt=""><span data-t>Guy Hawkins</span></p></div>
         </a>
-        <a class="pod" href="#podcasts">
-          <div class="media" data-draw><img src="assets/pod-3.png" width="320" height="400" alt="" loading="lazy"></div>
+        <a class="pod" href="article.html">
+          <div class="media" data-draw><img src="assets/pod-3.jpg" width="320" height="400" alt="" loading="lazy"></div>
           <div><h3 data-t>Connecting ideas, people, and perspectives</h3><p data-t>This podcast bridges ideas, people, &amp; perspectives, fostering meaningful conversations.</p>
           <p class="meta"><span data-t>12 Minutes</span><img class="dash" data-draw src="assets/dash.svg" width="15" height="1" alt=""><span data-t>Guy Hawkins</span></p></div>
         </a>
-        <a class="pod" href="#podcasts">
-          <div class="media" data-draw><img src="assets/pod-4.png" width="500" height="430" alt="" loading="lazy"></div>
+        <a class="pod" href="article.html">
+          <div class="media" data-draw><img src="assets/pod-4.jpg" width="500" height="430" alt="" loading="lazy"></div>
           <div><h3 data-t>On the air capturing the voices of change</h3><p data-t>Brings you powerful stories and conversations with individuals who are making a difference.</p>
           <p class="meta"><span data-t>09 Minutes</span><img class="dash" data-draw src="assets/dash.svg" width="15" height="1" alt=""><span data-t>Guy Hawkins</span></p></div>
         </a>
-        <a class="pod" href="#podcasts">
-          <div class="media" data-draw><img src="assets/pod-5.png" width="500" height="430" alt="" loading="lazy"></div>
+        <a class="pod" href="article.html">
+          <div class="media" data-draw><img src="assets/pod-5.jpg" width="500" height="430" alt="" loading="lazy"></div>
           <div><h3 data-t>The podcast where ideas take flight</h3><p data-t>Offering listeners a chance to hear how groundbreaking ideas are launched into the world.</p>
           <p class="meta"><span data-t>06 Minutes</span><img class="dash" data-draw src="assets/dash.svg" width="15" height="1" alt=""><span data-t>Guy Hawkins</span></p></div>
         </a>
-        <a class="pod" href="#podcasts">
-          <div class="media" data-draw><img src="assets/pod-6.png" width="320" height="400" alt="" loading="lazy"></div>
+        <a class="pod" href="article.html">
+          <div class="media" data-draw><img src="assets/pod-6.jpg" width="320" height="400" alt="" loading="lazy"></div>
           <div><h3 data-t>Exploring thought-provoking topics weekly</h3><p data-t>A wide range of topics, offering fresh perspectives and in-depth analysis on issues.</p>
           <p class="meta"><span data-t>10 Minutes</span><img class="dash" data-draw src="assets/dash.svg" width="15" height="1" alt=""><span data-t>Guy Hawkins</span></p></div>
         </a>
@@ -233,6 +234,6 @@
   <div class="loader" aria-hidden="true"></div>
   <div class="cursors" aria-hidden="true"></div>
 
-  <script src="app.js?v=16"></script>
+  <script src="app.js?v=18"></script>
 </body>
 </html>
