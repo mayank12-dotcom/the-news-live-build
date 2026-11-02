@@ -39,6 +39,14 @@
   const LAYER = '[data-t], [data-draw]';
 
   const root = document.documentElement;
+
+  // Publisher photos that are blocked or gone fall back to the slot's design photo.
+  function useFallback(img) {
+    const fallback = img.dataset.fallback;
+    if (fallback && !img.src.endsWith(fallback)) img.src = fallback;
+  }
+  document.addEventListener('error', (e) => { if (e.target.tagName === 'IMG') useFallback(e.target); }, true);
+  document.querySelectorAll('img[data-fallback]').forEach((img) => { if (img.complete && !img.naturalWidth) useFallback(img); });
   const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
   const orbitEl = document.querySelector('[data-orbit]');
   const layerEl = document.querySelector('.cursors');

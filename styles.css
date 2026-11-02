@@ -252,6 +252,8 @@ h2 { font-size: var(--text-h2); font-weight: 500; line-height: 1.1; text-transfo
 .article-body ul { display: grid; gap: 8px; padding-left: 1.2em; list-style: disc; }
 .similar { padding-bottom: 0; }
 .read-source { font-size: 18px; font-weight: 500; }
+.story-summary { font-size: clamp(18px, 1rem + 0.5vw, 22px); font-weight: 300; line-height: 1.5; }
+.story-kicker { font-size: 14px; color: var(--muted); }
 .article-body .coverage { display: grid; gap: 0; padding: 0; list-style: none; }
 .coverage li { padding-block: 12px; border-top: 1px solid rgb(32 33 36 / 0.15); }
 .coverage a { font-weight: 400; text-decoration: underline; text-decoration-color: rgb(32 33 36 / 0.3); text-underline-offset: 3px; }

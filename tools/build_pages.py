@@ -76,16 +76,19 @@ def meta(left, right, slot=None):
             f'<span data-t{bind(slot, "date")}>{esc(right)}</span></p>')
 
 
-def img(name, cls="", alt="", lazy=True):
+def img(name, cls="", alt="", lazy=True, slot=None, remote=None):
     w, h = image_size(name)
     attrs = f' class="{cls}"' if cls else ""
     loading = ' loading="lazy"' if lazy else ' fetchpriority="high"'
-    return f'<img{attrs} src="assets/{name}" width="{w}" height="{h}" alt="{esc(alt)}"{loading}>'
+    # A remote publisher photo falls back to the design photo if it fails (see app.js).
+    src = (f'src="{esc(remote)}" data-fallback="assets/{name}" referrerpolicy="no-referrer"' if remote
+           else f'src="assets/{name}"')
+    return f'<img{attrs} {src}{bind(slot, "image")} width="{w}" height="{h}" alt="{esc(alt)}"{loading}>'
 
 
 def card(c, byline="author", slot=None, href="article.html"):
     return f'''        <a class="card" href="{href}"{bind(slot, "href")}>
-          <div class="media" data-draw>{img(c["img"])}</div>
+          <div class="media" data-draw>{img(c["img"], slot=slot, remote=c.get("remote"))}</div>
           <h3 data-t{bind(slot, "title")}>{esc(c["title"])}</h3>
           {meta(c[byline], c["date"], slot)}
         </a>'''
@@ -177,6 +180,7 @@ def main():
 
 
 SLOT_TEXT = re.compile(r'(<(\w+)[^>]*? data-news="(\w+):(\d+)" data-news-field="(title|source|date|byline)"[^>]*>)[^<]*(</\2>)')
+SLOT_IMG = re.compile(r'<img src="([^"]*)"(?: data-fallback="([^"]*)")?(?: referrerpolicy="no-referrer")? data-news="(\w+):(\d+)" data-news-field="image"')
 SLOT_HREF = re.compile(r'href="[^"]*"(?: target="_blank" rel="noopener")? data-news="(\w+):(\d+)" data-news-field="href"')
 FEED_NAV = {"top": None, "world": "World News", "politics": "Politics", "business": "Business",
             "technology": "Technology", "health": "Health", "sports": "Sports", "culture": "Culture",
@@ -202,6 +206,8 @@ def external(href, inner, cls=""):
 
 def story_main(pages, feed, i, s, stories):
     label = FEED_LABEL.get(feed, f"{FEED_NAV[feed]} News")
+    summary = (f'<p class="story-summary" data-t>{esc(s["summary"])}</p>\n        <p class="story-kicker" data-t>{esc(label)} · {esc(s["source"])}</p>'
+               if s.get("summary") else f'<p data-t>{esc(label)} · reported by {esc(s["source"])}. The full story is published on their site.</p>')
     coverage = "\n".join(
         f'          <li>{external(r["link"], f"<span data-t>{esc(r['title'])}</span>")} <span class="coverage-source" data-t>{esc(r["source"])}</span></li>'
         for r in s["related"])
@@ -214,11 +220,12 @@ def story_main(pages, feed, i, s, stories):
              '<img src="assets/arrow.svg" width="10" height="8" alt=""></span>')
     more = [(j, o) for j, o in enumerate(stories) if o["id"] != s["id"]][i:i + 3] or \
            [(j, o) for j, o in enumerate(stories) if o["id"] != s["id"]][:3]
-    cards = "\n".join(card({"title": o["title"], "author": o["source"], "date": o["date"], "img": story_photo(pages, feed, j)},
+    cards = "\n".join(card({"title": o["title"], "author": o["source"], "date": o["date"],
+                            "img": story_photo(pages, feed, j), "remote": o.get("image")},
                            href=story_href(o)) for j, o in more)
     return f'''  <main id="top" class="wrap article-page">
     <article class="article" aria-labelledby="page-title">
-      <div class="media article-hero" data-draw>{img(story_photo(pages, feed, i), lazy=False)}</div>
+      <div class="media article-hero" data-draw>{img(story_photo(pages, feed, i), lazy=False, remote=s.get("image"))}</div>
       <div class="byline">
         <span class="rule" data-draw></span>
         <div class="byline-row">
@@ -232,8 +239,8 @@ def story_main(pages, feed, i, s, stories):
       <h1 id="page-title" class="article-title" data-t>{esc(s["title"])}</h1>
       <span class="rule" data-draw></span>
       <div class="article-body">
-        <p data-t>{esc(label)} · reported by {esc(s["source"])}. The full story is published on their site.</p>
-        <p>{external(s["link"], f'<span data-t>Read the full story on {esc(s["source"])}</span>{arrow}', "more read-source")}</p>{coverage_block}
+        {summary}
+        <p>{external(s.get("url") or s["link"], f'<span data-t>Read the full story on {esc(s["source"])}</span>{arrow}', "more read-source")}</p>{coverage_block}
       </div>
       <span class="rule" data-draw></span>
     </article>
@@ -295,9 +302,17 @@ def fill_news():
             return m.group(0)
         return f'href="{story_href(s)}" data-news="{m.group(1)}:{m.group(2)}" data-news-field="href"'
 
+    def image(m):
+        fallback = m.group(2) or m.group(1)
+        s = story(m.group(3), m.group(4))
+        if not s or not s.get("image"):
+            return f'<img src="{fallback}" data-news="{m.group(3)}:{m.group(4)}" data-news-field="image"'
+        return (f'<img src="{esc(s["image"])}" data-fallback="{fallback}" referrerpolicy="no-referrer" '
+                f'data-news="{m.group(3)}:{m.group(4)}" data-news-field="image"')
+
     for page in sorted(ROOT.glob("*.html")):
         source = page.read_text()
-        filled = SLOT_HREF.sub(href, SLOT_TEXT.sub(text, source))
+        filled = SLOT_IMG.sub(image, SLOT_HREF.sub(href, SLOT_TEXT.sub(text, source)))
         if filled != source:
             page.write_text(filled)
             print("filled", page.name)
