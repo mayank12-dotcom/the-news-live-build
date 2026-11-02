@@ -3,7 +3,8 @@ story slots with the latest headlines from content/news.json.
 
 The masthead, footer and page chrome are lifted from index.html, so the home page
 stays the single source for shared markup. A story slot is any element tagged
-data-news="<feed>:<index>" data-news-field="title|source|date|byline|href".
+data-news="<feed>:<index>" data-news-field="title|source|date|byline|href";
+each story also gets its own page at news/<id>.html.
 Run from the repo root:
     python3 tools/build_pages.py
 """
@@ -82,8 +83,8 @@ def img(name, cls="", alt="", lazy=True):
     return f'<img{attrs} src="assets/{name}" width="{w}" height="{h}" alt="{esc(alt)}"{loading}>'
 
 
-def card(c, byline="author", slot=None):
-    return f'''        <a class="card" href="article.html"{bind(slot, "href")}>
+def card(c, byline="author", slot=None, href="article.html"):
+    return f'''        <a class="card" href="{href}"{bind(slot, "href")}>
           <div class="media" data-draw>{img(c["img"])}</div>
           <h3 data-t{bind(slot, "title")}>{esc(c["title"])}</h3>
           {meta(c[byline], c["date"], slot)}
@@ -177,6 +178,96 @@ def main():
 
 SLOT_TEXT = re.compile(r'(<(\w+)[^>]*? data-news="(\w+):(\d+)" data-news-field="(title|source|date|byline)"[^>]*>)[^<]*(</\2>)')
 SLOT_HREF = re.compile(r'href="[^"]*"(?: target="_blank" rel="noopener")? data-news="(\w+):(\d+)" data-news-field="href"')
+FEED_NAV = {"top": None, "world": "World News", "politics": "Politics", "business": "Business",
+            "technology": "Technology", "health": "Health", "sports": "Sports", "culture": "Culture",
+            "podcast": "Podcast"}
+FEED_LABEL = {"top": "Top Stories", "world": "World News"}
+HOME_PHOTOS = ["hero.jpg", "latest-main.jpg", "latest-1.jpg", "latest-2.jpg", "card-1.jpg", "card-2.jpg", "card-3.jpg"]
+
+
+def story_href(s):
+    return f"news/{s['id']}.html"
+
+
+def story_photo(pages, feed, i):
+    # Feeds carry no images, so each story borrows the design photo of its section slot.
+    pool = HOME_PHOTOS if feed == "top" else [c["img"] for c in pages[feed]["cards"]]
+    return pool[i % len(pool)]
+
+
+def external(href, inner, cls=""):
+    attrs = f' class="{cls}"' if cls else ""
+    return f'<a{attrs} href="{esc(href)}" target="_blank" rel="noopener">{inner}</a>'
+
+
+def story_main(pages, feed, i, s, stories):
+    label = FEED_LABEL.get(feed, f"{FEED_NAV[feed]} News")
+    coverage = "\n".join(
+        f'          <li>{external(r["link"], f"<span data-t>{esc(r['title'])}</span>")} <span class="coverage-source" data-t>{esc(r["source"])}</span></li>'
+        for r in s["related"])
+    coverage_block = f'''
+        <p class="lead-in" data-t>More coverage of this story</p>
+        <ul class="coverage">
+{coverage}
+        </ul>''' if coverage else ""
+    arrow = ('<span class="ring-arrow" data-draw><img src="assets/ring.svg" width="20" height="20" alt="">'
+             '<img src="assets/arrow.svg" width="10" height="8" alt=""></span>')
+    more = [(j, o) for j, o in enumerate(stories) if o["id"] != s["id"]][i:i + 3] or \
+           [(j, o) for j, o in enumerate(stories) if o["id"] != s["id"]][:3]
+    cards = "\n".join(card({"title": o["title"], "author": o["source"], "date": o["date"], "img": story_photo(pages, feed, j)},
+                           href=story_href(o)) for j, o in more)
+    return f'''  <main id="top" class="wrap article-page">
+    <article class="article" aria-labelledby="page-title">
+      <div class="media article-hero" data-draw>{img(story_photo(pages, feed, i), lazy=False)}</div>
+      <div class="byline">
+        <span class="rule" data-draw></span>
+        <div class="byline-row">
+          <div>
+            <p class="byline-name" data-t>{esc(s["source"])}</p>
+            <p class="byline-date"><img data-draw src="assets/article-calendar.svg" width="16" height="18" alt=""><span data-t>{esc(s["longDate"])}</span></p>
+          </div>
+        </div>
+        <span class="rule" data-draw></span>
+      </div>
+      <h1 id="page-title" class="article-title" data-t>{esc(s["title"])}</h1>
+      <span class="rule" data-draw></span>
+      <div class="article-body">
+        <p data-t>{esc(label)} · reported by {esc(s["source"])}. The full story is published on their site.</p>
+        <p>{external(s["link"], f'<span data-t>Read the full story on {esc(s["source"])}</span>{arrow}', "more read-source")}</p>{coverage_block}
+      </div>
+      <span class="rule" data-draw></span>
+    </article>
+    <section class="block similar" aria-labelledby="similar-title">
+      <header class="block-head">
+        <h2 id="similar-title" data-t>More {esc(label)}</h2>
+        <span class="rule" data-draw></span>
+      </header>
+      <div class="cards">
+{cards}
+      </div>
+    </section>
+  </main>'''
+
+
+def build_stories(parts, pages, feeds):
+    """One page per story under news/; pages for stories that dropped out of the feeds are removed."""
+    out_dir = ROOT / "news"
+    out_dir.mkdir(exist_ok=True)
+    head_src = parts["head"].replace("<head>", '<head>\n  <base href="../">', 1)
+    shell_parts = {**parts, "head": head_src}
+    written = set()
+    # Section feeds first, so a story that is also a top story is filed under its section.
+    for feed, stories in sorted(feeds.items(), key=lambda kv: kv[0] == "top"):
+        for i, s in enumerate(stories):
+            name = f"{s['id']}.html"
+            if name in written:
+                continue
+            written.add(name)
+            (out_dir / name).write_text(page_html(shell_parts, s["title"], FEED_NAV[feed], story_main(pages, feed, i, s, stories)))
+    for old in out_dir.glob("*.html"):
+        if old.name not in written:
+            old.unlink()
+    print(f"wrote {len(written)} story pages")
 
 
 def fill_news():
@@ -185,6 +276,7 @@ def fill_news():
     if not path.exists():
         return
     feeds = json.loads(path.read_text())["feeds"]
+    build_stories(shell(), json.loads((ROOT / "content" / "pages.json").read_text()), feeds)
 
     def story(feed, i):
         stories = feeds.get(feed) or []
@@ -201,7 +293,7 @@ def fill_news():
         s = story(m.group(1), m.group(2))
         if not s:
             return m.group(0)
-        return f'href="{esc(s["link"])}" target="_blank" rel="noopener" data-news="{m.group(1)}:{m.group(2)}" data-news-field="href"'
+        return f'href="{story_href(s)}" data-news="{m.group(1)}:{m.group(2)}" data-news-field="href"'
 
     for page in sorted(ROOT.glob("*.html")):
         source = page.read_text()

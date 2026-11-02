@@ -5,7 +5,10 @@ https://news.google.com/home?hl=en-IN&gl=IN&ceid=IN:en — one feed per section.
 Run by .github/workflows/news.yml every 2 hours; also safe to run by hand:
     python3 tools/fetch_news.py
 """
+import hashlib
+import html
 import json
+import re
 import sys
 import urllib.parse
 import urllib.request
@@ -44,6 +47,20 @@ def clean_title(title, source):
     return title[: -len(suffix)].strip() if source and title.endswith(suffix) else title.strip()
 
 
+RELATED = re.compile(r'<a href="([^"]+)"[^>]*>(.*?)</a>(?:&nbsp;|\s)*<font[^>]*>(.*?)</font>', re.S)
+
+
+def related_coverage(description, title):
+    """Other outlets' takes on the same story, as listed in the item description."""
+    items = []
+    for link, headline, source in RELATED.findall(html.unescape(description or "")):
+        headline, source = html.unescape(headline).strip(), html.unescape(source).strip()
+        headline = clean_title(headline, source)
+        if headline and headline != title:
+            items.append({"title": headline, "source": source, "link": link})
+    return items[:6]
+
+
 def fetch(path):
     req = urllib.request.Request(feed_url(path), headers={"User-Agent": "Mozilla/5.0 (news-refresh bot)"})
     with urllib.request.urlopen(req, timeout=20) as res:
@@ -56,11 +73,15 @@ def fetch(path):
             continue
         seen.add(title)
         published = parsedate_to_datetime(item.findtext("pubDate")).astimezone(IST)
+        link = item.findtext("link") or "https://news.google.com/"
         stories.append({
+            "id": hashlib.sha1(link.encode()).hexdigest()[:10],
             "title": title,
             "source": source or "Google News",
-            "link": item.findtext("link") or "https://news.google.com/",
+            "link": link,
             "date": f"{published:%b} {published.day}, {published:%Y}",
+            "longDate": f"{published:%A, %B} {published.day}, {published:%Y}",
+            "related": related_coverage(item.findtext("description"), title),
         })
         if len(stories) == PER_FEED:
             break

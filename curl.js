@@ -14,7 +14,8 @@
 
   function rank(url) {
     const name = new URL(url, location.href).pathname.split('/').pop().replace(/\.html$/, '') || 'index';
-    return Math.max(0, ORDER.indexOf(name));
+    const i = ORDER.indexOf(name);
+    return i < 0 ? ORDER.length : i; // story pages (news/<id>.html) sit deepest in the paper
   }
 
   // A static copy of the page as it looks right now, without the live cursor layer or scripts.
