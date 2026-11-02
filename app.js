@@ -43,7 +43,25 @@
   const orbitEl = document.querySelector('[data-orbit]');
   const layerEl = document.querySelector('.cursors');
 
+  // Today's date in the top bar, written before the layers are read so it's typed too.
+  const todayFormat = new Intl.DateTimeFormat('en-US', { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' });
+  const todayEls = [...document.querySelectorAll('[data-today]')];
+  todayEls.forEach((el) => { el.textContent = todayFormat.format(new Date()); });
+
   const ops = new Map([...document.querySelectorAll(LAYER)].map((el) => [el, setup(el)]));
+
+  // Roll the date over at midnight without a reload.
+  setInterval(() => {
+    const today = todayFormat.format(new Date());
+    for (const el of todayEls) {
+      const op = ops.get(el);
+      if (!op || op.text === today) continue;
+      op.text = today;
+      op.k = today.length;
+      op.n = -1;
+      if (op.done || op.p >= 1) render(op);
+    }
+  }, 30000);
   const units = buildUnits();
   let state = 'loading';
   root.classList.add('ready');

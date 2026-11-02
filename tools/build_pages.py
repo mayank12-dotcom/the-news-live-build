@@ -1,7 +1,10 @@
-"""Generates the inner pages from content/pages.json.
+"""Generates the inner pages from content/pages.json, then fills every page's
+story slots with the latest headlines from content/news.json.
 
 The masthead, footer and page chrome are lifted from index.html, so the home page
-stays the single source for shared markup. Run from the repo root:
+stays the single source for shared markup. A story slot is any element tagged
+data-news="<feed>:<index>" data-news-field="title|source|date|byline|href".
+Run from the repo root:
     python3 tools/build_pages.py
 """
 import html
@@ -62,10 +65,14 @@ def head(source, title):
     return re.sub(r"<title>.*?</title>", f"<title>{esc(title)} — The News</title>", source)
 
 
-def meta(left, right):
-    return (f'<p class="meta"><span data-t>{esc(left)}</span>'
+def bind(slot, name):
+    return f' data-news="{slot}" data-news-field="{name}"' if slot else ""
+
+
+def meta(left, right, slot=None):
+    return (f'<p class="meta"><span data-t{bind(slot, "source")}>{esc(left)}</span>'
             f'<img class="dash" data-draw src="assets/dash.svg" width="15" height="1" alt="">'
-            f'<span data-t>{esc(right)}</span></p>')
+            f'<span data-t{bind(slot, "date")}>{esc(right)}</span></p>')
 
 
 def img(name, cls="", alt="", lazy=True):
@@ -75,16 +82,16 @@ def img(name, cls="", alt="", lazy=True):
     return f'<img{attrs} src="assets/{name}" width="{w}" height="{h}" alt="{esc(alt)}"{loading}>'
 
 
-def card(c, byline="author"):
-    return f'''        <a class="card" href="article.html">
+def card(c, byline="author", slot=None):
+    return f'''        <a class="card" href="article.html"{bind(slot, "href")}>
           <div class="media" data-draw>{img(c["img"])}</div>
-          <h3 data-t>{esc(c["title"])}</h3>
-          {meta(c[byline], c["date"])}
+          <h3 data-t{bind(slot, "title")}>{esc(c["title"])}</h3>
+          {meta(c[byline], c["date"], slot)}
         </a>'''
 
 
-def listing_main(page):
-    cards = "\n".join(card(c) for c in page["cards"])
+def listing_main(slug, page):
+    cards = "\n".join(card(c, slot=f"{slug}:{i}") for i, c in enumerate(page["cards"]))
     return f'''  <main id="top" class="wrap listing">
     <section aria-labelledby="page-title">
       <header class="block-head">
@@ -162,9 +169,46 @@ def main():
         if slug == "article":
             content = page_html(parts, page["headline"].capitalize(), page["nav"], article_main(page))
         else:
-            content = page_html(parts, page["title"].title(), page["nav"], listing_main(page))
+            content = page_html(parts, page["title"].title(), page["nav"], listing_main(slug, page))
         out.write_text(content)
         print("wrote", out.name)
+    fill_news()
+
+
+SLOT_TEXT = re.compile(r'(<(\w+)[^>]*? data-news="(\w+):(\d+)" data-news-field="(title|source|date|byline)"[^>]*>)[^<]*(</\2>)')
+SLOT_HREF = re.compile(r'href="[^"]*"(?: target="_blank" rel="noopener")? data-news="(\w+):(\d+)" data-news-field="href"')
+
+
+def fill_news():
+    """Writes the latest headlines into every story slot; slots without a story keep their text."""
+    path = ROOT / "content" / "news.json"
+    if not path.exists():
+        return
+    feeds = json.loads(path.read_text())["feeds"]
+
+    def story(feed, i):
+        stories = feeds.get(feed) or []
+        return stories[int(i)] if int(i) < len(stories) else None
+
+    def text(m):
+        s = story(m.group(3), m.group(4))
+        if not s:
+            return m.group(0)
+        value = {"title": s["title"], "source": s["source"], "date": s["date"], "byline": f"by. {s['source']}"}[m.group(5)]
+        return f"{m.group(1)}{esc(value)}{m.group(6)}"
+
+    def href(m):
+        s = story(m.group(1), m.group(2))
+        if not s:
+            return m.group(0)
+        return f'href="{esc(s["link"])}" target="_blank" rel="noopener" data-news="{m.group(1)}:{m.group(2)}" data-news-field="href"'
+
+    for page in sorted(ROOT.glob("*.html")):
+        source = page.read_text()
+        filled = SLOT_HREF.sub(href, SLOT_TEXT.sub(text, source))
+        if filled != source:
+            page.write_text(filled)
+            print("filled", page.name)
 
 
 if __name__ == "__main__":
