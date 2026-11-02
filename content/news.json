@@ -1,13 +1,7 @@
 {
-  "updated": "2026-11-03T01:37+05:30",
+  "updated": "2026-11-03T01:41+05:30",
   "feeds": {
     "top": [
-      {
-        "title": "Delhi's smog came from farm fires lit after NASA's satellite passed | India News",
-        "source": "Hindustan Times",
-        "link": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxQcXcwUzQ1QkpidFgxRm9LbFBLakxNbWRqVUFaZjlOanJsNGJWTkc5R3ZoeEY3eDFENG1lanRFV0J1YlV6U1owWGxVbF9zQjBGbUpLd3ZnSng2a1VZYzllRFotYUtQRDFaSFVLV3N3V3NGOTRPTnp5X1ZieTJVM1JucXNjNXkxNkZIU0pYSHJLS1V6ZEpfUG1zNUI3dTRlM0R6N1BQYk5SNGtuQXhRUGF0WTA3NDRIVTJ0bkNmMktrOEpsWUxINjBRb0hZeFBJckNMVTFoelVBQk1KY0VraW80YTZKQXJfWl9MbDdUeHRfMERxdHp4SWxhUlpVWlRhd9IBgwJBVV95cUxPVmI4ZXZUbXhUaEZ3clpzZVVEQml2SjZXd1hOallndk5veUxkNEF4VGJGTndiQ2FJZHV6NFBZcmZJSmtmQXBLRDdhdzRDY1NnNzBKVFZzaXJvUzhiekFWTGtzUzNsV2FYN2hPVFc2SGxUdTZkZFEwbjdhOWVzVkoxTnBxOVRZcEs0TElranZWRjNZWmpBUENzenQ3WGlpTGhKM2dwdnZQNmF0TGRvUk85clVMU3lhTnNPOGFvQ2x3ODlaazlqekFJWFkyY0RzdVdERjRlNWxjYmhDQUVZRGloVjQwRjN0UWF4UWhmUGk5ZGpLM2pQaUluU3ZUamo3TU5LUFFR?oc=5",
-        "date": "Nov 2, 2026"
-      },
       {
         "title": "Explosion Sparks Major Fire at HPCL Visakhapatnam Refinery",
         "source": "Deccan Chronicle",
@@ -27,15 +21,21 @@
         "date": "Nov 3, 2026"
       },
       {
-        "title": "\"Who Will Compensate?\" Traders Claim Rs 11,000 Crore Loss Due To INDIA Bloc Rally",
-        "source": "NDTV",
-        "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPSDdULXJmemhtdnY0N1psd2h2cEQxRlBydlk1bF95ZTUyRGZNam5uOXZpazZDRGpqSURVaVJab1NQY3ptQUhLdVBTRVhMRDhNMlFITWllTWlOTlhRenpOTmZMVlkzNjRWS0xDaDBiZDJUX21ndVdwWlFKcjBFZ3VxRzBNM1ZKSWZvUG1KQUNDUU01OUZ3MkNkbWJ4Q0dlVUFRajhyd2xvdHlFME1SZlc2bzZxOEdLT213R3c1NVJlUWFzQVU3YzdybjVjY3lkNFNGVGxWVzZJSQ?oc=5",
+        "title": "Delhi records season’s first ‘very poor’ AQI at 324; GRAP-2 curbs imposed, border checks snarl traffic",
+        "source": "The Times of India",
+        "link": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxORlhoLTdPWU45Skd4T0dZaThYUW9Od0tWR0Nqa19heUhubGNiek84NDNaQ29lZWpuWVZOeEVTRTBUZEM5ZVBzaTJLQjVhUmNEeXJnQUx0UVVkZE02LWlDbzk1TW1LWEtZMjgyUXlRSDZYS0RyV1p0Zk0wZGRMTlo1YWxzTk9mRzJhNXlkVDdXYUhxWDlZR0l3VkUyWXZxY2VPSUZDZTUySkI1M3psdHhkUHZhSVp6ODVWeU1haDRoTnFRNnJ3U2RyaEZqQlM2ajhub1pCaF9UTDY5LURYc3lYcVRTRjF6ekJXSDRLV2hLcHBYZFJ3WUtIRWlkT3hnQ2s?oc=5",
         "date": "Nov 2, 2026"
       },
       {
-        "title": "Nukes, Netanyahu, and November: Tucker Carlson raises nuclear war alarm for Nth time",
-        "source": "The Times of India",
-        "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPZXA2ZFlXUXBDeUhyVzAzRlZiZ1owWVRCYmNwZVFKMVI2dWc3NWoxQXBYS2NfbHl3eklObVpDbGJpOVNRYm4tb1JJa2dtaGFnbldldUxnRkVQbzdOVHlIRmpnSFNfQjV1N3YyYzIxdjdOMnNWSVFoTWVYMDNsRVRQdm9GMVZBWmdzVS1WZDVIVGZfeS1Qc3NSY3R6M0hTRS1QVkhiS1JmelVobnhHLS1EYVowczhSYUhabVhDeDBwMGF5amVOSTgzcjlJczJmVWV5NUVIcmJoamtaUmFRUFp4eko5RzNZbDTSAewBQVVfeXFMUEsxSnZ4OGp6UlF5TkFaVDNaVzdSMEozQ3ZmSmJYcENRQjUtYXRYVFpocmVLejdTVzNhTHY1V0h5dVdPakRYV0R6cDFabnAtenZjVlZMbmJ0dnBweGc1VWxHcXVmT1BXeXdlLVF2Tml3RU01ancwc3lkU1duaUMzZXpqbjZzOEFpbWJSazB5UDFmajd0M1RsRGRBSTRybG9ackM2QVNBd3I3aXBNRlB2TGtrQlRVOHY4ajVPcGRxYkJpaV9RNHdtVHhjdkFNOXFGcVpKOUJhbV84MXhFSExqSzFiS3NoeUg3dGwwM04?oc=5",
+        "title": "OCIs Are Not Citizens: Bombay High Court Asks Imran Khan To Apologise For Participating In SIR Protest,...",
+        "source": "Live Law",
+        "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNZmdKb3MyaWswM0lOTm9lWmdKTEpRYnFXYzJnejZhSDExMFZpdlpONVczSllwcVkyeXpsS3I5LWdINThKYThEdm1vQ0lzVHBKQlFUS3BHbVFwWloyazBRV0FXRmtEU1ZTR0V3RVE2eHFjZlExYlBzYThIOVJtbkpyX3ZSVnJtaFdTaUN4T3hWeURuSDVTbV9HWnpLZjdsVFdlOVdaZUhvbjNNOXk5dFNUY2ZNRmxLZ9IBuwFBVV95cUxOczk2ckVRRXVOa3BwZDIzdlY1Wm1sdkh6bTZCb0J0QWE0M05vWE1McnVVX2UyRzBQN0NscDR5MVpZODJXOUVXZ3hiVThPWFRwVHdsVkxKUVd5cHdyYk9QUjFrd1hpQmhySEg2XzFMNEpSNXlSMnUtUXRpeVh6aURITF9aTjZDZl9KV2lid0tEMDZQM2w3TXNNV1lQTUVIOC1wZGJCU191UFcyRldQM2NBRmR5djB0dHNPSGxr?oc=5",
+        "date": "Nov 2, 2026"
+      },
+      {
+        "title": "Trump admin may launch nuclear strike on Iran after pressure from Netanyahu, claims Tucker Carlson",
+        "source": "CNBC TV18",
+        "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOSWlydVZuVE12V2tEdHpYaTN2TGVfU1hCV1lkREhidTVBUlg2Y0I4ZmZadjBjQks4OEJac2UwcU8zYmZpZG0tWHh6RTQ5Z2J1Q1NTb2dRR3lHT3RHSWZGZVc0UVI2czMwZFN0bXFRVXR4UHozQ3FtdVdmLWxMOWJyV19tNERtSkdLVVNwZWxzdi1WSnQ4RHl1dlNMc1gzeGtEd281SUU0eDBJNGJpczZGMmVlaENBekNWUHJlWE9Tdm5QSVRUS1QycnhqWnRJWno4aUo3RlZlTdIB3AFBVV95cUxQVkpURl9xNHFpUjVyUW9lc3NHUThDYl82VV9QYlQzSE9NWXdMZTBQc3dwS1VycXU0SDgzejQ0MndRZnZLdU9sLTk1SUFIa3lFbUl5aUplRk55S0xtQTBqRWI4eU1uZ2FnNjhxdXhyWjJDZkdsSVloclFYMC15NU9uUFFMWkNzT29kMkhVOTQtZzktMHlOSUpMbU1XS1lNVlpBeVlmMHZxcjl4Q1JPOW93aEFsSDhMOTFld0xodFBXOGE4d0VOSkxydEtYS2MtSW5pRGFKaklZMklKS3lh?oc=5",
         "date": "Nov 2, 2026"
       },
       {
@@ -63,15 +63,15 @@
         "date": "Nov 2, 2026"
       },
       {
-        "title": "US midterms: 1 day to go – Democrats rally around El-Sayed amid attacks",
-        "source": "Al Jazeera",
-        "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNMERJNEpDYlFKUDYwdmtrMkpJLS1KUVFlTmhCaFNjNFdobmtvMjZHcmVkN1lCQ0hMYzVjZG5EcWxsOGlCUDZ2V2tRNU1FVHBrSWdQZDVJczZ1dXVVdnRYNVhoaVhBRzRMMTk1U1J2SFN5aXA5M2hkN0VSTkgtX3VFUDltSDlqTVRNYXp6VXk3MUJVRFdoU2ZsRVhXZ2RDaTZLQ0NFZWR5ZElNd0NHY1HSAbMBQVVfeXFMUFp0Nkh4dDFhUlM4cjZjVWxFOFRVQXdsRFBYTE5oa3lkR0RTYVJVNmVtdk1wUktPWk42WDZ2N2pZRkM4dWZpY1NBU1k4NUhJMGVlQWJLSy1yYXhEanRiNmpPc05yVkdyT2tlYWdTbDB6Zkc2TXg0SFpMSVp2Q3pyb1k1RDM0cmhfbjNqU0NWQk5taTkxclVoSzBjalYyMjRLa1JzcGJQUUJLSHFIZ2JwSDhaMkU?oc=5",
-        "date": "Nov 2, 2026"
-      },
-      {
         "title": "Trump Floats Pardon For Musk And Staff If Democrats Win",
         "source": "Forbes",
         "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQU0txME45QUxsMVNySDhqbGxINS1rQTRSd0FmbU1raDVnSklzMW1vcDlwLWcyZ1h5YmYwUGNqaXM3UFUzOUYxWEtva0pINzAyQk9DRWFFY2dkYXhTS3JQZ08yYllWM3JqMXdQQk5XRmJjazRMbmZxTEVGVTV2ZXpwcV9HRktSYkpET2RRLXF4TVo2WWR2MDBXMVFjb1VCcEk?oc=5",
+        "date": "Nov 2, 2026"
+      },
+      {
+        "title": "US midterms: 1 day to go – Democrats rally around El-Sayed amid attacks",
+        "source": "Al Jazeera",
+        "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNMERJNEpDYlFKUDYwdmtrMkpJLS1KUVFlTmhCaFNjNFdobmtvMjZHcmVkN1lCQ0hMYzVjZG5EcWxsOGlCUDZ2V2tRNU1FVHBrSWdQZDVJczZ1dXVVdnRYNVhoaVhBRzRMMTk1U1J2SFN5aXA5M2hkN0VSTkgtX3VFUDltSDlqTVRNYXp6VXk3MUJVRFdoU2ZsRVhXZ2RDaTZLQ0NFZWR5ZElNd0NHY1HSAbMBQVVfeXFMUFp0Nkh4dDFhUlM4cjZjVWxFOFRVQXdsRFBYTE5oa3lkR0RTYVJVNmVtdk1wUktPWk42WDZ2N2pZRkM4dWZpY1NBU1k4NUhJMGVlQWJLSy1yYXhEanRiNmpPc05yVkdyT2tlYWdTbDB6Zkc2TXg0SFpMSVp2Q3pyb1k1RDM0cmhfbjNqU0NWQk5taTkxclVoSzBjalYyMjRLa1JzcGJQUUJLSHFIZ2JwSDhaMkU?oc=5",
         "date": "Nov 2, 2026"
       }
     ],
@@ -95,15 +95,15 @@
         "date": "Nov 2, 2026"
       },
       {
-        "title": "US midterms: 1 day to go – Democrats rally around El-Sayed amid attacks",
-        "source": "Al Jazeera",
-        "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNMERJNEpDYlFKUDYwdmtrMkpJLS1KUVFlTmhCaFNjNFdobmtvMjZHcmVkN1lCQ0hMYzVjZG5EcWxsOGlCUDZ2V2tRNU1FVHBrSWdQZDVJczZ1dXVVdnRYNVhoaVhBRzRMMTk1U1J2SFN5aXA5M2hkN0VSTkgtX3VFUDltSDlqTVRNYXp6VXk3MUJVRFdoU2ZsRVhXZ2RDaTZLQ0NFZWR5ZElNd0NHY1HSAbMBQVVfeXFMUFp0Nkh4dDFhUlM4cjZjVWxFOFRVQXdsRFBYTE5oa3lkR0RTYVJVNmVtdk1wUktPWk42WDZ2N2pZRkM4dWZpY1NBU1k4NUhJMGVlQWJLSy1yYXhEanRiNmpPc05yVkdyT2tlYWdTbDB6Zkc2TXg0SFpMSVp2Q3pyb1k1RDM0cmhfbjNqU0NWQk5taTkxclVoSzBjalYyMjRLa1JzcGJQUUJLSHFIZ2JwSDhaMkU?oc=5",
-        "date": "Nov 2, 2026"
-      },
-      {
         "title": "Foreign policy is a local issue in U.S. midterm campaigns",
         "source": "The Hindu",
         "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNQXlic3R2Yzk2SHJYYWlWQkhzYkg2N2N0WU11MDdwZmEtTFBVTW5jX19kcHZ5S01wSzJ0VlUzaXY1UENvR2tmM1JqVFJ4Sk5JZFVNbElNbHRjemtnVWRFVDdpTC02UkFaNW1QMHlUVDZJcm8teXRPdnBHQW9zbFVNZDVhVG03NGpvanlLd1FDVVJyOE1sbnVyN2I0TGJWb3U3VWtZVmJFd1dTRjlWbjNCanIxeG9DUTViOHZB0gHCAUFVX3lxTE1JRDJzRS0zbllWWnZRVDl3OEE3d2N0NzFnamRvM0M2VzV4ZlJnOFkyZ2ZCT1lac1hfYW1ZczFYNWJta1VMMExOOUFQeF9lVmdOSHpoZTJDOHZiSF9SVk9OWHVIdlhtMmxiMGVFWFRyMk9FcHF2LUl2Q0tObExqd21FR0pFTEV5ajA2ZUtCODFvc2s2bjhtS1k0VnV6STJON3c1Qnhra01mbGFBTk05MlY1d3lYQXVIVDBRSlZVY0MweDln?oc=5",
+        "date": "Nov 2, 2026"
+      },
+      {
+        "title": "US midterms: 1 day to go – Democrats rally around El-Sayed amid attacks",
+        "source": "Al Jazeera",
+        "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNMERJNEpDYlFKUDYwdmtrMkpJLS1KUVFlTmhCaFNjNFdobmtvMjZHcmVkN1lCQ0hMYzVjZG5EcWxsOGlCUDZ2V2tRNU1FVHBrSWdQZDVJczZ1dXVVdnRYNVhoaVhBRzRMMTk1U1J2SFN5aXA5M2hkN0VSTkgtX3VFUDltSDlqTVRNYXp6VXk3MUJVRFdoU2ZsRVhXZ2RDaTZLQ0NFZWR5ZElNd0NHY1HSAbMBQVVfeXFMUFp0Nkh4dDFhUlM4cjZjVWxFOFRVQXdsRFBYTE5oa3lkR0RTYVJVNmVtdk1wUktPWk42WDZ2N2pZRkM4dWZpY1NBU1k4NUhJMGVlQWJLSy1yYXhEanRiNmpPc05yVkdyT2tlYWdTbDB6Zkc2TXg0SFpMSVp2Q3pyb1k1RDM0cmhfbjNqU0NWQk5taTkxclVoSzBjalYyMjRLa1JzcGJQUUJLSHFIZ2JwSDhaMkU?oc=5",
         "date": "Nov 2, 2026"
       },
       {
@@ -119,22 +119,22 @@
         "date": "Nov 2, 2026"
       },
       {
-        "title": "Netanyahu's \"Poll Stolen\" Charge At Arab Parties Amid Fractured Mandate",
+        "title": "How US Midterms Could Move Stock Markets, Oil Prices And India's Exports",
         "source": "NDTV",
-        "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNWk1zSVhnS1V6bVdQSktSYWFRZEkzdVk3M2JrX0NWdGxpLUdMR1JEYjBLRFFQUmxnczB3Y2ZvdHNwZ1RRQ04tRm5qbF8xWUFfZEd1RVdaVkVGVXlUU05fS2Nnb1JSbXkzR2FRV2g0U3JVZjBDODVhcDNNbmU4ZUg5c1ltbmlZZWhmMEhmVzhWanJHQjJmNkxtMmhzV0RyWVlGTGVlOHRrVlV1eHc2dnZ6TzJLcklobXl4amc?oc=5",
-        "date": "Oct 29, 2026"
-      },
-      {
-        "title": "US Midterm Elections Live Updates: Trump says he’ll ‘veto everything’ if Democrats gain control of Congress in midterms",
-        "source": "The Indian Express",
-        "link": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxNZ2RDZmItdnpKR20ydER6bEZvWmdtcFV5VjlKMjJUWkZlNG5GaGR6VmVBcFpkaXR1SlpCMGRwTm1WTG9GeXg3M2k4ZlhYOWNBMFRXV0xzUV83MGo5OFl3VUhUMy1UeHNiOUVvWThLTFdrR2w3RjRGdU9SeUROZmljNjFTZ3ZEWHEzcEZoTXpfa3pCaWZWak81aFJ5ZFZWaUNaaW9ROUYzTDAwVDBZYmJSTzE2SDRmbEtsWUl2MElJSEhudWlDeWtGd3hEYTBOUHMzd2RLTW54aXJGelYyb1QyMDZvcU15di0xcVFSNU9WLUhha0hVUzg00gH-AUFVX3lxTE9Ja2Y5dlh2ZEoxSUlXcU5iZUIxQnJNZlAtcG9lbHd0TDJRc2VYS05ocHFvZUxaTWdaWHk2NWlBb0x1VFVMN3lfOUhCWmNvcEV6MjZNM3dRaDQ3Q05BeHZnZm1JQ2dER1kzanVHQ1Q1NG9UNHl1cFF4dWFMWGZscGQybkRENFZybmNtUDQ1Z0NaclZTd1NaNjdLdFVDcGFnM0pyUHd3UE1wQTFsOVM2RWg3RlVadk43RF9rNHZIRV9EUzBSUTVVWF9yOE52YklrYXF6eFR2bldodGttR0hPSUNTZUxkOHg1Szh1VlQydUppZm5GUmlWc3lmS1pDVXZB?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNYXFpVERoSjJOLTJ6ZFZDM0J4ZHFIcHQwcE5iSE1XUWk0S1g1TTN2OFZFbDN5MFdjWU8tV0ZBUnAxRGV6NXZVY3hKZlpaRV92bnh5VWY5NjJBam9QOTNHenZZUnl2MnN5UW5fUDdRVm1mMjVva2tZdWhSeFlBWjg2WlFaMlY0bkNKZkU2MDlRNDR1ZFhUT3BYZVEtZW9Jc3l3ZGU4cEVLTjVYVkN1RUZLWEQ5SV9NQ2c?oc=5",
         "date": "Nov 2, 2026"
       },
       {
-        "title": "Who was the female pilot in the Learjet 60 crash? Intense social media speculation over Alexandra Dudgeon",
-        "source": "The Times of India",
-        "link": "https://news.google.com/rss/articles/CBMixwJBVV95cUxObTlzUTVQZTJvdjBld3lSZEVnWXNjcDJLeUdOVUs4Y25Gbl8yT2M5WThETHIwcy1Bdl9FU1l3VmxxSmw0dEt0SUhNTVlDajZ4bHZ5NjE4OFN2Njg4Wi1fWHdFNnJQZ2NiRDJuR214SnNNTjVBcUdNZHpOTkFkMmt3NlRNblQ2amJOWWVXSVRYTkRRektlb2xQemRRdDFTMThyRW9Pd2RNbTRENGYxMVpMaTIweVVEeVk3dGI0Nk5uZTFUNTFjc0tKWFV4dHQ2ZFEyT1ZaWTh2NnRDQXVYM0FpMXU4UUl5czB2R3NScl9uUXVMdE1TOWoxN2tSQ1dySFRHNVhCaVNoTDBQV01FNXU3aFJMbllkSU5acmk1aHR4dzdxLURrdDhBc1lNU2VMNV9UWWJ6X05aVzV4bHd0RHkyOG9LSDRicTDSAcwCQVVfeXFMTlY2Yldqd2d1Z0hTNWlYUzJKb2lZUjJJMHdjNDh3MEgyanJ1b0hMelNFeDR3RDdyT0Y0Qm1qYUl2elZrbFJVVHdIaXI1bkVrZzhNWm5fc3BtNExZUHFPaEduby1kSWFvbWNiR01RTDhmMmVPMUJSeWZyaUZ2Z01ic2hmblE1WG05ejhZWlg5NTNoYklSZnMzdWRMUFNKc18xN0xYTWJQaWpyNW5NbHV0aHF6YlJodXItNXRxckthUHoxNmhVRDVNM3AxZ2VxR2NDWk4waUI1bHVDRWN6VnhJUWVGS0JMMVBtUmUzODlrWmdyNXVzVlhKNnJBN0lKbEt4djJMdDRsM3hTVDNxekMxUWw5Y0wzMkdLQllrbVV1aWtLRkJ1c1huUnJRSi1CdzBqNm9iMUswdTR2Nm9RMWpqLUxKN3RERk9xTGFObmc?oc=5",
+        "title": "Learjet crash that killed 9: Audio from Miami ATC reveals Florida plane dropped at 20,000 feet per minute",
+        "source": "Deccan Herald",
+        "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNU3pyclV5R2RyLXpWSHJONnFQNGJUdDFBYmpNOExBdW1LSHF3aWduTThLNWNrRV83dEpRVEpRbVlzNzZobkxsbUtna3dPRVg2SFZkX1ZwM2dvUmI0aEV3Y2t2MFlNY1pjdVdvRl9QNkxOMlBvRG1NQUV5RlNGQVl2MHFpYmNZUjdEZzRiVC1BRmk4WVZrR1dUYnNHVVB0VC1WeWczNTROUE5ualFiV0s4WWVRNm8xYXhITDlacnpFZEg2UzlQdWM1bFRURjN5QzNXMlY3SVBPWEcwU09JeHZaSEJUZw?oc=5",
         "date": "Nov 2, 2026"
+      },
+      {
+        "title": "Israeli opposition accuses Netanyahu of trying to 'delegitimise' election",
+        "source": "BBC",
+        "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9sT29xaTR0Y1ZvbTY4WDBUbno3THNGdnJYcVZ4azNCZWZmMmsyX1pWSkxQemFNbmx1UDBzeTVNV21nNHpUdElRM3M5RVNmNlRGT3UyWHN4M2dPMWM?oc=5",
+        "date": "Oct 30, 2026"
       },
       {
         "title": "Iran's IRGC Navy says two tankers 'exploded' after hitting mines in Hormuz",
@@ -243,6 +243,12 @@
         "date": "Nov 2, 2026"
       },
       {
+        "title": "$3.64 billion pulled from world's largest crypto exchange Binance after $6.3 billion heist",
+        "source": "The Times of India",
+        "link": "https://news.google.com/rss/articles/CBMijgJBVV95cUxQei1STGQ4ZWJjWmdMZnZmcjVUTmdMR3BIYlFORFVWMzU4Wl96cTRCdjRSUU1QcEZCT0FVSGxwUTkxT3c5MGxHSmhEYmEwdFVxaU9TakN3bG9WZWtzVW5WRE9KQkwzQjN6Szg3ZG51dDRwbmRrbzEwMEJ4NW9lUUVsMmR4UWdmdWRDRzBkTkZYaFUxbVJFVDlhTTJDQWpHY0NleWt3WnJBR1dpZGU2TW5PTDdKaS1rNmtjZkJ6dmQ3VWJKWjlBcWZpVzdyaXVyNVNvRzhCOTR3eWZndmVLTjBSeG5VX1FRdkVxU2E3ME1lQm40S2tORXZrZjg4dTNqWTBjb2F4Sm01SlMtS1BaSkE?oc=5",
+        "date": "Nov 2, 2026"
+      },
+      {
         "title": "Anthropic Set For Mega IPO: World's Biggest Listings Ranked",
         "source": "NDTV",
         "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPV2s3SnRKcEZUTVBVMk9JdkEtem5Ec1VWb1NWUmtkS01UR0VIdjVJeGdGRENkRmVveHNpV01uTEFFODF3WEdacHQxTk80eTNBMlBYWDUzWVdfcFRSTzluVDJ2NjlNNWc4M29UT1pGWktmVmJhQVB3NEhmWS1zakhpaEViRU1zaDV4ZmZ3RXJkYjlueVh0ZXB5amFZRnZaMWvSAacBQVVfeXFMUEttZlY1eTRmQ1FqMlRNVmdDY3pzakpvMTdZeHpSTy14Rl9BVVNKdzROVjVDU3MxaEZIblFpRW1FLVR0VGZxbEJaVWlzYlZqTVl0aWYzdjFNQmprZzhQOXFkei11NTMzWks0UWF3b0J2Z0ZlQzFiTmNxdzhyMUh3ZHNDNFB6d2F1LUN0cTRxT1dNNmRBQjRpeFo4cFNuT1VyQlpwTnB3U1k?oc=5",
@@ -255,21 +261,15 @@
         "date": "Nov 2, 2026"
       },
       {
-        "title": "'Cannot spill out in public': Sitharaman urges Tata Sons, Tata Trusts to settle dispute soon",
-        "source": "The Times of India",
-        "link": "https://news.google.com/rss/articles/CBMihAJBVV95cUxPSE1KWUp4bGx4Wm1DSDY5QTJlWTJPOGttci1iMTBTUk14R0lsUWZNd2J5cnUtUU1pMWRKY2sxR3dCR0g4M181eFVNYWNEYnFNY0dTcnBhdWNnbmkxRTFteFpIYVRZVE95MHhhNDlsU0hlS3J4bHlYcnZDVnZvTnFEZHNpX0NnbE1kUnZXX0ZPNXlVYVR4TU5nWlBEVVNaVlE0cFBnVU94elZlckVkR3hPM0NQOUlfOWRpZ3ZfOWg0TXhwcFpfRE4zMFo0X3c2MjAzRTNQU1RHQXVLTjJEUGphYnNnSTVNbTBYRmw1Uzk5WW9mdzV6RDN1aml4N3Rod2JjMHpkYg?oc=5",
-        "date": "Nov 2, 2026"
-      },
-      {
-        "title": "Bitcoin holds near $78,000 as Binance reopens withdrawals: Crypto Markets Today",
-        "source": "CoinDesk",
-        "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOWlpFWmdfRE53cTgzMmdpbDVhOXZ0c213YWpxWm1UN1hVVHZjX1NieHhsZXQ0SlFtUUgwdVRJWXBpRUdzSktmT210YUhYQlk3SVFGQUNWYU5UUVlYSk10b2hVR3pyWVFEeHF3Znd1SHZmTHpraDRGX2luMl9ZZ2FSUUZQSERyVjRlLWQtRHNvWElYaGplaERIUXdheF82X3V2dmM1bllpdmtEenJTeGNlOWlrM2NvRzl1cjgwcnBoR3h0bFB2aDJjWWtJZHgyc2YzSUE?oc=5",
-        "date": "Nov 2, 2026"
-      },
-      {
-        "title": "Reliance Industries shares jump nearly 12% after record Q2 results; top Nifty gainer, biggest index...",
+        "title": "‘You cannot be spinning out like this in public’: FM urges Tata Group to resolve internal differences",
         "source": "Moneycontrol.com",
-        "link": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxQU2IxZFp2SXB5LVpkOElMdjZtckM1VmFaZTlpckNMNlhDd29SVHNUU0V4OFU0RTZHWXVzalJaYXREeVE1V05yOGpETFk1aGhqOE91bWc5SkdUYlJ6NG1HYVdFektOZzdZVjVLSUpGaC1zSjc0X3g3T3JBYVVaYWNJUzk1Wi1HNGRFRTdlaWh3NjdwTThBSHRZV0NkSlBXX3FFS09WTHRkMDZTY1U1VTloTzVGRFRmRHp3LVlINlUzV2RpN0VpLUM2Ung4TlZCVXRhWDY4Q3FYTWV4dWdJU1lLbi1HVVJSbjFiMU8tZ1F1S2NjVWp5THV1NUF1Y3NuNEHSAYQCQVVfeXFMUGVrRU5iX3dDUG5lNWo0MDZNS19XVjRVZzF3U0tybTFrY2NHXzRGMTRGQTlVWWU3ZElsVTRTa3FyLVFfR2xZXzlBOHdFeS1LakcyWHM3cnQ1Q3NtZGYtX2Njd0lPNnpRdzN3M3ZsSUdiTUdWX21WTndXRUJXLTd5UHVHNEh2Vnk1M1JicE16c1RtNXRyYVFMdms1cWlLZlZUdURhLTJvcmtzUm9iTmxLTXY5Sk5oX2dkME5aNEVnczRIXzhtZmpOWFNCTXloMzRjSmZNeVotdTBKRF9WQWdHaWh5R3lsV0ZncHFVWms2OVQtOGJMdDUxaXRvOTRjOWxBZl9XVUM?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMinAJBVV95cUxNUjBPNFRjRnJ6VEk5NE5wYVhSb3htRUx6RndzVHVLS3dzckk5aEh4czc0YzNDVWY5ZlZSOUxPZktVV1RGNm9sc3lVQkhHQUNkQnNIOFZGLVlBR2VFdXZFMkhGT19oSlRZZWJhSDE0ekhON0c0MjM2XzVTeElCeDAwd1JQM3VYQnNxbHNVc2J3S2M5UUJTYkl1cVlWcU10OUUwQXd2anMxdjRTN1FzelFCdG9XZXVwMVpIbnlUd2JvRzNETXU3SEg1cEdNZ3ctTkFKbTY4SWhnTGxJbWV3VlY1NTk1LTIxMkppdjg2LWp0VHByb1NsQlVQRWF5Y0tKemUwVXRyWkdDYnRQYkExZ1NIUmNuU3V0STFHRDU1NtIBogJBVV95cUxONjJYTWtDUVZIOTUyUXdCcjZoY1k5QS1tNDhRcGhtWmp0VFF3RUJ4RnZHVzg1VEpaUVJuOHZKMGh2TlZVSGlsWE1pMlQxeVZHNEg2UmZJYkdjbnViS0JQOG5icDYzZzhZZTVuMGVkSkJnMjg1c25wWEs3STBNUFlYdUVVb0JlNy1pdTEyeGZYckI3Xzd5Rzd4blVRRjc4S3JIUWphZkctZVNOR1BuTU5KRnlmcTdtLTF1VUVOU25ESVRaRW5tR01UNDc2UldEeV9IaEhXQkpnZzBlc241Q3lmSERBX2ZsbGdpVEszWF9nZlFUT0x6SmZEZjJVclhOQWhVTlVNRVhFZHBMcjI5SFNfUUxIWWxINzRBd2tzUi1sUi02QQ?oc=5",
+        "date": "Nov 2, 2026"
+      },
+      {
+        "title": "Reliance Industries shares jump 6%, set for biggest single-day gain since January 2024 after Q2 earnings beat",
+        "source": "CNBC TV18",
+        "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOUXAySS1Ibmc4OEVVS2VKVWFQaDdXM0g5cWRUMGVMNENoZHc1N0xsZjBpN2o4bUUtVUFxTDFFWDl2dEg4d29IVzFtbVJpNjlIakxrUXRBTUpCYlZUbm91Y1UtUm9FU0NmTFJ0eWJrVmNTZmM1QUxBWnJQMlE1cFl5V3RxVC0xWGZ1MU4zVDZDSWVaWHBUOXdLeFcxdEsxUTdZdk1wWXF4dWUzdTJCQ09Tdm9qWUlRSHFMWnFxdW80b25lSUxMSXFqY2hfelI2Q0tCdFNmUFV0bWhNZUNTU3fSAeMBQVVfeXFMTkpwd3hDYXZmWlRhQmZBTjhfamNkVnp1Mnd6WW9ONHFNZHlvVHZwOEpicUZHYUY3NDg2LVFJMkFXYUpQQ2I0c3FqVXhWdHhzbm1aTDYtN0U5dDkteGlQc2ZaQWxWam1DOUpYNFlDTlpDYlNyZ051MTNFMUhoVWs2V0VLdmVFRGY5Tml6Y0JPYl9SZnpKcmprZ2pQRi14ZjFNU3Exa082QjVRcnloUUktYU9zVEJwVmZDQV8yOHdpZERrVDB5Y25kWU5XRTFVZkhtR3Vka29RSmJKZzVrdEZPeE5uVVk?oc=5",
         "date": "Nov 2, 2026"
       },
       {
@@ -285,15 +285,15 @@
         "date": "Nov 2, 2026"
       },
       {
-        "title": "Jio Platforms' next growth drivers: Broadband, enterprise services and AI take centre stage",
-        "source": "Moneycontrol.com",
-        "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNWm1oSTFzOWNBUGd4dkVid2VjendoX3U2d05qQ241ZzNDRVAtdXI4akNBN2gyWFQwZklmSTFDMEZ2SnFKcW83TzloUGoweUF0WjhuTC1xb0YwY2VPdFBFRmJZUHdIOVptd2VONzlBN0FITkw5VHRkU2lEUk1IVmpVWGZWRlBoWVlSbzBNYng0Y2VYalVSYTdoaHJPTGZHejE5NG9lVUdDdHNvXzFhR1pyUmc5SDlFX1lWdEdOa3U4cW9uVF8zbjZqZVU5YmJ1TWF4MzZKMWt0MGlvWmhKU0dVU3p1dFFSOEZB0gHuAUFVX3lxTFAxT3F0Zk02ajFiRERmRUZ5S2dpbHdWOWpvY0xLTWZNT3BXZXVkdnMyUXQ4THc1bTk3X2MtRXY0WWV5NTlfVTFDVW93UjJwU3h3Y1M5bnpYTXVVRjM4SjluNHJMSkZwSVRNMk4yaEFYR1QzZG5xNW1TLVU0TkZ0elVMY0JiVGRuZjAyeFlCTEVla2N5WGZhOUNCaXJFY1Q1WEpEVE5zbGNQVEl2UVNibldxTm80Sjh0UE81Q3kzaVBJdEpvN2ZGZVd3dGVsZDdGTFZLVFZrQUlydU1zXzFJN2lwWWRKckVwWUdyU1IwUGc?oc=5",
-        "date": "Nov 2, 2026"
-      },
-      {
         "title": "Top Indian cigarette maker ITC's profit drops 20% as higher prices dent demand",
         "source": "Reuters",
         "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPSTBNLTF0d2Y1MVZNWWFWOElrM0VDb2ItcF92NXRUazl0aFlqLUZXLTZ4SHowZWJIRHJYSjBBQTVZNDhyeFpySHBTbzZzQXBFWngtTVBKUDY4WDJEX29yS0ppaFhMcGhyblV1dERBZE54TlFjbXNTd2lKcDBJY1ZQWjAyRG9mU3RaZWU0R1BpZVh4WW5PaXFkNWRQcGJLWUhUZWxKOHcwazdkNng3QW90aWtlWFRYRHRlQ09J?oc=5",
+        "date": "Nov 2, 2026"
+      },
+      {
+        "title": "Jio Platforms' next growth drivers: Broadband, enterprise services and AI take centre stage",
+        "source": "Moneycontrol.com",
+        "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNWm1oSTFzOWNBUGd4dkVid2VjendoX3U2d05qQ241ZzNDRVAtdXI4akNBN2gyWFQwZklmSTFDMEZ2SnFKcW83TzloUGoweUF0WjhuTC1xb0YwY2VPdFBFRmJZUHdIOVptd2VONzlBN0FITkw5VHRkU2lEUk1IVmpVWGZWRlBoWVlSbzBNYng0Y2VYalVSYTdoaHJPTGZHejE5NG9lVUdDdHNvXzFhR1pyUmc5SDlFX1lWdEdOa3U4cW9uVF8zbjZqZVU5YmJ1TWF4MzZKMWt0MGlvWmhKU0dVU3p1dFFSOEZB0gHuAUFVX3lxTFAxT3F0Zk02ajFiRERmRUZ5S2dpbHdWOWpvY0xLTWZNT3BXZXVkdnMyUXQ4THc1bTk3X2MtRXY0WWV5NTlfVTFDVW93UjJwU3h3Y1M5bnpYTXVVRjM4SjluNHJMSkZwSVRNMk4yaEFYR1QzZG5xNW1TLVU0TkZ0elVMY0JiVGRuZjAyeFlCTEVla2N5WGZhOUNCaXJFY1Q1WEpEVE5zbGNQVEl2UVNibldxTm80Sjh0UE81Q3kzaVBJdEpvN2ZGZVd3dGVsZDdGTFZLVFZrQUlydU1zXzFJN2lwWWRKckVwWUdyU1IwUGc?oc=5",
         "date": "Nov 2, 2026"
       }
     ],
@@ -323,9 +323,9 @@
         "date": "Nov 2, 2026"
       },
       {
-        "title": "Temple Is The Most Accurate Heart Rate Detector, Claims Deepinder Goyal; Here's How It Works",
-        "source": "NDTV",
-        "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNbUN1NFZtaXMtbUpEUTU2STdMam1KaFpzb2tkYS1PaEJXRFpnYzdGT2tweGtxT0tNRWJwWnBHQ1JlUU00X0s5cVZvZFpUeG5HTVlUT0ZoSEJfZ0ZYRHNkVXF2eml4a0k2dFFFMTBTVnY2SjN2aV8zT25SYTBZQTRULWFDZGdYVjU2NVFFdVFSTy1iTVpmOTl3cUw2NDlzdWxkanNfMHJCUlU4RTRodWpOSGIta1JramtqRkxMbXVaVXRXcGlTbWVnZi1xSXJuY3M?oc=5",
+        "title": "Deepinder Goyal’s Temple bets on anatomy to rewrite wearable tech rules",
+        "source": "Indian Television Dot Com",
+        "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQNUN1UEY1N1d4bFg3cVhDTnhMU00zM19SV0Z6SHFNN0tBc1hjcmZlOUdRQW1ndktfajFpQnFPeS1KWTBvZGpuOVJ1a1dsYWI5dnNyRVNoeGRuSEtoazhxYUNkWTZJRElhanhWaVJuUVpNMGtTZ3ZRaWZtclYtU2s5QkJ5TGcwUERoRmpxUTY0eFAybkhsd3hkQUhzN1pJQ001RXFiNFlTVQ?oc=5",
         "date": "Nov 2, 2026"
       },
       {
@@ -347,21 +347,21 @@
         "date": "Nov 2, 2026"
       },
       {
-        "title": "Nintendo Explains Why It Chose to Do Another The Legend of Zelda: Ocarina of Time Remake",
+        "title": "Nintendo Reveals Development Team Behind The Legend of Zelda: Ocarina of Time Remake",
         "source": "IGN India",
-        "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQQWUyNUlLU0VaVl80X050R0ZPV3dXN0pIdmZoRE1kYTRvNnpSajFtSlVIRDNaUEljR3FELU1qTGRBY3ZsVVVxTWF0eTBVNmIyNUh3Q0JWejFZOWc1RHZVMl9HcEVZWkZ3NGhSVlU2ZlRNZU9JWF9mV18yVHZaWi13VVlXejNQU2JhM2MxNGR5RGFlRmw3SU4tb1VSTVdGT0hQTEdNZVRzSVVUVWFNX1gyVDd3bU05eXpBQ2pyQ3YxRC13OFl2Vl9HR3FYOEx0OGxoV2dMOGliWFAycktVVTV4Rnl3SFJHYkk4Vmc?oc=5",
-        "date": "Nov 3, 2026"
+        "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNV0w4UlQ2dXc0ZTVQenJqOXRrNnVLeGNNVTF0cTV2WUFZTWYwM0pLV3ROSWdSYXdjcW5HNU1tSWszR3NIN2dSdVZEZURxU2pBM1ZpWEhMNkFtbWpJOS0xUG4ybjY0Rnc5cVZnczh3QVU3UFo5N3dXRFVNc3U0ODdYaFB5UGJRc0oxWlJmc2t5TDVTZnUzcXNoaGV1ckhhSVVGZlZQSUVHbXZmSF9fcUgzT0RSNDBFRHhnRVUyY0Q3NW4wT0RxRGVjQklseWt2QjRnVEZnU3ZSVzZGU01MNlpyNXpJQVo?oc=5",
+        "date": "Nov 2, 2026"
+      },
+      {
+        "title": "How did 400 AI apps with hidden deepfake tools bypass app store checks? | Apps were developed by a single Chinese org | Inshorts",
+        "source": "Inshorts",
+        "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQLWxuaXlOMy1XbWNxNno1UjVRMGx1NjVZWHQ2NVVFVkNyREV6R2JsdktnSUdkZVNWQ2g3VGszQTJlcDRmOUE5NFR4SU5fMFZILTh1N3RhWjNHMzdseTNDZXJaSC1nX1VjRld5SHZNTEt4bjlqeTVydUsxNW1Sd1BDZEN1bk95ZHV3eThiXzh5anY3cC1WOHRZZlE0dVRZQVdBZVFCRmMxU21Qb3lkODZOSG5LTlHSAboBQVVfeXFMTy00QUpLcEJ4aG9BR05vLV9sSFFpdzFNZVpLSnF2ZGdLdnBoenBYZEVURko1TmVjZjhZWFhZdjNsUy1fb1lpY1E3X0JILWVuNjJQY2hpLVNvSm9GdVFnRl9yVE0tRDN2QW1selVDYVlkRGFfVW5LdXhlWnhodHNEang5d2lDNEtwVmliWHBGQ3JoQ0l3QUZCUW1xUnZiY3YzdTFsajNsb0s0YnIxVVBFRGtwSUdTdTUwWVJB?oc=5",
+        "date": "Nov 2, 2026"
       },
       {
         "title": "Apple Watch Glitch After Daylight Saving? Company Shares Quick Fixes",
         "source": "Analytics Insight",
         "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNbnoyUmVDU1o4SklnSFBNZVZjUy1UcDVUbVVhTE9uaXNJdnRnclVzR2JhMW1BbnI2b1d5S2Z2UndWcWtxczVGWS1xOHMxZW9lOUloM1hPeUl4OTdsbEM4T3FXWW5HWmR5eEJPbUZnTXJ6U3JaUk9xT2lzSl82VzJJd2lzeGJSSHdFNDVMMXN2MXh5TkpZXzhfWENqc3dBUE12ZjdvLUM4NDTSAbYBQVVfeXFMTm03YzhuQlZ4S0ZqSmN3S0dHcngxVVh6QVYzNHlZUnh2c0lhRGZmc0FBc2x5MldTdlZjVEFRWldKR25pMXI5aTFsS2t5dzBVZF9yeF94QjBVSDJEdEdFcTZZclJIbTZhNHFoajFrRDE5bWdvUG1EdU9iSlZoLVlUUGNPZ1NjVm8xMWo5dGpqN1U1UWxzUGVmUXMybUxjbUd1a2FjUmtMSkVYN3dNSm81dDZyOFdJMUE?oc=5",
-        "date": "Nov 2, 2026"
-      },
-      {
-        "title": "Over 400 AI Apps Slip Past Apple and Google Vetting, Concealing Deepfake Abuse Tools",
-        "source": "BigGo Finance",
-        "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9WSm40QXlON002aGFkTWpjX2NJRTUtMmZQUUdzeExBM3BSaV9wSll3b0g0TUZRN2ZWYU5qY0haT20tTkFtVHo1bENzNFB4cElRNG9NTU5qWGlsYVQ3UUF2dVBEcXYzWmc5YkYtckdHbmlaMmxtdWc?oc=5",
         "date": "Nov 2, 2026"
       },
       {
@@ -447,21 +447,21 @@
     ],
     "sports": [
       {
-        "title": "Sarfaraz Khan: 'Everyday I ask myself why I should work harder'",
-        "source": "Cricinfo",
-        "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQSEdXUDB5Y24yc1JDVWZ2d1gtRFJ0QWtqcFZpeS1XNnRnZFdIMHdtbFFtSDJhUHFXbGVzYlg4azBZMkx0RFhwdnV5eURIYmwwRjE1NldyUVJVaERqcHlXWkRXcDBRLXJGd0hXbmIzeWRtenduTXpaaW9KNEhPTXhRc2lRS3M1WUFWOHJqdmp2YS16TzUwajJtZnpvT2dHMmVYQlU2cEM2MVNiSHZjME8tSTVFZ1F2MW8tR00zT2RUVXBmc1VLRm8tRtIB2gFBVV95cUxOVzhNNlpmWk80S2FYWlhwVVB6UjhIMHlHQV9jeVpnU1Fpa2xocDFxRGtTUFl4ZzkyRUllcXRjNzlOWG1lYzl4NEF0NkgtZDUycUpEN2RqMTFjSDdHTkFQZHM4dVNGQkNDLVJad2RhZmZFWkxHZE5qSk03R0VUY2E5Ykdxb3MzVUQwNl9UT0dIX3c4VjdSQVpjV2dwT085cVpfaUpqelJMcDN6NzBuVnk2azI0aWgyUVZQS01Dbm8wSTFCR2laUlR1eVhob3ROMU1iQllrcWpvRW1hdw?oc=5",
+        "title": "'Why should I wake up at 5 am?': Sarfaraz Khan opens up on India snubs, motivation and father's support",
+        "source": "The Times of India",
+        "link": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxNT3EzWWNxRjhFVDMxcm1sYVZ4YTc5ckxzSzZGdzBYZ3dLb2J2TWVHVTNLN3dYQVFSSHRDeWJTWFlWV0xhc0JjdVc5ZndLYW9WX0Q0aHl4MmZrZlZMelZoeFhSTnppTmdDQkZHelBYUlI4M0FXRjRmZUU2cjFxTEludzA5d0JiYlN1czVnVDlWNTVGdWFZQVZUTHI5VFNEVzlJeWJUbDJYTXBsS3dMZ3hMc09vQk5tclVnQmlnVVRGOXBVUi1VTnZjTUNHQ0piWTk4WTEtbVBsTDJZYVA5OENUbGYyMWdaWmJfOVUwdFRUQ1FEbE9NYlQ1alBFVXlPMlp6VmUzb0doRmtXdHM?oc=5",
         "date": "Nov 2, 2026"
       },
       {
-        "title": "BCCI extends IPL retention deadline to November 17",
+        "title": "IPL 2027 retention deadline moved to November 17",
+        "source": "Cricinfo",
+        "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQV0VnbWtlV0ZkYmVLYjNmc0QyOWEzTFZOcTdtZ2o4ZzIzQVpuejR6eEhlM0lJWXlsU2VnLVlxZ1VHYU0xbGRXY2RmN19wbEc3cGs2d3BBWkxEZ3ZJSXNXVzhuSlRjbUVIVk1wWTRpQV9SUjgxZFhzZjdYSGJXQWtqWnZGRy01eTVPUzNqdHBTU3rSAaIBQVVfeXFMTTM1N1lwN1F2cnZYVV9FYlhSUEEzajZiZUV3U2dfM3FycHdqSHNaMExMSTFIS2RWV3BIb2QzM3lSUm5pVWtPalNFeElPaV9rQnlvR0pZWmNVTnpaczF4c0hBS2toZlhjbDAwMXlYWUpWMUU0THFwb2JHdm81SURwV2JFN0ZyWVMwOTZxeWYxbFVCTnJqb2tETE5ZUVRTb0pqSi13?oc=5",
+        "date": "Nov 2, 2026"
+      },
+      {
+        "title": "No India 'A' games for Pant, but New Zealand Tests remain a distinct possibility",
         "source": "Cricbuzz",
-        "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNcmFfZEx4bUdndkhicUpYSU95QzlFUnBJa1BXZTl0ZnhNaFBQVWJncVEwSllpM3I2Rl9Da2JBZUNqdHNHZXo0WXRXZUQxcVdaZmJpa2V5OENGTHoydEtvOEozaHpaa05ZRnRWMTR5ejg3RlhYanY0RFBlODFiVUdZS09CLXRYQ2tza0xjdnNaVFV2OVRMZ0ZKbzh6NkowNi1vNFVhc3J5S1FmMVE?oc=5",
-        "date": "Nov 2, 2026"
-      },
-      {
-        "title": "Pant to undergo fitness assessment before leaving for New Zealand",
-        "source": "Cricinfo",
-        "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQWHFZa2lNX3VVQW85OVRqWnBTY0VjSkRGYm5kMnVpMGlBdkZBUl8ycFlaSFp5QVZYaGZneXJfLVdhVjg5VC1BRWQweGtPRTF4aTZPYlVvVEdqamZYaGlTc2Fsa0tVMVV3WDZxalIzM1VIVm4tN193Qkg3VXFKR3lvVGlfSHRMWmd6UXJyVGh5TXQ5TmNmYVJRYkdud3JaMERQc0RHMnpfdVlON0xVN3hkSmFDeG9fWGxVOWppV1ZqbDg?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOZnVycVI3RnRsRlpKTk81bVFERGY1R2U3WVNUWms3QnpXSFZscXZWVDAyV1MwcmswOUpRVk53Z29nQWRndDVqTG5oMzZEMHE1MHFNS1FMS2dLTHhqa09rMm9RRFpEZVVTMERRT0hGd3pPci0yaXVPcG5JM2xFVGVyR1NWNVNpMVFhUnJNYndyREJIVF9RNU10RE9ZRkYwb2FjVDA2ajU0Mk1sdlNubGtvTXhNYlpfYi1zMTQ0WDhCUEtwMl9DaFFyUzdENzNrUQ?oc=5",
         "date": "Nov 2, 2026"
       },
       {
@@ -483,16 +483,16 @@
         "date": "Nov 2, 2026"
       },
       {
-        "title": "From Kimi Antonelli To Vaibhav Sooryavanshi: How Young Champions Can Create Next Generation Of Sports Fans",
-        "source": "NDTV Sports",
-        "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPdTlUb2Z5WTdrcUNYTnN2UGtTcnA3Z2VRQVN4RlRwa1ZqNjc2RVRIMHE3NFNPX1VZR1ZsUGtxTzBvWGUtcVJXM3loNHVSSC16RDlBSGdKYjhnMVJXZVJ4NXpXZFJaSHB2UzFTdXFoMkZ5MWlMc3RNcHZOeS1CN2tjWXhoV1BfSXJXR09rMXBnYTJHeUpTbERBNUJvSlNxME1GVGREb0VaMVdHdmpPLTdPeThvenZuOEhzenY0OEx0aWV1OXlhWjNoQURkSExFSWlSaDk1bnktQWwzUWdJV2o0bGZn?oc=5",
-        "date": "Nov 2, 2026"
-      },
-      {
         "title": "Lakshya Sen wins Hylo Open 2026, beats Jonatan Christie in final — Full match score highlights",
         "source": "The Hindu",
         "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxORHBxZkJINlBrcFFVc2tzUkVjOUhvWTZ3QVYwaEJSSmNPOUNDMUlzNDV2YThVVzBQaWRxY0lvV01xU2ZkcXVJOEN5aG45NV9mTm1zZFNoMlp1T2NkenBLbXV6Y0tBYUo1MmlrSW1mOF9USVl4TmhsLTNiWm1FTVdmWTBzX3ZORUVZYmVtYmFNY0NjM19taW5XR0xrUjR5TkRKVlF1OERUUW0zRENMWDU3b0JSSjFmM09pZFBSaEdscnpjNk9ueTdFcG9Ua21mdjhfY1dTT3NQUGxoQk1MLWgzcE96TVIwU0lBTXfSAfABQVVfeXFMTzFpcm1JeHRILWExUGJ0RE1YdHJDaHo4QjJYQXJfTUVReFdwR0FjZDB0SzhockFKNGltTVJOWHZKRVpTamFFcTVqZE9IUVF5ZVZ5dW1rWTBKMVJaR0FxMDh5M1JZdlJlMmVLakJLV2tvbzVqLVNYb3JvTDEzSndrbHJGT2xsQl9FVFJMdzVlRXg3bDg2dUt5eDFuRGhvM1ZPX0Y3cWhKSUU3OG5pX3d1aWxXSmh3cXZnSE96NXAtc1FJb3czLTR1azRRUTFzNW9IYXhFLUdZVGNUZENjaG1CUmplN1lmTTV3WEJFdjBYclVi?oc=5",
         "date": "Nov 1, 2026"
+      },
+      {
+        "title": "From Kimi Antonelli To Vaibhav Sooryavanshi: How Young Champions Can Create Next Generation Of Sports Fans",
+        "source": "NDTV Sports",
+        "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPdTlUb2Z5WTdrcUNYTnN2UGtTcnA3Z2VRQVN4RlRwa1ZqNjc2RVRIMHE3NFNPX1VZR1ZsUGtxTzBvWGUtcVJXM3loNHVSSC16RDlBSGdKYjhnMVJXZVJ4NXpXZFJaSHB2UzFTdXFoMkZ5MWlMc3RNcHZOeS1CN2tjWXhoV1BfSXJXR09rMXBnYTJHeUpTbERBNUJvSlNxME1GVGREb0VaMVdHdmpPLTdPeThvenZuOEhzenY0OEx0aWV1OXlhWjNoQURkSExFSWlSaDk1bnktQWwzUWdJV2o0bGZn?oc=5",
+        "date": "Nov 2, 2026"
       },
       {
         "title": "Mukesh Kumar takes five but lower-order puts New Zealand 'A' in front",
@@ -545,15 +545,15 @@
         "date": "Nov 2, 2026"
       },
       {
-        "title": "Yim Si Wan Feels Flustered As Seol In Ah Doesn't Remember Their Accidental Kiss In \"Love In Disguise\"",
-        "source": "Soompi",
-        "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOY3BsZGxTdjBDMENNa2pDNjFVNmZtNnNNMlRFM1NueVYzZURYVUZjYVljMFlfaVV3V0pPZ2o0TzdEc1ZWMGFISXEyS1N2bnVWWXJCMi10Snd6UjBJMDR5MndKWnZhcTBrTThXNW9lQkhVUXNPY3Zma2ZneVlVUEdSLUtGRUtlWGtGam9Fc3ZkQ3N5eWtGZ0ZoSmZqU1poS1kzclcweXVtdlI5a0pENUFEb1dmaHVhRlNMZGRzVjd3dFdiS1lZMllRb1d4YWowMlgwbnU3UjNlQQ?oc=5",
-        "date": "Nov 2, 2026"
-      },
-      {
         "title": "Aadarsha Kutumbam House No: 47 Box Office Day 3: Lags Behind F3: Fun And Frustration's Opening Weekend By 26%",
         "source": "Koimoi",
         "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQZmF5QW9ZQ2lrWUk2Uy11cEZJejgzVG5IeGt5UEFTdmZTcUZCa1JPVThGYkJNdGRCNk96ODhWeTZqaDF1bFlISnQ5ZzdhenREa3pER0V3ZGEyVXRUck9GSWNCbldGVHpDN2laWG9Vc1p2VlFJNjJET0JVbWhsMlMzOF91QS1aMWxFUU9OOUw4Sy1ESzZBemdWUW9KRjUwVUlrUUR4M3pYQTl1ekxpQV9YTDgzcEVZZWpKREl1eXFIRGJRT3N2SV9sQVhHR3hwYVk3ZkZXVGlB?oc=5",
+        "date": "Nov 2, 2026"
+      },
+      {
+        "title": "Yim Si Wan Feels Flustered As Seol In Ah Doesn't Remember Their Accidental Kiss In \"Love In Disguise\"",
+        "source": "Soompi",
+        "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOY3BsZGxTdjBDMENNa2pDNjFVNmZtNnNNMlRFM1NueVYzZURYVUZjYVljMFlfaVV3V0pPZ2o0TzdEc1ZWMGFISXEyS1N2bnVWWXJCMi10Snd6UjBJMDR5MndKWnZhcTBrTThXNW9lQkhVUXNPY3Zma2ZneVlVUEdSLUtGRUtlWGtGam9Fc3ZkQ3N5eWtGZ0ZoSmZqU1poS1kzclcweXVtdlI5a0pENUFEb1dmaHVhRlNMZGRzVjd3dFdiS1lZMllRb1d4YWowMlgwbnU3UjNlQQ?oc=5",
         "date": "Nov 2, 2026"
       },
       {
@@ -581,25 +581,19 @@
         "date": "Nov 2, 2026"
       },
       {
+        "title": "‘Tu Mil Jaaye’: First song from Shah Rukh Khan’s ‘King’ reminds netizens of ‘Pathaan’, ‘Jawan’",
+        "source": "Telegraph India",
+        "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOR3VydVdwTXlMZU9RMnh1MFpqWWJyQ25EQmJEelFLYXNxQXE1eUxNVUNzZmlVNFZkNG85akx6aWhNdlotdXNhY3pOVDQtOFZUcFV2TDNubDNyeXRWdHQwdDF1WXFyN2MtUVlTUEF5cEgwV0hlVHh1RnVVRnBSWFdBMUFBZWFKTHNySkdIMU5vc0lTZk9OYklUZFJrM2diaW00X2F2SnMtV3Z6ZmI0T1VOZTNoZ1dEWklvS2ZLZU5WMW5tSFo0TGd4OW90bkxVc2JZMk9VWDRhd9IB3AFBVV95cUxPLUxyZF91RVhYdFJqMjRXbjBSQ0ppQjAyNmJ3WmNHelNZX2FsXzNic085NUdKRlFlY0djeXNXNG9Vd2hPbEp2X3Y1ZFF2d0k3dGttV0M2MC1PZFQyU2I2X3pwMzhKT0F3OWMzQUcyVm5pYkk3N1FMMzljTHFPNXBOVlRfYXc5RWx0b3JUXzF0TUYyNEFCQkRKNkh6MWNWZHhqZ245ZDUybUJaTGJhNlUtVXVfMUFLeGpJcWNoR2JydzZ2bklpcjBGbnJ3LU1CUDVvaWY0Q3lEcGpIWkNo?oc=5",
+        "date": "Nov 2, 2026"
+      },
+      {
         "title": "Today’s NYT Connections Hints and Answers for Monday, Nov. 2, #1240",
         "source": "CNET",
         "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNWWx2eEZieU9uSmpNem1JdTRSRlVGSTJ5RV9sSnpNTURBeWpKQmtHRUdSUHFfQmt3SzlXT0x4QWN4ZXl1UUFhbTNvWHNrdDVNN1NBcDJGLTVUaktyUEhyZnpZdDZoaDNCZDdnY0w4U2tfbE1pTERHZC1za2Q5Vl9zM0t1NjBJTmlHbl9hM1lRUQ?oc=5",
         "date": "Nov 2, 2026"
-      },
-      {
-        "title": "Sanjay Gupta’s wife defends ‘grieving’ daughter for showing middle finger to paparazzi",
-        "source": "The Indian Express",
-        "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQZm1ITTVEdGRscWg0ZjdNUDNHWmhDbExpRHVJQ2c4RVNkWlBVWHdnRExyb0V4X0NZajhBNGlkOVpRRm9vUFRhNl9EWFpBT19IWTI4aTRLNHFDQ2d2bDRTbmh3aVc3clVseU5Lc1RHUG92MUM1d25YWF81UGVPNVBQNjZlTlpSN0NTdlFqYVFHRUR6Q3QzYS1wTmtLdlJ3WFJlNXNxSGtKM0VMZXlzMXlFVzEzUkJqNDhnMUNlYXNpRGRVZnJvRmVEWmJGMTd5eVo5bW1VaNIB2wFBVV95cUxNbHBrTWtvemI2Q1lFbVRYUUZ2SUJxMUd1QXFiTFhTRzduNGJDZUQyQ3cxQUlPZHBJQzFjWTRkdlpUMEtJOWtUNmdGb3kyNjg4YVBJVlFIS3hVbEJIdHBlZEhXanJObVNBQ0w4NXFGRk5ZUFgwRFBLZDFUUU14clczbGVtLXM3c1lWQ2xsQ0l6NERudmk0SnlJZzJBRHR1dWd0WF9zVkpxU1NXSHZUNDREMkYzdXc5QmllVk9IeFZLUzJPQmRwYnB2WTd0elc4azhrSXlON1M0dU1USlk?oc=5",
-        "date": "Nov 2, 2026"
       }
     ],
     "podcast": [
-      {
-        "title": "Global News Podcast | Ukraine and Russia hit by fake emergency alerts",
-        "source": "BBC",
-        "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE44TjFfVGVSN1A3OG5FcWhSRHp3Uk9qdVIwRWlOZ3JhRGkxZGxzbmVmbzljNXBXUzNlMVhNaVdrbzNqc2l5ejdPeUpONF9hQzRn?oc=5",
-        "date": "Nov 3, 2026"
-      },
       {
         "title": "Hit podcasts reveal the angst of China’s youth",
         "source": "The Economist",
@@ -607,16 +601,16 @@
         "date": "Nov 1, 2026"
       },
       {
+        "title": "Global News Podcast | Ukraine and Russia hit by fake emergency alerts",
+        "source": "BBC",
+        "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE44TjFfVGVSN1A3OG5FcWhSRHp3Uk9qdVIwRWlOZ3JhRGkxZGxzbmVmbzljNXBXUzNlMVhNaVdrbzNqc2l5ejdPeUpONF9hQzRn?oc=5",
+        "date": "Nov 3, 2026"
+      },
+      {
         "title": "I’m sick of smug celebrities on the podcast circuit. No wonder there’s a fuss when someone speaks the truth",
         "source": "The Guardian",
         "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQWk95bEVXQlYxSHRzcm5iQ2Y1dmFuUDJzN285czh1UTJ1Wi1tU050ZldYbnkwSm1kdDZmeVdkeEZBMVdJM2Fvb2dIMzNONzNnRVJ2TGZkSUtMZUFmOG5NRVJSZjB6bmhLRU9wNlJIWk44eW1qaE1UQWFJM2RvOGxWSG8xZTdOZEFXSzFDbE1EVGpqR2JwS1dEc0xnRGVVaERU?oc=5",
         "date": "Nov 1, 2026"
-      },
-      {
-        "title": "Aston Villa to take legal action against Jamie Carragher over podcast comments",
-        "source": "ESPN India",
-        "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPZDM1SEZGXzh5TDBqc1FNZzAwZGVTZnZpMjZwWlA4WUZzM2tPY1gtSHhCWDlWLW55UFNVeXRtVnVsemI1TXdwX0xCVW1qSDNtTU1KNTJkRWNDbklDYm5YdzI2X2o0ZDhjVjk0REJCSFQwdU1OdkNQZmRGUTVhTzJvbGQyc2NCSk1sRFhmNmNBN0RoRzBuQnl5NTIzWEVYbGRUaUZDTnNORnVPY3Q4QVprUw?oc=5",
-        "date": "Oct 31, 2026"
       },
       {
         "title": "Gartner on AI ROI: A Computer Weekly Downtime Upload podcast",
@@ -637,22 +631,28 @@
         "date": "Nov 2, 2026"
       },
       {
-        "title": "Michael Jordan's challenging condition to appear on a podcast: “All he wants to do is gamble”",
-        "source": "MARCA",
-        "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQQU8yZm1XX0dWd2x2dFg0bHhnYWl3bU9rLXRVSlRwQnpva1dLMi14WDlMVjR3LXlQOTdVdUs2aGhQZW9zbkcyNnZNc0djc1V6WFl2TUhrSnFKT213b0VGdFlPaWowSk9FVVJmUHM0VVBZN0FabW9NandRVk0zaVoyR3hRZHQ5el9rS2NvTnVHR3Boc1dQOFE3ZXBra204MHdHSVdBV185S1pRVTRaSmRzOXlXMzhwdDdVOVpyZUpMTFpqcEN2Z0dEcjhvQXB4UmV0QW04NEpISW9vRVJWWTdnWVJkOEg3MGF3RzhmYzl5d9IB7wFBVV95cUxPR01mMll3UVRVV1ZGSVdKSTBfVi1pVmpzWEREWW9EaGdoS1gtYm5lWGVNWVJvemVUQnREYnh3djR3aDhWNmlLYlZpOFUxZlNXRmlQT2NsWkF4cDZpOENVaUtZWWxzLTZqaGh0cnhEY3dfNld6eW5zWEtZNHBLNWhtWHJZSGpROEdYc3FSTlM5RGVETjdCT04xdmZVRDVObWhaRnNST2VhNW0wczFZSVRSVlBNWGZSOXRoLWd2S016azAtX2g2aWVpeVpmdTBWcHZWVXczVGlXMXdLdTFYRGNMYkwwZ0JmWmw5WThjOWhWYw?oc=5",
-        "date": "Nov 2, 2026"
-      },
-      {
         "title": "Why Flailing Trump Will Suffer Crushing Defeat",
         "source": "The Daily Beast",
         "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOSDZKanYtVzlhalljSk8yaEtwUGFQRTBOWlFrT0g1V2JicmtLenFvbkh5blZjeVh5VUdZcHVsUFg2RGRWSW1BSWlxeWs4TlNzNWUtb3BmSzZYY0xlZjlOWGJBbm94TmZFNGlPbXhBZWlrUS0xcld5Z3pHVC1BblVoV3JB?oc=5",
         "date": "Nov 2, 2026"
       },
       {
-        "title": "PODCAST: Anticipation builds ahead of new Toyota Fortuner arrival",
-        "source": "The Citizen",
-        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQRXk2endmZlJjZjYtT1ZPUHJyQXk4YWRLVzFSZHFJN1NhTmVfeDdORkc0c0hyd3FEbWl5TlhTMVNBTnNXQXMwcTBsM0FaNFhma0tkZzFORU9EVkdHZjVwcWFZd1h0eS1KZXhKaEphQkNxaW5BcUFrTUxpLVB5ZGtOc3hhMmo?oc=5",
-        "date": "Oct 31, 2026"
+        "title": "Man Utd podcast: United hit 'self-destruct button' at Chelsea - The Devils' Advocate",
+        "source": "BBC",
+        "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQSVUtem5TQ1pVanJjdHRoWE5pSUxUenhPSVlNSW9IOUFvZy1NV2ZYRXh2ZWxTZE5VWkFJd1ZCNXVlWl9ya1JjdEc5M3Z6STJ2c19oNHZBOVhnM2FtaTljWUJVa1htMmhyV3ZVLS1iTjNzUlhnWVVFTHZBZXBaMjM1NURxUjhvSlB4QTdsNjItSWJ4enNmYV9xUGJUZF9qY0NuQi1YdWRiclg2QW90MmtuME9YX2RwcTFXdXNTZkY4MnN1WVVlUHhXVVhxbE4ydFI1aFRBUzQ5TWw5dWdlUGhvaW9n?oc=5",
+        "date": "Nov 2, 2026"
+      },
+      {
+        "title": "BBC Scotland launches Murder Trial video podcast",
+        "source": "BBC",
+        "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE96SS1mVk4tMkhwVU9XMXhFNGxiemxqdEtVNGF0NDhBSmtDZXdNTWlEOHpVSXFXUHRfY25kTHkxSlQ5Qi1nUGRZT1ZJY2s0NUp2VWVuUzZTZm9TdEl1U0tMbWFBNHFMeUJ1N1RIcktiQzVXR21DUjVwR2h3?oc=5",
+        "date": "Nov 2, 2026"
+      },
+      {
+        "title": "Leeds United podcast: Do expectation levels need reassessing?",
+        "source": "BBC",
+        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE55ZG1ZbWtaNXc3clNrUVlNelc0cVh4R1VOMUJ4TVdDcmstem8zV25UOW5mMGNTTGVRcTdsS1hsUmlTUG5mTEEyRzFTTDAtT0xnOEl5N1dodUtENDlpTHVoNWRwekd2a1hW?oc=5",
+        "date": "Nov 2, 2026"
       },
       {
         "title": "‘Growing Impact’ podcast explores plants as environmental contaminant sensors",
