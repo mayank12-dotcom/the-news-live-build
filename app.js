@@ -177,6 +177,7 @@
         const copied = srcImg && (srcImg.currentSrc || srcImg.src);
         if (img && copied && copied !== (img.currentSrc || img.src)) {
           op.realSrc = img.getAttribute('src');
+          new Image().src = op.realSrc; // warm it, so the swap doesn't blink empty
           op.swap = true;
           img.removeAttribute('loading');
           img.src = copied;
@@ -460,7 +461,8 @@
 
   // Grab the first item of the set, alt-drag a copy into this item's place, let go.
   function duplicate(c, unit, now) {
-    const src = unit.prev.el.getBoundingClientRect();
+    // Drag out of the finished first item, so the copy always matches what it left.
+    const src = unit.source.el.getBoundingClientRect();
     const grab = toPage(src.left + Math.min(src.width * 0.3, 60), src.top + Math.min(src.height * 0.35, 40));
     if (c.phase === 'dupe-travel') {
       if (!c.travelMs) c.travelMs = Math.min(1000, 220 + Math.hypot(grab.x - c.from.x, grab.y - c.from.y) * 0.55) * rand(0.85, 1.2);
@@ -476,10 +478,12 @@
         pasteCopy(unit);
         const dest = unit.el.getBoundingClientRect();
         c.dupe = { grab, dx: dest.left - src.left, dy: dest.top - src.top, ms: rand(...DUPE_MS) };
+        // Start the copy on top of the item it came from, not at its own slot for a frame.
+        unit.el.style.translate = `${-c.dupe.dx}px ${-c.dupe.dy}px`;
         unit.el.classList.add('dragging');
         setPhase(c, 'dupe-move', now);
       }
-      return { point: grab, mode: 'copy', sel: boxOf(unit.prev.el), unit, exact: true };
+      return { point: grab, mode: 'copy', sel: boxOf(unit.source.el), unit, exact: true };
     }
     if (c.phase === 'dupe-move') {
       const { dx, dy, ms } = c.dupe;
