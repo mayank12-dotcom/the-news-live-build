@@ -225,6 +225,9 @@ h2 { font-size: var(--text-h2); font-weight: 500; line-height: 1.1; text-transfo
 .social { display: flex; gap: 14px; }
 .social a { display: block; transition: opacity 0.2s; }
 .social a:hover { opacity: 0.6; }
+.sources { display: grid; gap: 6px; font-size: 12px; font-weight: 300; line-height: 1.7; color: var(--muted); }
+.sources a { color: var(--ink); text-decoration: underline; text-decoration-color: rgb(32 33 36 / 0.25); text-underline-offset: 2px; transition: text-decoration-color 0.2s; }
+.sources a:hover { text-decoration-color: currentColor; }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }

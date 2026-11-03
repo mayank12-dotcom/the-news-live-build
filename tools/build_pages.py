@@ -12,7 +12,10 @@ import html
 import json
 import re
 import struct
+from collections import Counter
+from datetime import datetime
 from pathlib import Path
+from urllib.parse import urlsplit
 
 ROOT = Path(__file__).resolve().parent.parent
 NAV_FILES = {
@@ -165,7 +168,43 @@ def page_html(parts, title, active, main):
 '''
 
 
+GOOGLE_NEWS = "https://news.google.com/home?hl=en-IN&gl=IN&ceid=IN:en"
+SOURCES_SLOT = re.compile(r'(<div class="sources" data-draw data-news-sources>).*?(</div>)', re.S)
+
+
+def fill_sources():
+    """Lists every publisher on the page in the home footer, which all other pages copy."""
+    path = ROOT / "content" / "news.json"
+    if not path.exists():
+        return
+    news = json.loads(path.read_text())
+    stories = [s for feed in news["feeds"].values() for s in feed]
+    counts = Counter(s["source"] for s in stories)
+    homes = {}
+    for s in stories:
+        if s.get("url"):
+            parts = urlsplit(s["url"])
+            homes.setdefault(s["source"], f"{parts.scheme}://{parts.netloc}/")
+    names = sorted(counts, key=lambda name: (-counts[name], name.lower()))
+    links = ", ".join(
+        external(homes[name], esc(name)) if name in homes else esc(name) for name in names
+    )
+    updated = datetime.fromisoformat(news["updated"]).strftime("%b %-d, %Y, %-I:%M %p IST")
+    block = (
+        f'<p>Headlines from {external(GOOGLE_NEWS, "Google News")} (India edition), refreshed every 2 hours; '
+        f"last updated {updated}. Photos and summaries come from each publisher.</p>"
+        f'<p class="sources-list">Sources: {links}</p>'
+    )
+    home = ROOT / "index.html"
+    source = home.read_text()
+    filled = SOURCES_SLOT.sub(lambda m: m.group(1) + block + m.group(2), source)
+    if filled != source:
+        home.write_text(filled)
+        print("listed", len(names), "sources")
+
+
 def main():
+    fill_sources()
     parts = shell()
     pages = json.loads((ROOT / "content" / "pages.json").read_text())
     for slug, page in pages.items():
