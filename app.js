@@ -118,9 +118,12 @@
     return { ...op, text, typed, caret, rest, cps, k: 0, nextKeyAt: 0 };
   }
 
-  // A page section: the masthead, the footer, or a top-level block of the main column.
-  function sectionOf(el) {
-    return el.closest('main > *') || el.closest('body > *');
+  // Which screen-height band of the page a frame belongs to: the one it fits in whole,
+  // so a frame poking out under the fold waits for the next screen. Frames taller than
+  // a screen go by their top.
+  function foldOf(unit) {
+    const r = unit.el.getBoundingClientRect();
+    return Math.floor(((r.height < innerHeight ? r.bottom - 1 : r.top) + scrollY) / innerHeight);
   }
 
   function buildUnits() {
@@ -130,10 +133,10 @@
       for (const el of document.querySelectorAll(selector)) {
         const layers = [...(el.matches(LAYER) ? [el] : []), ...el.querySelectorAll(LAYER)].filter((l) => !claimed.has(l));
         layers.forEach((l) => claimed.add(l));
-        list.push({ el, ops: layers.map((l) => ops.get(l)), idx: 0, state: 'idle', selector, section: sectionOf(el) });
+        list.push({ el, ops: layers.map((l) => ops.get(l)), idx: 0, state: 'idle', selector });
       }
     }
-    for (const [el, op] of ops) if (!claimed.has(el)) list.push({ el, ops: [op], idx: 0, state: 'idle', section: sectionOf(el) });
+    for (const [el, op] of ops) if (!claimed.has(el)) list.push({ el, ops: [op], idx: 0, state: 'idle' });
     list.sort((a, b) => (a.el.compareDocumentPosition(b.el) & Node.DOCUMENT_POSITION_FOLLOWING ? -1 : 1));
     linkRepeats(list);
     return list;
@@ -274,11 +277,13 @@
   }
 
   // Free cursor takes the next unbuilt frame in reading order (units are sorted
-  // top to bottom). Nobody moves on to the next section until this one is fully built;
-  // cursors with nothing left to do here wait on the logo.
+  // top to bottom). The page is built one fold (one screen height) at a time: nobody
+  // moves down to the next fold until everything starting in this one is built.
   function claimUnit() {
-    const current = units.find((u) => u.state !== 'done')?.section;
-    const unit = units.find((u) => u.section === current && claimable(u));
+    const left = units.filter((u) => u.state !== 'done');
+    const folds = left.map(foldOf);
+    const current = Math.min(...folds);
+    const unit = left.find((u, i) => folds[i] === current && claimable(u));
     if (unit) unit.state = unit.source && !unit.duped ? 'duping' : 'active';
     return unit || null;
   }
