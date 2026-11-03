@@ -273,7 +273,6 @@ h2 { font-size: var(--text-h2); font-weight: 500; line-height: 1.1; text-transfo
 .turn-layer { position: fixed; inset: 0; z-index: 60; overflow: hidden; pointer-events: none; }
 .turn-page { overflow: hidden; background: var(--bg); }
 .turn-copy { position: absolute; left: 0; }
-.turn-copy [data-draw] { clip-path: none; }
 
 /* ---------- article ---------- */
 .article-page { padding-top: clamp(48px, 6vw, 96px); }

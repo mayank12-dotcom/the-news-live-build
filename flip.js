@@ -69,7 +69,8 @@
     document.body.append(layer);
 
     const leaving = bookPage(saved.html, saved.scrollY);
-    const arriving = bookPage(snapshot(document.body), scrollY);
+    // The new page hasn't been built yet, so it arrives as a blank sheet the cursors then fill.
+    const arriving = bookPage('', 0);
     const pages = back ? [arriving, leaving] : [leaving, arriving];
 
     let flip;
