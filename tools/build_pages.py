@@ -3,7 +3,7 @@ story slots with the latest headlines from content/news.json.
 
 The masthead, footer and page chrome are lifted from index.html, so the home page
 stays the single source for shared markup. A story slot is any element tagged
-data-news="<feed>:<index>" data-news-field="title|source|date|byline|href";
+data-news="<feed>:<index>" data-news-field="title|source|date|byline|summary|href";
 each story also gets its own page at news/<id>.html.
 Run from the repo root:
     python3 tools/build_pages.py
@@ -225,7 +225,7 @@ def main():
     clean_links()
 
 
-SLOT_TEXT = re.compile(r'(<(\w+)[^>]*? data-news="(\w+):(\d+)" data-news-field="(title|source|date|byline)"[^>]*>)[^<]*(</\2>)')
+SLOT_TEXT = re.compile(r'(<(\w+)[^>]*? data-news="(\w+):(\d+)" data-news-field="(title|source|date|byline|summary)"[^>]*>)[^<]*(</\2>)')
 SLOT_IMG = re.compile(r'<img src="([^"]*)"(?: data-fallback="([^"]*)")?(?: referrerpolicy="no-referrer")? data-news="(\w+):(\d+)" data-news-field="image"')
 SLOT_HREF = re.compile(r'href="[^"]*"(?: target="_blank" rel="noopener")? data-news="(\w+):(\d+)" data-news-field="href"')
 FEED_NAV = {"top": None, "world": "World News", "politics": "Politics", "business": "Business",
@@ -339,7 +339,8 @@ def fill_news():
         s = story(m.group(3), m.group(4))
         if not s:
             return m.group(0)
-        value = {"title": s["title"], "source": s["source"], "date": s["date"], "byline": f"by. {s['source']}"}[m.group(5)]
+        value = {"title": s["title"], "source": s["source"], "date": s["date"], "byline": f"by. {s['source']}",
+                 "summary": s.get("summary") or f"From {s['source']}"}[m.group(5)]
         return f"{m.group(1)}{esc(value)}{m.group(6)}"
 
     def href(m):

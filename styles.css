@@ -127,7 +127,7 @@ h3 { font-size: 18px; font-weight: 500; line-height: 1.4; }
 
 /* ---------- topics + lead ---------- */
 .topics { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px 20px; padding-block: 40px 16px; }
-.topics li { display: flex; gap: 12px; align-items: center; }
+.topics .topic { display: flex; gap: 12px; align-items: center; }
 .topics .media { flex: none; width: 64px; height: 58px; }
 .topics h3 { font-size: 14px; font-weight: 600; text-transform: uppercase; line-height: 1.3; }
 .topics p { font-size: 12px; line-height: 1.6; }
