@@ -277,19 +277,26 @@
   }
 
   // Free cursor takes the next unbuilt frame in reading order (units are sorted
-  // top to bottom). The page is built one fold (one screen height) at a time: nobody
-  // moves down to the next fold until everything starting in this one is built.
+  // top to bottom), working fold by fold (one screen height at a time). The top fold
+  // comes first; only when there's nothing left to start or help with there does a
+  // free cursor move down to start a section in the next fold, so nobody sits idle.
   function claimUnit() {
     const left = units.filter((u) => u.state !== 'done');
     const folds = left.map(foldOf);
-    const current = Math.min(...folds);
-    const unit = left.find((u, i) => folds[i] === current && claimable(u));
-    if (!unit) return lendHand(left.filter((u, i) => folds[i] === current));
-    unit.state = unit.source && !unit.duped ? 'duping' : 'active';
-    return unit;
+    for (const fold of [...new Set(folds)].sort((a, b) => a - b)) {
+      const inFold = left.filter((u, i) => folds[i] === fold);
+      const unit = inFold.find(claimable);
+      if (unit) {
+        unit.state = unit.source && !unit.duped ? 'duping' : 'active';
+        return unit;
+      }
+      const helper = lendHand(inFold);
+      if (helper) return helper;
+    }
+    return null;
   }
 
-  // Nothing left to start in this fold: take over the untouched back half of a frame
+  // Nothing left to start in a fold: take over the untouched back half of a frame
   // another cursor is still working through, so nobody stands around. Only layers whose
   // boxes are already drawn can be handed over, or the text would land in an empty box.
   function lendHand(inFold) {
