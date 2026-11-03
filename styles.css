@@ -55,11 +55,12 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--sel); outline-o
 .cursors > * { position: absolute; left: 0; top: 0; }
 .cursor { will-change: transform; }
 .ico { position: absolute; display: none; overflow: visible; }
-.ico-pointer { left: 0; top: 0; filter: drop-shadow(0 1px 2px rgb(0 0 0 / 0.3)); }
-.ico-pointer path { fill: #000; stroke: #fff; stroke-width: 1.5; stroke-linejoin: round; }
+.ico-pointer { left: -1px; top: -1px; overflow: visible; filter: drop-shadow(0 1px 2px rgb(0 0 0 / 0.3)); }
+.ico-pointer use { fill: var(--c); }
+.ico-pointer .edge { fill: none; stroke: #fff; stroke-width: 60; }
 .ico-text { left: -6px; top: -11px; }
 .ico-draw { left: -10px; top: -10px; }
-.ico-text path, .ico-draw path { fill: none; stroke: #000; stroke-width: 1.6; stroke-linecap: round; }
+.ico-text path, .ico-draw path { fill: none; stroke: var(--c); stroke-width: 1.6; stroke-linecap: round; }
 .ico-text, .ico-draw { filter: drop-shadow(0 0 1px #fff) drop-shadow(0 0 1px #fff) drop-shadow(0 1px 2px rgb(0 0 0 / 0.25)); }
 .mode-pointer .ico-pointer, .mode-text .ico-text, .mode-draw .ico-draw { display: block; }
 

@@ -2,6 +2,7 @@
   // Lifecycle: loading (cursors spin on a white screen) → building (each cursor
   // claims a frame and builds its layers one by one, visible frames first) →
   // resting (the swarm buzzes in a tiny circle on the masthead).
+  const ARROW = 'M.1 32.5C-1.9 7.3 26.2-9 47 5.4L261.8 153.3c23.4 16.1 13.4 52.7-14.9 54.6L137.1 215.6 75.6 306.8C59.8 330.4 23.1 320.8 20.8 292.5Z';
   const CURSOR_COUNT = 8;
   const TYPE_CPS = 14;           // average typing speed, characters per second
   const LONG_TEXT = 90;          // longer than this and the typist speeds up proportionally (article paragraphs)
@@ -81,6 +82,10 @@
     return;
   }
 
+  // Each cursor gets its own random colour; hues are spread around the wheel so no two look alike.
+  const hueOffset = Math.random() * 360;
+  const hues = Array.from({ length: CURSOR_COUNT }, (_, i) => Math.round(hueOffset + (i * 360) / CURSOR_COUNT + Math.random() * 20) % 360)
+    .sort(() => Math.random() - 0.5);
   const cursors = Array.from({ length: CURSOR_COUNT }, makeCursor);
 
   function setup(el) {
@@ -117,10 +122,14 @@
   function makeCursor(_, i) {
     const html = (tag, cls, inner = '') => Object.assign(document.createElement(tag), { className: cls, innerHTML: inner });
     const sel = html('div', 'sel', '<i class="tl"></i><i class="tr"></i><i class="bl"></i><i class="br"></i><b class="dim"></b>');
+    // Arrow from the Figma file (node 2007:845): colored body, white inner border.
     const el = html('div', 'cursor mode-pointer', `
-      <svg class="ico ico-pointer" width="22" height="22" viewBox="0 0 22 22"><path d="M1 1v17l4.5-4.3 3.3 7.3 2.8-1.2-3.2-7.1H15z"/></svg>
+      <svg class="ico ico-pointer" width="19" height="22" viewBox="0 0 275 321"><defs><path id="arrow-${i}" d="${ARROW}"/><mask id="arrow-in-${i}"><use href="#arrow-${i}" fill="#fff"/></mask></defs><use href="#arrow-${i}"/><use href="#arrow-${i}" class="edge" mask="url(#arrow-in-${i})"/></svg>
       <svg class="ico ico-text" width="12" height="22" viewBox="0 0 12 22"><path d="M2 1.5h2.5L6 3l1.5-1.5H10M6 3v16M2 20.5h2.5L6 19l1.5 1.5H10"/></svg>
       <svg class="ico ico-draw" width="20" height="20" viewBox="0 0 20 20"><path d="M10 1v18M1 10h18"/></svg>`);
+    const color = `hsl(${hues[i]} 82% 48%)`;
+    sel.style.setProperty('--c', color);
+    el.style.setProperty('--c', color);
     layerEl.append(sel, el);
     const angle = (i * Math.PI * 2) / CURSOR_COUNT;
     const start = state === 'resting' ? swarmStart(angle) : loaderPoint(angle, performance.now() / 1000);
