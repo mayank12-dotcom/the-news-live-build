@@ -243,9 +243,12 @@ h2 { font-size: var(--text-h2); font-weight: 500; line-height: 1.1; text-transfo
 .sources-note { font-size: 12px; font-weight: 300; color: var(--muted); }
 .sources-note a { color: var(--ink); text-decoration: underline; text-decoration-color: rgb(32 33 36 / 0.25); text-underline-offset: 2px; }
 .marquee {
-  /* Runs edge to edge of the screen, past the page margins, with nothing faded out. */
   display: flex; overflow-x: auto; scrollbar-width: none;
-  margin-inline: calc(50% - 50vw);
+  mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
+}
+/* On phones it runs edge to edge of the screen, past the page margins, with nothing faded out. */
+@media (max-width: 760px) {
+  .marquee { margin-inline: calc(50% - 50vw); mask-image: none; }
 }
 .marquee.running { overflow: hidden; }
 .marquee-track { display: flex; flex: none; gap: 28px; padding: 6px 28px 6px 0; will-change: transform; }
