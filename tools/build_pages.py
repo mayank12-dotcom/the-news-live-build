@@ -72,7 +72,7 @@ def bind(slot, name):
 
 def meta(left, right, slot=None):
     return (f'<p class="meta"><span data-t{bind(slot, "source")}>{esc(left)}</span>'
-            f'<img class="dash" data-draw src="assets/dash.svg" width="15" height="1" alt="">'
+            f'<span class="dash" data-draw aria-hidden="true"></span>'
             f'<span data-t{bind(slot, "date")}>{esc(right)}</span></p>')
 
 

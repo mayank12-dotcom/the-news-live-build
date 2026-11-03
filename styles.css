@@ -93,11 +93,10 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--sel); outline-o
   display: flex; justify-content: center; gap: clamp(18px, 2.4vw, 34px);
   padding-block: 10px;
   font-size: clamp(15px, 1rem, 18px); letter-spacing: -0.6px;
-  overflow-x: auto; scrollbar-width: none;
+  flex-wrap: wrap; row-gap: 8px;
 }
 .sections a { flex: none; transition: opacity 0.2s; }
 .sections a:hover { opacity: 0.6; }
-@media (max-width: 760px) { .sections { justify-content: flex-start; } }
 
 /* ---------- shared ---------- */
 main { position: relative; }
@@ -106,8 +105,8 @@ main { position: relative; }
 a:hover .media img { transform: scale(1.04); }
 h3 { font-size: 18px; font-weight: 500; line-height: 1.4; }
 .meta { display: flex; align-items: center; gap: 10px; margin-top: 8px; font-size: 12px; font-weight: 400; color: var(--muted); white-space: nowrap; }
-.dash { width: 15px; height: 1px; opacity: 0.3; }
-.dash-light { filter: invert(1); }
+/* Dash takes the colour of the text on its line. */
+.dash { display: inline-block; flex: none; width: 15px; height: 1px; background: currentColor; }
 .more { display: inline-flex; align-items: center; gap: 6px; font-size: 14px; font-weight: 400; }
 .ring-arrow { display: grid; place-items: center; width: 20px; height: 20px; }
 .ring-arrow img { grid-area: 1 / 1; transition: transform 0.3s var(--ease); }
