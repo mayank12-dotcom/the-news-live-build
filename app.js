@@ -14,6 +14,8 @@
   const DUPE_MS = [520, 760];    // alt-drag a copy of the first item in a repeated set into place
   const SELECT_MS = [260, 420];  // double-click the copied text before retyping it
   const SWAP_MS = 320;           // a copied photo is replaced with the item's own
+  const CATCH_UP_PER_FOLD = 1;   // extra build speed for each fold the viewer is scrolled ahead
+  const MAX_CATCH_UP = 4;        // never more than 4x the normal speed
   const START_STAGGER_MS = 1400; // cursors peel off the loader one at a time
   const MIN_LOADER_MS = 1400;
   const MAX_LOADER_MS = 8000;
@@ -597,17 +599,38 @@
   });
   const minShown = new Promise((resolve) => setTimeout(resolve, MIN_LOADER_MS));
   if (state !== 'resting') Promise.all([loaded, minShown]).then(() => {
-    const now = performance.now();
-    for (const c of cursors) c.readyAt = now + Math.random() * START_STAGGER_MS;
+    for (const c of cursors) c.readyAt = buildTime + Math.random() * START_STAGGER_MS;
     state = 'building';
     root.classList.add('loaded');
   });
 
+  // The build runs on its own clock, which speeds up while the viewer is scrolled
+  // ahead of the fold being built, so the cursors hurry to catch up.
   let last = t0;
+  let buildTime = t0;
+  let speed = 1;
+  let speedTarget = 1;
+  let speedCheckAt = 0;
+
+  function catchUpSpeed() {
+    const left = units.filter((u) => u.state !== 'done');
+    if (!left.length) return 1;
+    const building = Math.min(...left.map(foldOf));
+    const viewing = Math.floor((scrollY + innerHeight - 1) / innerHeight);
+    return Math.min(MAX_CATCH_UP, 1 + Math.max(0, viewing - building) * CATCH_UP_PER_FOLD);
+  }
+
   function frame(now) {
-    const dt = Math.min(1 / 30, (now - last) / 1000);
+    const realDt = Math.min(1 / 30, (now - last) / 1000);
     last = now;
-    for (const c of cursors) moveCursor(c, state === 'building' ? work(c, now) : null, now, dt);
+    if (state === 'building' && now >= speedCheckAt) {
+      speedTarget = catchUpSpeed();
+      speedCheckAt = now + 200;
+    }
+    speed += (speedTarget - speed) * Math.min(1, realDt * 3);
+    buildTime += realDt * 1000 * (state === 'building' ? speed : 1);
+    // Physics keeps real time steps so the springy swarm stays stable at any speed.
+    for (const c of cursors) moveCursor(c, state === 'building' ? work(c, buildTime) : null, buildTime, realDt);
     if (state === 'building' && units.every((u) => u.state === 'done')) finishBuild();
     requestAnimationFrame(frame);
   }
