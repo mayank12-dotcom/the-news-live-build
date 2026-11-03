@@ -133,8 +133,9 @@
     return list;
   }
 
-  // Items that repeat (same frame, same parent, same layer structure) are built once
-  // and then duplicated: each later item copies the first one and updates its content.
+  // Items that repeat (same frame, same parent, same layer structure) are built once,
+  // then duplicated one after another, each copy from the one before; only when every
+  // copy is in place does anyone start updating their content.
   function linkRepeats(list) {
     const firsts = new Map();
     const shape = (u) => u.ops.map((op) => (op.draw ? 'd' : 't')).join('');
@@ -143,9 +144,24 @@
       const key = `${unit.selector}|${unit.el.tagName}|${shape(unit)}`;
       const peers = firsts.get(unit.el.parentElement) || new Map();
       firsts.set(unit.el.parentElement, peers);
-      if (peers.has(key)) unit.source = peers.get(key);
-      else peers.set(key, unit);
+      const first = peers.get(key);
+      if (!first) {
+        peers.set(key, unit);
+        unit.copies = [];
+        continue;
+      }
+      unit.source = first;
+      unit.prev = first.copies.at(-1) || first;
+      first.copies.push(unit);
     }
+  }
+
+  // What a free cursor may pick up next: a plain frame, the next copy to duplicate,
+  // or a placed copy to update once its whole set has been duplicated.
+  function claimable(u) {
+    if (!u.source) return u.state === 'idle';
+    if (u.state === 'idle') return u.prev === u.source ? u.source.state === 'done' : Boolean(u.prev.duped);
+    return u.state === 'placed' && u.source.copies.every((copy) => copy.duped);
   }
 
   const imageOf = (op) => (op.el.tagName === 'IMG' ? op.el : op.el.querySelector('img'));
@@ -254,9 +270,9 @@
   // Free cursor takes the next unbuilt frame in reading order (units are sorted
   // top to bottom), skipping ahead to the screen when the viewer scrolls past.
   function claimUnit() {
-    const idle = units.filter((u) => u.state === 'idle' && (!u.source || u.source.state === 'done'));
-    const unit = idle.find((u) => u.el.getBoundingClientRect().bottom > 0) || idle[0];
-    if (unit) unit.state = 'active';
+    const free = units.filter(claimable);
+    const unit = free.find((u) => u.el.getBoundingClientRect().bottom > 0) || free[0];
+    if (unit) unit.state = unit.source && !unit.duped ? 'duping' : 'active';
     return unit || null;
   }
 
@@ -345,7 +361,7 @@
       c.unit = claimUnit();
       if (!c.unit) return null;
       c.quick = false;
-      startTravel(c, now, c.unit.source ? 'dupe-travel' : 'travel');
+      startTravel(c, now, c.unit.state === 'duping' ? 'dupe-travel' : 'travel');
     }
     const unit = c.unit;
     if (c.phase.startsWith('dupe')) return duplicate(c, unit, now);
@@ -445,7 +461,7 @@
 
   // Grab the first item of the set, alt-drag a copy into this item's place, let go.
   function duplicate(c, unit, now) {
-    const src = unit.source.el.getBoundingClientRect();
+    const src = unit.prev.el.getBoundingClientRect();
     const grab = toPage(src.left + Math.min(src.width * 0.3, 60), src.top + Math.min(src.height * 0.35, 40));
     if (c.phase === 'dupe-travel') {
       if (!c.travelMs) c.travelMs = Math.min(1000, 220 + Math.hypot(grab.x - c.from.x, grab.y - c.from.y) * 0.55) * rand(0.85, 1.2);
@@ -464,7 +480,7 @@
         unit.el.classList.add('dragging');
         setPhase(c, 'dupe-move', now);
       }
-      return { point: grab, mode: 'copy', sel: boxOf(unit.source.el), unit, exact: true };
+      return { point: grab, mode: 'copy', sel: boxOf(unit.prev.el), unit, exact: true };
     }
     if (c.phase === 'dupe-move') {
       const { dx, dy, ms } = c.dupe;
@@ -479,10 +495,16 @@
       }
       return { point: { x: c.dupe.grab.x + dx * e, y: c.dupe.grab.y + dy * e }, mode: 'copy', sel: boxOf(unit.el), unit, exact: true };
     }
-    // Let go, then start on the copy's content.
+    // Let go; the same hand goes straight on to the next copy in the set, if there is one.
     if (now >= c.waitUntil) {
+      unit.duped = true;
+      unit.state = 'placed';
+      const next = unit.source.copies.find((copy) => copy.prev === unit);
+      c.unit = next && next.state === 'idle' ? next : null;
+      if (c.unit) c.unit.state = 'duping';
       c.quick = false;
-      startTravel(c, now);
+      startTravel(c, now, c.unit ? 'dupe-travel' : 'travel');
+      return { point: { x: c.dupe.grab.x + c.dupe.dx, y: c.dupe.grab.y + c.dupe.dy }, mode: 'pointer', unit, exact: true };
     }
     return { point: { x: c.dupe.grab.x + c.dupe.dx, y: c.dupe.grab.y + c.dupe.dy }, mode: 'pointer', sel: boxOf(unit.el), unit, exact: true };
   }
