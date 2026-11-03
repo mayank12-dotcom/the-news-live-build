@@ -143,8 +143,8 @@
   }
 
   // Items that repeat (same frame, same parent, same layer structure) are built once,
-  // then duplicated one after another, each copy from the one before. Whoever drops a
-  // copy updates its content, while the next free cursor duplicates the next one.
+  // then every free cursor grabs a copy at once: each alt-drags its copy out of the
+  // first item and updates the content of the copy it dropped.
   function linkRepeats(list) {
     const firsts = new Map();
     const shape = (u) => u.ops.map((op) => (op.draw ? 'd' : 't')).join('');
@@ -160,16 +160,14 @@
         continue;
       }
       unit.source = first;
-      unit.prev = first.copies.at(-1) || first;
       first.copies.push(unit);
     }
   }
 
-  // What a free cursor may pick up next: a plain frame, or the next copy to duplicate.
+  // What a free cursor may pick up next: a plain frame, or any copy once its first item is built.
   function claimable(u) {
     if (u.state !== 'idle') return false;
-    if (!u.source) return true;
-    return u.prev === u.source ? u.source.state === 'done' : Boolean(u.prev.duped);
+    return !u.source || u.source.ops.every((op) => op.done); // its helpers may still be on it
   }
 
   const imageOf = (op) => (op.el.tagName === 'IMG' ? op.el : op.el.querySelector('img'));
@@ -284,8 +282,33 @@
     const folds = left.map(foldOf);
     const current = Math.min(...folds);
     const unit = left.find((u, i) => folds[i] === current && claimable(u));
-    if (unit) unit.state = unit.source && !unit.duped ? 'duping' : 'active';
-    return unit || null;
+    if (!unit) return lendHand(left.filter((u, i) => folds[i] === current));
+    unit.state = unit.source && !unit.duped ? 'duping' : 'active';
+    return unit;
+  }
+
+  // Nothing left to start in this fold: take over the untouched back half of a frame
+  // another cursor is still working through, so nobody stands around. Only layers whose
+  // boxes are already drawn can be handed over, or the text would land in an empty box.
+  function lendHand(inFold) {
+    let best = null;
+    for (const u of inFold) {
+      if (u.state !== 'active') continue; // a copy is only 'active' once it's been dropped
+      const mine = u.ops.slice(u.idx).filter((op) => !op.done && (!op.owner || op.owner === u));
+      const rest = mine.slice(1); // the first one is in someone's hands right now
+      for (let k = Math.floor(rest.length / 2); k < rest.length; k++) {
+        const tail = rest.slice(k);
+        const kept = mine.slice(0, k + 1);
+        if (kept.some((box) => box.draw && tail.some((op) => box.el.contains(op.el)))) continue;
+        if (!best || tail.length > best.ops.length) best = { from: u, ops: tail };
+        break;
+      }
+    }
+    if (!best) return null;
+    const helper = { el: best.ops[0].el, ops: best.ops, idx: 0, state: 'active' };
+    best.ops.forEach((op) => { op.owner = helper; });
+    units.push(helper);
+    return helper;
   }
 
   // Cursor positions live in page coordinates so a cursor stays put on the
@@ -383,8 +406,9 @@
     }
     const unit = c.unit;
     if (c.phase.startsWith('dupe')) return duplicate(c, unit, now);
+    const skip = (o) => o.done || (o.owner && o.owner !== unit);
     let op = unit.ops[unit.idx];
-    while (op && op.done) op = unit.ops[++unit.idx];
+    while (op && skip(op)) op = unit.ops[++unit.idx];
     if (!op) {
       unit.state = 'done';
       c.unit = null;
