@@ -4,7 +4,7 @@
   // resting (the swarm buzzes in a tiny circle on the masthead).
   const ARROW = 'M.1 32.5C-1.9 7.3 26.2-9 47 5.4L261.8 153.3c23.4 16.1 13.4 52.7-14.9 54.6L137.1 215.6 75.6 306.8C59.8 330.4 23.1 320.8 20.8 292.5Z';
   const CURSOR_COUNT = 8;
-  const TYPE_CPS = 20;           // average typing speed, characters per second
+  const TYPE_CPS = 40;           // average typing speed, characters per second
   const LONG_TEXT = 90;          // longer than this and the typist speeds up proportionally (article paragraphs)
   const DRAW_S = 0.65;           // average seconds to drag out a box
   const AIM_MS = [90, 260];      // hover before clicking into a layer
