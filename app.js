@@ -10,6 +10,9 @@
   const AIM_MS = [90, 260];      // hover before clicking into a layer
   const LINGER_MS = [140, 380];  // look at the result before moving on
   const QUICK_MS = [30, 90];     // aim/linger when going straight from a box to what's inside it
+  const DUPE_MS = [520, 760];    // alt-drag a copy of the first item in a repeated set into place
+  const SELECT_MS = [260, 420];  // double-click the copied text before retyping it
+  const SWAP_MS = 320;           // a copied photo is replaced with the item's own
   const START_STAGGER_MS = 1400; // cursors peel off the loader one at a time
   const MIN_LOADER_MS = 1400;
   const MAX_LOADER_MS = 8000;
@@ -121,11 +124,64 @@
       for (const el of document.querySelectorAll(selector)) {
         const layers = [...(el.matches(LAYER) ? [el] : []), ...el.querySelectorAll(LAYER)].filter((l) => !claimed.has(l));
         layers.forEach((l) => claimed.add(l));
-        list.push({ el, ops: layers.map((l) => ops.get(l)), idx: 0, state: 'idle' });
+        list.push({ el, ops: layers.map((l) => ops.get(l)), idx: 0, state: 'idle', selector });
       }
     }
     for (const [el, op] of ops) if (!claimed.has(el)) list.push({ el, ops: [op], idx: 0, state: 'idle' });
-    return list.sort((a, b) => (a.el.compareDocumentPosition(b.el) & Node.DOCUMENT_POSITION_FOLLOWING ? -1 : 1));
+    list.sort((a, b) => (a.el.compareDocumentPosition(b.el) & Node.DOCUMENT_POSITION_FOLLOWING ? -1 : 1));
+    linkRepeats(list);
+    return list;
+  }
+
+  // Items that repeat (same frame, same parent, same layer structure) are built once
+  // and then duplicated: each later item copies the first one and updates its content.
+  function linkRepeats(list) {
+    const firsts = new Map();
+    const shape = (u) => u.ops.map((op) => (op.draw ? 'd' : 't')).join('');
+    for (const unit of list) {
+      if (!unit.selector || unit.ops.length < 2) continue;
+      const key = `${unit.selector}|${unit.el.tagName}|${shape(unit)}`;
+      const peers = firsts.get(unit.el.parentElement) || new Map();
+      firsts.set(unit.el.parentElement, peers);
+      if (peers.has(key)) unit.source = peers.get(key);
+      else peers.set(key, unit);
+    }
+  }
+
+  const imageOf = (op) => (op.el.tagName === 'IMG' ? op.el : op.el.querySelector('img'));
+
+  // Fill a repeated item with the first item's content, as a fresh duplicate would look.
+  function pasteCopy(unit) {
+    unit.ops.forEach((op, i) => {
+      const from = unit.source.ops[i];
+      if (op.draw) {
+        op.p = 1;
+        render(op);
+        const img = imageOf(op);
+        const srcImg = imageOf(from);
+        const copied = srcImg && (srcImg.currentSrc || srcImg.src);
+        if (img && copied && copied !== (img.currentSrc || img.src)) {
+          op.realSrc = img.getAttribute('src');
+          op.swap = true;
+          img.removeAttribute('loading');
+          img.src = copied;
+        } else op.done = true;
+      } else if (from.text === op.text) {
+        op.done = true;
+        finishOp(op);
+      } else {
+        op.old = from.text;
+        op.stale = true;
+        op.n = -1;
+        render(op);
+      }
+    });
+  }
+
+  function restoreImage(op) {
+    if (!op.realSrc) return;
+    imageOf(op).src = op.realSrc;
+    op.realSrc = null;
   }
 
   function makeCursor(_, i) {
@@ -134,8 +190,9 @@
     // Arrow from the Figma file (node 2007:845): colored body, white inner border.
     const el = html('div', 'cursor mode-pointer', `
       <svg class="ico ico-pointer" width="19" height="22" viewBox="0 0 275 321"><defs><path id="arrow-${i}" d="${ARROW}"/><mask id="arrow-in-${i}"><use href="#arrow-${i}" fill="#fff"/></mask></defs><use href="#arrow-${i}"/><use href="#arrow-${i}" class="edge" mask="url(#arrow-in-${i})"/></svg>
-      <svg class="ico ico-text" width="12" height="22" viewBox="0 0 12 22"><path d="M2 1.5h2.5L6 3l1.5-1.5H10M6 3v16M2 20.5h2.5L6 19l1.5 1.5H10"/></svg>
-      <svg class="ico ico-draw" width="20" height="20" viewBox="0 0 20 20"><path d="M10 1v18M1 10h18"/></svg>`);
+      <svg class="ico ico-copy" width="10" height="10" viewBox="0 0 10 10"><circle cx="5" cy="5" r="4.5"/><path d="M5 2.6v4.8M2.6 5h4.8"/></svg>
+      <svg class="ico ico-text" width="14" height="24" viewBox="-1 -1 14 24"><path class="halo" d="M2 1.5h2.5L6 3l1.5-1.5H10M6 3v16M2 20.5h2.5L6 19l1.5 1.5H10"/><path d="M2 1.5h2.5L6 3l1.5-1.5H10M6 3v16M2 20.5h2.5L6 19l1.5 1.5H10"/></svg>
+      <svg class="ico ico-draw" width="22" height="22" viewBox="-1 -1 22 22"><path class="halo" d="M10 1v18M1 10h18"/><path d="M10 1v18M1 10h18"/></svg>`);
     const color = `hsl(${hues[i]} 82% 48%)`;
     sel.style.setProperty('--c', color);
     el.style.setProperty('--c', color);
@@ -143,7 +200,7 @@
     const angle = (i * Math.PI * 2) / CURSOR_COUNT;
     const start = state === 'resting' ? swarmStart(angle) : loaderPoint(angle, performance.now() / 1000);
     return {
-      el, sel, angle, phase: 'idle', phaseAt: 0, unit: null,
+      el, sel, angle, color, phase: 'idle', phaseAt: 0, unit: null,
       // Each fly gets its own little orbit so the swarm doesn't move in lockstep.
       swarmRadius: 10 + Math.random() * 12,
       swarmSpin: (Math.random() < 0.5 ? -1 : 1) * (2 + Math.random() * 1.8),
@@ -159,6 +216,16 @@
       el.classList.toggle('drawn', p >= 1);
       return;
     }
+    if (op.stale) {
+      if (op.n !== -2) {
+        op.n = -2;
+        op.typed.textContent = op.old;
+        op.rest.textContent = '';
+      }
+      el.classList.remove('typing');
+      el.classList.add('typed');
+      return;
+    }
     const n = Math.round(p * op.text.length);
     if (n !== op.n) {
       op.n = n;
@@ -170,6 +237,9 @@
   }
 
   function finishOp(op) {
+    op.stale = false;
+    op.swap = false;
+    restoreImage(op);
     op.p = 1;
     op.done = true;
     render(op);
@@ -184,7 +254,7 @@
   // Free cursor takes the next unbuilt frame in reading order (units are sorted
   // top to bottom), skipping ahead to the screen when the viewer scrolls past.
   function claimUnit() {
-    const idle = units.filter((u) => u.state === 'idle');
+    const idle = units.filter((u) => u.state === 'idle' && (!u.source || u.source.state === 'done'));
     const unit = idle.find((u) => u.el.getBoundingClientRect().bottom > 0) || idle[0];
     if (unit) unit.state = 'active';
     return unit || null;
@@ -203,6 +273,7 @@
       return r.height ? toPage(r.right + 3, r.top + r.height / 2) : null;
     }
     const r = op.el.getBoundingClientRect();
+    if (op.swap) return r.height ? toPage(r.left + r.width * 0.5, r.top + r.height * 0.45) : null;
     return r.height ? toPage(r.left + r.width * op.p, r.top + r.height * op.p) : null;
   }
 
@@ -252,8 +323,8 @@
     return ms;
   }
 
-  function startTravel(c, now) {
-    setPhase(c, 'travel', now);
+  function startTravel(c, now, phase = 'travel') {
+    setPhase(c, phase, now);
     c.from = { x: c.x, y: c.y };
     c.bend = rand(-0.18, 0.18);
     c.travelMs = 0;
@@ -274,9 +345,10 @@
       c.unit = claimUnit();
       if (!c.unit) return null;
       c.quick = false;
-      startTravel(c, now);
+      startTravel(c, now, c.unit.source ? 'dupe-travel' : 'travel');
     }
     const unit = c.unit;
+    if (c.phase.startsWith('dupe')) return duplicate(c, unit, now);
     let op = unit.ops[unit.idx];
     while (op && op.done) op = unit.ops[++unit.idx];
     if (!op) {
@@ -306,15 +378,41 @@
     }
     if (c.phase === 'aim') {
       if (now >= c.waitUntil) {
-        setPhase(c, 'work', now);
+        setPhase(c, op.stale ? 'select' : 'work', now);
+        c.waitUntil = now + rand(...SELECT_MS);
         op.nextKeyAt = now;
-        op.dragMs = DRAW_S * 1000 * rand(0.8, 1.25);
+        op.dragMs = op.swap ? SWAP_MS : DRAW_S * 1000 * rand(0.8, 1.25);
+        if (op.stale) op.el.style.setProperty('--hl', c.color);
+        if (op.swap) {
+          // Drop the item's own photo onto the copy.
+          restoreImage(op);
+          op.el.classList.remove('swapped');
+          void op.el.offsetWidth;
+          op.el.classList.add('swapped');
+        }
       }
-      return { point, mode: tool, unit, exact: true };
+      return { point, mode: op.swap ? 'pointer' : tool, unit, exact: true };
+    }
+    if (c.phase === 'select') {
+      // Double-click the copied words, then type over them.
+      op.el.classList.add('selecting');
+      if (now >= c.waitUntil) {
+        op.el.classList.remove('selecting');
+        op.stale = false;
+        op.k = 0;
+        op.n = -1;
+        render(op);
+        setPhase(c, 'work', now);
+        op.nextKeyAt = now + rand(60, 160);
+      }
+      return { point, mode: 'text', sel: selectionFor(op), unit, exact: true };
     }
     if (c.phase === 'work') {
       let finished;
-      if (op.draw) {
+      if (op.swap) {
+        finished = now - c.phaseAt >= op.dragMs;
+        if (finished) op.swap = false;
+      } else if (op.draw) {
         const s = Math.min(1, (now - c.phaseAt) / op.dragMs);
         op.p = s < 1 ? dragEase(s) : 1;
         finished = s >= 1;
@@ -337,7 +435,56 @@
       startTravel(c, now);
     }
     // Hands on the layer: the crosshair sits on the dragging corner, the I-beam on the caret.
-    return { point: pointFor(op), mode: tool, sel: selectionFor(op), unit, exact: true };
+    return { point: pointFor(op), mode: op.swap ? 'pointer' : tool, sel: selectionFor(op), unit, exact: true };
+  }
+
+  function boxOf(el) {
+    const r = el.getBoundingClientRect();
+    return { x: r.left, y: r.top, w: r.width, h: r.height, dim: `${Math.round(r.width)} × ${Math.round(r.height)}` };
+  }
+
+  // Grab the first item of the set, alt-drag a copy into this item's place, let go.
+  function duplicate(c, unit, now) {
+    const src = unit.source.el.getBoundingClientRect();
+    const grab = toPage(src.left + Math.min(src.width * 0.3, 60), src.top + Math.min(src.height * 0.35, 40));
+    if (c.phase === 'dupe-travel') {
+      if (!c.travelMs) c.travelMs = Math.min(1000, 220 + Math.hypot(grab.x - c.from.x, grab.y - c.from.y) * 0.55) * rand(0.85, 1.2);
+      const s = Math.min(1, (now - c.phaseAt) / c.travelMs);
+      if (s >= 1) {
+        setPhase(c, 'dupe-aim', now);
+        c.waitUntil = now + rand(...AIM_MS);
+      }
+      return { point: along(c.from, grab, c.bend, minJerk(s)), mode: 'pointer', unit, exact: true };
+    }
+    if (c.phase === 'dupe-aim') {
+      if (now >= c.waitUntil) {
+        pasteCopy(unit);
+        const dest = unit.el.getBoundingClientRect();
+        c.dupe = { grab, dx: dest.left - src.left, dy: dest.top - src.top, ms: rand(...DUPE_MS) };
+        unit.el.classList.add('dragging');
+        setPhase(c, 'dupe-move', now);
+      }
+      return { point: grab, mode: 'copy', sel: boxOf(unit.source.el), unit, exact: true };
+    }
+    if (c.phase === 'dupe-move') {
+      const { dx, dy, ms } = c.dupe;
+      const s = Math.min(1, (now - c.phaseAt) / ms);
+      const e = minJerk(s);
+      unit.el.style.translate = `${dx * (e - 1)}px ${dy * (e - 1)}px`;
+      if (s >= 1) {
+        unit.el.style.translate = '';
+        unit.el.classList.remove('dragging');
+        setPhase(c, 'dupe-linger', now);
+        c.waitUntil = now + rand(...LINGER_MS);
+      }
+      return { point: { x: c.dupe.grab.x + dx * e, y: c.dupe.grab.y + dy * e }, mode: 'copy', sel: boxOf(unit.el), unit, exact: true };
+    }
+    // Let go, then start on the copy's content.
+    if (now >= c.waitUntil) {
+      c.quick = false;
+      startTravel(c, now);
+    }
+    return { point: { x: c.dupe.grab.x + c.dupe.dx, y: c.dupe.grab.y + c.dupe.dy }, mode: 'pointer', sel: boxOf(unit.el), unit, exact: true };
   }
 
   function place(node, box) {
