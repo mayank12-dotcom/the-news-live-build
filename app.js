@@ -203,9 +203,9 @@
   function makeCursor(_, i) {
     const html = (tag, cls, inner = '') => Object.assign(document.createElement(tag), { className: cls, innerHTML: inner });
     const sel = html('div', 'sel', '<i class="tl"></i><i class="tr"></i><i class="bl"></i><i class="br"></i><b class="dim"></b>');
-    // Arrow from the Figma file (node 2007:845): colored body, white inner border.
+    // Arrow from the Figma file (node 2007:845): colored body, white border stroked across the edge so no color shows at the rim.
     const el = html('div', 'cursor mode-pointer', `
-      <svg class="ico ico-pointer" width="19" height="22" viewBox="0 0 275 321"><defs><path id="arrow-${i}" d="${ARROW}"/><mask id="arrow-in-${i}"><use href="#arrow-${i}" fill="#fff"/></mask></defs><use href="#arrow-${i}"/><use href="#arrow-${i}" class="edge" mask="url(#arrow-in-${i})"/></svg>
+      <svg class="ico ico-pointer" width="19" height="22" viewBox="0 0 275 321"><path d="${ARROW}"/></svg>
       <svg class="ico ico-copy" width="10" height="10" viewBox="0 0 10 10"><circle cx="5" cy="5" r="4.5"/><path d="M5 2.6v4.8M2.6 5h4.8"/></svg>
       <svg class="ico ico-text" width="14" height="24" viewBox="-1 -1 14 24"><path class="halo" d="M2 1.5h2.5L6 3l1.5-1.5H10M6 3v16M2 20.5h2.5L6 19l1.5 1.5H10"/><path d="M2 1.5h2.5L6 3l1.5-1.5H10M6 3v16M2 20.5h2.5L6 19l1.5 1.5H10"/></svg>
       <svg class="ico ico-draw" width="22" height="22" viewBox="-1 -1 22 22"><path class="halo" d="M10 1v18M1 10h18"/><path d="M10 1v18M1 10h18"/></svg>`);

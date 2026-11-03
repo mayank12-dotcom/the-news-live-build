@@ -52,12 +52,13 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--sel); outline-o
 
 /* ---------- cursor layer (Figma-style) ---------- */
 .cursors { position: fixed; inset: 0; z-index: 40; overflow: hidden; pointer-events: none; --c: var(--sel); --ui: "Inter", system-ui, -apple-system, sans-serif; }
+/* The viewer's own pointer: the same Figma arrow, black with a white border. */
+html { cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='23' viewBox='-12 -12 299 345'%3E%3Cpath d='M.1 32.5C-1.9 7.3 26.2-9 47 5.4L261.8 153.3c23.4 16.1 13.4 52.7-14.9 54.6L137.1 215.6 75.6 306.8C59.8 330.4 23.1 320.8 20.8 292.5Z' fill='%23111' stroke='%23fff' stroke-width='44' stroke-linejoin='round'/%3E%3C/svg%3E") 1 1, auto; }
 .cursors > * { position: absolute; left: 0; top: 0; }
 .cursor { will-change: transform; }
 .ico { position: absolute; display: none; overflow: visible; }
 .ico-pointer { left: -1px; top: -1px; overflow: visible; }
-.ico-pointer use { fill: var(--c); }
-.ico-pointer .edge { fill: none; stroke: #fff; stroke-width: 60; }
+.ico-pointer path { fill: var(--c); stroke: #fff; stroke-width: 44; stroke-linejoin: round; }
 .ico-text { left: -7px; top: -12px; }
 .ico-draw { left: -11px; top: -11px; }
 .ico-text path, .ico-draw path { fill: none; stroke: var(--c); stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
