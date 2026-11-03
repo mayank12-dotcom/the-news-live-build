@@ -134,8 +134,8 @@
   }
 
   // Items that repeat (same frame, same parent, same layer structure) are built once,
-  // then duplicated one after another, each copy from the one before; only when every
-  // copy is in place does anyone start updating their content.
+  // then duplicated one after another, each copy from the one before. Whoever drops a
+  // copy updates its content, while the next free cursor duplicates the next one.
   function linkRepeats(list) {
     const firsts = new Map();
     const shape = (u) => u.ops.map((op) => (op.draw ? 'd' : 't')).join('');
@@ -156,12 +156,11 @@
     }
   }
 
-  // What a free cursor may pick up next: a plain frame, the next copy to duplicate,
-  // or a placed copy to update once its whole set has been duplicated.
+  // What a free cursor may pick up next: a plain frame, or the next copy to duplicate.
   function claimable(u) {
-    if (!u.source) return u.state === 'idle';
-    if (u.state === 'idle') return u.prev === u.source ? u.source.state === 'done' : Boolean(u.prev.duped);
-    return u.state === 'placed' && u.source.copies.every((copy) => copy.duped);
+    if (u.state !== 'idle') return false;
+    if (!u.source) return true;
+    return u.prev === u.source ? u.source.state === 'done' : Boolean(u.prev.duped);
   }
 
   const imageOf = (op) => (op.el.tagName === 'IMG' ? op.el : op.el.querySelector('img'));
@@ -495,16 +494,12 @@
       }
       return { point: { x: c.dupe.grab.x + dx * e, y: c.dupe.grab.y + dy * e }, mode: 'copy', sel: boxOf(unit.el), unit, exact: true };
     }
-    // Let go; the same hand goes straight on to the next copy in the set, if there is one.
+    // Let go, then update the copy just dropped; the next copy is free for another cursor.
     if (now >= c.waitUntil) {
       unit.duped = true;
-      unit.state = 'placed';
-      const next = unit.source.copies.find((copy) => copy.prev === unit);
-      c.unit = next && next.state === 'idle' ? next : null;
-      if (c.unit) c.unit.state = 'duping';
+      unit.state = 'active';
       c.quick = false;
-      startTravel(c, now, c.unit ? 'dupe-travel' : 'travel');
-      return { point: { x: c.dupe.grab.x + c.dupe.dx, y: c.dupe.grab.y + c.dupe.dy }, mode: 'pointer', unit, exact: true };
+      startTravel(c, now);
     }
     return { point: { x: c.dupe.grab.x + c.dupe.dx, y: c.dupe.grab.y + c.dupe.dy }, mode: 'pointer', sel: boxOf(unit.el), unit, exact: true };
   }
