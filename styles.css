@@ -121,7 +121,8 @@ h3 { font-size: 18px; font-weight: 500; line-height: 1.4; }
 /* Once a headline is fully typed, cut it to --clamp lines. */
 .topics p, .latest-list .row h3 { --clamp: 3; }
 .world-list .side h3 { --clamp: 5; }
-:is(.topics p, .latest-list .row h3, .world-list .side h3).typed {
+.pods .pod p { --clamp: 2; }
+:is(.topics p, .latest-list .row h3, .world-list .side h3, .pods .pod p).typed {
   display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: var(--clamp); line-clamp: var(--clamp); overflow: hidden;
 }
 @media (min-width: 900px) { .topics { grid-template-columns: repeat(4, 1fr); } }
