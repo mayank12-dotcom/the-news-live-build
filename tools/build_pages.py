@@ -222,6 +222,7 @@ def main():
         out.write_text(content)
         print("wrote", out.name)
     fill_news()
+    clean_links()
 
 
 SLOT_TEXT = re.compile(r'(<(\w+)[^>]*? data-news="(\w+):(\d+)" data-news-field="(title|source|date|byline)"[^>]*>)[^<]*(</\2>)')
@@ -361,6 +362,25 @@ def fill_news():
         if filled != source:
             page.write_text(filled)
             print("filled", page.name)
+
+
+# GitHub Pages serves world.html at /world, so links leave the extension off.
+LOCAL_HTML = re.compile(r'href="(?![a-z]+:|//|#)([^"#]*?)\.html(#[^"]*)?"')
+
+
+def clean_link(m):
+    path = m.group(1)
+    if path == "index" or path.endswith("/index"):
+        path = path[:-5] or "./"
+    return f'href="{path}{m.group(2) or ""}"'
+
+
+def clean_links():
+    for page in [*ROOT.glob("*.html"), *(ROOT / "news").glob("*.html")]:
+        source = page.read_text()
+        cleaned = LOCAL_HTML.sub(clean_link, source)
+        if cleaned != source:
+            page.write_text(cleaned)
 
 
 if __name__ == "__main__":
