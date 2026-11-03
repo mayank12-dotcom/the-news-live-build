@@ -2,7 +2,8 @@
   // Lifecycle: loading (cursors spin on a white screen) → building (each cursor
   // claims a frame and builds its layers one by one, visible frames first) →
   // resting (the swarm buzzes in a tiny circle on the masthead).
-  const ARROW = 'M.1 32.5C-1.9 7.3 26.2-9 47 5.4L261.8 153.3c23.4 16.1 13.4 52.7-14.9 54.6L137.1 215.6 75.6 306.8C59.8 330.4 23.1 320.8 20.8 292.5Z';
+  const ARROW = 'M0.101898 32.4518C-1.90724 7.26404 26.2171 -8.9729 47.0257 5.36096L261.832 153.329C285.213 169.434 275.216 205.994 246.894 207.963L137.119 215.59L75.6263 306.843L75.2503 307.389C59.3159 330.056 23.6497 320.694 20.9017 293.124L20.8962 293.062L20.8431 292.464L0.101898 32.4518Z';
+  const ARROW_IN = 'M30.0072 30.066L244.814 178.034L120.427 186.678L50.7474 290.079L30.0072 30.066Z';
   const CURSOR_COUNT = 8;
   const TYPE_CPS = 40;           // average typing speed, characters per second
   const LONG_TEXT = 90;          // longer than this and the typist speeds up proportionally (article paragraphs)
@@ -203,9 +204,9 @@
   function makeCursor(_, i) {
     const html = (tag, cls, inner = '') => Object.assign(document.createElement(tag), { className: cls, innerHTML: inner });
     const sel = html('div', 'sel', '<i class="tl"></i><i class="tr"></i><i class="bl"></i><i class="br"></i><b class="dim"></b>');
-    // Arrow from the Figma file (node 2007:845): colored body, white border stroked across the edge so no color shows at the rim.
+    // Arrow from cursor.svg: white outline, colored body.
     const el = html('div', 'cursor mode-pointer', `
-      <svg class="ico ico-pointer" width="19" height="22" viewBox="0 0 275 321"><path d="${ARROW}"/></svg>
+      <svg class="ico ico-pointer" width="19" height="22" viewBox="0 0 275 321"><path class="rim" d="${ARROW}"/><path d="${ARROW_IN}"/></svg>
       <svg class="ico ico-copy" width="10" height="10" viewBox="0 0 10 10"><circle cx="5" cy="5" r="4.5"/><path d="M5 2.6v4.8M2.6 5h4.8"/></svg>
       <svg class="ico ico-text" width="14" height="24" viewBox="-1 -1 14 24"><path class="halo" d="M2 1.5h2.5L6 3l1.5-1.5H10M6 3v16M2 20.5h2.5L6 19l1.5 1.5H10"/><path d="M2 1.5h2.5L6 3l1.5-1.5H10M6 3v16M2 20.5h2.5L6 19l1.5 1.5H10"/></svg>
       <svg class="ico ico-draw" width="22" height="22" viewBox="-1 -1 22 22"><path class="halo" d="M10 1v18M1 10h18"/><path d="M10 1v18M1 10h18"/></svg>`);
