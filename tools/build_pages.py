@@ -169,31 +169,37 @@ def page_html(parts, title, active, main):
 
 
 GOOGLE_NEWS = "https://news.google.com/home?hl=en-IN&gl=IN&ceid=IN:en"
-SOURCES_SLOT = re.compile(r'(<div class="sources" data-draw data-news-sources>).*?(</div>)', re.S)
+SOURCES_SLOT = re.compile(r'(<div class="sources" data-draw data-news-sources>).*?(</div>)(?=\s*<span class="rule")', re.S)
 
 
 def fill_sources():
-    """Lists every publisher on the page in the home footer, which all other pages copy."""
+    """Puts every publisher's logo in the home footer's marquee, which all other pages copy."""
     path = ROOT / "content" / "news.json"
     if not path.exists():
         return
     news = json.loads(path.read_text())
     stories = [s for feed in news["feeds"].values() for s in feed]
     counts = Counter(s["source"] for s in stories)
-    homes = {}
+    hosts = {}
     for s in stories:
         if s.get("url"):
-            parts = urlsplit(s["url"])
-            homes.setdefault(s["source"], f"{parts.scheme}://{parts.netloc}/")
+            hosts.setdefault(s["source"], urlsplit(s["url"]).netloc.lower())
     names = sorted(counts, key=lambda name: (-counts[name], name.lower()))
-    links = ", ".join(
-        external(homes[name], esc(name)) if name in homes else esc(name) for name in names
-    )
+
+    def chip(name):
+        host = hosts.get(name)
+        logo = ROOT / "assets" / "logos" / f"{host}.png"
+        mark = f'<img src="assets/logos/{esc(host)}.png" width="24" height="24" alt="">' if host and logo.exists() else ""
+        inner = f"{mark}<span>{esc(name)}</span>"
+        return f"<li>{external(f'https://{host}/', inner) if host else inner}</li>"
+
     updated = datetime.fromisoformat(news["updated"]).strftime("%b %-d, %Y, %-I:%M %p IST")
     block = (
-        f'<p>Headlines from {external(GOOGLE_NEWS, "Google News")} (India edition), refreshed every 2 hours; '
-        f"last updated {updated}. Photos and summaries come from each publisher.</p>"
-        f'<p class="sources-list">Sources: {links}</p>'
+        f'<p class="sources-note">Headlines from {external(GOOGLE_NEWS, "Google News")} (India edition), '
+        f"refreshed every 2 hours · updated {updated}</p>"
+        f'<div class="marquee" role="region" aria-label="News sources"><ul class="marquee-track">'
+        + "".join(chip(name) for name in names)
+        + "</ul></div>"
     )
     home = ROOT / "index.html"
     source = home.read_text()

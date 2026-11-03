@@ -4,7 +4,8 @@ Uses Google News' public RSS feeds for the same edition as
 https://news.google.com/home?hl=en-IN&gl=IN&ceid=IN:en — one feed per section.
 Each new story is then resolved to the publisher's article, and its link-preview
 metadata (og:image, og:description) is recorded. Results are cached by story id,
-so a story is only looked up once.
+so a story is only looked up once. Each publisher's logo is saved to
+assets/logos/<host>.png (once) for the footer's source marquee.
 Run by .github/workflows/news.yml every 2 hours; also safe to run by hand:
     python3 tools/fetch_news.py
 """
@@ -154,6 +155,37 @@ def enrich(feeds, previous):
     return len(fresh)
 
 
+LOGOS = ROOT / "assets" / "logos"
+LOGO_URL = "https://www.google.com/s2/favicons?domain={host}&sz=128"
+
+
+def logo_host(url):
+    return urllib.parse.urlsplit(url).netloc.lower()
+
+
+def fetch_logo(host):
+    path = LOGOS / f"{host}.png"
+    if path.exists():
+        return False
+    req = urllib.request.Request(LOGO_URL.format(host=host), headers={"User-Agent": BROWSER_UA})
+    try:
+        with urllib.request.urlopen(req, timeout=20) as res:
+            data = res.read()
+    except Exception:  # no logo: the marquee shows the publisher's name alone
+        return False
+    if data[:8] != b"\x89PNG\r\n\x1a\n":
+        return False
+    path.write_bytes(data)
+    return True
+
+
+def fetch_logos(feeds):
+    LOGOS.mkdir(parents=True, exist_ok=True)
+    hosts = {logo_host(s["url"]) for v in feeds.values() for s in v if s.get("url")}
+    with ThreadPoolExecutor(LOOKUP_WORKERS) as pool:
+        return sum(pool.map(fetch_logo, sorted(hosts)))
+
+
 def main():
     previous = json.loads(OUT.read_text()) if OUT.exists() else {"feeds": {}}
     feeds, failed = {}, []
@@ -172,6 +204,7 @@ def main():
     with_image = sum(1 for v in feeds.values() for s in v if s.get("image"))
     total = sum(len(v) for v in feeds.values())
     print(f"looked up {looked_up} new stories; {with_image}/{total} have a publisher image")
+    print(f"saved {fetch_logos(feeds)} new publisher logos")
     for line in failed:
         print("kept previous copy for", line, file=sys.stderr)
 
