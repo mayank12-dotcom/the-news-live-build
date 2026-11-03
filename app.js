@@ -74,16 +74,11 @@
   let state = 'loading';
   root.classList.add('ready');
 
-  // The crew builds the paper once per visit; pages opened afterwards arrive printed.
-  const BUILT_KEY = 'paper-built';
-  let builtBefore = false;
-  try { builtBefore = sessionStorage.getItem(BUILT_KEY) === '1'; } catch { /* storage blocked: build every time */ }
-
-  if (reduceMotion || builtBefore) {
+  if (reduceMotion) {
     for (const op of ops.values()) finishOp(op);
     for (const unit of units) unit.state = 'done';
     finishBuild();
-    if (reduceMotion) return;
+    return;
   }
 
   const cursors = Array.from({ length: CURSOR_COUNT }, makeCursor);
@@ -163,7 +158,6 @@
 
   function finishBuild() {
     state = 'resting';
-    try { sessionStorage.setItem(BUILT_KEY, '1'); } catch { /* storage blocked */ }
     root.classList.add('loaded', 'built');
     document.body.setAttribute('aria-busy', 'false');
   }
