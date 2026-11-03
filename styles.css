@@ -118,8 +118,12 @@ h3 { font-size: 18px; font-weight: 500; line-height: 1.4; }
 .topics .media { flex: none; width: 64px; height: 58px; }
 .topics h3 { font-size: 14px; font-weight: 600; text-transform: uppercase; line-height: 1.3; }
 .topics p { font-size: 12px; line-height: 1.6; }
-/* Once the headline is fully typed, keep it to three lines. */
-.topics p.typed { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; line-clamp: 3; overflow: hidden; }
+/* Once a headline is fully typed, cut it to --clamp lines. */
+.topics p, .latest-list .row h3 { --clamp: 3; }
+.world-list .side h3 { --clamp: 5; }
+:is(.topics p, .latest-list .row h3, .world-list .side h3).typed {
+  display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: var(--clamp); line-clamp: var(--clamp); overflow: hidden;
+}
 @media (min-width: 900px) { .topics { grid-template-columns: repeat(4, 1fr); } }
 
 .lead-media { aspect-ratio: 4 / 3; }

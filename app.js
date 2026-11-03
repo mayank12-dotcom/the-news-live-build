@@ -52,25 +52,34 @@
   const orbitEl = document.querySelector('[data-orbit]');
   const layerEl = document.querySelector('.cursors');
 
-  // Today's date in the top bar, written before the layers are read so it's typed too.
-  const todayFormat = new Intl.DateTimeFormat('en-US', { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' });
+  // Today's date and time in the top bar, written before the layers are read so it's typed too.
+  // Small screens get the short form: "Tue, Nov 3, 2026 | 10:12 AM".
+  const smallScreen = matchMedia('(max-width: 760px)');
+  const longDate = new Intl.DateTimeFormat('en-US', { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' });
+  const shortDate = new Intl.DateTimeFormat('en-US', { weekday: 'short', month: 'short', day: 'numeric', year: 'numeric' });
+  const clock = new Intl.DateTimeFormat('en-US', { hour: 'numeric', minute: '2-digit' });
+  const nowText = (now = new Date()) => `${(smallScreen.matches ? shortDate : longDate).format(now)} | ${clock.format(now)}`;
   const todayEls = [...document.querySelectorAll('[data-today]')];
-  todayEls.forEach((el) => { el.textContent = todayFormat.format(new Date()); });
+  todayEls.forEach((el) => { el.textContent = nowText(); });
 
   const ops = new Map([...document.querySelectorAll(LAYER)].map((el) => [el, setup(el)]));
 
-  // Roll the date over at midnight without a reload.
-  setInterval(() => {
-    const today = todayFormat.format(new Date());
+  // Keep the clock ticking (and the format matching the screen) without a reload.
+  function refreshToday() {
+    const text = nowText();
     for (const el of todayEls) {
       const op = ops.get(el);
-      if (!op || op.text === today) continue;
-      op.text = today;
-      op.k = today.length;
+      if (!op || op.text === text) continue;
+      op.text = text;
       op.n = -1;
-      if (op.done || op.p >= 1) render(op);
+      if (op.done || op.p >= 1) {
+        op.k = text.length;
+        render(op);
+      }
     }
-  }, 30000);
+  }
+  setInterval(refreshToday, 5000);
+  smallScreen.addEventListener('change', refreshToday);
   const units = buildUnits();
   let state = 'loading';
   root.classList.add('ready');
