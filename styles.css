@@ -230,7 +230,7 @@ h2 { font-size: var(--text-h2); font-weight: 500; line-height: 1.1; text-transfo
 @media (min-width: 1024px) { .pods { grid-template-columns: repeat(3, 1fr); } }
 
 /* ---------- footer ---------- */
-.foot { display: grid; gap: 12px; margin-top: var(--block); padding-bottom: 96px; }
+.foot { display: grid; gap: 12px; margin-top: var(--block); padding-bottom: 32px; }
 .rule-thick { height: 4px; opacity: 1; }
 .foot-logo { width: 184px; height: auto; }
 .foot-row { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 14px; }
