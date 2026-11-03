@@ -157,6 +157,7 @@
       op.rest.textContent = op.text.slice(n);
     }
     el.classList.toggle('typing', p > 0 && p < 1);
+    el.classList.toggle('typed', p >= 1);
   }
 
   function finishOp(op) {
