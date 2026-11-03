@@ -1,12 +1,13 @@
 (() => {
   // Footer source logos scroll by on their own; hovering a logo eases the scroll down.
-  const SPEED = 40;       // px per second
+  const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const SPEED = reduceMotion ? 16 : 40; // px per second; gentler when the device asks for less motion
   const HOVER_SPEED = 8;  // px per second while a logo is hovered
   const EASE = 4;         // how quickly the speed follows the pointer (per second)
 
   const marquee = document.querySelector('.marquee');
   const track = marquee?.querySelector('.marquee-track');
-  if (!track || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  if (!track) return;
 
   // A second copy of the logos follows the first, so the loop never shows a gap.
   const copy = track.cloneNode(true);
@@ -22,9 +23,13 @@
 
   const slow = () => { target = HOVER_SPEED; };
   const resume = () => { target = SPEED; };
-  marquee.addEventListener('pointerover', (e) => { if (e.target.closest('li')) slow(); else resume(); });
+  // Only a real hover slows it: a finger never "leaves", so touch would leave it crawling.
+  marquee.addEventListener('pointerover', (e) => {
+    if (e.pointerType === 'touch') return;
+    if (e.target.closest('li')) slow(); else resume();
+  });
   marquee.addEventListener('pointerleave', resume);
-  marquee.addEventListener('focusin', slow);
+  marquee.addEventListener('focusin', (e) => { if (e.target.matches(':focus-visible')) slow(); });
   marquee.addEventListener('focusout', resume);
 
   function frame(now) {
