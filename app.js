@@ -296,7 +296,13 @@
 
   function selectionFor(op) {
     const r = op.el.getBoundingClientRect();
-    if (!op.draw) return { x: r.left - 2, y: r.top - 2, w: r.width + 4, h: r.height + 4, text: true };
+    if (!op.draw) {
+      // Auto-height text box: it grows line by line with what's been typed so far.
+      const line = [...op.typed.getClientRects()].at(-1) || op.caret.getBoundingClientRect();
+      const lineH = parseFloat(getComputedStyle(op.el).lineHeight) || line.height;
+      const bottom = line.height ? Math.min(r.bottom, line.top + (line.height + lineH) / 2) : r.bottom;
+      return { x: r.left - 2, y: r.top - 2, w: r.width + 4, h: bottom - r.top + 4, text: true };
+    }
     const p = Math.max(op.p, 0.02);
     return { x: r.left, y: r.top, w: r.width * p, h: r.height * p, dim: `${Math.round(r.width * p)} × ${Math.round(r.height * p)}` };
   }
