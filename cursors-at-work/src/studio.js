@@ -9,11 +9,13 @@ CAW.studio = (options = {}) => {
   const MINOR = 10;     // short ticks in between
   const SNAP_PX = 2;    // edges this close share a guide
   const MAX_GUIDES = 8; // older guides fade away so the page doesn't drown in red lines
+  const MAX_DOTS = 5;   // colour dots in the crew counter
 
   const make = (tag, cls, html = '') => Object.assign(document.createElement(tag), { className: cls, innerHTML: html });
   const layer = make('div', 'caw-ui caw-studio', '<canvas class="caw-ruler"></canvas><canvas class="caw-ruler"></canvas><i class="caw-ruler-corner"></i>');
   layer.setAttribute('aria-hidden', 'true');
   const bar = make('div', 'caw-ui caw-toolbar', `
+    <span class="caw-count" aria-live="off"><span class="caw-count-dots" aria-hidden="true"></span><b>0</b><span class="caw-count-of"> / 0</span><span class="caw-count-label"> at work</span></span>
     <button type="button" data-act="tour" aria-pressed="false">Tour</button>
     <span class="caw-seg" role="group" aria-label="Build speed">
       <button type="button" data-speed="1" aria-pressed="true">1×</button><button type="button" data-speed="2" aria-pressed="false">2×</button><button type="button" data-speed="3" aria-pressed="false">3×</button>
@@ -35,6 +37,7 @@ CAW.studio = (options = {}) => {
   const measures = new Map();
   let onAction = () => {};
   let drawnKey = '';
+  let countKey = '';
 
   bar.addEventListener('click', (e) => {
     const b = e.target.closest('button');
@@ -179,6 +182,23 @@ CAW.studio = (options = {}) => {
     setMode(mode) { bar.dataset.mode = mode; },
     setTour(on) { press('[data-act="tour"]', () => on); },
     setSpeed(n) { press('[data-speed]', (b) => Number(b.dataset.speed) === n); },
+    // The crew counter: dots in the working cursors' colours, then "12 / 16 at work".
+    setCount(working, total, colors) {
+      const key = `${bar.dataset.mode}|${working}|${total}|${colors.join()}`;
+      if (key === countKey) return;
+      countKey = key;
+      const [dots, num, of, label] = bar.querySelector('.caw-count').children;
+      dots.replaceChildren(...colors.slice(0, MAX_DOTS).map((c) => {
+        const dot = make('i');
+        dot.style.background = c;
+        return dot;
+      }));
+      num.textContent = working;
+      const building = bar.dataset.mode === 'building';
+      of.textContent = building ? ` / ${total}` : '';
+      label.textContent = building ? ' at work' : ` cursor${total === 1 ? '' : 's'}`;
+    },
+
     setSound(label, on) {
       const b = bar.querySelector('[data-act="sound"]');
       if (!b) return;

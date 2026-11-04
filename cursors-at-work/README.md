@@ -57,7 +57,7 @@ Pass them to `start()`, or as data attributes on the script tag (`maxCursors` be
 | `columns` | `'auto'` | Layout grid: `'auto'`, or a fixed column count |
 | `grid` | `true` | Show the layout grid (`data-grid="off"`) |
 | `sound` | `true` | Synthesized sound (`data-sound="off"`) |
-| `toolbar` | `true` | Tour, 1×/2×/3×, Sound, Go live, Replay (`data-toolbar="off"`) |
+| `toolbar` | `true` | Crew counter, Tour, 1×/2×/3×, Sound, Go live, Replay (`data-toolbar="off"`) |
 | `skip` | `null` | CSS selector for elements to leave out |
 | `root` | `<body>` | Element to build (JS only) |
 | `respectReducedMotion` | `true` | Visitors who prefer reduced motion get the page as is |
@@ -94,8 +94,9 @@ All of the plugin's classes, attributes and CSS variables start with `caw-`. Its
    - Rules and single-side borders are drawn with the pen tool.
    - Repeated cards are built once, then alt-dragged into place with red spacing measurements, then retyped, re-photographed or restyled.
    - Before text is typed, a cursor pulls a red guide out of the ruler onto the edge or baseline that text shares with others.
-3. **Scroll.** Frames start only as they come into view. Idle cursors wait at the bottom of the screen and follow the visitor down. Scroll fast and more cursors join. Tour scrolls for them.
-4. **Done.** The cursors flock around the mouse and keep clear of the pointer. **Go live** fades to the real page; **Replay** builds it again.
+3. **Crew counter.** The toolbar shows how many cursors are on a job right now, with a dot in each one's colour ("9 / 17 at work").
+4. **Scroll.** Frames start only as they come into view. Idle cursors wait at the bottom of the screen and follow the visitor down. Scroll fast and more cursors join. Tour scrolls for them.
+5. **Done.** The cursors flock around the mouse and keep clear of the pointer. **Go live** fades to the real page; **Replay** builds it again.
 
 Sound is mostly clicky: keys, mouse presses, guide snaps. Boxes add sparse glass-piano notes, and the page finishes on a soft chord. Browsers only allow audio after the visitor's first tap or key press. **M** toggles sound.
 

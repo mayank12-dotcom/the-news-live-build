@@ -720,6 +720,9 @@ CAW.run = (config) => {
         if (job?.sel) boxes.push({ ...job.sel, color: c.color });
       }
       Studio.frame(boxes);
+      // Building: who's on a job right now. Built: the whole crew.
+      const busy = state === 'building' ? cursors.filter((c) => c.unit && buildTime >= c.readyAt) : cursors;
+      Studio.setCount(busy.length, cursors.length, busy.map((c) => c.color));
     }
     if (state === 'building' && frames.every((u) => u.state === 'done')) finishBuild();
     requestAnimationFrame(frame);
