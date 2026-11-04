@@ -23,6 +23,7 @@ CAW.studio = (options = {}) => {
   bar.setAttribute('role', 'toolbar');
   bar.setAttribute('aria-label', 'Build controls');
   if (options.sound === false) bar.querySelector('[data-act="sound"]').remove();
+  if (options.autoLive !== false) bar.querySelector('[data-act="live"]').remove(); // it goes live by itself
   document.body.append(layer);
   if (options.toolbar !== false) document.body.append(bar);
 

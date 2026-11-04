@@ -742,6 +742,7 @@
     bar.setAttribute('role', 'toolbar');
     bar.setAttribute('aria-label', 'Build controls');
     if (options.sound === false) bar.querySelector('[data-act="sound"]').remove();
+    if (options.autoLive !== false) bar.querySelector('[data-act="live"]').remove(); // it goes live by itself
     document.body.append(layer);
     if (options.toolbar !== false) document.body.append(bar);
 
@@ -931,8 +932,8 @@
   CAW.run = (config) => {
     // Lifecycle: loading (the cursors orbit the logo on a blank canvas) → building (each
     // cursor claims a frame that's scrolled into view and builds its layers; idle cursors
-    // chase the viewer's scroll) → built (the crew flocks around the mouse; Go live or
-    // Replay) → live (the real page, chrome gone).
+    // chase the viewer's scroll) → built (the crew flocks around the mouse) → live (the real
+    // page, chrome gone; straight away with autoLive, else on Go live). Replay starts over.
     const ARROW = 'M0.101898 32.4518C-1.90724 7.26404 26.2171 -8.9729 47.0257 5.36096L261.832 153.329C285.213 169.434 275.216 205.994 246.894 207.963L137.119 215.59L75.6263 306.843L75.2503 307.389C59.3159 330.056 23.6497 320.694 20.9017 293.124L20.8962 293.062L20.8431 292.464L0.101898 32.4518Z';
     const ARROW_IN = 'M30.0072 30.066L244.814 178.034L120.427 186.678L50.7474 290.079L30.0072 30.066Z';
     const CURSOR_COUNT = config.cursors;
@@ -962,6 +963,7 @@
     const GROW_STEPS = 4;
     const GROW_STEP_MS = 110;
     const GUIDE_PULL_MS = [380, 560];
+    const LIVE_DELAY_MS = 700;     // with autoLive: let the closing chord land, then hand over the page
     const SPRING = 70;
     const DAMPING = 12;
 
@@ -1527,6 +1529,7 @@
       root.classList.add('caw-built');
       document.body.setAttribute('aria-busy', 'false');
       Sound.chord();
+      if (config.autoLive) setTimeout(() => { if (state === 'built') goLive(); }, LIVE_DELAY_MS);
     }
 
     function goLive() {
@@ -1685,7 +1688,8 @@
     columns: 'auto',     // layout grid: 'auto' (4 / 8 / 8–12 by screen and layout) or a number
     grid: true,          // show the layout grid
     sound: true,         // synthesized sounds (still need a first tap or key to unlock)
-    toolbar: true,       // crew counter, Tour, Sound; Go live and Replay once built
+    toolbar: true,       // crew counter, Tour, Sound; Replay once built
+    autoLive: true,      // hand back the real page as soon as the build is done (false: wait for Go live)
     skip: null,          // CSS selector for elements to leave out of the build
     root: null,          // element to build (defaults to <body>)
     respectReducedMotion: true,
@@ -1718,7 +1722,8 @@
   }
 
   // Options from a script tag's data attributes: data-logo, data-cursors, data-max-cursors,
-  // data-typing-speed, data-columns, data-grid="off", data-sound="off", data-toolbar="off", data-skip.
+  // data-typing-speed, data-columns, data-grid="off", data-sound="off", data-toolbar="off",
+  // data-auto-live="off", data-skip.
   function fromDataset(d) {
     const num = (v) => (v === undefined || v === '' || Number.isNaN(Number(v)) ? undefined : Number(v));
     const off = (v) => (v === undefined ? undefined : v !== 'off' && v !== 'false');
@@ -1731,6 +1736,7 @@
       grid: off(d.grid),
       sound: off(d.sound),
       toolbar: off(d.toolbar),
+      autoLive: off(d.autoLive),
       skip: d.skip,
     };
     return Object.fromEntries(Object.entries(options).filter(([, v]) => v !== undefined));

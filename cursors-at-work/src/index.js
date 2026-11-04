@@ -8,7 +8,8 @@ const DEFAULTS = {
   columns: 'auto',     // layout grid: 'auto' (4 / 8 / 8–12 by screen and layout) or a number
   grid: true,          // show the layout grid
   sound: true,         // synthesized sounds (still need a first tap or key to unlock)
-  toolbar: true,       // crew counter, Tour, Sound; Go live and Replay once built
+  toolbar: true,       // crew counter, Tour, Sound; Replay once built
+  autoLive: true,      // hand back the real page as soon as the build is done (false: wait for Go live)
   skip: null,          // CSS selector for elements to leave out of the build
   root: null,          // element to build (defaults to <body>)
   respectReducedMotion: true,
@@ -41,7 +42,8 @@ function injectStyles() {
 }
 
 // Options from a script tag's data attributes: data-logo, data-cursors, data-max-cursors,
-// data-typing-speed, data-columns, data-grid="off", data-sound="off", data-toolbar="off", data-skip.
+// data-typing-speed, data-columns, data-grid="off", data-sound="off", data-toolbar="off",
+// data-auto-live="off", data-skip.
 function fromDataset(d) {
   const num = (v) => (v === undefined || v === '' || Number.isNaN(Number(v)) ? undefined : Number(v));
   const off = (v) => (v === undefined ? undefined : v !== 'off' && v !== 'false');
@@ -54,6 +56,7 @@ function fromDataset(d) {
     grid: off(d.grid),
     sound: off(d.sound),
     toolbar: off(d.toolbar),
+    autoLive: off(d.autoLive),
     skip: d.skip,
   };
   return Object.fromEntries(Object.entries(options).filter(([, v]) => v !== undefined));
