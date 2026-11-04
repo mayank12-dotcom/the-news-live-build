@@ -57,7 +57,7 @@ Pass them to `start()`, or as data attributes on the script tag (`maxCursors` be
 | `columns` | `'auto'` | Layout grid: `'auto'`, or a fixed column count |
 | `grid` | `true` | Show the layout grid (`data-grid="off"`) |
 | `sound` | `true` | Synthesized sound (`data-sound="off"`) |
-| `toolbar` | `true` | Floating toolbar, always in the bottom-left corner: crew counter, Tour, Sound. Once built, Tour builds the page again and tours it (`data-toolbar="off"`) |
+| `toolbar` | `true` | Floating toolbar, always in the bottom-right corner: crew counter, Tour, Sound. Once built, Tour builds the page again and tours it (`data-toolbar="off"`) |
 | `startOn` | `'scroll'` | `'scroll'`: the intro waits, cursors orbiting, until the visitor first scrolls (or presses Tour). `'load'`: start on its own (`data-start-on="load"`) |
 | `autoLive` | `true` | Hand back the real page as soon as the build is done. `false` keeps the finale (cursors flocking around the mouse) until the visitor clicks Go live (`data-auto-live="off"`) |
 | `skip` | `null` | CSS selector for elements to leave out |
