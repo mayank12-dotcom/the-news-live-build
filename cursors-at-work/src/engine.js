@@ -21,7 +21,7 @@ CAW.run = (config) => {
   const SWAP_MS = 320;           // a copied photo or fill is changed to the item's own
   const CATCH_UP_PER_FOLD = 1;   // extra build speed for each screen the viewer is scrolled ahead
   const MAX_CATCH_UP = 4;
-  const TOUR_PX_S = 240;         // Tour scrolls at most this fast (times the speed setting)
+  const TOUR_PX_S = 240;         // Tour scrolls at most this fast
   const TOUR_LEAD = 0.82;        // and keeps the next unbuilt frame this far down the screen
   const START_STAGGER_MS = 1600; // cursors peel off the loader one at a time
   const MIN_LOADER_MS = 1800;
@@ -67,7 +67,6 @@ CAW.run = (config) => {
   document.body.setAttribute('aria-busy', 'true');
 
   let state = 'loading';
-  let userSpeed = 1;
   let touring = false;
 
   // Each cursor gets its own colour; hues are spread around the wheel so no two look alike.
@@ -644,9 +643,8 @@ CAW.run = (config) => {
     Studio.setTour(touring);
   }
 
-  Studio.onAction((act, value) => {
+  Studio.onAction((act) => {
     if (act === 'tour') setTour(!touring);
-    else if (act === 'speed') { userSpeed = value; Studio.setSpeed(value); }
     else if (act === 'sound') Sound.toggle();
     else if (act === 'live') goLive();
     else if (act === 'replay') replay();
@@ -665,7 +663,7 @@ CAW.run = (config) => {
     const ahead = next.el.getBoundingClientRect().top - innerHeight * TOUR_LEAD;
     const room = document.documentElement.scrollHeight - innerHeight - scrollY;
     if (ahead <= 0 || room <= 0) return;
-    scrollTo({ top: scrollY + Math.min(ahead, room, TOUR_PX_S * userSpeed * dt), behavior: 'instant' });
+    scrollTo({ top: scrollY + Math.min(ahead, room, TOUR_PX_S * dt), behavior: 'instant' });
   }
 
   // Scroll fast and more cursors join, flying in from the edge you're scrolling toward.
@@ -683,7 +681,7 @@ CAW.run = (config) => {
     cursors.push(c);
   }
 
-  // The build runs on its own clock: the speed setting, plus a catch-up boost while the
+  // The build runs on its own clock, with a catch-up boost while the
   // viewer is scrolled ahead of what's being built.
   let last = performance.now();
   let buildTime = last;
@@ -703,7 +701,7 @@ CAW.run = (config) => {
     const realDt = Math.min(1 / 30, (now - last) / 1000);
     last = now;
     if (state === 'building' && now >= speedCheckAt) {
-      speedTarget = catchUpSpeed() * userSpeed;
+      speedTarget = catchUpSpeed();
       speedCheckAt = now + 200;
     }
     speed += (speedTarget - speed) * Math.min(1, realDt * 3);

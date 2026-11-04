@@ -57,7 +57,7 @@ Pass them to `start()`, or as data attributes on the script tag (`maxCursors` be
 | `columns` | `'auto'` | Layout grid: `'auto'`, or a fixed column count |
 | `grid` | `true` | Show the layout grid (`data-grid="off"`) |
 | `sound` | `true` | Synthesized sound (`data-sound="off"`) |
-| `toolbar` | `true` | Crew counter, Tour, 1×/2×/3×, Sound, Go live, Replay (`data-toolbar="off"`) |
+| `toolbar` | `true` | Floating bottom-right toolbar: crew counter, Tour, Sound; Go live and Replay once built (`data-toolbar="off"`) |
 | `skip` | `null` | CSS selector for elements to leave out |
 | `root` | `<body>` | Element to build (JS only) |
 | `respectReducedMotion` | `true` | Visitors who prefer reduced motion get the page as is |
@@ -72,6 +72,7 @@ CursorsAtWork.tour(true)     // auto-scroll at the pace the cursors keep up with
 CursorsAtWork.goLive()       // remove the build chrome, back to the real page
 CursorsAtWork.replay()       // blank the page and build it again
 CursorsAtWork.state          // 'idle' | 'loading' | 'building' | 'built' | 'live'
+CursorsAtWork.plan           // the page as read: { ops, frames }, for inspection
 CursorsAtWork.version
 ```
 
@@ -88,13 +89,13 @@ All of the plugin's classes, attributes and CSS variables start with `caw-`. Its
 ## What the visitor sees
 
 1. **Intro.** The page clears to a blank canvas and the cursors orbit your logo.
-2. **Build.** Figma rulers slide in and your layout grid drops in column by column. The cursors fan out:
+2. **Build.** Figma rulers slide in and your layout grid drops in column by column, with no labels over your page. The cursors fan out:
    - Boxes are crosshair-dragged as grey placeholders with a W×H badge, then filled. Photos sweep in.
    - Text boxes are dragged out, then typed into. Big headings start at 18px and step up to size.
    - Rules and single-side borders are drawn with the pen tool.
    - Repeated cards are built once, then alt-dragged into place with red spacing measurements, then retyped, re-photographed or restyled.
    - Before text is typed, a cursor pulls a red guide out of the ruler onto the edge or baseline that text shares with others.
-3. **Crew counter.** The toolbar shows how many cursors are on a job right now, with a dot in each one's colour ("9 / 17 at work").
+3. **Crew counter.** While cursors are on a job, the toolbar shows how many, with a dot in each one's colour ("9 / 17 at work"). It's hidden when nobody is working.
 4. **Scroll.** Frames start only as they come into view. Idle cursors wait at the bottom of the screen and follow the visitor down. Scroll fast and more cursors join. Tour scrolls for them.
 5. **Done.** The cursors flock around the mouse and keep clear of the pointer. **Go live** fades to the real page; **Replay** builds it again.
 

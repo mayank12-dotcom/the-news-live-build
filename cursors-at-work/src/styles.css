@@ -109,11 +109,6 @@ html:not(.caw-loading):not(.caw-pending) .caw-studio { opacity: 1; visibility: v
   transform-origin: top; animation: caw-column 0.7s var(--caw-ease) both; animation-delay: calc(var(--i) * 45ms);
 }
 @keyframes caw-column { from { transform: scaleY(0); } }
-.caw-studio > .caw-grid-label {
-  left: auto; right: 4px; top: 2px; padding: 1px 6px; border-radius: 3px;
-  background: #444; color: #ffb3a3; font: 500 10px/1.4 var(--caw-ui); white-space: nowrap;
-}
-.caw-grid-label:empty { display: none; }
 .caw-ruler-corner { width: 18px; height: 18px; background: #2c2c2c; box-shadow: 1px 1px 0 #444; }
 .caw-guide { background: var(--caw-red); opacity: 0.7; }
 .caw-guide-x { width: 1px; height: 100%; }
@@ -129,48 +124,47 @@ html:not(.caw-loading):not(.caw-pending) .caw-studio { opacity: 1; visibility: v
 .caw-measure.vertical b { translate: 6px -50%; }
 .caw-measure[hidden] { display: none; }
 
-/* ---------- toolbar ---------- */
+/* ---------- toolbar: a floating pill in the bottom-right corner ---------- */
 .caw-toolbar {
-  position: fixed; left: 50%; bottom: 16px; z-index: calc(var(--caw-z) + 2); translate: -50% 0;
-  display: flex; align-items: center; gap: 4px; max-width: calc(100vw - 32px); padding: 4px;
-  border-radius: 12px; background: #2c2c2c; box-shadow: 0 10px 30px rgb(0 0 0 / 0.22), inset 0 0 0 1px rgb(255 255 255 / 0.06);
+  position: fixed; right: 16px; bottom: 16px; z-index: calc(var(--caw-z) + 2);
+  display: flex; align-items: center; gap: 4px; max-width: calc(100vw - 32px); padding: 5px;
+  border-radius: 999px; background: #2c2c2c;
+  box-shadow: 0 12px 32px rgb(0 0 0 / 0.24), 0 2px 6px rgb(0 0 0 / 0.12), inset 0 0 0 1px rgb(255 255 255 / 0.06);
   font: 500 12px/1 var(--caw-ui); color: #fff;
   transition: opacity 0.4s var(--caw-ease), translate 0.4s var(--caw-ease);
 }
 .caw-toolbar button {
-  all: unset; box-sizing: border-box; padding: 8px 11px; border-radius: 8px; cursor: pointer; white-space: nowrap;
-  color: #d6d6d6; transition: background-color 0.15s, color 0.15s;
+  all: unset; box-sizing: border-box; padding: 8px 14px; border-radius: 999px; cursor: pointer; white-space: nowrap;
+  color: #d6d6d6; transition: background-color 0.15s, color 0.15s, translate 0.15s var(--caw-ease);
 }
 .caw-toolbar button:hover { background: #3d3d3d; color: #fff; }
-.caw-toolbar button:active { background: #474747; }
-.caw-toolbar button:focus-visible { outline: 2px solid var(--caw-sel); outline-offset: 1px; }
+.caw-toolbar button:active { background: #474747; translate: 0 1px; }
+.caw-toolbar button:focus-visible { outline: 2px solid var(--caw-sel); outline-offset: 2px; }
 .caw-toolbar button[aria-pressed="true"] { background: #4a4a4a; color: #fff; }
 .caw-toolbar .caw-primary { background: var(--caw-sel); color: #fff; }
 .caw-toolbar .caw-primary:hover { background: #0a84e0; }
-/* Crew counter: overlapping colour dots, then a tabular count. */
-.caw-count { display: flex; align-items: center; gap: 7px; padding: 0 12px 0 8px; margin-right: 2px; border-right: 1px solid #444; color: #d6d6d6; white-space: nowrap; font-variant-numeric: tabular-nums; }
+/* Crew counter, only while cursors are working: overlapping colour dots, then a tabular count. */
+.caw-count { display: flex; align-items: center; gap: 7px; padding: 0 10px 0 9px; color: #d6d6d6; white-space: nowrap; font-variant-numeric: tabular-nums; animation: caw-fade 0.3s var(--caw-ease); }
+.caw-count[hidden] { display: none; }
 .caw-count-dots { display: flex; }
 .caw-count-dots:empty { display: none; }
 .caw-count-dots i { width: 9px; height: 9px; border-radius: 50%; box-shadow: 0 0 0 1.5px #2c2c2c; transition: background-color 0.3s; }
 .caw-count-dots i + i { margin-left: -3px; }
 .caw-count b { color: #fff; font-weight: 600; min-width: 2ch; text-align: right; }
 .caw-count-of, .caw-count-label { color: #9a9a9a; }
-.caw-toolbar[data-mode="live"] .caw-count { display: none; }
-/* Phones: the same controls, tighter, so the toolbar never runs off screen. */
+/* Phones: the same controls, tighter. */
 @media (max-width: 480px) {
-  .caw-toolbar { gap: 2px; }
-  .caw-toolbar button { padding: 8px 7px; }
-  .caw-count { gap: 5px; padding: 0 8px 0 4px; }
-  .caw-toolbar[data-mode="building"] .caw-count-label { display: none; }
-  .caw-seg { padding-inline: 2px; }
+  .caw-toolbar { right: 12px; bottom: 12px; max-width: calc(100vw - 24px); gap: 2px; }
+  .caw-toolbar button { padding: 8px 11px; }
+  .caw-count { gap: 5px; padding: 0 6px 0 7px; }
+  .caw-count-label { display: none; }
 }
-.caw-seg { display: flex; gap: 2px; padding-inline: 4px; border-inline: 1px solid #444; }
 .caw-toolbar[data-mode="building"] :is([data-act="live"], [data-act="replay"]),
-.caw-toolbar[data-mode="built"] :is([data-act="tour"], .caw-seg),
+.caw-toolbar[data-mode="built"] [data-act="tour"],
 .caw-toolbar[data-mode="live"] > :not([data-act="replay"]) { display: none; }
 .caw-toolbar[data-mode="live"] { opacity: 0.55; }
 .caw-toolbar[data-mode="live"]:hover, .caw-toolbar[data-mode="live"]:focus-within { opacity: 1; }
-.caw-loading .caw-toolbar { translate: -50% 80px; opacity: 0; }
+.caw-loading .caw-toolbar { translate: 0 80px; opacity: 0; }
 
 /* ---------- going live: the real page, chrome gone ---------- */
 .caw-live .caw-studio, .caw-live .caw-cursors { opacity: 0 !important; visibility: hidden !important; }

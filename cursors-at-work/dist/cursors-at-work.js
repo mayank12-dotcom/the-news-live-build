@@ -1,7 +1,7 @@
 /*! Cursors at Work v1.0.0 | MIT License | https://github.com/mayank12-dotcom/cursors-at-work */
 (function () {
   'use strict';
-  const CAW = { version: "1.0.0", css: ":root{--caw-sel:#0d99ff;--caw-red:#f24822;--caw-ease:cubic-bezier(0.16,1,0.3,1);--caw-ui:\"Inter\",system-ui,-apple-system,\"Segoe UI\",sans-serif;--caw-z:2147483000}.caw-paint{background-color:transparent !important;background-image:none !important;border-color:transparent !important;box-shadow:none !important;outline-color:transparent !important}.caw-filled,.caw-restyled{transition:background-color 0.35s var(--caw-ease),border-color 0.35s,box-shadow 0.35s}.caw-edge-top{border-top-color:transparent !important}.caw-edge-right{border-right-color:transparent !important}.caw-edge-bottom{border-bottom-color:transparent !important}.caw-edge-left{border-left-color:transparent !important}.caw-hide{opacity:0 !important}.caw-reveal{animation:caw-fade 0.35s var(--caw-ease)}img.caw-reveal,video.caw-reveal,canvas.caw-reveal{animation:caw-fade 0.35s var(--caw-ease),caw-sweep 0.55s var(--caw-ease)}@keyframes caw-fade{from{opacity:0}}@keyframes caw-sweep{from{clip-path:inset(0 0 100% 0)}}.caw-ghost{color:transparent !important;-webkit-text-fill-color:transparent !important;text-decoration-color:transparent !important;text-shadow:none !important}.caw-caret{display:inline-block;width:0;height:0.95em;vertical-align:-0.12em;box-shadow:0 0 0 1px var(--c,var(--caw-sel));visibility:hidden}.caw-typing .caw-caret{visibility:visible}.caw-growing{transform-origin:left top}.caw-snap-x{animation:caw-snap-x 0.22s var(--caw-ease)}.caw-snap-y{animation:caw-snap-y 0.22s var(--caw-ease)}@keyframes caw-snap-x{from{translate:5px 0}}@keyframes caw-snap-y{from{translate:0 4px}}.caw-dragging{position:relative;z-index:5;background-color:var(--caw-canvas,#fff);box-shadow:0 10px 28px rgb(32 33 36 / 0.14)}.caw-selecting .caw-typed:first-child{background:color-mix(in srgb,var(--hl) 26%,transparent)}.caw-swapped{animation:caw-swap 0.32s var(--caw-ease)}@keyframes caw-swap{from{opacity:0.3}}.caw-loader{position:fixed;inset:0;z-index:calc(var(--caw-z) - 2);background:var(--caw-canvas,#fff);opacity:0;visibility:hidden;pointer-events:none;transition:opacity 0.7s var(--caw-ease),visibility 0.7s}.caw-loading .caw-loader{opacity:1;visibility:visible}.caw-loader-mark{position:absolute;left:50%;top:50%;width:172px;max-width:calc(100vw - 140px);height:auto;translate:-50% -50%;opacity:0.16;filter:grayscale(1);animation:caw-breathe 2.4s ease-in-out infinite alternate}@keyframes caw-breathe{to{opacity:0.3}}.caw-cursors{position:fixed;inset:0;z-index:calc(var(--caw-z) + 1);overflow:hidden;pointer-events:none;transition:opacity 0.5s var(--caw-ease),visibility 0.5s}.caw-cursors>*{position:absolute;left:0;top:0}.caw-cursor{will-change:transform}.caw-cursor .ico{position:absolute;display:none;overflow:visible}.caw-cursor .ico-pointer{left:-2px;top:-2px}.caw-cursor .ico-pointer path{fill:var(--c)}.caw-cursor .ico-pointer .rim{fill:#fff}.caw-cursor .ico-text{left:-7px;top:-12px}.caw-cursor .ico-draw{left:-11px;top:-11px}.caw-cursor .ico-pen{left:-1.5px;top:-1.5px}.caw-cursor .ico-pen .nib{fill:var(--c);stroke:#fff;stroke-width:1.4;stroke-linejoin:round}.caw-cursor .ico-pen circle{fill:#fff}.caw-cursor .ico-text path,.caw-cursor .ico-draw path{fill:none;stroke:var(--c);stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}.caw-cursor .ico-text .halo,.caw-cursor .ico-draw .halo{stroke:#fff;stroke-width:4.5}.mode-pointer .ico-pointer,.mode-text .ico-text,.mode-draw .ico-draw,.mode-pen .ico-pen,.mode-copy .ico-pointer,.mode-copy .ico-copy{display:block !important}.caw-cursor .ico-copy{left:13px;top:15px}.caw-cursor .ico-copy circle{fill:var(--c);stroke:#fff;stroke-width:1}.caw-cursor .ico-copy path{stroke:#fff;stroke-width:1.4;stroke-linecap:round}.caw-sel{display:none;box-shadow:inset 0 0 0 1px var(--c),0 0 0 0.5px var(--c)}.caw-sel.on{display:block}.caw-sel i{position:absolute;width:7px;height:7px;background:#fff;border:1px solid var(--c)}.caw-sel .tl{left:-3px;top:-3px}.caw-sel .tr{right:-3px;top:-3px}.caw-sel .bl{left:-3px;bottom:-3px}.caw-sel .br{right:-3px;bottom:-3px}.caw-dim{position:absolute;left:50%;top:100%;margin-top:6px;transform:translateX(-50%);padding:2px 5px;border-radius:3px;background:var(--c);color:#fff;font:500 11px/1.3 var(--caw-ui);white-space:nowrap}.caw-dim:empty,.caw-sel.text i{display:none}.caw-sel.fill{background:#d9d9d9}.caw-sel.pen{box-shadow:none;background:var(--c)}.caw-sel.pen i{border-radius:50%}.caw-sel.pen .tr,.caw-sel.pen .bl{display:none}.caw-studio{position:fixed;inset:0;z-index:var(--caw-z);overflow:hidden;pointer-events:none;opacity:0;visibility:hidden;transition:opacity 0.6s var(--caw-ease),visibility 0.6s}html:not(.caw-loading):not(.caw-pending) .caw-studio{opacity:1;visibility:visible}.caw-studio>*{position:absolute;left:0;top:0}.caw-grid{position:absolute;inset:0}.caw-grid i{position:absolute;top:0;bottom:0;background:rgb(242 72 34 / 0.05);box-shadow:inset 1px 0 rgb(242 72 34 / 0.16),inset -1px 0 rgb(242 72 34 / 0.16);transform-origin:top;animation:caw-column 0.7s var(--caw-ease) both;animation-delay:calc(var(--i) * 45ms)}@keyframes caw-column{from{transform:scaleY(0)}}.caw-studio>.caw-grid-label{left:auto;right:4px;top:2px;padding:1px 6px;border-radius:3px;background:#444;color:#ffb3a3;font:500 10px/1.4 var(--caw-ui);white-space:nowrap}.caw-grid-label:empty{display:none}.caw-ruler-corner{width:18px;height:18px;background:#2c2c2c;box-shadow:1px 1px 0 #444}.caw-guide{background:var(--caw-red);opacity:0.7}.caw-guide-x{width:1px;height:100%}.caw-guide-y{width:100%;height:1px}.caw-guide.moving{opacity:1}.caw-guide.gone{opacity:0;transition:opacity 0.4s var(--caw-ease)}.caw-measure{background:var(--caw-red)}.caw-measure b{position:absolute;left:50%;top:50%;translate:-50% -50%;padding:1px 4px;border-radius:2px;background:var(--caw-red);color:#fff;font:500 10px/1.3 var(--caw-ui);white-space:nowrap}.caw-measure.vertical b{translate:6px -50%}.caw-measure[hidden]{display:none}.caw-toolbar{position:fixed;left:50%;bottom:16px;z-index:calc(var(--caw-z) + 2);translate:-50% 0;display:flex;align-items:center;gap:4px;max-width:calc(100vw - 32px);padding:4px;border-radius:12px;background:#2c2c2c;box-shadow:0 10px 30px rgb(0 0 0 / 0.22),inset 0 0 0 1px rgb(255 255 255 / 0.06);font:500 12px/1 var(--caw-ui);color:#fff;transition:opacity 0.4s var(--caw-ease),translate 0.4s var(--caw-ease)}.caw-toolbar button{all:unset;box-sizing:border-box;padding:8px 11px;border-radius:8px;cursor:pointer;white-space:nowrap;color:#d6d6d6;transition:background-color 0.15s,color 0.15s}.caw-toolbar button:hover{background:#3d3d3d;color:#fff}.caw-toolbar button:active{background:#474747}.caw-toolbar button:focus-visible{outline:2px solid var(--caw-sel);outline-offset:1px}.caw-toolbar button[aria-pressed=\"true\"]{background:#4a4a4a;color:#fff}.caw-toolbar .caw-primary{background:var(--caw-sel);color:#fff}.caw-toolbar .caw-primary:hover{background:#0a84e0}.caw-count{display:flex;align-items:center;gap:7px;padding:0 12px 0 8px;margin-right:2px;border-right:1px solid #444;color:#d6d6d6;white-space:nowrap;font-variant-numeric:tabular-nums}.caw-count-dots{display:flex}.caw-count-dots:empty{display:none}.caw-count-dots i{width:9px;height:9px;border-radius:50%;box-shadow:0 0 0 1.5px #2c2c2c;transition:background-color 0.3s}.caw-count-dots i + i{margin-left:-3px}.caw-count b{color:#fff;font-weight:600;min-width:2ch;text-align:right}.caw-count-of,.caw-count-label{color:#9a9a9a}.caw-toolbar[data-mode=\"live\"] .caw-count{display:none}@media (max-width:480px){.caw-toolbar{gap:2px}.caw-toolbar button{padding:8px 7px}.caw-count{gap:5px;padding:0 8px 0 4px}.caw-toolbar[data-mode=\"building\"] .caw-count-label{display:none}.caw-seg{padding-inline:2px}}.caw-seg{display:flex;gap:2px;padding-inline:4px;border-inline:1px solid #444}.caw-toolbar[data-mode=\"building\"] :is([data-act=\"live\"],[data-act=\"replay\"]),.caw-toolbar[data-mode=\"built\"] :is([data-act=\"tour\"],.caw-seg),.caw-toolbar[data-mode=\"live\"]>:not([data-act=\"replay\"]){display:none}.caw-toolbar[data-mode=\"live\"]{opacity:0.55}.caw-toolbar[data-mode=\"live\"]:hover,.caw-toolbar[data-mode=\"live\"]:focus-within{opacity:1}.caw-loading .caw-toolbar{translate:-50% 80px;opacity:0}.caw-live .caw-studio,.caw-live .caw-cursors{opacity:0 !important;visibility:hidden !important}@media (prefers-reduced-motion:reduce){.caw-ui{display:none !important}}" };
+  const CAW = { version: "1.0.0", css: ":root{--caw-sel:#0d99ff;--caw-red:#f24822;--caw-ease:cubic-bezier(0.16,1,0.3,1);--caw-ui:\"Inter\",system-ui,-apple-system,\"Segoe UI\",sans-serif;--caw-z:2147483000}.caw-paint{background-color:transparent !important;background-image:none !important;border-color:transparent !important;box-shadow:none !important;outline-color:transparent !important}.caw-filled,.caw-restyled{transition:background-color 0.35s var(--caw-ease),border-color 0.35s,box-shadow 0.35s}.caw-edge-top{border-top-color:transparent !important}.caw-edge-right{border-right-color:transparent !important}.caw-edge-bottom{border-bottom-color:transparent !important}.caw-edge-left{border-left-color:transparent !important}.caw-hide{opacity:0 !important}.caw-reveal{animation:caw-fade 0.35s var(--caw-ease)}img.caw-reveal,video.caw-reveal,canvas.caw-reveal{animation:caw-fade 0.35s var(--caw-ease),caw-sweep 0.55s var(--caw-ease)}@keyframes caw-fade{from{opacity:0}}@keyframes caw-sweep{from{clip-path:inset(0 0 100% 0)}}.caw-ghost{color:transparent !important;-webkit-text-fill-color:transparent !important;text-decoration-color:transparent !important;text-shadow:none !important}.caw-caret{display:inline-block;width:0;height:0.95em;vertical-align:-0.12em;box-shadow:0 0 0 1px var(--c,var(--caw-sel));visibility:hidden}.caw-typing .caw-caret{visibility:visible}.caw-growing{transform-origin:left top}.caw-snap-x{animation:caw-snap-x 0.22s var(--caw-ease)}.caw-snap-y{animation:caw-snap-y 0.22s var(--caw-ease)}@keyframes caw-snap-x{from{translate:5px 0}}@keyframes caw-snap-y{from{translate:0 4px}}.caw-dragging{position:relative;z-index:5;background-color:var(--caw-canvas,#fff);box-shadow:0 10px 28px rgb(32 33 36 / 0.14)}.caw-selecting .caw-typed:first-child{background:color-mix(in srgb,var(--hl) 26%,transparent)}.caw-swapped{animation:caw-swap 0.32s var(--caw-ease)}@keyframes caw-swap{from{opacity:0.3}}.caw-loader{position:fixed;inset:0;z-index:calc(var(--caw-z) - 2);background:var(--caw-canvas,#fff);opacity:0;visibility:hidden;pointer-events:none;transition:opacity 0.7s var(--caw-ease),visibility 0.7s}.caw-loading .caw-loader{opacity:1;visibility:visible}.caw-loader-mark{position:absolute;left:50%;top:50%;width:172px;max-width:calc(100vw - 140px);height:auto;translate:-50% -50%;opacity:0.16;filter:grayscale(1);animation:caw-breathe 2.4s ease-in-out infinite alternate}@keyframes caw-breathe{to{opacity:0.3}}.caw-cursors{position:fixed;inset:0;z-index:calc(var(--caw-z) + 1);overflow:hidden;pointer-events:none;transition:opacity 0.5s var(--caw-ease),visibility 0.5s}.caw-cursors>*{position:absolute;left:0;top:0}.caw-cursor{will-change:transform}.caw-cursor .ico{position:absolute;display:none;overflow:visible}.caw-cursor .ico-pointer{left:-2px;top:-2px}.caw-cursor .ico-pointer path{fill:var(--c)}.caw-cursor .ico-pointer .rim{fill:#fff}.caw-cursor .ico-text{left:-7px;top:-12px}.caw-cursor .ico-draw{left:-11px;top:-11px}.caw-cursor .ico-pen{left:-1.5px;top:-1.5px}.caw-cursor .ico-pen .nib{fill:var(--c);stroke:#fff;stroke-width:1.4;stroke-linejoin:round}.caw-cursor .ico-pen circle{fill:#fff}.caw-cursor .ico-text path,.caw-cursor .ico-draw path{fill:none;stroke:var(--c);stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}.caw-cursor .ico-text .halo,.caw-cursor .ico-draw .halo{stroke:#fff;stroke-width:4.5}.mode-pointer .ico-pointer,.mode-text .ico-text,.mode-draw .ico-draw,.mode-pen .ico-pen,.mode-copy .ico-pointer,.mode-copy .ico-copy{display:block !important}.caw-cursor .ico-copy{left:13px;top:15px}.caw-cursor .ico-copy circle{fill:var(--c);stroke:#fff;stroke-width:1}.caw-cursor .ico-copy path{stroke:#fff;stroke-width:1.4;stroke-linecap:round}.caw-sel{display:none;box-shadow:inset 0 0 0 1px var(--c),0 0 0 0.5px var(--c)}.caw-sel.on{display:block}.caw-sel i{position:absolute;width:7px;height:7px;background:#fff;border:1px solid var(--c)}.caw-sel .tl{left:-3px;top:-3px}.caw-sel .tr{right:-3px;top:-3px}.caw-sel .bl{left:-3px;bottom:-3px}.caw-sel .br{right:-3px;bottom:-3px}.caw-dim{position:absolute;left:50%;top:100%;margin-top:6px;transform:translateX(-50%);padding:2px 5px;border-radius:3px;background:var(--c);color:#fff;font:500 11px/1.3 var(--caw-ui);white-space:nowrap}.caw-dim:empty,.caw-sel.text i{display:none}.caw-sel.fill{background:#d9d9d9}.caw-sel.pen{box-shadow:none;background:var(--c)}.caw-sel.pen i{border-radius:50%}.caw-sel.pen .tr,.caw-sel.pen .bl{display:none}.caw-studio{position:fixed;inset:0;z-index:var(--caw-z);overflow:hidden;pointer-events:none;opacity:0;visibility:hidden;transition:opacity 0.6s var(--caw-ease),visibility 0.6s}html:not(.caw-loading):not(.caw-pending) .caw-studio{opacity:1;visibility:visible}.caw-studio>*{position:absolute;left:0;top:0}.caw-grid{position:absolute;inset:0}.caw-grid i{position:absolute;top:0;bottom:0;background:rgb(242 72 34 / 0.05);box-shadow:inset 1px 0 rgb(242 72 34 / 0.16),inset -1px 0 rgb(242 72 34 / 0.16);transform-origin:top;animation:caw-column 0.7s var(--caw-ease) both;animation-delay:calc(var(--i) * 45ms)}@keyframes caw-column{from{transform:scaleY(0)}}.caw-ruler-corner{width:18px;height:18px;background:#2c2c2c;box-shadow:1px 1px 0 #444}.caw-guide{background:var(--caw-red);opacity:0.7}.caw-guide-x{width:1px;height:100%}.caw-guide-y{width:100%;height:1px}.caw-guide.moving{opacity:1}.caw-guide.gone{opacity:0;transition:opacity 0.4s var(--caw-ease)}.caw-measure{background:var(--caw-red)}.caw-measure b{position:absolute;left:50%;top:50%;translate:-50% -50%;padding:1px 4px;border-radius:2px;background:var(--caw-red);color:#fff;font:500 10px/1.3 var(--caw-ui);white-space:nowrap}.caw-measure.vertical b{translate:6px -50%}.caw-measure[hidden]{display:none}.caw-toolbar{position:fixed;right:16px;bottom:16px;z-index:calc(var(--caw-z) + 2);display:flex;align-items:center;gap:4px;max-width:calc(100vw - 32px);padding:5px;border-radius:999px;background:#2c2c2c;box-shadow:0 12px 32px rgb(0 0 0 / 0.24),0 2px 6px rgb(0 0 0 / 0.12),inset 0 0 0 1px rgb(255 255 255 / 0.06);font:500 12px/1 var(--caw-ui);color:#fff;transition:opacity 0.4s var(--caw-ease),translate 0.4s var(--caw-ease)}.caw-toolbar button{all:unset;box-sizing:border-box;padding:8px 14px;border-radius:999px;cursor:pointer;white-space:nowrap;color:#d6d6d6;transition:background-color 0.15s,color 0.15s,translate 0.15s var(--caw-ease)}.caw-toolbar button:hover{background:#3d3d3d;color:#fff}.caw-toolbar button:active{background:#474747;translate:0 1px}.caw-toolbar button:focus-visible{outline:2px solid var(--caw-sel);outline-offset:2px}.caw-toolbar button[aria-pressed=\"true\"]{background:#4a4a4a;color:#fff}.caw-toolbar .caw-primary{background:var(--caw-sel);color:#fff}.caw-toolbar .caw-primary:hover{background:#0a84e0}.caw-count{display:flex;align-items:center;gap:7px;padding:0 10px 0 9px;color:#d6d6d6;white-space:nowrap;font-variant-numeric:tabular-nums;animation:caw-fade 0.3s var(--caw-ease)}.caw-count[hidden]{display:none}.caw-count-dots{display:flex}.caw-count-dots:empty{display:none}.caw-count-dots i{width:9px;height:9px;border-radius:50%;box-shadow:0 0 0 1.5px #2c2c2c;transition:background-color 0.3s}.caw-count-dots i + i{margin-left:-3px}.caw-count b{color:#fff;font-weight:600;min-width:2ch;text-align:right}.caw-count-of,.caw-count-label{color:#9a9a9a}@media (max-width:480px){.caw-toolbar{right:12px;bottom:12px;max-width:calc(100vw - 24px);gap:2px}.caw-toolbar button{padding:8px 11px}.caw-count{gap:5px;padding:0 6px 0 7px}.caw-count-label{display:none}}.caw-toolbar[data-mode=\"building\"] :is([data-act=\"live\"],[data-act=\"replay\"]),.caw-toolbar[data-mode=\"built\"] [data-act=\"tour\"],.caw-toolbar[data-mode=\"live\"]>:not([data-act=\"replay\"]){display:none}.caw-toolbar[data-mode=\"live\"]{opacity:0.55}.caw-toolbar[data-mode=\"live\"]:hover,.caw-toolbar[data-mode=\"live\"]:focus-within{opacity:1}.caw-loading .caw-toolbar{translate:0 80px;opacity:0}.caw-live .caw-studio,.caw-live .caw-cursors{opacity:0 !important;visibility:hidden !important}@media (prefers-reduced-motion:reduce){.caw-ui{display:none !important}}" };
 
   // ---- kit.js ----
   CAW.kit = (() => {
@@ -734,11 +734,8 @@
     const layer = make('div', 'caw-ui caw-studio', '<canvas class="caw-ruler"></canvas><canvas class="caw-ruler"></canvas><i class="caw-ruler-corner"></i>');
     layer.setAttribute('aria-hidden', 'true');
     const bar = make('div', 'caw-ui caw-toolbar', `
-      <span class="caw-count" aria-live="off"><span class="caw-count-dots" aria-hidden="true"></span><b>0</b><span class="caw-count-of"> / 0</span><span class="caw-count-label"> at work</span></span>
+      <span class="caw-count" aria-live="off" hidden><span class="caw-count-dots" aria-hidden="true"></span><b>0</b><span class="caw-count-of"> / 0</span><span class="caw-count-label"> at work</span></span>
       <button type="button" data-act="tour" aria-pressed="false">Tour</button>
-      <span class="caw-seg" role="group" aria-label="Build speed">
-        <button type="button" data-speed="1" aria-pressed="true">1×</button><button type="button" data-speed="2" aria-pressed="false">2×</button><button type="button" data-speed="3" aria-pressed="false">3×</button>
-      </span>
       <button type="button" data-act="sound" aria-pressed="true">Sound</button>
       <button type="button" data-act="live" class="caw-primary">Go live</button>
       <button type="button" data-act="replay">Replay</button>`);
@@ -750,9 +747,7 @@
 
     const [top, left] = layer.querySelectorAll('canvas');
     const gridEl = make('div', 'caw-grid');
-    const gridLabel = make('b', 'caw-grid-label');
     layer.prepend(gridEl);
-    layer.append(gridLabel); // sits on the top ruler, never over the page
     const guides = [];
     const measures = new Map();
     let onAction = () => {};
@@ -763,7 +758,7 @@
       const b = e.target.closest('button');
       if (!b) return;
       e.stopPropagation();
-      onAction(b.dataset.act || 'speed', Number(b.dataset.speed) || null);
+      onAction(b.dataset.act);
     });
 
     function fit(canvas, w, h) {
@@ -887,7 +882,6 @@
           col.style.cssText = `left:${a}px;width:${b - a}px;--i:${i}`;
           return col;
         });
-        gridLabel.textContent = `${grid.count} columns · ${grid.gutter}px gutter`;
         gridEl.dataset.breakpoint = grid.breakpoint;
         gridEl.replaceChildren(...cols);
       },
@@ -898,25 +892,27 @@
         drawnKey = '';
       },
 
-      // Toolbar state: 'building' (tour, speed, sound), 'built' (go live, replay, sound), 'live' (replay).
+      // Toolbar state: 'building' (counter, tour, sound), 'built' (sound, go live, replay), 'live' (replay).
       setMode(mode) { bar.dataset.mode = mode; },
       setTour(on) { press('[data-act="tour"]', () => on); },
-      setSpeed(n) { press('[data-speed]', (b) => Number(b.dataset.speed) === n); },
       // The crew counter: dots in the working cursors' colours, then "12 / 16 at work".
+      // Shown only while cursors are actually on a job.
       setCount(working, total, colors) {
         const key = `${bar.dataset.mode}|${working}|${total}|${colors.join()}`;
         if (key === countKey) return;
         countKey = key;
-        const [dots, num, of, label] = bar.querySelector('.caw-count').children;
+        const counter = bar.querySelector('.caw-count');
+        counter.hidden = bar.dataset.mode !== 'building' || !working;
+        if (counter.hidden) return;
+        const [dots, num, of, label] = counter.children;
         dots.replaceChildren(...colors.slice(0, MAX_DOTS).map((c) => {
           const dot = make('i');
           dot.style.background = c;
           return dot;
         }));
         num.textContent = working;
-        const building = bar.dataset.mode === 'building';
-        of.textContent = building ? ` / ${total}` : '';
-        label.textContent = building ? ' at work' : ` cursor${total === 1 ? '' : 's'}`;
+        of.textContent = ` / ${total}`;
+        label.textContent = ' at work';
       },
 
       setSound(label, on) {
@@ -955,7 +951,7 @@
     const SWAP_MS = 320;           // a copied photo or fill is changed to the item's own
     const CATCH_UP_PER_FOLD = 1;   // extra build speed for each screen the viewer is scrolled ahead
     const MAX_CATCH_UP = 4;
-    const TOUR_PX_S = 240;         // Tour scrolls at most this fast (times the speed setting)
+    const TOUR_PX_S = 240;         // Tour scrolls at most this fast
     const TOUR_LEAD = 0.82;        // and keeps the next unbuilt frame this far down the screen
     const START_STAGGER_MS = 1600; // cursors peel off the loader one at a time
     const MIN_LOADER_MS = 1800;
@@ -1001,7 +997,6 @@
     document.body.setAttribute('aria-busy', 'true');
 
     let state = 'loading';
-    let userSpeed = 1;
     let touring = false;
 
     // Each cursor gets its own colour; hues are spread around the wheel so no two look alike.
@@ -1578,9 +1573,8 @@
       Studio.setTour(touring);
     }
 
-    Studio.onAction((act, value) => {
+    Studio.onAction((act) => {
       if (act === 'tour') setTour(!touring);
-      else if (act === 'speed') { userSpeed = value; Studio.setSpeed(value); }
       else if (act === 'sound') Sound.toggle();
       else if (act === 'live') goLive();
       else if (act === 'replay') replay();
@@ -1599,7 +1593,7 @@
       const ahead = next.el.getBoundingClientRect().top - innerHeight * TOUR_LEAD;
       const room = document.documentElement.scrollHeight - innerHeight - scrollY;
       if (ahead <= 0 || room <= 0) return;
-      scrollTo({ top: scrollY + Math.min(ahead, room, TOUR_PX_S * userSpeed * dt), behavior: 'instant' });
+      scrollTo({ top: scrollY + Math.min(ahead, room, TOUR_PX_S * dt), behavior: 'instant' });
     }
 
     // Scroll fast and more cursors join, flying in from the edge you're scrolling toward.
@@ -1617,7 +1611,7 @@
       cursors.push(c);
     }
 
-    // The build runs on its own clock: the speed setting, plus a catch-up boost while the
+    // The build runs on its own clock, with a catch-up boost while the
     // viewer is scrolled ahead of what's being built.
     let last = performance.now();
     let buildTime = last;
@@ -1637,7 +1631,7 @@
       const realDt = Math.min(1 / 30, (now - last) / 1000);
       last = now;
       if (state === 'building' && now >= speedCheckAt) {
-        speedTarget = catchUpSpeed() * userSpeed;
+        speedTarget = catchUpSpeed();
         speedCheckAt = now + 200;
       }
       speed += (speedTarget - speed) * Math.min(1, realDt * 3);
@@ -1691,7 +1685,7 @@
     columns: 'auto',     // layout grid: 'auto' (4 / 8 / 8–12 by screen and layout) or a number
     grid: true,          // show the layout grid
     sound: true,         // synthesized sounds (still need a first tap or key to unlock)
-    toolbar: true,       // Tour, speed, Sound, Go live, Replay
+    toolbar: true,       // crew counter, Tour, Sound; Go live and Replay once built
     skip: null,          // CSS selector for elements to leave out of the build
     root: null,          // element to build (defaults to <body>)
     respectReducedMotion: true,
@@ -1785,6 +1779,8 @@
     goLive: () => running?.goLive(),
     tour: (on = true) => running?.tour(on),
     get state() { return running ? running.state : 'idle'; },
+    // The page as read: { ops, frames }, for inspecting what will be built and in what order.
+    get plan() { return running ? running.plan : null; },
   };
 
   const me = document.currentScript;

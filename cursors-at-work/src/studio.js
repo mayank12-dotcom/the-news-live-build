@@ -15,11 +15,8 @@ CAW.studio = (options = {}) => {
   const layer = make('div', 'caw-ui caw-studio', '<canvas class="caw-ruler"></canvas><canvas class="caw-ruler"></canvas><i class="caw-ruler-corner"></i>');
   layer.setAttribute('aria-hidden', 'true');
   const bar = make('div', 'caw-ui caw-toolbar', `
-    <span class="caw-count" aria-live="off"><span class="caw-count-dots" aria-hidden="true"></span><b>0</b><span class="caw-count-of"> / 0</span><span class="caw-count-label"> at work</span></span>
+    <span class="caw-count" aria-live="off" hidden><span class="caw-count-dots" aria-hidden="true"></span><b>0</b><span class="caw-count-of"> / 0</span><span class="caw-count-label"> at work</span></span>
     <button type="button" data-act="tour" aria-pressed="false">Tour</button>
-    <span class="caw-seg" role="group" aria-label="Build speed">
-      <button type="button" data-speed="1" aria-pressed="true">1×</button><button type="button" data-speed="2" aria-pressed="false">2×</button><button type="button" data-speed="3" aria-pressed="false">3×</button>
-    </span>
     <button type="button" data-act="sound" aria-pressed="true">Sound</button>
     <button type="button" data-act="live" class="caw-primary">Go live</button>
     <button type="button" data-act="replay">Replay</button>`);
@@ -31,9 +28,7 @@ CAW.studio = (options = {}) => {
 
   const [top, left] = layer.querySelectorAll('canvas');
   const gridEl = make('div', 'caw-grid');
-  const gridLabel = make('b', 'caw-grid-label');
   layer.prepend(gridEl);
-  layer.append(gridLabel); // sits on the top ruler, never over the page
   const guides = [];
   const measures = new Map();
   let onAction = () => {};
@@ -44,7 +39,7 @@ CAW.studio = (options = {}) => {
     const b = e.target.closest('button');
     if (!b) return;
     e.stopPropagation();
-    onAction(b.dataset.act || 'speed', Number(b.dataset.speed) || null);
+    onAction(b.dataset.act);
   });
 
   function fit(canvas, w, h) {
@@ -168,7 +163,6 @@ CAW.studio = (options = {}) => {
         col.style.cssText = `left:${a}px;width:${b - a}px;--i:${i}`;
         return col;
       });
-      gridLabel.textContent = `${grid.count} columns · ${grid.gutter}px gutter`;
       gridEl.dataset.breakpoint = grid.breakpoint;
       gridEl.replaceChildren(...cols);
     },
@@ -179,25 +173,27 @@ CAW.studio = (options = {}) => {
       drawnKey = '';
     },
 
-    // Toolbar state: 'building' (tour, speed, sound), 'built' (go live, replay, sound), 'live' (replay).
+    // Toolbar state: 'building' (counter, tour, sound), 'built' (sound, go live, replay), 'live' (replay).
     setMode(mode) { bar.dataset.mode = mode; },
     setTour(on) { press('[data-act="tour"]', () => on); },
-    setSpeed(n) { press('[data-speed]', (b) => Number(b.dataset.speed) === n); },
     // The crew counter: dots in the working cursors' colours, then "12 / 16 at work".
+    // Shown only while cursors are actually on a job.
     setCount(working, total, colors) {
       const key = `${bar.dataset.mode}|${working}|${total}|${colors.join()}`;
       if (key === countKey) return;
       countKey = key;
-      const [dots, num, of, label] = bar.querySelector('.caw-count').children;
+      const counter = bar.querySelector('.caw-count');
+      counter.hidden = bar.dataset.mode !== 'building' || !working;
+      if (counter.hidden) return;
+      const [dots, num, of, label] = counter.children;
       dots.replaceChildren(...colors.slice(0, MAX_DOTS).map((c) => {
         const dot = make('i');
         dot.style.background = c;
         return dot;
       }));
       num.textContent = working;
-      const building = bar.dataset.mode === 'building';
-      of.textContent = building ? ` / ${total}` : '';
-      label.textContent = building ? ' at work' : ` cursor${total === 1 ? '' : 's'}`;
+      of.textContent = ` / ${total}`;
+      label.textContent = ' at work';
     },
 
     setSound(label, on) {

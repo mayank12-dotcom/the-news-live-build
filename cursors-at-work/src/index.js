@@ -8,7 +8,7 @@ const DEFAULTS = {
   columns: 'auto',     // layout grid: 'auto' (4 / 8 / 8–12 by screen and layout) or a number
   grid: true,          // show the layout grid
   sound: true,         // synthesized sounds (still need a first tap or key to unlock)
-  toolbar: true,       // Tour, speed, Sound, Go live, Replay
+  toolbar: true,       // crew counter, Tour, Sound; Go live and Replay once built
   skip: null,          // CSS selector for elements to leave out of the build
   root: null,          // element to build (defaults to <body>)
   respectReducedMotion: true,
@@ -102,6 +102,8 @@ const api = {
   goLive: () => running?.goLive(),
   tour: (on = true) => running?.tour(on),
   get state() { return running ? running.state : 'idle'; },
+  // The page as read: { ops, frames }, for inspecting what will be built and in what order.
+  get plan() { return running ? running.plan : null; },
 };
 
 const me = document.currentScript;
