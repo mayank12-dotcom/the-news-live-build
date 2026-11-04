@@ -27,8 +27,8 @@ CAW.run = (config) => {
   const START_STAGGER_MS = 1600; // cursors peel off the loader one at a time
   const MIN_LOADER_MS = 1800;
   const MAX_LOADER_MS = 8000;
-  const LOADER_RX = 118;         // the cursors orbit the logo in a loose ellipse
-  const LOADER_RY = 64;
+  const LOADER_RX = 46;          // the cursors orbit the screen's centre in a tight circle
+  const LOADER_RY = 46;
   const HEADING_START_PX = 18;   // big type is typed at 18px, then stepped up
   const GROW_STEPS = 4;
   const GROW_STEP_MS = 110;
@@ -49,7 +49,8 @@ CAW.run = (config) => {
   const loaderEl = Object.assign(document.createElement('div'), { className: 'caw-ui caw-loader' });
   layerEl.setAttribute('aria-hidden', 'true');
   loaderEl.setAttribute('aria-hidden', 'true');
-  const logo = config.logo || document.querySelector('link[rel~="icon"]')?.href;
+  // No mark with logo: false; otherwise the given one, else the favicon.
+  const logo = config.logo === false ? null : config.logo || document.querySelector('link[rel~="icon"]')?.href;
   const scanRoot = config.root || document.body;
   if (logo) loaderEl.innerHTML = `<img class="caw-loader-mark" src="${encodeURI(logo)}" alt="">`;
   // Waiting for the visitor: the build starts on their first scroll (or Tour).

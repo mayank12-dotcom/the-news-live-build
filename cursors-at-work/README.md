@@ -50,7 +50,7 @@ Pass them to `start()`, or as data attributes on the script tag (`maxCursors` be
 
 | Option | Default | What it does |
 | --- | --- | --- |
-| `logo` | the favicon | Mark the cursors orbit on the intro |
+| `logo` | the favicon | Mark the cursors orbit on the intro; `false` (`data-logo="none"`) for just the cursors |
 | `cursors` | `16` | Cursors at the start (1–64) |
 | `maxCursors` | `32` | Fast scrolling brings in more, up to this many |
 | `typingSpeed` | `40` | Average characters per second |
@@ -90,7 +90,7 @@ All of the plugin's classes, attributes and CSS variables start with `caw-`. Its
 
 ## What the visitor sees
 
-1. **Intro.** The page clears to a blank canvas and the cursors orbit your logo, with a "Scroll to start" hint. Nothing is built until the visitor scrolls (or presses Tour).
+1. **Intro.** The page clears to a blank canvas and the cursors orbit in a tight circle (around your logo, if you set one), with a "Scroll to start" hint. Nothing is built until the visitor scrolls (or presses Tour).
 2. **Build.** Figma rulers slide in and your layout grid drops in column by column, with no labels over your page. The cursors fan out:
    - Boxes are crosshair-dragged as grey placeholders with a W×H badge, then filled. Photos sweep in.
    - Text boxes are dragged out, then typed into. Big headings start at 18px and step up to size.

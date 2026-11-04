@@ -1,7 +1,7 @@
 // Public API. On a <script> tag it starts by itself (unless it has data-manual);
 // from a bundler, call CursorsAtWork.start(options).
 const DEFAULTS = {
-  logo: null,          // the mark the cursors orbit on the intro (defaults to the favicon)
+  logo: null,          // the mark the cursors orbit on the intro (defaults to the favicon; false for none)
   cursors: 16,         // cursors at the start
   maxCursors: 32,      // fast scrolling brings in more, up to this many
   typingSpeed: 40,     // average characters per second
@@ -49,7 +49,7 @@ function fromDataset(d) {
   const num = (v) => (v === undefined || v === '' || Number.isNaN(Number(v)) ? undefined : Number(v));
   const off = (v) => (v === undefined ? undefined : v !== 'off' && v !== 'false');
   const options = {
-    logo: d.logo ? new URL(d.logo, document.baseURI).href : undefined,
+    logo: d.logo === 'none' || d.logo === 'off' ? false : d.logo ? new URL(d.logo, document.baseURI).href : undefined,
     cursors: num(d.cursors),
     maxCursors: num(d.maxCursors),
     typingSpeed: num(d.typingSpeed),
