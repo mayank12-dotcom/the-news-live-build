@@ -1,0 +1,20 @@
+{
+  "name": "cursors-at-work",
+  "version": "1.0.0",
+  "description": "Drop-in plugin: your page builds itself live, by a crew of Figma-style multiplayer cursors.",
+  "keywords": ["animation", "cursors", "figma", "multiplayer", "page-builder", "scroll", "intro", "plugin", "vanilla-js"],
+  "license": "MIT",
+  "author": "mayank12-dotcom",
+  "homepage": "https://github.com/mayank12-dotcom/cursors-at-work",
+  "repository": { "type": "git", "url": "git+https://github.com/mayank12-dotcom/cursors-at-work.git" },
+  "bugs": { "url": "https://github.com/mayank12-dotcom/cursors-at-work/issues" },
+  "main": "dist/cursors-at-work.js",
+  "browser": "dist/cursors-at-work.js",
+  "unpkg": "dist/cursors-at-work.js",
+  "jsdelivr": "dist/cursors-at-work.js",
+  "files": ["dist", "src", "README.md", "LICENSE"],
+  "sideEffects": true,
+  "scripts": {
+    "build": "node build.mjs"
+  }
+}

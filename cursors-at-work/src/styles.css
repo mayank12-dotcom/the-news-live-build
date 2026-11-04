@@ -1,0 +1,162 @@
+/* Cursors at Work: everything is prefixed caw- so it can sit on any site. */
+:root {
+  --caw-sel: #0d99ff;
+  --caw-red: #f24822;
+  --caw-ease: cubic-bezier(0.16, 1, 0.3, 1);
+  --caw-ui: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --caw-z: 2147483000;
+}
+
+/* ---------- layers waiting to be built ---------- */
+/* A box's own paint is hidden until it's drawn; its contents are separate layers. */
+.caw-paint {
+  background-color: transparent !important; background-image: none !important;
+  border-color: transparent !important; box-shadow: none !important; outline-color: transparent !important;
+}
+.caw-filled, .caw-restyled { transition: background-color 0.35s var(--caw-ease), border-color 0.35s, box-shadow 0.35s; }
+.caw-edge-top { border-top-color: transparent !important; }
+.caw-edge-right { border-right-color: transparent !important; }
+.caw-edge-bottom { border-bottom-color: transparent !important; }
+.caw-edge-left { border-left-color: transparent !important; }
+.caw-hide { opacity: 0 !important; }
+.caw-reveal { animation: caw-fade 0.35s var(--caw-ease); }
+img.caw-reveal, video.caw-reveal, canvas.caw-reveal { animation: caw-fade 0.35s var(--caw-ease), caw-sweep 0.55s var(--caw-ease); }
+@keyframes caw-fade { from { opacity: 0; } }
+@keyframes caw-sweep { from { clip-path: inset(0 0 100% 0); } }
+
+/* Text keeps its full layout while typing: the untyped rest is there, just invisible. */
+.caw-ghost { color: transparent !important; -webkit-text-fill-color: transparent !important; text-decoration-color: transparent !important; text-shadow: none !important; }
+.caw-caret {
+  display: inline-block; width: 0; height: 0.95em; vertical-align: -0.12em;
+  box-shadow: 0 0 0 1px var(--c, var(--caw-sel));
+  visibility: hidden;
+}
+.caw-typing .caw-caret { visibility: visible; }
+.caw-growing { transform-origin: left top; }
+.caw-snap-x { animation: caw-snap-x 0.22s var(--caw-ease); }
+.caw-snap-y { animation: caw-snap-y 0.22s var(--caw-ease); }
+@keyframes caw-snap-x { from { translate: 5px 0; } }
+@keyframes caw-snap-y { from { translate: 0 4px; } }
+/* A copy being dragged into place, its copied text selected, its photo replaced. */
+.caw-dragging { position: relative; z-index: 5; background-color: var(--caw-canvas, #fff); box-shadow: 0 10px 28px rgb(32 33 36 / 0.14); }
+.caw-selecting .caw-typed:first-child { background: color-mix(in srgb, var(--hl) 26%, transparent); }
+.caw-swapped { animation: caw-swap 0.32s var(--caw-ease); }
+@keyframes caw-swap { from { opacity: 0.3; } }
+
+/* ---------- intro: a blank canvas, the cursors circling the logo ---------- */
+.caw-loader {
+  position: fixed; inset: 0; z-index: calc(var(--caw-z) - 2);
+  background: var(--caw-canvas, #fff); opacity: 0; visibility: hidden; pointer-events: none;
+  transition: opacity 0.7s var(--caw-ease), visibility 0.7s;
+}
+.caw-loading .caw-loader { opacity: 1; visibility: visible; }
+.caw-loader-mark {
+  position: absolute; left: 50%; top: 50%; width: 172px; max-width: calc(100vw - 140px); height: auto; translate: -50% -50%;
+  opacity: 0.16; filter: grayscale(1); animation: caw-breathe 2.4s ease-in-out infinite alternate;
+}
+@keyframes caw-breathe { to { opacity: 0.3; } }
+
+/* ---------- cursors and selections ---------- */
+.caw-cursors { position: fixed; inset: 0; z-index: calc(var(--caw-z) + 1); overflow: hidden; pointer-events: none; transition: opacity 0.5s var(--caw-ease), visibility 0.5s; }
+.caw-cursors > * { position: absolute; left: 0; top: 0; }
+.caw-cursor { will-change: transform; }
+.caw-cursor .ico { position: absolute; display: none; overflow: visible; }
+.caw-cursor .ico-pointer { left: -2px; top: -2px; }
+.caw-cursor .ico-pointer path { fill: var(--c); }
+.caw-cursor .ico-pointer .rim { fill: #fff; }
+.caw-cursor .ico-text { left: -7px; top: -12px; }
+.caw-cursor .ico-draw { left: -11px; top: -11px; }
+.caw-cursor .ico-pen { left: -1.5px; top: -1.5px; }
+.caw-cursor .ico-pen .nib { fill: var(--c); stroke: #fff; stroke-width: 1.4; stroke-linejoin: round; }
+.caw-cursor .ico-pen circle { fill: #fff; }
+.caw-cursor .ico-text path, .caw-cursor .ico-draw path { fill: none; stroke: var(--c); stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+.caw-cursor .ico-text .halo, .caw-cursor .ico-draw .halo { stroke: #fff; stroke-width: 4.5; }
+.mode-pointer .ico-pointer, .mode-text .ico-text, .mode-draw .ico-draw, .mode-pen .ico-pen,
+.mode-copy .ico-pointer, .mode-copy .ico-copy { display: block !important; }
+.caw-cursor .ico-copy { left: 13px; top: 15px; }
+.caw-cursor .ico-copy circle { fill: var(--c); stroke: #fff; stroke-width: 1; }
+.caw-cursor .ico-copy path { stroke: #fff; stroke-width: 1.4; stroke-linecap: round; }
+
+/* Layer selection: 1px box, square handles, dimension pill. */
+.caw-sel { display: none; box-shadow: inset 0 0 0 1px var(--c), 0 0 0 0.5px var(--c); }
+.caw-sel.on { display: block; }
+.caw-sel i { position: absolute; width: 7px; height: 7px; background: #fff; border: 1px solid var(--c); }
+.caw-sel .tl { left: -3px; top: -3px; }
+.caw-sel .tr { right: -3px; top: -3px; }
+.caw-sel .bl { left: -3px; bottom: -3px; }
+.caw-sel .br { right: -3px; bottom: -3px; }
+.caw-dim {
+  position: absolute; left: 50%; top: 100%; margin-top: 6px; transform: translateX(-50%);
+  padding: 2px 5px; border-radius: 3px; background: var(--c); color: #fff;
+  font: 500 11px/1.3 var(--caw-ui); white-space: nowrap;
+}
+.caw-dim:empty, .caw-sel.text i { display: none; }
+.caw-sel.fill { background: #d9d9d9; }
+/* Pen tool: a rubber band in the cursor's colour between two round anchors. */
+.caw-sel.pen { box-shadow: none; background: var(--c); }
+.caw-sel.pen i { border-radius: 50%; }
+.caw-sel.pen .tr, .caw-sel.pen .bl { display: none; }
+
+/* ---------- rulers, guides, measurements ---------- */
+.caw-studio { position: fixed; inset: 0; z-index: var(--caw-z); overflow: hidden; pointer-events: none; opacity: 0; visibility: hidden; transition: opacity 0.6s var(--caw-ease), visibility 0.6s; }
+html:not(.caw-loading):not(.caw-pending) .caw-studio { opacity: 1; visibility: visible; }
+.caw-studio > * { position: absolute; left: 0; top: 0; }
+/* Layout grid: translucent columns over the content box, dropping in one by one. */
+.caw-grid { position: absolute; inset: 0; }
+.caw-grid i {
+  position: absolute; top: 0; bottom: 0; background: rgb(242 72 34 / 0.05);
+  box-shadow: inset 1px 0 rgb(242 72 34 / 0.16), inset -1px 0 rgb(242 72 34 / 0.16);
+  transform-origin: top; animation: caw-column 0.7s var(--caw-ease) both; animation-delay: calc(var(--i) * 45ms);
+}
+@keyframes caw-column { from { transform: scaleY(0); } }
+.caw-grid-label {
+  position: absolute; right: 8px; top: 24px; padding: 3px 7px; border-radius: 4px;
+  background: #2c2c2c; color: #ffb3a3; font: 500 10px/1.3 var(--caw-ui); white-space: nowrap;
+}
+.caw-ruler-corner { width: 18px; height: 18px; background: #2c2c2c; box-shadow: 1px 1px 0 #444; }
+.caw-guide { background: var(--caw-red); opacity: 0.7; }
+.caw-guide-x { width: 1px; height: 100%; }
+.caw-guide-y { width: 100%; height: 1px; }
+.caw-guide.moving { opacity: 1; }
+.caw-guide.gone { opacity: 0; transition: opacity 0.4s var(--caw-ease); }
+.caw-measure { background: var(--caw-red); }
+.caw-measure b {
+  position: absolute; left: 50%; top: 50%; translate: -50% -50%;
+  padding: 1px 4px; border-radius: 2px; background: var(--caw-red); color: #fff;
+  font: 500 10px/1.3 var(--caw-ui); white-space: nowrap;
+}
+.caw-measure.vertical b { translate: 6px -50%; }
+.caw-measure[hidden] { display: none; }
+
+/* ---------- toolbar ---------- */
+.caw-toolbar {
+  position: fixed; left: 50%; bottom: 16px; z-index: calc(var(--caw-z) + 2); translate: -50% 0;
+  display: flex; align-items: center; gap: 4px; max-width: calc(100vw - 32px); padding: 4px;
+  border-radius: 12px; background: #2c2c2c; box-shadow: 0 10px 30px rgb(0 0 0 / 0.22), inset 0 0 0 1px rgb(255 255 255 / 0.06);
+  font: 500 12px/1 var(--caw-ui); color: #fff;
+  transition: opacity 0.4s var(--caw-ease), translate 0.4s var(--caw-ease);
+}
+.caw-toolbar button {
+  all: unset; box-sizing: border-box; padding: 8px 11px; border-radius: 8px; cursor: pointer; white-space: nowrap;
+  color: #d6d6d6; transition: background-color 0.15s, color 0.15s;
+}
+.caw-toolbar button:hover { background: #3d3d3d; color: #fff; }
+.caw-toolbar button:active { background: #474747; }
+.caw-toolbar button:focus-visible { outline: 2px solid var(--caw-sel); outline-offset: 1px; }
+.caw-toolbar button[aria-pressed="true"] { background: #4a4a4a; color: #fff; }
+.caw-toolbar .caw-primary { background: var(--caw-sel); color: #fff; }
+.caw-toolbar .caw-primary:hover { background: #0a84e0; }
+.caw-seg { display: flex; gap: 2px; padding-inline: 4px; border-inline: 1px solid #444; }
+.caw-toolbar[data-mode="building"] :is([data-act="live"], [data-act="replay"]),
+.caw-toolbar[data-mode="built"] :is([data-act="tour"], .caw-seg),
+.caw-toolbar[data-mode="live"] > :not([data-act="replay"]) { display: none; }
+.caw-toolbar[data-mode="live"] { opacity: 0.55; }
+.caw-toolbar[data-mode="live"]:hover, .caw-toolbar[data-mode="live"]:focus-within { opacity: 1; }
+.caw-loading .caw-toolbar { translate: -50% 80px; opacity: 0; }
+
+/* ---------- going live: the real page, chrome gone ---------- */
+.caw-live .caw-studio, .caw-live .caw-cursors { opacity: 0 !important; visibility: hidden !important; }
+
+@media (prefers-reduced-motion: reduce) {
+  .caw-ui { display: none !important; }
+}

@@ -4,8 +4,11 @@ Uses Google News' public RSS feeds for the same edition as
 https://news.google.com/home?hl=en-IN&gl=IN&ceid=IN:en — one feed per section.
 Each new story is then resolved to the publisher's article, and its link-preview
 metadata (og:image, og:description) is recorded. Results are cached by story id,
-so a story is only looked up once. Each publisher's logo is saved to
-assets/logos/<host>.png (once) for the footer's source marquee.
+so a story is only looked up once. Each story's preview photo is downloaded into
+assets/news/<id>.jpg (resized when Pillow is installed) so the site never loads
+images from other servers; photos of stories that have dropped out are removed.
+Each publisher's logo is saved to assets/logos/<host>.png (once) for the footer's
+source marquee.
 Run by .github/workflows/news.yml every 2 hours; also safe to run by hand:
     python3 tools/fetch_news.py
 """
@@ -155,6 +158,71 @@ def enrich(feeds, previous):
     return len(fresh)
 
 
+PHOTOS = ROOT / "assets" / "news"
+PHOTO_MAX_BYTES = 6_000_000   # skip anything bigger than this
+PHOTO_WIDTH = 960             # resized to at most this wide (needs Pillow)
+PHOTO_TYPES = ((b"\xff\xd8\xff", "jpg"), (b"\x89PNG\r\n\x1a\n", "png"), (b"GIF8", "gif"), (b"RIFF", "webp"))
+
+
+def photo_kind(data):
+    for magic, kind in PHOTO_TYPES:
+        if data.startswith(magic) and (kind != "webp" or data[8:12] == b"WEBP"):
+            return kind
+    return None
+
+
+def shrink(data):
+    """Resize to PHOTO_WIDTH as a progressive JPEG when Pillow is available; otherwise keep as is."""
+    try:
+        from io import BytesIO
+        from PIL import Image
+    except ImportError:
+        return data
+    img = Image.open(BytesIO(data))
+    img.thumbnail((PHOTO_WIDTH, PHOTO_WIDTH * 2))
+    out = BytesIO()
+    img.convert("RGB").save(out, "JPEG", quality=78, optimize=True, progressive=True)
+    return out.getvalue()
+
+
+def save_photo(item):
+    """Download one story's photo into the site; returns the saved file, or None to use the design photo."""
+    sid, url = item
+    existing = next(PHOTOS.glob(f"{sid}.*"), None)
+    if existing:
+        return existing
+    req = urllib.request.Request(url, headers={"User-Agent": BROWSER_UA})
+    try:
+        with urllib.request.urlopen(req, timeout=20) as res:
+            data = res.read(PHOTO_MAX_BYTES + 1)
+        if len(data) > PHOTO_MAX_BYTES or not photo_kind(data):
+            return None
+        data = shrink(data)
+    except Exception:  # blocked, gone or not an image: the slot keeps its design photo
+        return None
+    path = PHOTOS / f"{sid}.{photo_kind(data)}"
+    path.write_bytes(data)
+    return path
+
+
+def fetch_photos(feeds):
+    """Give every story with a publisher image a local copy; delete copies no story uses any more."""
+    PHOTOS.mkdir(parents=True, exist_ok=True)
+    wanted = {s["id"]: s["image"] for v in feeds.values() for s in v if s.get("image")}
+    before = {p.name for p in PHOTOS.iterdir()}
+    with ThreadPoolExecutor(LOOKUP_WORKERS) as pool:
+        saved = dict(zip(wanted, pool.map(save_photo, wanted.items())))
+    for stories in feeds.values():
+        for s in stories:
+            path = saved.get(s["id"])
+            s["photo"] = f"assets/news/{path.name}" if path else None
+    keep = {p.name for p in saved.values() if p}
+    for p in PHOTOS.iterdir():
+        if p.name not in keep:
+            p.unlink()
+    return len(keep - before), len(before - keep)
+
+
 LOGOS = ROOT / "assets" / "logos"
 LOGO_URL = "https://www.google.com/s2/favicons?domain={host}&sz=128"
 
@@ -198,12 +266,14 @@ def main():
     if all(not stories for stories in feeds.values()):
         sys.exit("No feeds could be fetched:\n" + "\n".join(failed))
     looked_up = enrich(feeds, previous)
+    added, removed = fetch_photos(feeds)
     OUT.write_text(json.dumps({"updated": datetime.now(IST).isoformat(timespec="minutes"), "feeds": feeds},
                               indent=2, ensure_ascii=False) + "\n")
     print(f"wrote {OUT.relative_to(ROOT)}: " + ", ".join(f"{k} {len(v)}" for k, v in feeds.items()))
     with_image = sum(1 for v in feeds.values() for s in v if s.get("image"))
     total = sum(len(v) for v in feeds.values())
     print(f"looked up {looked_up} new stories; {with_image}/{total} have a publisher image")
+    print(f"photos: {added} downloaded, {removed} removed")
     print(f"saved {fetch_logos(feeds)} new publisher logos")
     for line in failed:
         print("kept previous copy for", line, file=sys.stderr)

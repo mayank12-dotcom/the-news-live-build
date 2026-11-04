@@ -19,7 +19,7 @@
   // A static copy of the page as it looks right now, without the live cursor layer or scripts.
   function snapshot(root) {
     const copy = root.cloneNode(true);
-    copy.querySelectorAll('.swarm-ui, .turn-layer, script').forEach((n) => n.remove());
+    copy.querySelectorAll('.caw-ui, .turn-layer, script').forEach((n) => n.remove());
     copy.querySelectorAll('img[loading="lazy"]').forEach((n) => n.removeAttribute('loading'));
     return copy.innerHTML;
   }
@@ -64,7 +64,7 @@
     layer.className = 'turn-layer';
     layer.setAttribute('aria-hidden', 'true');
     layer.inert = true;
-    layer.dataset.swarmSkip = ''; // the swarm builds the page, not this snapshot of the last one
+    layer.dataset.cawSkip = ''; // the cursors build the page, not this snapshot of the last one
     const book = document.createElement('div');
     layer.append(book);
     document.body.append(layer);

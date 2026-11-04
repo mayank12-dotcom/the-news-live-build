@@ -83,8 +83,8 @@ def img(name, cls="", alt="", lazy=True, slot=None, remote=None):
     w, h = image_size(name)
     attrs = f' class="{cls}"' if cls else ""
     loading = ' loading="lazy"' if lazy else ' fetchpriority="high"'
-    # A remote publisher photo falls back to the design photo if it fails (see app.js).
-    src = (f'src="{esc(remote)}" data-fallback="assets/{name}" referrerpolicy="no-referrer"' if remote
+    # A story's own photo (saved locally by fetch_news) falls back to the design photo if it fails (see site.js).
+    src = (f'src="{esc(remote)}" data-fallback="assets/{name}"' if remote
            else f'src="assets/{name}"')
     return f'<img{attrs} {src}{bind(slot, "image")} width="{w}" height="{h}" alt="{esc(alt)}"{loading}>'
 
@@ -267,11 +267,11 @@ def story_main(pages, feed, i, s, stories):
     more = [(j, o) for j, o in enumerate(stories) if o["id"] != s["id"]][i:i + 3] or \
            [(j, o) for j, o in enumerate(stories) if o["id"] != s["id"]][:3]
     cards = "\n".join(card({"title": o["title"], "author": o["source"], "date": o["date"],
-                            "img": story_photo(pages, feed, j), "remote": o.get("image")},
+                            "img": story_photo(pages, feed, j), "remote": o.get("photo")},
                            href=story_href(o)) for j, o in more)
     return f'''  <main id="top" class="wrap article-page">
     <article class="article" aria-labelledby="page-title">
-      <div class="media article-hero" data-draw>{img(story_photo(pages, feed, i), lazy=False, remote=s.get("image"))}</div>
+      <div class="media article-hero" data-draw>{img(story_photo(pages, feed, i), lazy=False, remote=s.get("photo"))}</div>
       <div class="byline">
         <span class="rule" data-draw></span>
         <div class="byline-row">
@@ -352,9 +352,9 @@ def fill_news():
     def image(m):
         fallback = m.group(2) or m.group(1)
         s = story(m.group(3), m.group(4))
-        if not s or not s.get("image"):
+        if not s or not s.get("photo"):
             return f'<img src="{fallback}" data-news="{m.group(3)}:{m.group(4)}" data-news-field="image"'
-        return (f'<img src="{esc(s["image"])}" data-fallback="{fallback}" referrerpolicy="no-referrer" '
+        return (f'<img src="{esc(s["photo"])}" data-fallback="{fallback}" '
                 f'data-news="{m.group(3)}:{m.group(4)}" data-news-field="image"')
 
     for page in sorted(ROOT.glob("*.html")):

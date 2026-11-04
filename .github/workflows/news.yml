@@ -25,6 +25,10 @@ jobs:
         with:
           python-version: "3.12"
 
+      # Pillow only shrinks the story photos saved into the site; the pages need nothing at runtime.
+      - name: Install Pillow
+        run: python3 -m pip install --quiet pillow
+
       - name: Fetch headlines and rebuild pages
         run: |
           python3 tools/fetch_news.py
