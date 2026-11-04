@@ -109,10 +109,11 @@ html:not(.caw-loading):not(.caw-pending) .caw-studio { opacity: 1; visibility: v
   transform-origin: top; animation: caw-column 0.7s var(--caw-ease) both; animation-delay: calc(var(--i) * 45ms);
 }
 @keyframes caw-column { from { transform: scaleY(0); } }
-.caw-grid-label {
-  position: absolute; right: 8px; top: 24px; padding: 3px 7px; border-radius: 4px;
-  background: #2c2c2c; color: #ffb3a3; font: 500 10px/1.3 var(--caw-ui); white-space: nowrap;
+.caw-studio > .caw-grid-label {
+  left: auto; right: 4px; top: 2px; padding: 1px 6px; border-radius: 3px;
+  background: #444; color: #ffb3a3; font: 500 10px/1.4 var(--caw-ui); white-space: nowrap;
 }
+.caw-grid-label:empty { display: none; }
 .caw-ruler-corner { width: 18px; height: 18px; background: #2c2c2c; box-shadow: 1px 1px 0 #444; }
 .caw-guide { background: var(--caw-red); opacity: 0.7; }
 .caw-guide-x { width: 1px; height: 100%; }

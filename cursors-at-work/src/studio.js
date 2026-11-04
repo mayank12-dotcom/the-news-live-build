@@ -33,6 +33,7 @@ CAW.studio = (options = {}) => {
   const gridEl = make('div', 'caw-grid');
   const gridLabel = make('b', 'caw-grid-label');
   layer.prepend(gridEl);
+  layer.append(gridLabel); // sits on the top ruler, never over the page
   const guides = [];
   const measures = new Map();
   let onAction = () => {};
@@ -169,7 +170,7 @@ CAW.studio = (options = {}) => {
       });
       gridLabel.textContent = `${grid.count} columns · ${grid.gutter}px gutter`;
       gridEl.dataset.breakpoint = grid.breakpoint;
-      gridEl.replaceChildren(...cols, gridLabel);
+      gridEl.replaceChildren(...cols);
     },
 
     reset() {
