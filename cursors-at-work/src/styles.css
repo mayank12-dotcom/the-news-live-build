@@ -46,7 +46,7 @@ img.caw-reveal, video.caw-reveal, canvas.caw-reveal { animation: caw-fade 0.35s 
 /* ---------- intro: a blank canvas, the cursors circling the logo ---------- */
 .caw-loader {
   position: fixed; inset: 0; z-index: calc(var(--caw-z) - 2);
-  background: var(--caw-canvas, #fff); opacity: 0; visibility: hidden; pointer-events: none;
+  background: var(--caw-intro, #141414); opacity: 0; visibility: hidden; pointer-events: none;
   transition: opacity 0.7s var(--caw-ease), visibility 0.7s;
 }
 .caw-loading .caw-loader { opacity: 1; visibility: visible; }
@@ -60,7 +60,7 @@ html.caw-loading { overflow: hidden; }
 .caw-loader-hint {
   position: absolute; left: 50%; bottom: 84px; translate: -50% 8px; margin: 0;
   display: flex; flex-direction: column; align-items: center; gap: 10px;
-  color: #8a8a8a; font: 500 12px/1 var(--caw-ui); letter-spacing: 0.4px; opacity: 0;
+  color: rgb(255 255 255 / 0.55); font: 500 12px/1 var(--caw-ui); letter-spacing: 0.4px; opacity: 0;
   transition: opacity 0.6s var(--caw-ease), translate 0.6s var(--caw-ease);
 }
 .caw-waiting .caw-loader-hint { opacity: 1; translate: -50% 0; }

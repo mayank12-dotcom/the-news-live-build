@@ -1,6 +1,7 @@
 // Public API. On a <script> tag it starts by itself (unless it has data-manual);
 // from a bundler, call CursorsAtWork.start(options).
 const DEFAULTS = {
+  introColor: '#141414', // the intro's background (any CSS colour)
   logo: null,          // the mark the cursors orbit on the intro (defaults to the favicon; false for none)
   cursors: 16,         // cursors at the start
   maxCursors: 32,      // fast scrolling brings in more, up to this many
@@ -25,10 +26,12 @@ let starting = false;
 const release = () => document.documentElement.classList.remove('caw-pending');
 
 // Blank the page right away; the engine takes over once it has read the layout.
-function hold() {
+// The blank is already the intro's colour, so there's no light flash before it.
+function hold(color) {
   if (!document.getElementById(HOLD_ID)) {
     const style = Object.assign(document.createElement('style'), { id: HOLD_ID });
-    style.textContent = 'html.caw-pending body > :not([data-caw-skip]) { clip-path: inset(0 0 100% 0) !important; }';
+    style.textContent = 'html.caw-pending body > :not([data-caw-skip]) { clip-path: inset(0 0 100% 0) !important; }'
+      + `html.caw-pending, html.caw-pending body { background: ${color} !important; }`;
     (document.head || document.documentElement).append(style);
   }
   document.documentElement.classList.add('caw-pending');
@@ -44,11 +47,12 @@ function injectStyles() {
 
 // Options from a script tag's data attributes: data-logo, data-cursors, data-max-cursors,
 // data-typing-speed, data-columns, data-grid="off", data-sound="off", data-toolbar="off",
-// data-auto-live="off", data-start-on="load", data-skip.
+// data-auto-live="off", data-start-on="load", data-intro-color, data-skip.
 function fromDataset(d) {
   const num = (v) => (v === undefined || v === '' || Number.isNaN(Number(v)) ? undefined : Number(v));
   const off = (v) => (v === undefined ? undefined : v !== 'off' && v !== 'false');
   const options = {
+    introColor: d.introColor,
     logo: d.logo === 'none' || d.logo === 'off' ? false : d.logo ? new URL(d.logo, document.baseURI).href : undefined,
     cursors: num(d.cursors),
     maxCursors: num(d.maxCursors),
@@ -75,6 +79,7 @@ function validate(options) {
   config.maxCursors = count(config.maxCursors, config.cursors, 128, 'maxCursors');
   config.typingSpeed = count(config.typingSpeed, 1, 400, 'typingSpeed');
   if (config.columns !== 'auto') config.columns = count(config.columns, 1, 24, 'columns');
+  if (typeof CSS === 'undefined' || !CSS.supports('color', config.introColor)) throw new TypeError('cursors-at-work: introColor must be a CSS colour');
   if (!['scroll', 'load'].includes(config.startOn)) throw new RangeError("cursors-at-work: startOn must be 'scroll' or 'load'");
   return config;
 }
@@ -85,7 +90,7 @@ function start(options = {}) {
   if (config.respectReducedMotion && matchMedia('(prefers-reduced-motion: reduce)').matches) return api;
   starting = true;
   injectStyles();
-  hold();
+  hold(config.introColor);
   const go = () => {
     try {
       running = CAW.run(config);

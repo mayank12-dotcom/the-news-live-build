@@ -56,7 +56,11 @@ CAW.run = (config) => {
   // Waiting for the visitor: the build starts on their first scroll (or Tour).
   if (config.startOn === 'scroll') loaderEl.insertAdjacentHTML('beforeend', '<p class="caw-loader-hint">Scroll to start<i></i></p>');
   document.body.append(loaderEl, layerEl);
+  // The page's own background (read with the dark blank lifted for a moment, no paint between).
+  root.classList.remove('caw-pending');
   root.style.setProperty('--caw-canvas', getComputedStyle(document.body).backgroundColor);
+  root.classList.add('caw-pending');
+  root.style.setProperty('--caw-intro', config.introColor);
   const orbitEl = document.querySelector('[data-caw-orbit]');
 
   const { ops, frames } = L.scan(scanRoot, (el) => el.classList.contains('caw-ui') || el.hasAttribute('data-caw-skip') || Boolean(config.skip && el.matches(config.skip)));
