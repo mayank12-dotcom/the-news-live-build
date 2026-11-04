@@ -18,8 +18,7 @@ CAW.studio = (options = {}) => {
     <span class="caw-count" aria-live="off" hidden><span class="caw-count-dots" aria-hidden="true"></span><b>0</b><span class="caw-count-of"> / 0</span><span class="caw-count-label"> at work</span></span>
     <button type="button" data-act="tour" aria-pressed="false">Tour</button>
     <button type="button" data-act="sound" aria-pressed="true">Sound</button>
-    <button type="button" data-act="live" class="caw-primary">Go live</button>
-    <button type="button" data-act="replay">Replay</button>`);
+    <button type="button" data-act="live" class="caw-primary">Go live</button>`);
   bar.setAttribute('role', 'toolbar');
   bar.setAttribute('aria-label', 'Build controls');
   if (options.sound === false) bar.querySelector('[data-act="sound"]').remove();
@@ -174,7 +173,8 @@ CAW.studio = (options = {}) => {
       drawnKey = '';
     },
 
-    // Toolbar state: 'building' (counter, tour, sound), 'built' (sound, go live, replay), 'live' (replay).
+    // Toolbar state: 'building' (counter, tour, sound), 'built' (tour, sound, go live), 'live' (tour).
+    // Once built, Tour builds the page again from the top and tours it.
     setMode(mode) { bar.dataset.mode = mode; },
     setTour(on) { press('[data-act="tour"]', () => on); },
     // The crew counter: dots in the working cursors' colours, then "12 / 16 at work".

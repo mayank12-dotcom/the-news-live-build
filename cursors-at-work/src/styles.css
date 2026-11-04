@@ -159,9 +159,8 @@ html:not(.caw-loading):not(.caw-pending) .caw-studio { opacity: 1; visibility: v
   .caw-count { gap: 5px; padding: 0 6px 0 7px; }
   .caw-count-label { display: none; }
 }
-.caw-toolbar[data-mode="building"] :is([data-act="live"], [data-act="replay"]),
-.caw-toolbar[data-mode="built"] [data-act="tour"],
-.caw-toolbar[data-mode="live"] > :not([data-act="replay"]) { display: none; }
+.caw-toolbar[data-mode="building"] [data-act="live"],
+.caw-toolbar[data-mode="live"] > :not([data-act="tour"]) { display: none; }
 .caw-toolbar[data-mode="live"] { opacity: 0.55; }
 .caw-toolbar[data-mode="live"]:hover, .caw-toolbar[data-mode="live"]:focus-within { opacity: 1; }
 .caw-loading .caw-toolbar { translate: 0 80px; opacity: 0; }

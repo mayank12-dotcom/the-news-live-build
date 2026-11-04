@@ -57,7 +57,7 @@ Pass them to `start()`, or as data attributes on the script tag (`maxCursors` be
 | `columns` | `'auto'` | Layout grid: `'auto'`, or a fixed column count |
 | `grid` | `true` | Show the layout grid (`data-grid="off"`) |
 | `sound` | `true` | Synthesized sound (`data-sound="off"`) |
-| `toolbar` | `true` | Floating bottom-right toolbar: crew counter, Tour, Sound; Replay once built (`data-toolbar="off"`) |
+| `toolbar` | `true` | Floating bottom-right toolbar: crew counter, Tour, Sound. Once built, Tour builds the page again and tours it (`data-toolbar="off"`) |
 | `autoLive` | `true` | Hand back the real page as soon as the build is done. `false` keeps the finale (cursors flocking around the mouse) until the visitor clicks Go live (`data-auto-live="off"`) |
 | `skip` | `null` | CSS selector for elements to leave out |
 | `root` | `<body>` | Element to build (JS only) |
@@ -98,7 +98,7 @@ All of the plugin's classes, attributes and CSS variables start with `caw-`. Its
    - Before text is typed, a cursor pulls a red guide out of the ruler onto the edge or baseline that text shares with others.
 3. **Crew counter.** While cursors are on a job, the toolbar shows how many, with a dot in each one's colour ("9 / 17 at work"). It's hidden when nobody is working.
 4. **Scroll.** Frames start only as they come into view. Idle cursors wait at the bottom of the screen and follow the visitor down. Scroll fast and more cursors join. Tour scrolls for them.
-5. **Done.** The page finishes on a soft chord, and the build chrome fades away, leaving your real page. **Replay** builds it again. With `autoLive: false`, the cursors flock around the mouse until the visitor clicks **Go live**.
+5. **Done.** The page finishes on a soft chord, and the build chrome fades away, leaving your real page. **Tour** builds it again from the top and scrolls through it. With `autoLive: false`, the cursors flock around the mouse until the visitor clicks **Go live**.
 
 Sound is mostly clicky: keys, mouse presses, guide snaps. Boxes add sparse glass-piano notes, and the page finishes on a soft chord. Browsers only allow audio after the visitor's first tap or key press. **M** toggles sound.
 

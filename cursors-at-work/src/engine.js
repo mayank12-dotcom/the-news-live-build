@@ -2,7 +2,8 @@ CAW.run = (config) => {
   // Lifecycle: loading (the cursors orbit the logo on a blank canvas) → building (each
   // cursor claims a frame that's scrolled into view and builds its layers; idle cursors
   // chase the viewer's scroll) → built (the crew flocks around the mouse) → live (the real
-  // page, chrome gone; straight away with autoLive, else on Go live). Replay starts over.
+  // page, chrome gone; straight away with autoLive, else on Go live). Tour, once the page
+  // is done, starts over and tours the new build.
   const ARROW = 'M0.101898 32.4518C-1.90724 7.26404 26.2171 -8.9729 47.0257 5.36096L261.832 153.329C285.213 169.434 275.216 205.994 246.894 207.963L137.119 215.59L75.6263 306.843L75.2503 307.389C59.3159 330.056 23.6497 320.694 20.9017 293.124L20.8962 293.062L20.8431 292.464L0.101898 32.4518Z';
   const ARROW_IN = 'M30.0072 30.066L244.814 178.034L120.427 186.678L50.7474 290.079L30.0072 30.066Z';
   const CURSOR_COUNT = config.cursors;
@@ -69,6 +70,7 @@ CAW.run = (config) => {
 
   let state = 'loading';
   let touring = false;
+  let tourNext = false; // tour the build that's about to start
 
   // Each cursor gets its own colour; hues are spread around the wheel so no two look alike.
   const hueOffset = Math.random() * 360;
@@ -614,6 +616,8 @@ CAW.run = (config) => {
     state = 'building';
     root.classList.remove('caw-loading');
     Sound.arpeggio();
+    if (tourNext) setTour(true);
+    tourNext = false;
   }
 
   // Back to a blank canvas and build it all again.
@@ -642,21 +646,37 @@ CAW.run = (config) => {
 
   function setTour(on) {
     touring = on && state === 'building';
-    Studio.setTour(touring);
+    Studio.setTour(touring || tourNext);
+  }
+
+  // The Tour button: while building, auto-scroll on or off; once built, build it all
+  // again and tour it from the top.
+  function tourButton() {
+    if (state === 'building') setTour(!touring);
+    else if (state === 'loading') { tourNext = !tourNext; setTour(false); }
+    else {
+      replay();
+      tourNext = true;
+      setTour(false);
+    }
   }
 
   Studio.onAction((act) => {
-    if (act === 'tour') setTour(!touring);
+    if (act === 'tour') tourButton();
     else if (act === 'sound') Sound.toggle();
     else if (act === 'live') goLive();
-    else if (act === 'replay') replay();
   });
   Sound.onChange((label, on) => Studio.setSound(label, on));
   // What CursorsAtWork's public API drives.
   const handle = { replay, goLive, tour: setTour, get state() { return state; }, plan: { ops, frames } };
   // The viewer taking the wheel ends the tour.
-  for (const type of ['wheel', 'touchstart']) addEventListener(type, () => setTour(false), { passive: true });
-  addEventListener('keydown', (e) => { if (['ArrowDown', 'ArrowUp', 'PageDown', 'PageUp', ' ', 'Home', 'End'].includes(e.key)) setTour(false); });
+  const takeWheel = (e) => {
+    if (e.target instanceof Element && e.target.closest('.caw-ui')) return; // the toolbar's own taps
+    tourNext = false;
+    setTour(false);
+  };
+  for (const type of ['wheel', 'touchstart']) addEventListener(type, takeWheel, { passive: true });
+  addEventListener('keydown', (e) => { if (['ArrowDown', 'ArrowUp', 'PageDown', 'PageUp', ' ', 'Home', 'End'].includes(e.key)) takeWheel(); });
 
   // Tour: scroll down at a pace the cursors keep up with, keeping the next unbuilt frame low on screen.
   function tourStep(dt) {

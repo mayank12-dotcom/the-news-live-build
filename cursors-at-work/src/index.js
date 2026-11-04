@@ -8,7 +8,7 @@ const DEFAULTS = {
   columns: 'auto',     // layout grid: 'auto' (4 / 8 / 8–12 by screen and layout) or a number
   grid: true,          // show the layout grid
   sound: true,         // synthesized sounds (still need a first tap or key to unlock)
-  toolbar: true,       // crew counter, Tour, Sound; Replay once built
+  toolbar: true,       // crew counter, Tour (once built: build again and tour), Sound
   autoLive: true,      // hand back the real page as soon as the build is done (false: wait for Go live)
   skip: null,          // CSS selector for elements to leave out of the build
   root: null,          // element to build (defaults to <body>)
