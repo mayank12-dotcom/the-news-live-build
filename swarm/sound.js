@@ -3,8 +3,8 @@
   // typing, a click per mouse press, a tick per heading size step, a soft glass note
   // per finished box (big boxes low, small high, left to right rising, panned to the
   // cursor), and a chord when the page is done. Browsers keep audio locked until the
-  // first tap or key, so it starts then. M or the speaker button toggles it.
-  const KEY = 'news-sound';
+  // first tap or key, so it starts then. M or the toolbar's Sound button toggles it.
+  const KEY = 'swarm-sound';
   const PENTATONIC = [0, 2, 4, 7, 9];  // E major pentatonic, semitones above E
   const BASE_HZ = 164.81;              // E3
   const MAX_CLICKS_PER_S = 28;         // eight typists at once would otherwise buzz
@@ -20,15 +20,10 @@
   let budgetAt = 0;
   let lastNoteAt = 0;
 
-  const button = document.createElement('button');
-  button.type = 'button';
-  button.className = 'sound-toggle';
-  document.body.append(button);
-
+  let listener = () => {};
   function label() {
     const locked = on && (!ctx || ctx.state !== 'running');
-    button.textContent = !on ? 'Sound off' : locked ? 'Tap for sound' : 'Sound on';
-    button.setAttribute('aria-pressed', String(on));
+    listener(!on ? 'Sound off' : locked ? 'Tap for sound' : 'Sound on', on);
   }
 
   function unlock() {
@@ -56,14 +51,11 @@
     label();
   }
 
-  button.addEventListener('click', (e) => { e.stopPropagation(); toggle(); });
   addEventListener('pointerdown', unlock, { capture: true });
   addEventListener('keydown', (e) => {
     if (e.key.toLowerCase() === 'm' && !e.metaKey && !e.ctrlKey && !e.altKey && !e.target.closest('input, textarea, [contenteditable]')) toggle();
     else unlock();
   }, { capture: true });
-  label();
-
   const live = () => on && ctx && ctx.state === 'running';
   const panFor = (x) => Math.max(-0.8, Math.min(0.8, (x / innerWidth) * 2 - 1));
 
@@ -116,6 +108,50 @@
   const noteHz = (step) => BASE_HZ * 2 ** ((PENTATONIC[((step % 5) + 5) % 5] + 12 * Math.floor(step / 5)) / 12);
 
   window.Sound = {
+    toggle,
+    // Tell `fn(label, on)` whenever sound turns on, off or unlocks.
+    onChange(fn) { listener = fn; label(); },
+    // The page dissolving to a blank canvas: an airy swell of filtered noise.
+    swell() {
+      if (!live()) return;
+      const t = ctx.currentTime;
+      const src = ctx.createBufferSource();
+      const band = ctx.createBiquadFilter();
+      const g = chain(0);
+      src.buffer = noise;
+      src.loop = true;
+      band.type = 'bandpass';
+      band.Q.value = 0.8;
+      band.frequency.setValueAtTime(300, t);
+      band.frequency.exponentialRampToValueAtTime(2400, t + 1.2);
+      g.gain.setValueAtTime(0.0001, t);
+      g.gain.exponentialRampToValueAtTime(0.05, t + 0.7);
+      g.gain.exponentialRampToValueAtTime(0.0001, t + 1.6);
+      src.connect(band).connect(g);
+      src.start(t);
+      src.stop(t + 1.7);
+    },
+    // The swarm fanning out to build: a quick rising arpeggio.
+    arpeggio() {
+      if (!live()) return;
+      const t = ctx.currentTime;
+      [0, 1, 2, 3, 4, 5, 7].forEach((step, i) => tone(t + i * 0.07, { hz: noteHz(step + 5), gain: 0.035, len: 0.5, pan: (i / 6) * 1.2 - 0.6 }));
+    },
+    // Going live: a soft falling sweep.
+    sweep() {
+      if (!live()) return;
+      const t = ctx.currentTime;
+      const osc = ctx.createOscillator();
+      const g = chain(0);
+      osc.frequency.setValueAtTime(1200, t);
+      osc.frequency.exponentialRampToValueAtTime(160, t + 0.7);
+      g.gain.setValueAtTime(0.0001, t);
+      g.gain.exponentialRampToValueAtTime(0.045, t + 0.05);
+      g.gain.exponentialRampToValueAtTime(0.0001, t + 0.8);
+      osc.connect(g);
+      osc.start(t);
+      osc.stop(t + 0.85);
+    },
     // A mechanical key: a sharp click over a short thock, deeper on spaces.
     key(ch, x) {
       if (!live() || !spend()) return;
