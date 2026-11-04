@@ -5,6 +5,9 @@
   const ARROW = 'M0.101898 32.4518C-1.90724 7.26404 26.2171 -8.9729 47.0257 5.36096L261.832 153.329C285.213 169.434 275.216 205.994 246.894 207.963L137.119 215.59L75.6263 306.843L75.2503 307.389C59.3159 330.056 23.6497 320.694 20.9017 293.124L20.8962 293.062L20.8431 292.464L0.101898 32.4518Z';
   const ARROW_IN = 'M30.0072 30.066L244.814 178.034L120.427 186.678L50.7474 290.079L30.0072 30.066Z';
   const CURSOR_COUNT = 8;
+  const MAX_CURSORS = 16;        // fast scrolling calls in reinforcements, up to this many
+  const JOIN_SPEED = 1600;       // px/s of scrolling that counts as fast
+  const JOIN_EVERY_MS = 320;     // at most one newcomer this often
   const TYPE_CPS = 40;           // average typing speed, characters per second
   const LONG_TEXT = 90;          // longer than this and the typist speeds up proportionally (article paragraphs)
   const DRAW_S = 0.65;           // average seconds to drag out a box
@@ -17,9 +20,18 @@
   const CATCH_UP_PER_FOLD = 1;   // extra build speed for each fold the viewer is scrolled ahead
   const MAX_CATCH_UP = 4;        // never more than 4x the normal speed
   const START_STAGGER_MS = 1400; // cursors peel off the loader one at a time
-  const MIN_LOADER_MS = 1400;
+  const MIN_LOADER_MS = 1800;
   const MAX_LOADER_MS = 8000;
-  const LOADER_RADIUS = 18;
+  const LOADER_RX = 118;         // the swarm orbits the logo in a loose ellipse
+  const LOADER_RY = 64;
+  const HEADING_PX = 24;         // text this big starts at 18px and is stepped up once typed
+  const HEADING_START_PX = 18;
+  const GROW_STEPS = 4;
+  const GROW_STEP_MS = 110;
+  const GUIDE_CHANCE = 0.55;     // how often a new left edge gets a guide pulled out for it
+  const GUIDE_PULL_MS = [380, 560];
+  const FLOCK_RADIUS = 46;       // finished: the swarm circles the viewer's mouse this far out
+  const PERSONAL_SPACE = 20;
   const SPRING = 70;
   const DAMPING = 12;
 
@@ -57,6 +69,8 @@
   const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
   const orbitEl = document.querySelector('[data-orbit]');
   const layerEl = document.querySelector('.cursors');
+  const loaderEl = document.querySelector('.loader');
+  if (loaderEl && !reduceMotion) loaderEl.innerHTML = '<img class="loader-mark" src="assets/logo.svg" width="172" height="41" alt="">';
 
   // Today's date and time in the top bar, written before the layers are read so it's typed too.
   // Small screens get the short form: "Tue, Nov 3, 2026 | 10:12 AM".
@@ -99,13 +113,22 @@
 
   // Each cursor gets its own random colour; hues are spread around the wheel so no two look alike.
   const hueOffset = Math.random() * 360;
-  const hues = Array.from({ length: CURSOR_COUNT }, (_, i) => Math.round(hueOffset + (i * 360) / CURSOR_COUNT + Math.random() * 20) % 360)
+  const spread = (n, shift) => Array.from({ length: n }, (_, i) => Math.round(hueOffset + ((i + shift) * 360) / CURSOR_COUNT + Math.random() * 20) % 360)
     .sort(() => Math.random() - 0.5);
+  // Newcomers take the hues halfway between the first eight.
+  const hues = [...spread(CURSOR_COUNT, 0), ...spread(MAX_CURSORS - CURSOR_COUNT, 0.5)];
   const cursors = Array.from({ length: CURSOR_COUNT }, makeCursor);
 
   function setup(el) {
     const op = { el, p: 0, n: -1, draw: 'draw' in el.dataset, done: false };
-    if (op.draw) return op;
+    if (op.draw) {
+      // Hairlines (rules, dashes) are drawn with the pen tool, not dragged as boxes.
+      const r = el.getBoundingClientRect();
+      op.line = r.width > 0 && r.height > 0 && Math.min(r.width, r.height) <= 3;
+      op.vertical = op.line && r.height > r.width;
+      if (op.line) el.classList.add(op.vertical ? 'line-v' : 'line');
+      return op;
+    }
 
     // Full text stays in layout (ghost) so nothing reflows while typing.
     const text = el.textContent.replace(/\s+/g, ' ').trim();
@@ -117,7 +140,10 @@
     rest.className = 'ghost';
     el.replaceChildren(typed, caret, rest);
     const cps = TYPE_CPS * Math.min(8, Math.max(1, text.length / LONG_TEXT));
-    return { ...op, text, typed, caret, rest, cps, k: 0, nextKeyAt: 0 };
+    const style = getComputedStyle(el);
+    const size = parseFloat(style.fontSize);
+    const grow = size >= HEADING_PX && style.display !== 'inline' ? size : 0;
+    return { ...op, text, typed, caret, rest, cps, grow, k: 0, nextKeyAt: 0 };
   }
 
   // Which screen-height band of the page a frame belongs to: the one it fits in whole,
@@ -209,7 +235,7 @@
     op.realSrc = null;
   }
 
-  function makeCursor(_, i) {
+  function makeCursor(_, i, from) {
     const html = (tag, cls, inner = '') => Object.assign(document.createElement(tag), { className: cls, innerHTML: inner });
     const sel = html('div', 'sel', '<i class="tl"></i><i class="tr"></i><i class="bl"></i><i class="br"></i><b class="dim"></b>');
     // Arrow from cursor.svg: white outline, colored body.
@@ -217,15 +243,16 @@
       <svg class="ico ico-pointer" width="19" height="22" viewBox="0 0 275 321"><path class="rim" d="${ARROW}"/><path d="${ARROW_IN}"/></svg>
       <svg class="ico ico-copy" width="10" height="10" viewBox="0 0 10 10"><circle cx="5" cy="5" r="4.5"/><path d="M5 2.6v4.8M2.6 5h4.8"/></svg>
       <svg class="ico ico-text" width="14" height="24" viewBox="-1 -1 14 24"><path class="halo" d="M2 1.5h2.5L6 3l1.5-1.5H10M6 3v16M2 20.5h2.5L6 19l1.5 1.5H10"/><path d="M2 1.5h2.5L6 3l1.5-1.5H10M6 3v16M2 20.5h2.5L6 19l1.5 1.5H10"/></svg>
-      <svg class="ico ico-draw" width="22" height="22" viewBox="-1 -1 22 22"><path class="halo" d="M10 1v18M1 10h18"/><path d="M10 1v18M1 10h18"/></svg>`);
+      <svg class="ico ico-draw" width="22" height="22" viewBox="-1 -1 22 22"><path class="halo" d="M10 1v18M1 10h18"/><path d="M10 1v18M1 10h18"/></svg>
+      <svg class="ico ico-pen" width="20" height="22" viewBox="0 0 20 22"><path class="nib" d="M1.5 1.5l12 4.2-3.4 3.4 6.4 6.4-2.6 2.6-6.4-6.4-3.4 3.4z"/><circle cx="6.6" cy="6.6" r="1.3"/></svg>`);
     const color = `hsl(${hues[i]} 82% 48%)`;
     sel.style.setProperty('--c', color);
     el.style.setProperty('--c', color);
     layerEl.append(sel, el);
     const angle = (i * Math.PI * 2) / CURSOR_COUNT;
-    const start = state === 'resting' ? swarmStart(angle) : loaderPoint(angle, performance.now() / 1000);
+    const start = from || (state === 'resting' ? swarmStart(angle) : loaderPoint(angle, performance.now() / 1000));
     return {
-      el, sel, angle, color, phase: 'idle', phaseAt: 0, unit: null,
+      id: i, el, sel, angle, color, phase: 'idle', phaseAt: 0, unit: null,
       // Each fly gets its own little orbit so the swarm doesn't move in lockstep.
       swarmRadius: 10 + Math.random() * 12,
       swarmSpin: (Math.random() < 0.5 ? -1 : 1) * (2 + Math.random() * 1.8),
@@ -262,6 +289,11 @@
   }
 
   function finishOp(op) {
+    if (op.growing) {
+      op.growing = false;
+      op.el.classList.remove('growing');
+      op.el.style.scale = '';
+    }
     op.stale = false;
     op.swap = false;
     restoreImage(op);
@@ -274,6 +306,7 @@
     state = 'resting';
     root.classList.add('loaded', 'built');
     document.body.setAttribute('aria-busy', 'false');
+    if (!reduceMotion) window.Sound?.chord();
   }
 
   // Free cursor takes the next unbuilt frame in reading order (units are sorted
@@ -347,12 +380,22 @@
       return { x: r.left - 2, y: r.top - 2, w: r.width + 4, h: bottom - r.top + 4, text: true };
     }
     const p = Math.max(op.p, 0.02);
-    return { x: r.left, y: r.top, w: r.width * p, h: r.height * p, dim: `${Math.round(r.width * p)} × ${Math.round(r.height * p)}` };
+    if (op.line) {
+      // Pen tool: an anchor where it started, a rubber band out to the cursor.
+      const w = op.vertical ? r.width : r.width * p;
+      const h = op.vertical ? r.height * p : r.height;
+      return { x: r.left, y: r.top, w, h, pen: true, dim: `${Math.round(op.vertical ? h : w)}` };
+    }
+    // Crosshair drag: a grey placeholder grows with the drag; the real fill fades in when let go.
+    return { x: r.left, y: r.top, w: r.width * p, h: r.height * p, fill: op.p < 1, dim: `${Math.round(r.width * p)} × ${Math.round(r.height * p)}` };
   }
 
+  // Intro: the swarm circles the logo, each cursor breathing in and out a little.
   function loaderPoint(angle, t) {
-    const a = t * 3 + angle;
-    return toPage(innerWidth / 2 + Math.cos(a) * LOADER_RADIUS, innerHeight / 2 + Math.sin(a) * LOADER_RADIUS);
+    const a = t * 1.1 + angle;
+    const wobble = 1 + Math.sin(t * 2.3 + angle * 3) * 0.07;
+    const fit = Math.min(1, (innerWidth - 40) / (LOADER_RX * 2 + 40));
+    return toPage(innerWidth / 2 + Math.cos(a) * LOADER_RX * wobble * fit, innerHeight / 2 + Math.sin(a) * LOADER_RY * wobble);
   }
 
   function swarmStart(angle) {
@@ -365,6 +408,19 @@
     const r = orbitEl.getBoundingClientRect();
     const a = t * c.swarmSpin + c.angle;
     return toPage(r.right - r.width * 0.04 + Math.cos(a) * c.swarmRadius, r.top + r.height * 0.2 + Math.sin(a) * c.swarmRadius);
+  }
+
+  // Once the page is done the swarm flocks around the viewer's mouse, keeping clear of
+  // the pointer itself; with no mouse around it settles back on the logo.
+  let mouse = null;
+  addEventListener('pointermove', (e) => { mouse = e.pointerType === 'mouse' ? { x: e.clientX, y: e.clientY } : null; }, { passive: true });
+  root.addEventListener('mouseleave', () => { mouse = null; });
+
+  function restingPoint(c, t) {
+    if (state !== 'resting' || !mouse) return swarmPoint(c, t);
+    const a = t * c.swarmSpin * 0.45 + c.angle;
+    const r = FLOCK_RADIUS + c.swarmRadius * 1.5;
+    return toPage(mouse.x + Math.cos(a) * r, mouse.y + Math.sin(a) * r);
   }
 
   function setPhase(c, phase, now) {
@@ -428,7 +484,13 @@
       finishOp(op);
       return null;
     }
-    const tool = op.draw ? 'draw' : 'text';
+    const tool = op.draw ? (op.line ? 'pen' : 'draw') : 'text';
+    // On the way to a text box with a fresh left edge, pull a guide out of the ruler first.
+    if (c.phase === 'travel' && !op.draw && op.guide === undefined) {
+      op.guide = !unit.source && wantsGuide(op);
+      if (op.guide) startTravel(c, now, 'guide-travel');
+    }
+    if (c.phase.startsWith('guide')) return pullGuide(c, op, now);
 
     if (c.phase === 'travel') {
       // Move time grows with distance, varies a little per move (Fitts-ish).
@@ -450,6 +512,14 @@
         op.nextKeyAt = now;
         op.dragMs = op.swap ? SWAP_MS : DRAW_S * 1000 * rand(0.8, 1.25);
         if (op.stale) op.el.style.setProperty('--hl', c.color);
+        if (op.draw && !op.swap) window.Sound?.click(point.x - scrollX);
+        if (op.guide) op.el.classList.add('snapped');
+        if (op.grow && !unit.source && !op.stale) {
+          // Big type starts at 18px; it's stepped up to size once typed.
+          op.growing = true;
+          op.el.classList.add('growing');
+          op.el.style.scale = String(HEADING_START_PX / op.grow);
+        }
         if (op.swap) {
           // Drop the item's own photo onto the copy.
           restoreImage(op);
@@ -474,6 +544,7 @@
       }
       return { point, mode: 'text', sel: selectionFor(op), unit, exact: true };
     }
+    if (c.phase === 'grow') return growHeading(c, op, now);
     if (c.phase === 'work') {
       let finished;
       if (op.swap) {
@@ -481,15 +552,27 @@
         if (finished) op.swap = false;
       } else if (op.draw) {
         const s = Math.min(1, (now - c.phaseAt) / op.dragMs);
-        op.p = s < 1 ? dragEase(s) : 1;
+        op.p = s < 1 ? (op.line ? minJerk(s) : dragEase(s)) : 1;
         finished = s >= 1;
       } else {
-        while (now >= op.nextKeyAt && op.k < op.text.length) op.nextKeyAt += keyDelay(op.text[op.k++], op.cps);
+        let ch = null;
+        while (now >= op.nextKeyAt && op.k < op.text.length) {
+          ch = op.text[op.k];
+          op.nextKeyAt += keyDelay(op.text[op.k++], op.cps);
+        }
+        if (ch !== null) window.Sound?.key(ch, point.x - scrollX);
         op.p = op.k / op.text.length;
         finished = op.k >= op.text.length;
       }
       render(op);
-      if (finished) {
+      if (finished && op.draw && !op.swap) {
+        if (op.line) window.Sound?.click(point.x - scrollX);
+        else window.Sound?.note(boxOf(op.el));
+      }
+      if (finished && op.growing) {
+        setPhase(c, 'grow', now);
+        op.growStep = 0;
+      } else if (finished) {
         // A freshly drawn box gets filled right away; otherwise pause to look.
         const next = unit.ops[unit.idx + 1];
         c.quick = Boolean(next && op.draw && op.el.contains(next.el));
@@ -508,6 +591,71 @@
   function boxOf(el) {
     const r = el.getBoundingClientRect();
     return { x: r.left, y: r.top, w: r.width, h: r.height, dim: `${Math.round(r.width)} × ${Math.round(r.height)}` };
+  }
+
+  // Step a just-typed heading from 18px up to its size, a tick per step.
+  function growHeading(c, op, now) {
+    const step = Math.min(GROW_STEPS, Math.floor((now - c.phaseAt) / GROW_STEP_MS) + 1);
+    const px = HEADING_START_PX + ((op.grow - HEADING_START_PX) * step) / GROW_STEPS;
+    if (step !== op.growStep) {
+      op.growStep = step;
+      op.el.style.scale = step >= GROW_STEPS ? '' : String(px / op.grow);
+      window.Sound?.tick(step, op.el.getBoundingClientRect().left);
+    }
+    if (step >= GROW_STEPS && now - c.phaseAt >= GROW_STEPS * GROW_STEP_MS) {
+      op.growing = false;
+      op.el.classList.remove('growing');
+      setPhase(c, 'linger', now);
+      c.waitUntil = now + rand(...LINGER_MS);
+    }
+    return { point: pointFor(op), mode: 'text', sel: { ...selectionFor(op), dim: `${Math.round(px)}px` }, unit: c.unit, exact: true };
+  }
+
+  function wantsGuide(op) {
+    const studio = window.Studio;
+    const r = op.el.getBoundingClientRect();
+    if (!studio || !r.height || r.left <= studio.size + 4) return false;
+    return !studio.hasGuide(r.left) && Math.random() < GUIDE_CHANCE;
+  }
+
+  // Walk to the left ruler, press, drag a red guide out to the text's left edge, let go.
+  function pullGuide(c, op, now) {
+    const studio = window.Studio;
+    const r = op.el.getBoundingClientRect();
+    const y = Math.max(studio.size + 30, Math.min(innerHeight - 30, r.top + r.height / 2));
+    const start = studio.size / 2;
+    if (c.phase === 'guide-travel') {
+      const grab = toPage(start, y);
+      if (!c.travelMs) c.travelMs = Math.min(1000, 220 + Math.hypot(grab.x - c.from.x, grab.y - c.from.y) * 0.55) * rand(0.85, 1.2);
+      const s = Math.min(1, (now - c.phaseAt) / c.travelMs);
+      if (s >= 1) {
+        setPhase(c, 'guide-pull', now);
+        c.guide = studio.pullGuide(start);
+        c.guideMs = rand(...GUIDE_PULL_MS);
+        window.Sound?.click(start);
+      }
+      return { point: along(c.from, grab, c.bend, minJerk(s)), mode: 'pointer', unit: c.unit, exact: true };
+    }
+    const s = Math.min(1, (now - c.phaseAt) / c.guideMs);
+    const x = start + (r.left - start) * minJerk(s);
+    c.guide.move(x);
+    if (s >= 1) {
+      c.guide.drop();
+      c.guide = null;
+      window.Sound?.snap(x);
+      startTravel(c, now);
+    }
+    return { point: toPage(x, y), mode: 'pointer', unit: c.unit, exact: true };
+  }
+
+  // The gap between a copy and the item it came from, for the red measurement.
+  function gapBetween(a, b) {
+    const s = a.getBoundingClientRect();
+    const d = b.getBoundingClientRect();
+    const mid = (lo1, hi1, lo2, hi2) => (Math.max(lo1, lo2) + Math.min(hi1, hi2)) / 2;
+    if (d.left - s.right >= 1) return { x: s.right, y: mid(s.top, s.bottom, d.top, d.bottom), length: d.left - s.right, vertical: false };
+    if (d.top - s.bottom >= 1) return { x: mid(s.left, s.right, d.left, d.right), y: s.bottom, length: d.top - s.bottom, vertical: true };
+    return null;
   }
 
   // Grab the first item of the set, alt-drag a copy into this item's place, let go.
@@ -532,6 +680,7 @@
         // Start the copy on top of the item it came from, not at its own slot for a frame.
         unit.el.style.translate = `${-c.dupe.dx}px ${-c.dupe.dy}px`;
         unit.el.classList.add('dragging');
+        window.Sound?.click(grab.x - scrollX);
         setPhase(c, 'dupe-move', now);
       }
       return { point: grab, mode: 'copy', sel: boxOf(unit.source.el), unit, exact: true };
@@ -544,10 +693,12 @@
       if (s >= 1) {
         unit.el.style.translate = '';
         unit.el.classList.remove('dragging');
+        window.Sound?.note(boxOf(unit.el));
         setPhase(c, 'dupe-linger', now);
         c.waitUntil = now + rand(...LINGER_MS);
       }
-      return { point: { x: c.dupe.grab.x + dx * e, y: c.dupe.grab.y + dy * e }, mode: 'copy', sel: boxOf(unit.el), unit, exact: true };
+      const gap = gapBetween(unit.source.el, unit.el);
+      return { point: { x: c.dupe.grab.x + dx * e, y: c.dupe.grab.y + dy * e }, mode: 'copy', sel: boxOf(unit.el), gap, unit, exact: true };
     }
     // Let go, then update the copy just dropped; the next copy is free for another cursor.
     if (now >= c.waitUntil) {
@@ -556,7 +707,8 @@
       c.quick = false;
       startTravel(c, now);
     }
-    return { point: { x: c.dupe.grab.x + c.dupe.dx, y: c.dupe.grab.y + c.dupe.dy }, mode: 'pointer', sel: boxOf(unit.el), unit, exact: true };
+    const gap = gapBetween(unit.source.el, unit.el);
+    return { point: { x: c.dupe.grab.x + c.dupe.dx, y: c.dupe.grab.y + c.dupe.dy }, mode: 'pointer', sel: boxOf(unit.el), gap, unit, exact: true };
   }
 
   function place(node, box) {
@@ -576,13 +728,24 @@
       c.vx = c.vy = 0;
     } else {
       // Off duty: fly to the swarm with a springy chase and a buzz that fades as it lands.
-      const target = swarmPoint(c, t);
+      const target = restingPoint(c, t);
       const dist = Math.hypot(target.x - c.x, target.y - c.y);
       const buzz = Math.max(3, Math.min(26, dist * 0.13));
       const wx = target.x + Math.sin(t * 12 + c.angle * 3) * buzz;
       const wy = target.y + Math.cos(t * 9.5 + c.angle * 4) * buzz;
       c.vx += ((wx - c.x) * SPRING - c.vx * DAMPING) * dt;
       c.vy += ((wy - c.y) * SPRING - c.vy * DAMPING) * dt;
+      // Flocking: keep a little personal space from the others.
+      for (const o of cursors) {
+        if (o === c) continue;
+        const ox = c.x - o.x;
+        const oy = c.y - o.y;
+        const d = Math.hypot(ox, oy);
+        if (d > 0 && d < PERSONAL_SPACE) {
+          c.vx += (ox / d) * (PERSONAL_SPACE - d) * 60 * dt;
+          c.vy += (oy / d) * (PERSONAL_SPACE - d) * 60 * dt;
+        }
+      }
       c.x += c.vx * dt;
       c.y += c.vy * dt;
     }
@@ -591,8 +754,11 @@
     c.el.style.transform = `translate3d(${c.x - scrollX}px, ${c.y - scrollY}px, 0)`;
 
     place(c.sel, job?.sel);
+    window.Studio?.measure(c.id, job?.gap || null);
     if (job?.sel) {
       c.sel.classList.toggle('text', Boolean(job.sel.text));
+      c.sel.classList.toggle('fill', Boolean(job.sel.fill));
+      c.sel.classList.toggle('pen', Boolean(job.sel.pen));
       c.sel.lastChild.textContent = job.sel.dim || '';
     }
   }
@@ -627,6 +793,22 @@
     return Math.min(MAX_CATCH_UP, 1 + Math.max(0, viewing - building) * CATCH_UP_PER_FOLD);
   }
 
+  // Scroll fast and more cursors join, flying in from the edge you're scrolling toward.
+  let lastScroll = scrollY;
+  let scrollSpeed = 0;
+  let joinAt = 0;
+  function callReinforcements(now, dt) {
+    const moved = scrollY - lastScroll;
+    lastScroll = scrollY;
+    if (dt > 0) scrollSpeed += (Math.abs(moved) / dt - scrollSpeed) * Math.min(1, dt * 8);
+    if (scrollSpeed < JOIN_SPEED || cursors.length >= MAX_CURSORS || now < joinAt) return;
+    joinAt = now + JOIN_EVERY_MS;
+    const edge = moved >= 0 ? innerHeight + 24 : -24;
+    const c = makeCursor(null, cursors.length, toPage(rand(0.1, 0.9) * innerWidth, edge));
+    c.readyAt = buildTime;
+    cursors.push(c);
+  }
+
   function frame(now) {
     const realDt = Math.min(1 / 30, (now - last) / 1000);
     last = now;
@@ -636,8 +818,15 @@
     }
     speed += (speedTarget - speed) * Math.min(1, realDt * 3);
     buildTime += realDt * 1000 * (state === 'building' ? speed : 1);
+    if (state === 'building') callReinforcements(now, realDt);
     // Physics keeps real time steps so the springy swarm stays stable at any speed.
-    for (const c of cursors) moveCursor(c, state === 'building' ? work(c, buildTime) : null, buildTime, realDt);
+    const boxes = [];
+    for (const c of cursors) {
+      const job = state === 'building' ? work(c, buildTime) : null;
+      moveCursor(c, job, buildTime, realDt);
+      if (job?.sel) boxes.push({ ...job.sel, color: c.color });
+    }
+    if (state !== 'resting') window.Studio?.frame(boxes);
     if (state === 'building' && units.every((u) => u.state === 'done')) finishBuild();
     requestAnimationFrame(frame);
   }

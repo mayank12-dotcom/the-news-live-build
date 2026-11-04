@@ -19,7 +19,7 @@
   // A static copy of the page as it looks right now, without the live cursor layer or scripts.
   function snapshot(root) {
     const copy = root.cloneNode(true);
-    copy.querySelectorAll('.cursors, .loader, .turn-layer, script').forEach((n) => n.remove());
+    copy.querySelectorAll('.cursors, .loader, .studio, .sound-toggle, .turn-layer, script').forEach((n) => n.remove());
     copy.querySelectorAll('img[loading="lazy"]').forEach((n) => n.removeAttribute('loading'));
     return copy.innerHTML;
   }
