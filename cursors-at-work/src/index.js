@@ -10,6 +10,7 @@ const DEFAULTS = {
   sound: true,         // synthesized sounds (still need a first tap or key to unlock)
   toolbar: true,       // crew counter, Tour (once built: build again and tour), Sound
   autoLive: true,      // hand back the real page as soon as the build is done (false: wait for Go live)
+  startOn: 'scroll',   // 'scroll': the intro waits for the visitor's first scroll; 'load': start on its own
   skip: null,          // CSS selector for elements to leave out of the build
   root: null,          // element to build (defaults to <body>)
   respectReducedMotion: true,
@@ -43,7 +44,7 @@ function injectStyles() {
 
 // Options from a script tag's data attributes: data-logo, data-cursors, data-max-cursors,
 // data-typing-speed, data-columns, data-grid="off", data-sound="off", data-toolbar="off",
-// data-auto-live="off", data-skip.
+// data-auto-live="off", data-start-on="load", data-skip.
 function fromDataset(d) {
   const num = (v) => (v === undefined || v === '' || Number.isNaN(Number(v)) ? undefined : Number(v));
   const off = (v) => (v === undefined ? undefined : v !== 'off' && v !== 'false');
@@ -57,6 +58,7 @@ function fromDataset(d) {
     sound: off(d.sound),
     toolbar: off(d.toolbar),
     autoLive: off(d.autoLive),
+    startOn: d.startOn,
     skip: d.skip,
   };
   return Object.fromEntries(Object.entries(options).filter(([, v]) => v !== undefined));
@@ -73,6 +75,7 @@ function validate(options) {
   config.maxCursors = count(config.maxCursors, config.cursors, 128, 'maxCursors');
   config.typingSpeed = count(config.typingSpeed, 1, 400, 'typingSpeed');
   if (config.columns !== 'auto') config.columns = count(config.columns, 1, 24, 'columns');
+  if (!['scroll', 'load'].includes(config.startOn)) throw new RangeError("cursors-at-work: startOn must be 'scroll' or 'load'");
   return config;
 }
 

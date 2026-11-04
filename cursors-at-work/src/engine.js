@@ -52,6 +52,8 @@ CAW.run = (config) => {
   const logo = config.logo || document.querySelector('link[rel~="icon"]')?.href;
   const scanRoot = config.root || document.body;
   if (logo) loaderEl.innerHTML = `<img class="caw-loader-mark" src="${encodeURI(logo)}" alt="">`;
+  // Waiting for the visitor: the build starts on their first scroll (or Tour).
+  if (config.startOn === 'scroll') loaderEl.insertAdjacentHTML('beforeend', '<p class="caw-loader-hint">Scroll to start<i></i></p>');
   document.body.append(loaderEl, layerEl);
   root.style.setProperty('--caw-canvas', getComputedStyle(document.body).backgroundColor);
   const orbitEl = document.querySelector('[data-caw-orbit]');
@@ -612,6 +614,8 @@ CAW.run = (config) => {
   }
 
   function startBuilding() {
+    if (state !== 'loading') return;
+    root.classList.remove('caw-waiting');
     for (const c of cursors) c.readyAt = buildTime + Math.random() * START_STAGGER_MS;
     state = 'building';
     root.classList.remove('caw-loading');
@@ -653,7 +657,11 @@ CAW.run = (config) => {
   // again and tour it from the top.
   function tourButton() {
     if (state === 'building') setTour(!touring);
-    else if (state === 'loading') { tourNext = !tourNext; setTour(false); }
+    else if (state === 'loading') {
+      tourNext = true; // Tour on the intro starts the build and tours it
+      setTour(false);
+      wantStart();
+    }
     else {
       replay();
       tourNext = true;
@@ -740,8 +748,8 @@ CAW.run = (config) => {
         if (job?.sel) boxes.push({ ...job.sel, color: c.color });
       }
       Studio.frame(boxes);
-      // Building: who's on a job right now. Built: the whole crew.
-      const busy = state === 'building' ? cursors.filter((c) => c.unit && buildTime >= c.readyAt) : cursors;
+      // Only cursors on a job right now count; on the intro and once built, nobody is.
+      const busy = state === 'building' ? cursors.filter((c) => c.unit && buildTime >= c.readyAt) : [];
       Studio.setCount(busy.length, cursors.length, busy.map((c) => c.color));
     }
     if (state === 'building' && frames.every((u) => u.state === 'done')) finishBuild();
@@ -755,7 +763,36 @@ CAW.run = (config) => {
     setTimeout(resolve, MAX_LOADER_MS);
   });
   Sound.swell();
-  Promise.all([loaded, new Promise((resolve) => setTimeout(resolve, MIN_LOADER_MS))]).then(startBuilding);
+
+  // The first build waits for the visitor (startOn: 'scroll'): the cursors keep orbiting
+  // until they scroll, swipe, press a scrolling key or hit Tour. 'load' starts on its own.
+  let introDone = false;
+  let wanted = config.startOn === 'load';
+  function maybeStart() {
+    if (!introDone) return;
+    if (wanted) startBuilding();
+    else root.classList.add('caw-waiting');
+  }
+  function wantStart() {
+    wanted = true;
+    maybeStart();
+  }
+  if (!wanted) {
+    const SCROLL_KEYS = ['ArrowDown', 'PageDown', ' ', 'End'];
+    const intent = (e) => {
+      if (e.type === 'keydown' && !SCROLL_KEYS.includes(e.key)) return;
+      if (e.type === 'wheel' && e.deltaY <= 0) return;
+      if (e.target instanceof Element && e.target.closest('.caw-ui')) return;
+      wantStart();
+    };
+    addEventListener('wheel', intent, { passive: true });
+    addEventListener('touchmove', intent, { passive: true });
+    addEventListener('keydown', intent);
+  }
+  Promise.all([loaded, new Promise((resolve) => setTimeout(resolve, MIN_LOADER_MS))]).then(() => {
+    introDone = true;
+    maybeStart();
+  });
   requestAnimationFrame(frame);
   return handle;
 

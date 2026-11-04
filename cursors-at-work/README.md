@@ -57,7 +57,8 @@ Pass them to `start()`, or as data attributes on the script tag (`maxCursors` be
 | `columns` | `'auto'` | Layout grid: `'auto'`, or a fixed column count |
 | `grid` | `true` | Show the layout grid (`data-grid="off"`) |
 | `sound` | `true` | Synthesized sound (`data-sound="off"`) |
-| `toolbar` | `true` | Floating bottom-right toolbar: crew counter, Tour, Sound. Once built, Tour builds the page again and tours it (`data-toolbar="off"`) |
+| `toolbar` | `true` | Floating toolbar, always in the bottom-left corner: crew counter, Tour, Sound. Once built, Tour builds the page again and tours it (`data-toolbar="off"`) |
+| `startOn` | `'scroll'` | `'scroll'`: the intro waits, cursors orbiting, until the visitor first scrolls (or presses Tour). `'load'`: start on its own (`data-start-on="load"`) |
 | `autoLive` | `true` | Hand back the real page as soon as the build is done. `false` keeps the finale (cursors flocking around the mouse) until the visitor clicks Go live (`data-auto-live="off"`) |
 | `skip` | `null` | CSS selector for elements to leave out |
 | `root` | `<body>` | Element to build (JS only) |
@@ -89,7 +90,7 @@ All of the plugin's classes, attributes and CSS variables start with `caw-`. Its
 
 ## What the visitor sees
 
-1. **Intro.** The page clears to a blank canvas and the cursors orbit your logo.
+1. **Intro.** The page clears to a blank canvas and the cursors orbit your logo, with a "Scroll to start" hint. Nothing is built until the visitor scrolls (or presses Tour).
 2. **Build.** Figma rulers slide in and your layout grid drops in column by column, with no labels over your page. The cursors fan out:
    - Boxes are crosshair-dragged as grey placeholders with a W×H badge, then filled. Photos sweep in.
    - Text boxes are dragged out, then typed into. Big headings start at 18px and step up to size.

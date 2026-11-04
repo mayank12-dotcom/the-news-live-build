@@ -55,6 +55,17 @@ img.caw-reveal, video.caw-reveal, canvas.caw-reveal { animation: caw-fade 0.35s 
   opacity: 0.16; filter: grayscale(1); animation: caw-breathe 2.4s ease-in-out infinite alternate;
 }
 @keyframes caw-breathe { to { opacity: 0.3; } }
+/* The page holds still behind the intro; the first scroll starts the build instead. */
+html.caw-loading { overflow: hidden; }
+.caw-loader-hint {
+  position: absolute; left: 50%; bottom: 84px; translate: -50% 8px; margin: 0;
+  display: flex; flex-direction: column; align-items: center; gap: 10px;
+  color: #8a8a8a; font: 500 12px/1 var(--caw-ui); letter-spacing: 0.4px; opacity: 0;
+  transition: opacity 0.6s var(--caw-ease), translate 0.6s var(--caw-ease);
+}
+.caw-waiting .caw-loader-hint { opacity: 1; translate: -50% 0; }
+.caw-loader-hint i { width: 1px; height: 28px; background: linear-gradient(currentColor, transparent); animation: caw-nudge 1.6s ease-in-out infinite; }
+@keyframes caw-nudge { 0%, 100% { transform: translateY(-4px); opacity: 0.4; } 50% { transform: translateY(4px); opacity: 1; } }
 
 /* ---------- cursors and selections ---------- */
 .caw-cursors { position: fixed; inset: 0; z-index: calc(var(--caw-z) + 1); overflow: hidden; pointer-events: none; transition: opacity 0.5s var(--caw-ease), visibility 0.5s; }
@@ -124,9 +135,9 @@ html:not(.caw-loading):not(.caw-pending) .caw-studio { opacity: 1; visibility: v
 .caw-measure.vertical b { translate: 6px -50%; }
 .caw-measure[hidden] { display: none; }
 
-/* ---------- toolbar: a floating pill in the bottom-right corner ---------- */
+/* ---------- toolbar: a floating pill, always in the bottom-left corner ---------- */
 .caw-toolbar {
-  position: fixed; right: 16px; bottom: 16px; z-index: calc(var(--caw-z) + 2);
+  position: fixed; left: 16px; bottom: 16px; z-index: calc(var(--caw-z) + 2);
   display: flex; align-items: center; gap: 4px; max-width: calc(100vw - 32px); padding: 5px;
   border-radius: 999px; background: #2c2c2c;
   box-shadow: 0 12px 32px rgb(0 0 0 / 0.24), 0 2px 6px rgb(0 0 0 / 0.12), inset 0 0 0 1px rgb(255 255 255 / 0.06);
@@ -154,16 +165,13 @@ html:not(.caw-loading):not(.caw-pending) .caw-studio { opacity: 1; visibility: v
 .caw-count-of, .caw-count-label { color: #9a9a9a; }
 /* Phones: the same controls, tighter. */
 @media (max-width: 480px) {
-  .caw-toolbar { right: 12px; bottom: 12px; max-width: calc(100vw - 24px); gap: 2px; }
+  .caw-toolbar { left: 12px; bottom: 12px; max-width: calc(100vw - 24px); gap: 2px; }
   .caw-toolbar button { padding: 8px 11px; }
   .caw-count { gap: 5px; padding: 0 6px 0 7px; }
   .caw-count-label { display: none; }
 }
 .caw-toolbar[data-mode="building"] [data-act="live"],
-.caw-toolbar[data-mode="live"] > :not([data-act="tour"]) { display: none; }
-.caw-toolbar[data-mode="live"] { opacity: 0.55; }
-.caw-toolbar[data-mode="live"]:hover, .caw-toolbar[data-mode="live"]:focus-within { opacity: 1; }
-.caw-loading .caw-toolbar { translate: 0 80px; opacity: 0; }
+.caw-toolbar[data-mode="live"] :is(.caw-count, [data-act="live"]) { display: none; }
 
 /* ---------- going live: the real page, chrome gone ---------- */
 .caw-live .caw-studio, .caw-live .caw-cursors { opacity: 0 !important; visibility: hidden !important; }
