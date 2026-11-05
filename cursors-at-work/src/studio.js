@@ -14,8 +14,11 @@ CAW.studio = (options = {}) => {
   const make = (tag, cls, html = '') => Object.assign(document.createElement(tag), { className: cls, innerHTML: html });
   const layer = make('div', 'caw-ui caw-studio', '<canvas class="caw-ruler"></canvas><canvas class="caw-ruler"></canvas><i class="caw-ruler-corner"></i>');
   layer.setAttribute('aria-hidden', 'true');
+  // The crew counter is its own pill in the bottom-right; the toolbar sits bottom-left.
+  const crew = make('div', 'caw-ui caw-count', '<span class="caw-count-dots" aria-hidden="true"></span><b>0</b><span class="caw-count-of"> / 0</span><span class="caw-count-label"> at work</span>');
+  crew.setAttribute('aria-live', 'off');
+  crew.hidden = true;
   const bar = make('div', 'caw-ui caw-toolbar', `
-    <span class="caw-count" aria-live="off" hidden><span class="caw-count-dots" aria-hidden="true"></span><b>0</b><span class="caw-count-of"> / 0</span><span class="caw-count-label"> at work</span></span>
     <button type="button" data-act="tour" aria-pressed="false">Tour</button>
     <button type="button" data-act="sound" aria-pressed="true">Sound</button>
     <button type="button" data-act="live" class="caw-primary">Go live</button>`);
@@ -24,7 +27,7 @@ CAW.studio = (options = {}) => {
   if (options.sound === false) bar.querySelector('[data-act="sound"]').remove();
   if (options.autoLive !== false) bar.querySelector('[data-act="live"]').remove(); // it goes live by itself
   document.body.append(layer);
-  if (options.toolbar !== false) document.body.append(bar);
+  if (options.toolbar !== false) document.body.append(bar, crew);
 
   const [top, left] = layer.querySelectorAll('canvas');
   const gridEl = make('div', 'caw-grid');
@@ -183,10 +186,9 @@ CAW.studio = (options = {}) => {
       const key = `${bar.dataset.mode}|${working}|${total}|${colors.join()}`;
       if (key === countKey) return;
       countKey = key;
-      const counter = bar.querySelector('.caw-count');
-      counter.hidden = bar.dataset.mode !== 'building' || !working;
-      if (counter.hidden) return;
-      const [dots, num, of, label] = counter.children;
+      crew.hidden = bar.dataset.mode !== 'building' || !working;
+      if (crew.hidden) return;
+      const [dots, num, of, label] = crew.children;
       dots.replaceChildren(...colors.slice(0, MAX_DOTS).map((c) => {
         const dot = make('i');
         dot.style.background = c;

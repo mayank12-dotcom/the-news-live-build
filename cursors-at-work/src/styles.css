@@ -135,9 +135,9 @@ html:not(.caw-loading):not(.caw-pending) .caw-studio { opacity: 1; visibility: v
 .caw-measure.vertical b { translate: 6px -50%; }
 .caw-measure[hidden] { display: none; }
 
-/* ---------- toolbar: a floating pill, always in the bottom-right corner ---------- */
+/* ---------- toolbar bottom-left, crew counter bottom-right: floating pills ---------- */
 .caw-toolbar {
-  position: fixed; right: 16px; bottom: 16px; z-index: calc(var(--caw-z) + 2);
+  position: fixed; left: 16px; bottom: 16px; z-index: calc(var(--caw-z) + 2);
   display: flex; align-items: center; gap: 4px; max-width: calc(100vw - 32px); padding: 5px;
   border-radius: 999px; background: #2c2c2c;
   box-shadow: 0 12px 32px rgb(0 0 0 / 0.24), 0 2px 6px rgb(0 0 0 / 0.12), inset 0 0 0 1px rgb(255 255 255 / 0.06);
@@ -155,7 +155,14 @@ html:not(.caw-loading):not(.caw-pending) .caw-studio { opacity: 1; visibility: v
 .caw-toolbar .caw-primary { background: var(--caw-sel); color: #fff; }
 .caw-toolbar .caw-primary:hover { background: #0a84e0; }
 /* Crew counter, only while cursors are working: overlapping colour dots, then a tabular count. */
-.caw-count { display: flex; align-items: center; gap: 7px; padding: 0 10px 0 9px; color: #d6d6d6; white-space: nowrap; font-variant-numeric: tabular-nums; animation: caw-fade 0.3s var(--caw-ease); }
+.caw-count {
+  position: fixed; right: 16px; bottom: 16px; z-index: calc(var(--caw-z) + 2);
+  display: flex; align-items: center; gap: 7px; height: 38px; padding: 0 16px 0 14px; box-sizing: border-box;
+  border-radius: 999px; background: #2c2c2c; color: #d6d6d6;
+  box-shadow: 0 12px 32px rgb(0 0 0 / 0.24), 0 2px 6px rgb(0 0 0 / 0.12), inset 0 0 0 1px rgb(255 255 255 / 0.06);
+  font: 500 12px/1 var(--caw-ui); white-space: nowrap; font-variant-numeric: tabular-nums;
+  animation: caw-fade 0.3s var(--caw-ease);
+}
 .caw-count[hidden] { display: none; }
 .caw-count-dots { display: flex; }
 .caw-count-dots:empty { display: none; }
@@ -165,13 +172,13 @@ html:not(.caw-loading):not(.caw-pending) .caw-studio { opacity: 1; visibility: v
 .caw-count-of, .caw-count-label { color: #9a9a9a; }
 /* Phones: the same controls, tighter. */
 @media (max-width: 480px) {
-  .caw-toolbar { right: 12px; bottom: 12px; max-width: calc(100vw - 24px); gap: 2px; }
+  .caw-toolbar { left: 12px; bottom: 12px; max-width: calc(100vw - 24px); gap: 2px; }
   .caw-toolbar button { padding: 8px 11px; }
-  .caw-count { gap: 5px; padding: 0 6px 0 7px; }
+  .caw-count { right: 12px; bottom: 12px; gap: 5px; padding: 0 12px 0 11px; }
   .caw-count-label { display: none; }
 }
 .caw-toolbar[data-mode="building"] [data-act="live"],
-.caw-toolbar[data-mode="live"] :is(.caw-count, [data-act="live"]) { display: none; }
+.caw-toolbar[data-mode="live"] [data-act="live"] { display: none; }
 
 /* ---------- going live: the real page, chrome gone ---------- */
 .caw-live .caw-studio, .caw-live .caw-cursors { opacity: 0 !important; visibility: hidden !important; }
