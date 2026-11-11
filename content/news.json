@@ -1,117 +1,59 @@
 {
-  "updated": "2026-11-11T03:14+05:30",
+  "updated": "2026-11-11T07:19+05:30",
   "feeds": {
     "top": [
       {
-        "id": "846d0469fa",
-        "title": "\"We Didn't Start Iran War\": Pete Hegseth's Defence Amid Impeachment Threat",
-        "source": "NDTV",
-        "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOSGNDdzJIX3NzLTllNzU0UUZUMHFOY1VLeWNsRGlzS0RtNFFnMENHb2hmaWJ2M2pmekJ1R1NxUW5WajlTTkltOTZ3dWNKU1ZBNHhEMW5FRlM4RDQ3UmdaUlJoOG1DLU4wbFU3UVZId2czV0w5ZEdWYXRIMkdMY3ZUeWNxZk9aaUJISklxR3lHcU54S29USFVCX2pGNDNGUHJ3WE9OTXNYd2hlLUE?oc=5",
-        "date": "Nov 10, 2026",
-        "longDate": "Tuesday, November 10, 2026",
-        "related": [
-          {
-            "title": "Impeachment Live Updates: House to Read Accusations Against Hegseth",
-            "source": "The New York Times",
-            "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTFA3aFh0N1I3eXV5VHBNTkx3MEhtTnRKSmNtZXFNaVI3a0V5SUF2T2VfaC1SRnp0Uk5xOWt4Y0hZajRjTHp0bGhKS3RVbFd0b2pPaTJzT0JtbDhGVUc0V2FDTGFiZS1HaFFOdG5IejdJTUlMTGZlUExfZDEyc2c0dw?oc=5"
-          },
-          {
-            "title": "Live updates: Pete Hegseth defends record after Republican begins impeachment effort",
-            "source": "BBC",
-            "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE90QzhLd2lDckVuRlVEYjc0QU9vUkktcXFfcXpELUVXZTVuYW5NSnFZVlZJS3hkcllTNkVaZmFQa3locHVyZjN1eS1fRjZRaExiZmNoZi13?oc=5"
-          },
-          {
-            "title": "The trap in Trump’s Hegseth defense",
-            "source": "CNN",
-            "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNblBVR3V5SktCUTBGSE5IUHRzSEZubUFybXEwMm15RXJfNEVpVW9raXFwcVk1RXNLMVlnZFlVLUVIR2lkZlVIQzFBMXl4OUZuX09Xd1Q0RktJSzIyMUtpUHh2UXJiX3NrUkItVVZRaThQaXVaZlFvYmc5a0REdFFlQUNBTXQ?oc=5"
-          },
-          {
-            "title": "What to know about the Republican-led effort to impeach Pete Hegseth",
-            "source": "Vox",
-            "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQVmxpT3F3THNBdUp4TDhsakRMcTZCcXNSZFJZRkdwQVp5YUYxdEY5ekRUN1lLbzQzbGVIMk9SMm9QSEM1anRzZ3dydUJubkFScDVhRHpBeDltUmgtODJtMGJNQUFiTV9HLXU0aS1pTFNZNVhmMXlHSG5qaG9yWno4YVg1VmQ?oc=5"
-          }
-        ],
-        "url": "https://www.ndtv.com/world-news/facing-impeachment-pete-hegseth-makes-a-punish-own-warriors-remark-12308564",
-        "image": null,
-        "summary": null,
-        "photo": null
-      },
-      {
-        "id": "e9a64b273a",
-        "title": "Rubio says no need for major combat operations against Iran given US economic campaign",
-        "source": "Reuters",
-        "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOek5yNnd3UkRRS2RHYjY5MlR1NU9KQnFWcW43RGV1VHI5Yzhxc3RseUstNnVCbXVlUTN3T1hTcE9RUEFGT0R6Q0JUTmQxNW1aX2lZM0RXZkNjLTgwdWQ5aFN1OGM2LTBLcV91MlBkdDE0a2VCQk5nNUdDOGo1ZHI2TW9Pa010QjlrcjQwU0htVjlTMlVOUXJ2cThHQ0JHY09rSHFyYVgtNzNhMXNVVzJ3UTZTb1R6cmM?oc=5",
-        "date": "Nov 11, 2026",
-        "longDate": "Wednesday, November 11, 2026",
-        "related": [
-          {
-            "title": "Iran war live: Tehran’s security chief says no talks with US taking place",
-            "source": "Al Jazeera",
-            "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNb1BpVEpoUXk0dVZTcEVneEYyZVJuVHUwT2E5b1VobkVINDNGeHdwcTRsSzlaMlp6WU1MUFU0N05ucXRlQk1yclZnZGM1Z0dwOEZDcTNXOTlzdzBkQ1NCNVZyRTFNYWh0Z0ZtQXJNS1NvY2tBbFpDejBFZlVhMmlkRXM1MU1WQjJrVFp0eERuUE5mWG55dVdULW9xZ3I5SzZGeXZ5ZDhfNGRnX3ZNdjZUcU9MSmhLbXI2U3fSAb8BQVVfeXFMTUNBbmhtNUIyWFg4OXQ1U25TaXVzVGxKbWloNWoyQ2NVMDFLcHJRY1VnUTVyaTB6dHVHbEs5QTFtQ1QyYXUxRFpFTHpVMGg0Zi1TS2N1TUg0UW85Q2ZOOHk4c2I1aWo0UzNsc2hOYW8yU1lObzJaYzhpVkU0a3I4VWx2aWhxMGc4dTdQamNIZEJaM0t4ZlZzQ21pMWdHN0JiZml1RG9kd25lbktCSWxFc3prd3VmT2FZdzhJMWJPVDg?oc=5"
-          },
-          {
-            "title": "\"No Need For Major Combat\": Marco Rubio Says Iran Ops Were 'Devastating'",
-            "source": "NDTV",
-            "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPYVhGV2FJSUs4T0RFNUo1N0tid3FTWTRqaUxzZVhmbFNiZzF1TFpMYkpTZHVlazF1Mk12WFpUWHROS184MG5wTW5DaHpRNUpoVzNabWVVaFFaUHJGSGtJSllyZ2g5SVVrZXNvUVhiU3U2eXgxbXZ3c1NhRzFfN1FJMl9aQ1luZ3pScEVlVFdFemFlWlZLcnhrdE0zYW9La3llanY2am5VckVpOVp50gG0AUFVX3lxTFB3T0VwQjRualRDX2tucXdhem80VjVsT2l5RnVaU214ZFNWMlNlaUFOVllwSHhJSG5BUUdGbEJMTk5UVUF2RjBubDNEdGxIQndsNENITmZjdV9zY0RDczlXVFU3RHlfR1N1VHZTdEUzTVFHZFRYdVl3UEtzaWNNQkwzZ2pLU0FBdW5SVTlPRG9YM2VtT2w4N1A0bXhaUFNlR01uNWNFRFBSY3o1dlhYNWJIbFlQWA?oc=5"
-          },
-          {
-            "title": "US sanctions inflicting ‘extraordinary economic pain’ on Iran, no need for major combat ops: Rubio",
-            "source": "Hindustan Times",
-            "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxOdngwbjlSSXR3RXJWYms5OEtWTTZPYkgzbkRHS1N6VjlCNFVzRGVvMGs2RFNrb3duTm84RWVoZFVFV1VxM2Zub09YLUo3WU5XdGVkcTJZZDNFbUFIVTJqbE9lVlRVNXhWX3k2ZUMtTnZSSDBpYnNRTG1zYWhjYWh0QXNBX05ZZXFXanVwRVZ1WGpFczVnaU1ydkhITU9ha1h5T0ZvS2FkUDZqZ21kSG1jSXNzaVdBVENtUjB3aUhpM1A2dUlmWkZscFd6NmgzcE12Z2lHaExjVGNSWVpwUm5HQ0REVDNCSWRVRThibHlEbk96Tk9FaFduc2dieEQ?oc=5"
-          },
-          {
-            "title": "'Almost all of Iran's oil revenue will dry up': Rubio warns as US tightens sanctions",
-            "source": "The Times of India",
-            "link": "https://news.google.com/rss/articles/CBMiwgJBVV95cUxNenRCejhndFJzSjAyVjlFbm1hTVZzZFd3Y0NwdnFCenhyQTdIS0dRajMtWEpKbTdCN2hYR3diSFVPUlJvUlhONXJxckFGV3FNbHpnTXVGVnR5V05zOWJtVW0teHhsTW9Kakg2ZWRYYlNlTGNEM2w0MV9JblF5X0dtaEh4RHRURWJPc2ZpTDNXVEgtTW9CbXdobmR5aFhNTGlsN09OZkpjaVo4UTMwNTVEWWIxUTlpV1hqWXpYMl9VZkxiSEVROTVlSHRqODd0RWVuMElRWHZsNzNoWEU3MzRDMllCLW9CaGNnTlRiR21zRFE0dzh5VjNHaE5xRF9GUXpWTzFsWjBYb0g4ckVubkxHMzYwM1FnNUNNeXVnVkhHUVVGcFVLUUUzMGxvZnNkVEcyQ1JLRGNsWldNRmI1ZDNidXdn?oc=5"
-          }
-        ],
-        "url": "https://www.reuters.com/world/rubio-says-no-need-major-combat-operations-iran-given-us-economic-campaign-2026-11-10/",
-        "image": null,
-        "summary": null,
-        "photo": null
-      },
-      {
-        "id": "ae8474dc24",
-        "title": "Pranab Mukherjee hinted at desire to become PM, ‘shocked’ me, writes Sonia Gandhi",
+        "id": "db47222300",
+        "title": "Pentagon chief Hegseth calls moves to impeach him a farce that will fail",
         "source": "The Hindu",
-        "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQRnR2VmxKUzcxU1M3SUVhYTF5Z1FfRTNFNnMwSnYzaEhVSzZDRk5KaGlOaDJweFF6S29SQnpMclFma3JqOUg4S0RuaGY3Zjd6VklDRGhZV25Td0hNaWw3aTZMc2x2VTlieG5rbVphU0pRNGg3OUNWMGpuRlZPN3RMYUtmbFdKMUZ1OGpJVHVHZDZtTzk3SjhSUTNXbVVPNW9BY2NmRHV4M3pvTk1pVG9mbVA3cWRWbUk0WUVJOXJnX2RYTjRKcU9kYTc4NTA3eURIRlHSAdgBQVVfeXFMUGFFZk5nRjBWVjRmRm5LZVVyRktjVk1xRmxNMDFVZGo5bWhIblM4bUpQVWVVYjJ5LXdRM2Fqc2lRUnM1MUJpVS1yREl5dW1Fb3U0d3VhMzlhMWtseFkzbFZIZVZ6bFJuRjhlZ2JWZ1I4X0FCR3J0eUVmWjRlcXk5UHdKdDdjWWFpMjBTTm01Y2tQdXduWldQS01adjRsM0ExVnNoM1M0N3BqSnczOTktczV2eUs5UEVyRFZxZ05iWEViWWFHY3U3YzBiWE1jXzhkOUpaUURPcHoy?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQUkJOd3JQOHVGMWFnVU50WG9NOHgtSHBTREwwQlFCcV84M3NIMXU5MEVHT1ltY0F0bUhOZHZhNG16bWx4bU5IYU1rNnRib3c3d3lkeEtIeEQ2QmlxR1lCR3ZTTUZhLW85SU5vdXRMRnp6WjdVSTR2aF9YazdnVDlmWno5dGh0bXhFS0JtbHVGa0ZIbDZpdG9uY3I2cVliSTdBaXJPbi1GMEVlSVlWZEpvOUF0NEtwak9OUS1KRmZBSmduSHlhemo1UlZiZEhBeDhIc0HSAdgBQVVfeXFMT0ExbzBmZ29ZV0M3bVY1Ti1ja292akVUXy1BZ1AtdnFYVXduTkx4d0lwUURjU2FvOFNBSllsbUJqbXk3NmY5Qy1sZUVCVjhQWlZzOGpyY21JX3RZOHNEYTE4RXZtVXJ5MUdZNmI3X2RoZTFVSlFJMlAwekdya21XX3NTclhJUEVrX2hwV1l0UTU2dnNDbVNGbWRZUmM5aE15dVRYeG4tNVl4TGxBeWJNcDI0ZGxJYjhvZG5aVEVRcXRzYTN3Xzc5NjRzYlBfWmMydEE4WnIyRHBJ?oc=5",
         "date": "Nov 10, 2026",
         "longDate": "Tuesday, November 10, 2026",
         "related": [
           {
-            "title": "'Crime To Be Ambitious?' Pranab Mukherjee's Daughter Hits Back At Sonia Gandhi",
-            "source": "NDTV",
-            "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPcThyZUZnUWJVSUJ5TS14dU5CTWc2dl9ndzNGczJvSm0wd1RkNUh6WWtPZm9pMVZEY28tekc5dU9lUUJwRHYzNU80RGxzbEhQcC1DZ3BwUUxyTXItX19rcXU0YUhVYmJIaFhabGNnNkx5MWVFZHZMRWRWZ2IzMl8wMWI3ZjYxUk5XQUtjQU40WlkyYU9hNVFXTEhfZkh6TmVKM2NoQjhMakU2U2xVemtQVjhvN1NNTHBENjc3TUFaVlZ4N2ZYMllKVm5BOTdTR3o2THZOWk1RWHdxTVEzeGhmemstbVA4WFc2bUNaRnpzM2oxbDA?oc=5"
-          },
-          {
-            "title": "Evening newswrap: Sonia Gandhi's memoir sparks row; India condemns Chinese vloggers; MEA reacts to US midterm results, and more",
+            "title": "US House blocks bid to impeach war secretary Pete Hegseth",
             "source": "The Times of India",
-            "link": "https://news.google.com/rss/articles/CBMimgJBVV95cUxQcFpCbERIaVFNLUQ3YS1jUEJlMERHRi1peE9XTk5XRmJnV3ZCci1tRTVCaXN1dTdIWG1vTlc0ZUFMbElDTFVkcmc4ZjRsM2VsaHhOREU4czRPU2FWdURacWdSVUVQLWhldDJDZzlJRWdpMTNtcWtTc0FmOWZMOXFyTzBFaHA0TjRTZDlhZHY2ZFZaZVlYMEZRQXB4ZGRzWE8zS0RTQ0dVblpzdnB4aGJsZzY4WDZQMUUxUlZOT3JMdENGODVFRERfVTgwVm9oZTR1VE52aXZPZ2VtSHg2bmd5NldZV2l5QjV4R0JocWx1VDFINXNrZlBpSk52VGdSY1dnSmxDVFZkUGVzUGVXNWIwaUhKQ215RmktMnc?oc=5"
+            "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPdjl1c1JZSk1fTGc5bkRZZi00a3ItSW14MVNUaUkzeVQwRjR4UGNKV3RBMmd2em85QXBPc0RLbUlMdGZDSE80bWdhZVJFeE8zOWZCaGp5WmR0dk9HWWI0T29nX014aFNZU3BrV3VXYzd6ek10aGtqQW42ZU9McDljWkwxamg2Ml94Nml1ZTgtMTViUW1VcW9VcE81cXZCU0gwaWdrMWJXa3NBV3d0THU0dUxtUWd4dDU2Q1hzaGNpai1XUDF6WFdn?oc=5"
           },
           {
-            "title": "‘Why shocked about his PM ambition?’ Pranab Mukherjee’s daughter reacts to Sonia’s claim",
-            "source": "ThePrint",
-            "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNSkF2bVV5MzJvVHFHclo0Q2hLLWxDU1Vibm51a2FmQk9aTHVQcU1JeHJjc1U4UGthM3N3VzlmTHFrelBXcUV0Q0g3akFkMV9tUTU5RTU0RHNKMDJua21tb2hPTV9Ub29neUhOcjQ3QTJkRDQ2UGt4dm1rWkZ2UGJLZUR1ZHJ6ZTdTRHQ2bWNuSXRFcGs1MmE3RTlVMWJYeUpGQ0hoU3NhS1o2UzJSR011Q1pIdm1Nc3UwTmdFcFhB0gHDAUFVX3lxTE42N3VrQjdrVE9DMVdfSnA1U0Y2ZUxkQWJaLTItMWMwdWt6TEVqVi1mYk85TnJZTk9fNDJVdWZteDQtc1ZadFMxUGgzX0xIV01WWGs2VzBtR0k5RmxZT0FjdUM4bHJ5RE5UcGtrUW84Z0d2TmpmSVltN2llZEN6RXlzR0E3LUxtdDBkYzVfb2owR3pHMFJFVktFdzdnaHRhUXFZY3F3dWRKaHdtNVVMU1VJd2VVajlMYlZaLUZCd3ByVk5iaw?oc=5"
+            "title": "Morning Digest: U.S. Republicans derail bid to impeach Hegseth; Pranab Mukherjee hinted at desire to become PM, writes Sonia Gandhi in memoir, and more",
+            "source": "The Hindu",
+            "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOR0dMSzhkX3F1bW53TFNmdXpxejZacVA2WnFLcEpXdHVwQXJWZUNrckxVYzQ0WXUxUlZ6S2ZER3RwVWZvZlM4b01yQjdkbWhfYm9tQ2lyWGQxLUVIdElKUXMyZ2ExNEt1WnozbWsxUHNYMFIzWklUbkhCSHdoWko1b3BGdkZSUkhIZmRfVNIBkwFBVV95cUxPSWRXTGF4dFNzcXpmYU5rQVdJaEpEemhjcEhMdXJUNmhoRzA2T3dLeEZOUkRORXRSTFI5eno4LUtHcTI4c1FkMnNsaEVfU3NjTGdkS2xPWE1XSjRjb0ZGWGcxdl9WNkNCSTRyOHpnRENoMy01UkdWdmdfWmhjWDNrX3ZHdk1ERVFhbmNrUmVJX0tHUGc?oc=5"
           },
           {
-            "title": "‘Made it a point to speak frankly to each other’: Sonia Gandhi on her equation with Manmohan Singh",
-            "source": "The Economic Times",
-            "link": "https://news.google.com/rss/articles/CBMihAJBVV95cUxPOGc4RllPNzFaTDgwLW45WDNNajR3OXhGa2c0NEtLVXNER1V3cjhGN085dzlJWWpmQU1ZRmlIWTlPZGZzTVQyMk1mREFlSjVPeG1fWC1OSmZoS3ZSd3llS0h5RTR3NE5nbUxTSzk3QjdhTU4xSVBNLV8tOXpiUVBMWjJsamJLYV8tUUtVdFBaOXFLdDQ1UjNucVFXbFdWN2R3QlBhcVdGdE0taTUyaU9SZlBjUkFadTU2QU9wbjZTWVQwWHAxeHFhZEd4c2JsaGsxbnVUdkNiR3Y1RnNjSDZVZ2J0MUZkTWFSNE5SSnZ6dkVuMTBLQkJBVlZMbmRERFRnRDFledIBigJBVV95cUxPcEZWRi1zVzBkVzNIOEU0RVVlUmVJYmI3UU5adkJGMXA0c3V0b3VQVU45MlZVbEkta05sSndaQjJ5QjRnSGo4LXd3eVUzUnRyWVgxQzRjbVp6ZlplMGI3YWFYa2FnVTJkMEctVkVNR3I5MXVGaXlBS2VyOXFWQUpjbXN6Mm5mdHA0UXViYzd6TjE2MFlBVWxscTFmXzBOU1ZINjk5Y0FGMUtjRm5ZZGtDWXBsR3oweDhUUnoxUk9hZWZ2MjlvMF92cndCdUJRZ3M0WEluRW5iNmtGRmxfdWI0cEFfTk9uYlByaEZJQnB4NU5ha3FDTU5aQ0tHWGpaTXJHQW1mSkVQTkEtdw?oc=5"
+            "title": "Iran war live: Hegseth survives impeachment bid; Iran denies US talks",
+            "source": "Al Jazeera",
+            "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQcnQtOFhJLVdPd0NQa0NZVW5INzNFMF9ySUJlQlpXMEVCaGJYYl94dnJDeTFQU2VHbGd1VUZZNDNLUlNnX2g2Q0hENTZMMDlDX1plUTJSOEUtalZ0NWpGTDEwVE9rNlR4UFdpRi15R2NhQUEyRlpSdlZfTWdOZ3dDQl9kNTJjRDFzdDU5T1ZJRi1mNnNMcVBMWXhKTS1ENFBWM0pTOW9lS21UTGx5aU5ISXlwM2xoaFdqSUHSAb8BQVVfeXFMTmNPdEc3dmtNRm95cTBJSWtONzhKOHJ6X21BaXF4QklNdkU0WUdzMjhyeUJKNTNpdkJqSXZ0cm9wS0FscGstUmNDcFYyZjc4a0kxbVBEVXpOSTNoS2dVODN4WnlmOWZKdG9WdGJ6dk4tS3MzMWNsREluZ2VORV92ZFZEdVFteUNtUnpwWm96bkVjMFBmSmdhN2ZaaVRPR1hXTGtVTG1SNl9seWxjYnVVRFVJNFpMUEstZFRVQ01Da3c?oc=5"
+          },
+          {
+            "title": "Analysis: Hegseth fights for his political life with appeal to Trump",
+            "source": "BBC",
+            "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBqT0ZaTEk5THF3NDFvWFdQQTdjaEZkd1FiYW5sbG0zYS1USEEwNXBPTmdEN3ZLSXIxM3d5LUt1LU4xMDlEZHVpVHJEWnRvVHhiVnlJdUk1WFBIdUk?oc=5"
           }
         ],
-        "url": "https://www.thehindu.com/news/national/pranab-mukherjee-hinted-at-desire-to-become-pm-shocked-me-writes-sonia-gandhi/article71686777.ece",
-        "image": "https://th-i.thgim.com/public/incoming/toc5s9/article71687051.ece/alternates/LANDSCAPE_1200/PTI11_10_2026_000149B.jpg",
-        "summary": "Sonia Gandhi’s memoir reveals Pranab Mukherjee’s shock candid remark about becoming PM, amid Congress-era power dynamics and ambitious politics.",
-        "photo": "assets/news/ae8474dc24.jpg"
+        "url": "https://www.thehindu.com/news/international/pentagon-chief-hegseth-calls-moves-to-impeach-him-a-farce-that-will-fail/article71686563.ece",
+        "image": "https://th-i.thgim.com/public/incoming/xx0v3r/article71686594.ece/alternates/LANDSCAPE_1200/2026-11-10T135041Z_970840811_RC21LOADXIZQ_RTRMADP_3_USA-HEGSETH.JPG",
+        "summary": "Defence Secretary Hegseth dismisses impeachment moves as a failing farce amid eight articles from Massie, pledging support for Iran-war actions.",
+        "photo": "assets/news/db47222300.jpg"
       },
       {
-        "id": "2d08fb607b",
-        "title": "'Heart in my mouth': Sonia Gandhi details making 2003 alliance call to DMK chief Karunanidhi",
-        "source": "Deccan Herald",
-        "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPRnZMdkpRUGtfT1VpNDBLYmxHaDdJV0lLdVhMZVlyVUpxbFdmWE9MUndBeGgyZ0hYOENFOG1fZDRRUWhHc1M3MzJ1OWNKYXlsMEFiNWJfSC1Sbjk0WkotXzI0OWM5aTZPV3pSQ0JwX3A4T3hRRDJKWGhDc1BNdG0zeDlWNEc0amNkMjNWQWplRjA0VGNmX2lvcktwNzZ0TS1jS0I3elpKNE41TV9IV1dtMnNyX2FvaGhDeDV0enJaU1g4WVVSUkNDMUJFODI?oc=5",
+        "id": "40c5143528",
+        "title": "\"How Has He Left Me?\" Priyanka Recalls Sonia Gandhi's Grief After Rajiv's Death",
+        "source": "NDTV",
+        "link": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxOVnNYdkg3VnQ0eXBjOWVtb196XzhHVi1nNjVWXzl6V3B4OFV5ZUpxeUNzd014X0M1VHdVazNUaUI4T2twNUliVFNnV2s4bEdzUzRKZmFWUF83alVKOG9YSkdQdm5ZM2NiNmNhZnQtNTZaRTJhVFJwTXdwQU1pOUhrVmtwcUJpMFRMS1pNYWQzQmdpZ2NBRl9XTV9FOHAzbTlkbTNTN3pVanc0My1PdHZyVU15U0xaM29nZ2FoSV9PYW5sVWs2QjhNYll4b3RhRk9heFRQakZCM0Z0SU43VmpycjVGLWU4VmNTeVZwRWZDbEtxSnhrdk1McWxaSQ?oc=5",
         "date": "Nov 10, 2026",
         "longDate": "Tuesday, November 10, 2026",
         "related": [
+          {
+            "title": "'They will kill you too': Sonia Gandhi's turbulent journey in Indian politics",
+            "source": "BBC",
+            "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9hWmlyME5NYXlJaGtJZU5NSllZdjBWb1ViZlh0bnhNcjdpVHhvdV9NeEMtdDFUcmdyM0pHYzdieXdGMTlRUl9jREJKUXktQVI4NUVQaW1aaTdwWkk?oc=5"
+          },
+          {
+            "title": "Manmohan to Pranab, Sonia Gandhi recounts in memoir 'Belonging: A Journey of Love'",
+            "source": "Telegraph India",
+            "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNS3ZpdTZNREVDdlFrU2hpTzJjN2F4Vmx4X2VJZGZmLWNxUFlSTmx2OU1GdU93TnRMbHRpMTZsbEFURF80Uml2amt2NFg3OEs3UlVIS2t5dTRPcmZlNnZWblNaOUJwa2R2YmF3ajVNcXdNOFNhZElIdDQ0TExDYkJ0Y1ZIeFpmN3pLMmhpQU53WjE0SE05LXRQSHd3N1lDbU0xYV80OWNSakl0YUl0cjY5SS1DRDJzalFWbjdwYmk4a0NQVHhGMnVQX2RVT2fSAdIBQVVfeXFMTkZhNmdrUlpkN3pEc2pLdkd2NFNRd0xLOUtCQ1E5Y25nMVlZTk1LcEdBazBvcGk5bUhrOUdVODJJc05JRFkyRTJUWG9iVXpLcV9NWmh0WWZtbmJObW82UVVzLVhhVGllVzVTRDJCSU5DQzM1R25VdTdOd3pZUVUtMGg1VmxMTUd5d1NDcDNYU1dpcHRhamd6N2tfZUNpMU12RjR4MDZucEFiOEZXMXB1azlIbVlMbTNHM1dTUlVTeURLLUVNZEZvOW1QYTYxdlZaazN3?oc=5"
+          },
           {
             "title": "For the first time, Sonia confirms battle with cancer in memoirs",
             "source": "The Times of India",
@@ -121,22 +63,46 @@
             "title": "\"Not 2029 Elections\": N Ram On The Timing Of Sonia Gandhi's Book, Its Politics",
             "source": "NDTV",
             "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQSDJPYS1lR2J5VkNUMXU5T2ZfTEo3NmU3MFR4eFlXUjFscG1TdVN0cGRRVlJkcmlNd0U2Mm1ESHBSd0IwaTBQbHYxbTM2M1NPS05odVg3ZWpOam5SNG9CTFh1bElEejJrak5ydGdzTU93RWhiZmhWNnJjTExjLU40S3Y4eXpzR1pZTldLMUNwdWFwdDBCYTd4TGNmMHVzbnRpMnBLUHA1NHlKSUJGQWtsaF8xbm5aaTAybmpYVkxhWGZKY1J3Q09MTm8ya1lPTGxOTXVRdWcxTS1lN2JRT0VoVnYyQktBaDNncXZveElhQQ?oc=5"
-          },
-          {
-            "title": "Sonia Gandhi’s book attempts to give her family clean chit over 1984 anti-Sikh massacre: BJP",
-            "source": "The Hindu",
-            "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQN09nUkdvNzN5NEQ3TUI4X19aWmp0ZFRGRmlJcWxaRzB1ZkN1MTFYTGt5b016TzVqMjEwajRheE5HTzRLNk1jdHlzSzdNeHBZMEpuUHlxc0IzV0MwT3RLbmY1R1BmUXBEVE5MMU02R2xMWUZFNGhhUHphazFkd1VIWFhhWHB2bUpiVmFybjRJX0ZnTU40S2w5QkpqSjA1THZzTzltS3REVjZobXdzVUJzcHVyT2txcFp0RjVMYTRETExFMGNGQlVGWVgtYmFJOXFaSUJRLV96eHpDb1RUdnFjalRLNNIB6gFBVV95cUxOelQ1ZW0tdEJvMzdxaWpQbEJJaW1iZmg2dlFYYlN5RDJ2cUJuN3BDaFVIWEktZmlUTWoyaFY4MmVUTUJPRWxVSFFXMmRSSmpxX0trNGJLcDZNVWJvLWFIT1ZQV1V1Tm5iNXVMZEFPUVRHbXpXZGZ5MzFDd1FuNWRhdmw1a0tieHNPbklRVGNabWUxS3E1VEJsUk85b205bVFzWUoxcjBXVEdod2dlWGc0WUU3dzQwRDFob2N3d0VZTXR2Z1NTN3FFdW4tS2J4UEF5aDZpaXZaWDlwTkpBTGxIYXJ4aVA2RXdRVnc?oc=5"
-          },
-          {
-            "title": "‘Whitewashing’ or ‘Belonging’: BJP sees red in Sonia's memoir, Congress says ‘read book, don't shout’",
-            "source": "Telegraph India",
-            "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQa2tlbUh6LWxxSmRtUHhPUmM1bzhRS3ZVME4yOU1kby1wQnczMW5Hd0hMcC1qRE5adjczX2NXd0JVS3VpcTJBeTZ5RFQzQ2dGcGVObGpsODYtZFlXcG5SdmZoeUx0bVdlUUlJMDJuUzlKcEVaMXVUU3BXbjJxNEpfSmhqd2JHMl9yeFZaUjJBMEsxVWlSY1ltSWplTVpobnhWVkVlVjRuSGVpc19XNU5sM0MyYmFGRnVYSEdNY1RVdE5ZNlNxb09EZENUUEFXaTlxei1hYVJn0gHbAUFVX3lxTFBXNXIxa2pqYUJJV0JrZmVtTTdUMW5FREVNdGtEUWZSSll3MWMxZHhIMG9zLXdmT1JhQ05mTXJUTGtTVk1ycFd5czREdWV2b1ZUUWJldXR0dGFKUlZDZk56b25YeG9oaUx0QUlGU29FdVpmZDdieG5HcWV5YUhGbEFkR0IxMDRlRmJkWW5EM2VRNV8wTjZ6cDFUWDJiWUlGMkVfSVQtcnBBTWpiOE83eDFkOUVhUm5RNmhPSDBjSV9PVWJSLWwzaGY4c1FHTGd3aXQ1Z19TRW5kRXNfbw?oc=5"
           }
         ],
-        "url": "https://www.deccanherald.com/india/heart-in-my-mouth-sonia-gandhi-details-making-2003-alliance-call-to-dmk-chief-karunanidhi-4213686",
-        "image": "https://media.assettype.com/deccanherald%2F2026-11-10%2Fv8zfj0sx%2FSoniaDMKNCP.jpg?rect=0%2C0%2C1219%2C640&w=1200&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop",
-        "summary": "Political memoirs: In her new book, Sonia Gandhi recalls making a trembling phone call in 2003 to DMK supremo M Karunanidhi to forge an alliance against the BJP in New Delhi.",
-        "photo": "assets/news/2d08fb607b.jpg"
+        "url": null,
+        "image": null,
+        "summary": null,
+        "photo": null
+      },
+      {
+        "id": "ee084c723f",
+        "title": "Man posted with Rashtrapati Bhawan security shot in head over firecracker row in UP",
+        "source": "The Indian Express",
+        "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQeWItUFl1TkJhd1JjSkExQzNHLVpCX0ktQTZYaGhWTDdPcDdnZzYwSUdCLXR0NS1qRC13OXlKYWFnYXdDVks0NFM4RjY1di03MFlhSWlYR0RKM2ZGby1EeWtHU09PdzIxTTAzeUV0RkxXakFZZjRvTUo3RUViR2VWbnVQX2VJLWJSSW1GeHpZNXlMdWhwc3lMZlVuN3dFOVF1VGVTWVZpeVdRb2xOZmNIeTBNLUpqWjNqdzE3MFkzbUxjUQ?oc=5",
+        "date": "Nov 11, 2026",
+        "longDate": "Wednesday, November 11, 2026",
+        "related": [
+          {
+            "title": "President’s guard shot during Diwali clash with neighbours over crackers in UP's Baghpat",
+            "source": "Hindustan Times",
+            "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNMmFPUVFiLUtLTHFCbkZMeHFJa3dBSTNDY3RQaUVXMXVTNVNPUWw1ektyM0E0QXdKc05CbllQUXNySWdFM1V1YTJHV0ZGMTNPWmRSbmd4RjBsWFdoclRZNy1QNHR2bzFiTzduejg1RHM1akxLWEJPemVfSGlCREg3THE1a0M3TFkwZWhMTGE2NzFBSmxkU3NhZEtYMThWeVR0WVEyQU85aTUwanlxajVuRFRWbHJXZEQ4ZjN3RTVZOEZYZmJBSzdobjBIdUE4S1VFdnFxU09ENGdIdk54enpvU0ZweGdTMjhoMTF6SUJSNA?oc=5"
+          },
+          {
+            "title": "President's Bodyguard jawan shot in head after Diwali firecracker dispute in UP village, critical",
+            "source": "Telegraph India",
+            "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOdkloUUxEYmJ5OE5wZ3dmNUNyVW9CZVI3bzlyNnBkTGJGUlpnbXBIaEkzcFMwUnpiZkNBTVVEZWhEY2Zac0VnbVNuMlVjUnlsTVpaWktoSXlpRnN4Wm9ycVFvazJYTGVueHNNanRZcmw3NnYwRnFMcUVMY19qeV85bU1OTS01QVpHU3ZDbm5mRVRubDZDN29EWnQ5dTNPYmxaTjIzMGItUjJfQW1WdXQ2OVRiWk9JQm95RENrd2RTangxczlEdmZ3cmdHSUd4Nlp5ZmhNQWpGMmdNcXpt0gHiAUFVX3lxTE1ydFIyVmxkMktzcDBrMjNkQUhJTGtSZ0liVXZORnJUVFM1Y1pDU25hUWdkZVl2WXJkTkRVVWJueS0yNWZiYkg4enVHNkh0MnRFSk9EcFBzZzZXNnhtb0VSU3I2SG9pMFVoenJvWDBfa0txbERSYVRNbWt6a29ZQWhyUnNzM21kczdqMkdJamozbXY5VEtjNV9MRnY2U1RlRWc3aUFlQ1dOYzIxV2EwWUsxVHVfUnVrSi0wVjlJakZaWS1yZjI0NWhWWDlYSlJBSVpTaDdpMnRBTDdGRUx6YVZOVUE?oc=5"
+          },
+          {
+            "title": "President’s bodyguard shot in head over old rivalry in Baghpat village; undergoes surgery",
+            "source": "The Times of India",
+            "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxQZlF3YlBRRHdZeGoyb05aMTBuczhGbE82a3VQNzlWUzQ0anhZYjg3NDdVNVd2UTgyblRHWjJXS2tob2NkajAyNm1YYmxWZlBGeVFKTUY2OElaVTU5ZGl0T0ttQS0yTzdpWGpmZXIyV2tSZXZ4RHpzOGJVblNnM0Z3YTlRMzNhV0JMaWdENDlkYVJOaFh4UlZDVmdCc2c0TnFVeHBDUU5nWVZzdGpWS0lQTjFkV0J1dHZlZUFlaXI1bTlwXzdrV1pvOEFzeWo2cTNoSkFYY0xlQ29pRTZlTXJUSllISDhTUWtwbV94dXhrc1FRWGc?oc=5"
+          },
+          {
+            "title": "Home for Diwali, Rashtrapati Bhavan bodyguard shot over firecracker dispute",
+            "source": "India Today",
+            "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQcHpIclZQdGpMQ3h4R3JocXFhMWZHSTlkWUxPbkdYTExuSFRPdXZhcUpKb1UyNWtMNnFOa2FrWlcySWtEc2pWM2RDcUJXR0F2RWNDVW0xcVpJdUNmZElyT0FJbG5tSzB6N2Y4ZDBueDFIbmh3YlM2TXM2SFJLM2ltMU5VMDVib1lfb2duT000ZWdTQXZrM3FtdDlZWXI3dVY4M0o0dS0yZDFNTHFNd1NhcUZ4azJsUzJ0b2hBRXlDZFRBWVE?oc=5"
+          }
+        ],
+        "url": "https://indianexpress.com/article/cities/lucknow/presidents-bodyguard-shot-during-diwali-row-with-neighbours-in-up-10957600/",
+        "image": null,
+        "summary": null,
+        "photo": null
       },
       {
         "id": "506a89b16e",
@@ -152,9 +118,9 @@
             "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxONWlvWGJCd1cybzNhU01pWEpwbTY5OTVITnRaXzFtaUdyVWl4UlJweGRLLVZOQmxIY1dVdnQwM3R2MG0tN01YLThqUjJsWkctaE84YW1uVzdabkRZWDB4aWlFRTl1RVRyNW93c3B6R01xbFI0RkItZHBBUEtJNG16Mk4yYlFNak0yQmgzcmFMOEQzbWtyTmx4dGN2dnRaazJ2VW1Dc2tiU2ZjbVlEYW9Vd3A5bjJ6UWtjeGpnSmpMaUs3SEFFa21YOERNZ2tZRHBnbHd5dmpiOTREV19RVjhtMHZhYUZzNEhoQmRMZGx5ONIB9AFBVV95cUxNVEQ0N1B2SnEwOTBxLU8xblc3U01fVW5JWXlvOWhIWV9QdzJXeDNHM0d4VmpqT2NWWnduODFZNG9Td2RKUGtQa3dVTkVoWjZmQldIdGl2N2dTcEJMc25yUWhCUzN5R2ZubzZYNFJRWGxna0c4M2ZXU1VGczZLSzVHaVpfMEt0NkdrZk84OXdIOVdIcFUxSWZrU2M3M0QwZE5GcURDOFFFc2xiMzVJSG9acVBnLTRCVGstcGVPd2M0ckQ0LUxESU1UNzBrYUpiMjVNVHVFVVA0ei0tZDRIdHZJU05NckpuZk16Tk5jbTZmSWlmTm5y?oc=5"
           },
           {
-            "title": "Lahore beats Delhi on pollution chart, Pakistan blames India's Diwali celebrations",
-            "source": "India Today",
-            "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQQjl0cUduRWF2NHlUZ2FEM0RrNTlYc1RXb0U4aDNVRlRMcFc1dDBHMThMRVhkWUZMNGdrSEtWU0oxNjBzQXFwQjJJWS1VQ0EtUFFKNXBWN3hqaE5VQWN6Ny1kQk9OOW1ZZmpoUlpuS25iLUhweEhpelNaSzJpVlpaUktoVm02MldUMUlrdmpyRUR0TlFGSUh3bHo1M29sQkRmeFpsLWRDeW5xZ3pFMERuWXo5dk53STRHUXZR?oc=5"
+            "title": "Pakistan points finger at Diwali for Lahore pollution, but year-round data tells another story",
+            "source": "Firstpost",
+            "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPX0ZfWEx2WEIxczgwZkE4d1B6d01XT1R2TWpyWEY5RmtGcElzblM4cHExWGwyMjRudGR3cmdjSE9YWThYMVYzM3NUSThNdnFDNnBqOWlodjlmVHF4V280MTNLaHg4YjN2b3dIUnZMUDR2Y1E4M2gtNGhySEFaOWozSW1CSGpZSUZ0R0pLTTNNU1Jfb0xwTXgwczdhYXM4OVJsOWthSl9Qdmo2SEpfd01iVVlxSkM2S1RiQTB1eUNveV9GLUtsT1dwNEFkaUg4azM0R2YzdDZB0gHbAUFVX3lxTE5McnVhSEkxT1VySTE4ZTNkQW1aTXFjTkpMTG1ZbW1Mc0NPLS1YM0hKYmY3QjRZR09kSm54M3J5V1RDMl9DaElxa1NPSl9ReThFT2N6NUdSSW54S3pPZzdySll4SHBGTWdadDBRUURlMnI2UkpVYmVFV2hkRVV2YlhPQkxmQWdVUlZUR1M2QnNZTWlyS2tJek5VRGdHQ3BHYmFaSlFwTnNYMWxaS3lLejhiUWtFT2NWWHZEZTBuNW1Ic1NfYU5QaDVqbERPUXJDazBXb05XaHdDSUdnTQ?oc=5"
           },
           {
             "title": "Lahore’s PM2.5 level eight times WHO guideline, report says",
@@ -164,81 +130,13 @@
           {
             "title": "Revealing the Invisible: A decade of fighting for clean air in Pakistan",
             "source": "IQAir",
-            "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOMVdYVnFXRExxakhsbWYxdEJGSDVFWHV3bEFTQzlzWmxsRWtabnlQNDF0VTM1aGNWOWRObVNrelJ5RlY3OW10Vk4ydW90QmJrTnZRaGcyMDZaazk4d2ZuZ1NtNkp4RHBrNk1GV3Q0U2JnRFdTY0Y2NkhtWFZqcmV1d2RadjZESFo1em5sZUcwWE1zelBXVk4wUlBGRUM?oc=5"
+            "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQcGc3bUdSNTNIYWZpWVJ6SjQ0aHk5bl9SZWt5LTZDaTl4Mkk2ejlyR0VidDFTczVLWlZ4cDhTd00tdUVXdXBsRkMtSnRmYlk4QjJBS2tPWHV0eWRTQ3JWeFI4YVpjOWZjaEY2cEJHTW8xNHI5SUJfZk5oNUs3YUVlY3pSeTItVWpOT3plRDhGSG4xa041Qjg3aEphRms?oc=5"
           }
         ],
         "url": "https://www.reuters.com/business/environment/pakistan-blames-indias-diwali-fireworks-lahores-toxic-air-2026-11-10/",
         "image": null,
         "summary": null,
         "photo": null
-      },
-      {
-        "id": "6a2adc8b6d",
-        "title": "ECI’s Internal Records of 2024 Elections: In 51 Seats of Two States and a UT, Votes Cast Do Not Match Votes Counted",
-        "source": "The Reporters' Collective",
-        "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNZ29KRmxiSWZ4SVU3U2xfbHRRTFJlOFRGU3dfTTFYb2pyY0VPVnBNUDQ5SW4zYWw0WnhsMzE2UUpuQkI3ajM5Vm5YWWg2aXpVOEo3ME9xNjhrbTJNMW8zWFJIVE9lNHFadEZPbXI3VjJHcGVpb2VYOEctNE02eU1Ob3c3djN1M2poUmJVMXpzU0lSbjR4RXJNU3ZfMjExNlNDMTFRNUhqaWhzcU0?oc=5",
-        "date": "Nov 10, 2026",
-        "longDate": "Tuesday, November 10, 2026",
-        "related": [
-          {
-            "title": "No discrepancy in votes polled and counted in Mumbai North LS polls: EC officials",
-            "source": "ThePrint",
-            "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQbFhSQkFfYU50QzFUUUdtMWw1T1duMVB5azZJa29OSURlZFNZdUx3a2VSV2FFb2EtMDl6MXdLYmhqRUFkOU1ENVR2eFl4NldteGVuWjNXQm1TRWhvbTJJenJHem14a1FwaVY5SHpJSk1XeWx2dHU0UTNoRktWTV9mQnNsem9wMHdQTkE3RnVSYldSUTNmM2FmLW9HSzNlaDdKSGIwaGo0eFJpeV9QZUR5ZWlYdkNGUdIBuwFBVV95cUxNeUh4eXFuY2drTmdtU2E0ai1CMjRqYzlvSmVoaU9ZSmlQOTVXZ0NDUXc2OGZxUkxYMFo0c1NEYzZBbXI4TFRtc1BVclIwOVVZaldudVVySXEyblZNWG5lRVRjak9KOTVzRDU4YUNjNW43YzZ1SmNUZVpkZTA2OVpDR0pSRTNyOERRc0g4bllXblJYaGhxQzc4ZXNqRVJOZlVydHFRSWY1NUdSa05SQ1haZEJaYXJ2bTJYTWdF?oc=5"
-          },
-          {
-            "title": "Vote Count Mismatches Found In 51 Seats In 2024 Polls: Report",
-            "source": "Deccan Chronicle",
-            "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPQ2FiOHJ4TUt6T0JSNHZUdHM4OE14TmpmV21ES2tvcDJzS2NBMU51b3FfMnd1MHBORVBMWDdPcFU0RGl5N1BvUVk0VzRRT0pDSXRqU2NEQzZGU1dPWjlhZ0pjd3RNdEZqN2JFbkNvM0JvWkNjRVI1a2NfMFBKN0I5OVYzRGJZejg1TWlXWThNbGtYQnRMQVZ3NUxiNDIxdmxEVWl3YXlCY25EZlE?oc=5"
-          },
-          {
-            "title": "Congress presents new evidence of vote theft in India",
-            "source": "Kashmir Media Service",
-            "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNOThzd2traUVLMktHT0ZXNnhteVlEc2NvWHRQaVFZRTNSZ2dJVnZjV2xOZkVWS2FDaDdmYWxpcFM0TGVKTXNPSjNscVlBNHU5WjVSeTZ6WjVWMmNQSXM3TlJranFSTzY5SGFQN1J0NHZpMXo0bEpnalNjTmgxZEVuZG1uWkdyQi1uWDhJb1IyMHBWRHlfWEFPNA?oc=5"
-          },
-          {
-            "title": "Election Commission ignored mismatch between votes ‘cast’ and votes ‘counted’: Reporters’ Collective",
-            "source": "National Herald",
-            "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOSFIyUkxxY3hDeEpfYTR3eXhaaWtBYmpGQjNMTkZEdVZCZ1dKd1pXdkNuTEFqWE55dWJUaVNaakVzTlBYSkd6a2lYTmJ0RXREU05qemxqRnZIZUdaUk1aaTg4SEFCOThjb05zRkVRUHdfZUp3YlVWMi1qenV3T3pPY0lJXzl2OXE4czlKQW5VUXNpUUw3VTU0VE15UFEtX0RWc0RrRTdVUVIydXkxN1pNNG1LUnVBQ0dlOVFCbTBTcjdBMWhGVUVoeU1tU0NwSFlyYzV5RTZn0gHjAUFVX3lxTFBJWW82YTFQTUxPQ29CNzdDVWZZT25Rd2lyblRMODhQRDktQ1Z2TGt2c2pDb0ZCN3pLSjJYa1VLa0JjdlNCWmtvUFVSUkgzdkd1LTFfbGZHTWZCc2ZlUzE1OW41a3p4ZWdSN1hTYXFLYkJWdVQ5Wm1saURSRDFUdENQTE5BNmVfTjU3cDRmdjU1a3lXWU1rbGUwSGtyRFNOOGxtMlFydkZ6eWJuV2d4VHlKQW9QbGRpajNCLXRreGo3V0JnQ0RaLUdiMzVTQlBHWmx2TVJkcXBSb0xHenphUkxtMlFj?oc=5"
-          }
-        ],
-        "url": "https://www.reporters-collective.in/trc/eci-records-of-2024-elections-votes-cast-do-not-match-votes-counted",
-        "image": "https://cdn.prod.website-files.com/600865f0dc1db856edc28cd0/6aeeb7df3b038cb069deaafb_hero%20(3).webp",
-        "summary": "In <b>Maharashtra, Haryana and J&K</b>, the ECI did not record the number of votes polled in some seats. In others, the votes counted from EVMs mismatched the votes cast by lakhs. We accessed ECI’s data which it is required to audit to ensure elections are not rigged.",
-        "photo": "assets/news/6a2adc8b6d.jpg"
-      },
-      {
-        "id": "6a6faa24b4",
-        "title": "CPCB explains why official AQI is capped at 500 despite private apps showing higher readings",
-        "source": "The Times of India",
-        "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxPQTYwNDItZVNQNnpJQXRRbUR3N3NHbmJKeXFtdnVMaFMtNmszVXhCWlBvSFYtTENqeTA1RkVLalE1ZFFYXzFnaXM0LTdrV0lWVzc5Q1FsNWEza21mTFg2b3EyQWlWWWlNNGo1RXF0WHZvdWFiaFhKVmxpN0xaNzNsSEdoZm9rSzJQZE1KRnJxVjFHWk4taUNsbGZXVUx6SlV5UnBpUmNCNHBrX08yVmNrYmt1SGxld0VCa3lHUFd6LUE0dUZHQ2kyNV9ibnVjVDBfTnFqN0haWU40clBDeVNULVptVk1pOFR3bGJLbHd3VXFRZw?oc=5",
-        "date": "Nov 10, 2026",
-        "longDate": "Tuesday, November 10, 2026",
-        "related": [
-          {
-            "title": "Central Pollution Body Explains Data Gaps On Diwali Night",
-            "source": "NDTV",
-            "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNcW9VTDhObWl0aEdTeXhIbmdNcWYyclNSS1RjX2pfS2tZdVdRUU96eHlOakhzcE9McW1JWm1ieElZX1cxdVJROWZGVnlIYnFCd2ZYUmF4NmRvb1N2dXZXcGxmT1hzR015bk1ndGczLW8zU3dmVTlwVENmVHhjVmpwTDVjdHJPbXlNeU9vb05ON0VEUDg1enR3VTVOQUNsYUnSAacBQVVfeXFMTTRVX2Jpc2JHRk5ENmF0TGVfbVFQdFlLSk81ZzlzYm9zQXRwNXI4c3I5RGJCZzFUNzBKT1JFTjdFYmpoaDlFWV80QkI3WjVmbFZhZGRLR2xPWFAwazBfcmJMTTNBMWlEREdEemF6OUlpUEU3RWxFMW5zT051REFXRzFYcGFBc1M0NVVza0xqZ2h6aU1FbU54anRiMzcyMUlhTHdBWTNDRkE?oc=5"
-          },
-          {
-            "title": "AQI differences with private apps due to different methodology, not data under-reporting: CPCB",
-            "source": "The Economic Times",
-            "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQZzZXbGpmWTJxcm52MmVDRWdBVmhFNVRQMEU2TmJudThSU0dxdW1JaGJZNGRQSGwwb3hrVWJwU2tkcHR6Z2ZaVFVhY3E4VFR6a3ZLdTUxSThqQVc0Tno1a1lzd2d4NXZheERNSGJwYVNtU1V0UkU1RDFCSnN4ZmV0MDhNRjJDbVlEVWRZXy04M3A2Y0FManNfMXNNS25hU1dhV2gzMmhmUksweWN4ZW82S2dqN21Ic0hfVHZ0X21wLWZ5Y1RDY1NMRUhYc0lYV0VULVRQcS1iRXp4a2d0ckxoUWNvZW5IS1U4ak9KVXlB?oc=5"
-          },
-          {
-            "title": "CPCB explains why National Air Quality Index caps at 500",
-            "source": "NewsBytes",
-            "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNX0xvXzNiZzFjUVM3ckZoSy1lZDl5Z3Q5ajFhZnkwMGIteVVVb2xPcFRZZEZGVjQ3R1k5UDlWaU96c2p0RG84c2d3WFlENUJlTHZ1QTFucV9Ud203WnJXZmpZeDRwMWNDRUx4TWFwekVMOGhvTTROeHZoTEJQWFBxNXBPeU1aTmt6cFhZSGRJYmpTbFdnRzZIMmRqR05SakJDdWNn?oc=5"
-          },
-          {
-            "title": "CPCB confirms PM readings above 999 µg/m³ excluded from AQI; reviewing methodology",
-            "source": "The News Mill",
-            "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOVmJIY29taXdxN0x6NXR3cmJxM0NhMnBldnkyMG5XVXVpQUVTQzZVZW9UU21aUjBGVmJ2YVNlTHl0ZVBrQktMX1oxUkFGaWYwbnByeldDd0w5dUhiTkR4R3Z4Q3hhOUl2a0s2eDRpUEdCMXVEaTBIUVhROVJ2MlpkdG9VbTJyZmQ0SWZCaXNPek5BaDFxZFVFSlVhOFJaa2YwLXF5ZXZNRmk3YzlWVVJ6VGVicVlJZHpkMlMtY3JKSFNUdw?oc=5"
-          }
-        ],
-        "url": "https://timesofindia.indiatimes.com/india/cpcb-explains-why-official-aqi-is-capped-at-500-despite-private-apps-showing-higher-readings/articleshow/135715891.cms",
-        "image": "https://static.toiimg.com/thumb/msid-135715926,width-1280,height-720,resizemode-6,overlay-toi_sw,pt-32,y_pad-600/photo.jpg",
-        "summary": "The Central Pollution Control Board on Tuesday defended its air quality monitoring methodology, explaining why official AQI readings are capped at 500 even as private monitoring apps reported levels as high as 1,800 in Delhi after Diwali.",
-        "photo": "assets/news/6a6faa24b4.jpg"
       },
       {
         "id": "49be6b1377",
@@ -249,24 +147,24 @@
         "longDate": "Monday, November 9, 2026",
         "related": [
           {
+            "title": "80% of Delhi's pollution Monday due to crackers",
+            "source": "The Times of India",
+            "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOV29od0llc3FaN1FOc2F1YUx4OUhrcjBTOFhzMmRHZnE4ZkxlSWhiUFpKVUhTaUk2ZVdBWFFjU1FCN2VtdFZlWjR6MXlTbEJoaGdiRExRSmxMQTdXQjlfbk9wWTdWeWZuTE1iZ2ZmYkk5UHVnUVVXQnJ0ekRUeFhTMFNPV3NUNDRUay01bzFzVm1KS1BxQkZSSnZ3ZVhxVlhNMXVMRnJfQlIycHJzRkFMRThYOA?oc=5"
+          },
+          {
             "title": "Data Blindspots, Weak Rules: Inside Delhi's Annual Battle For Clean Air",
             "source": "NDTV",
             "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNM3VzRjc2d1p2R1ZwYlZ6VW9acnpGRlQxWUFRVkpIczBlTUVoVWsybWJXdjZhYXZudXBkR1RaZk1OSUhFdnFZTFlTWjZHcFphVWdEd1dhQlNKSnBEWkNTSmNxVHJUOFFEUXhMQkxiS1BUNDhQY19tMFJCd3VURFpIWGdPX21JS09OZ1dWLXZaNGxiUThPSXhKbW9HSVRkcjVnQmdwNmlBQnNIVVdVSWc?oc=5"
           },
           {
-            "title": "‘Firecrackers unfairly blamed for Delhi pollution’: CTI cites high pre-Diwali AQI, seeks action on stubble burning",
-            "source": "The Times of India",
-            "link": "https://news.google.com/rss/articles/CBMikAJBVV95cUxNdU5rQmR6SWNuaFd0YkNtS0RKbjF0Ums5VHB3VlF6WlNidnBtQWJyZ2c5YnktU2NCWW13SHgwMGVfX0FrNkU1QUczNlRLMEYyX2s2T0VxQWt6ZEQycFpKWXJ6TWJMRXpFNE85R3lNR09iN3IwU3Y1RURUVlM3VnVFaFRxREh4UFZXaHZDZjlDU0FPRUE3ZEdoZ2E1cmZQbHg2V1NXVXN5ZVRVNDhocmF6MHBMSW9FWmJGX0VtTW02UGZteVhqaFhCWmFNNnB3VjdvSHlPYlgwUk9HSU9LTGdqaVdEZG5iYzdrWnJIb1lNdGI3TGx4cHFzNkd5WktiM3Qxa1E2WGFuR1V5a2xoN0liYg?oc=5"
-          },
-          {
-            "title": "Delhi's air quality improves to 'poor' due to increased wind speed",
-            "source": "The Hindu",
-            "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNLThXQ3lpN0FyNGVuRWwxNDQ1MUNYU01RbjJSQnZDTHhOMHRCTl9IcFNfRUFCaW9FaHBEV1c4NlZwRjlKcXpKX3FfMHdDSmhTVDl3YUNGZ1kyMzNsc0ZXdlVlZGpaQUI0eVpkWXR6cnVpSGJTSHB1Y0p4bkhqcEs3amp3amQ3QnJPNkVqRURlMVp6cnVlMnlXRk9hVEd3aFp6NmU3NHlSMFhuY0dGMUtVQmM4R093M3JjUlZGXzRuSEUwU21B0gHLAUFVX3lxTE5TOTkyTl9mRGNCcmNqQ1M5WEdUU3hOOW5Uc3BfQldNOWVLUzluM2I3UGxuLVdCbkJHd3NVY3VNeGxRVExGU29yMHhfT21fMnhGMHF0R1VpeHBZeXFLTFdaazhzTGZmNm9TQmUxZ3pyVmdycmxHTjhNbFNCd093dGpxbFhwRUJ4Q2k0dnhla3I1cjVBY1JySDYyVjVrUV9uS1QyQWJjcDYxd2tEb0pWNGZhSVFEdkR3VThiM05CTXRSSmNqX3RzcHI0c1U0?oc=5"
-          },
-          {
-            "title": "Updated readings reveal alarming air pollution levels after Delhi's Diwali data gap",
+            "title": "Delhi air pollution eases with increased wind speed, AQI improves to 'poor' category",
             "source": "Telegraph India",
-            "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNdFVGMDNTM0ZOLXAyRmNkSWg5dFE3bks2aGlnb3psWjB5TU1LRkhTQTFNVDE3TzB2d25PN3JScUZ6aGhBR3VVZFF5eUdQc3ZJeXdKY2cyY1dBb0sxT1RheUlyeHBxUUtJTGQxTEdjOWNoakEydUV4ZkgtVTBfYlJ1OVE5WXE3Qk10aTRzd0FFT21lVGxXZmhaOTF0LTNlb0MtYVBtc1RWd3pTcnVSMEh5YVlXMTQtRFJ3aE01YTVwSWhGeTU4cU9yNGRLONIB0AFBVV95cUxQbExIVUdVcEpqUEFOUkRHM2tOZVc5dTZTVEZPT0owU3l5Vm9fVUhGQ3VXc2lyNmlDV3BMNEpNMTlwVU5URTF0SjhFaGJCaXotWGNDR3A2STdqQTkxbVJBeEJfaWw3eXhUUVJzNTR2U2N5MHFTWXZnN3hCTDZ0RmRuTjE2ZVFHckVPcnNzcnZhTFBGZzAyYnVpZWRVN2dDVE1uQXNhOGF0YkJmUmJUXzNSNTdPNjZFWUg3cW5Zd1BBR1Btc3FfYnd0NTYwYWhycjEx?oc=5"
+            "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNVFNtRFRMZWFPTjFCYVpMWFZJeUJZZXkwWXpsVmNfWkplTExmV3NmZkZhRGJZYWE0UldvZWlPYVQ3VGFyckw0ZjhWSHZLUllxVE9FZWFZN1ZGYWp0cC11cVhxYlZrYzQ3Q0hxY1haMFFkQ1RMbHVjeG95Znp5SDdYVXdYQ2gwSUNCbXRpSjFIZkgyYWhVN0xmbl9xLUY3R2FoYXJYVTJkVFJ6b0RNaEc4Skk1aksySjJTTXFXaFc2X3N0QUpMdUdPSUttODJyN3FmVS0w?oc=5"
+          },
+          {
+            "title": "Delhis Missing Diwali-Night Pollution Data Released: PM2.5 Crosses 3,700; Politicians Cling to Superstition",
+            "source": "TheWire.in",
+            "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQT1hOTkUxWkgyQlVjR0prUVV6M2VBYmxOYS15QlVuUHBpVXNQOXRRdi00Uk9jaUhxb0ItSmpzQ01TVk1LYml2LVVOTzBzcE9IcGhncTRBLWxNZ2piRDJDQ21udUVOdDNjM3I3UURBal9uTE56amtBWGpjX1FKVU1haDJSU0t0R3BmQ1FzT1RLVGZTeWt5by1jbllFS1QtR1c5LVhSRU54TkdEQ0lRbGFNSzVFYlFLOWswdEJvcUNuV1BwWU9aU3U4SGlmZmx5R0gxc0ZteHNuVG85dDFfVFHSAeMBQVVfeXFMTnR0aTU3M0loZW9uQmR4bnZURUc5MFFqN2dzZUJMMEh3RENycjUyZmhjeUEzcER0cDJwMVo0VmVVRUxzdUk4RjJ1YkpBckFpRXFkc2VrUUNiRGU2X0pTbnNwWDhoZ3FBSXB6ZkZZSEhpR2hkVFF3T0dQWFAtN2FfQ1UyZDFCTWx5ZXpRUHNSblBzQnc3bXR6N1dfWk5UREN2cVZZc0NQWkRLY2ItSGJlZ2s5UWphYzlzbHEzVGpaT1N1a0JsSnNZNkJrcnRESHp5YzFmNEJpRlFROGw1cFN1dGh0Nkk?oc=5"
           }
         ],
         "url": "https://www.telegraphindia.com/india/from-sikkim-to-saudi-arabia-where-union-ministers-were-on-diwali-as-delhis-air-worsened/cid/2188625",
@@ -275,210 +173,174 @@
         "photo": null
       },
       {
-        "id": "2b39e8f174",
-        "title": "Kharge asks why Delhi is becoming 'vishwaguru' in air pollution, dares PM Modi to give 'Hawa Ka Hisaab'",
-        "source": "The New Indian Express",
-        "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNZW9vM0MwMDdnNWVHSGdhMjNKd1pOSE1xQ1dSYjN3Rm4yU2RhMVR1b3kzcnFoVGhvVjRtYU84bUpleC1wYmhhT19JZEhhVEliM2JERVBrMU9rQWxWajZaUldpV2VGSFlEdXdDV2RlVElqM3VqOFF2cnBEQU8zWkdGWE1aY0EyQm4yVlFYZHR2Wmd1cnc3cjlfSVE4NkVXZzR4bGNzVS16cm5tZVZXLXdxWUFyc3A1THRvVk5TQ21ZclFFbml3VDhRUk51U2lkeHotd29GS2dNY0VJSmtpWmQ4c0NtQTc3cnNSem9tLdIB-gFBVV95cUxQb1JmZGVUNVJmb2VkSS02RTExUk9FYmFQbWNXbmx2MWVZMU1RUjdrQzNxcGtaLTQtaEE5MGVqeGJlTHpHSVJiaTNveGFIcXhvT2VuYThIOWwtRVQzZzRGM3RaYmN0SW9SUUo4QnJfU0hWOVpzbWNTNlBsNjBieFZoSExZRmtZbXhBTDQ3Q0NsVFNWTDVzTnVJV1VUSGRfWDFiQ01TblFQalhOOUJOTHR0SzV1RzU0R1ZjcTZZbkhkZkUtYk1qelJPMzhfYU1WZFZWRDBSVzBnTnNEbk5fT2Rkc3JVcEhwU2hGby16LUVJU3FTeERIY0JacFN3?oc=5",
+        "id": "10ca579695",
+        "title": "Nvidia shareholders sue Jensen Huang after affair with suspected Chinese spy",
+        "source": "Korea JoongAng Daily",
+        "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOdHE3bU5IM1BYNXVJcWd6QmRsWEVhTHJ5QmtHMWthYVFuQUlPdnRIMmY3N1NsWk1NVHBVNVkxYjk4d1piMlR3VHQzWDJLb0NVN05LdEJYa3haeU9UWHlXeGFvbFMtT1B3Q1lySVowWnhaTmZVdTlrS21HQ2lJVGZDSmpjWlJoQnZXbkJrX21NUkUxTGdqNFVvTDBoR2xmLThEbm5UZkJaUmFYWE1KOEVWQlF2V3R4QjZLWnZEZ3dnbmVfR21oM0pvVg?oc=5",
         "date": "Nov 10, 2026",
         "longDate": "Tuesday, November 10, 2026",
         "related": [
           {
-            "title": "‘Why are we becoming vishwaguru in air pollution?’ Kharge asks Modi government",
-            "source": "The Hindu",
-            "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQZERhNFltMVpGY0VwVFJRMHNUMzFmUEJtMXZScVBxT0hiUFJWUFVzQzNiNkFOcF81NDBzUFQ0Z2JDQXZWaExrdFpGUE5neDNQdEdseE0xQVY0aGFQUGpRczRMaTh1LTlxeDNkUFQ4d01kWC1nckVaYlFjTTBOVFlGejM4d1E5aGZfUjhVNndHeHAxOGJuMXlEakxXb1pZLWoxRkhLODVKNUo5X1llRzlXSnVoYTRId04tNV9IbVliaGg4UURwSHBZcTAyN0tBOUU?oc=5"
-          },
-          {
-            "title": "'Why are we becoming Vishwaguru in air pollution?' Congress questions PM Modi",
-            "source": "The Times of India",
-            "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNREtGMVZrQ3NyX0dLZGh0dDRQWTFiLTllSVV0bzI4T2JxMFNycEJ1RUVGNTNwOGxSYXlXc2FxN3N4UWdwUzFVOHYtcXlQR1AzbVVhTW1LTEJST295MF9rRlI1SktsOVZfdVNPUWN5eG9CV1N5cWtCU2JJdjBFd2VFbFZabGJHQmJ0MGd1Zml6WW8yb1ZHOW4zY3djRjRaNVdHOFlaNmVXUGY4NVhyQ3hYWXNSV0ZzdHkxWVRfUGFGOG1LdUdSSzlXMzEtR25SM2ZOWFdNLWlZMlpCdw?oc=5"
-          },
-          {
-            "title": "Air Pollution Costs India Up To 9.5% Of GDP, 2 Million Deaths Linked: New Report Calls For Health-Led Action",
+            "title": "\"There'll Never Be One Like Me\": Jensen Huang's Nvidia Faces A Succession Crisis",
             "source": "NDTV",
-            "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxOb09Ycm5QbERDTndvR2lGWFB0UzFUSGRicHNxT01WQ09GLU8xVy1oWVp5cEpHcHhhazVrOWxLQ3FCbXM3RU5oX3h5Qk9QRVRzWlRvcjhwNmtoU19VYm5wa2wtbTVfRktHQ0w3aE5OTUJjQjAxeG5KMGQ0S0tMa3hic1FzTjNCeUVMT1dKeTN6SUhtcEdxMDBaeVR2cXY2TFVGaF9rM2VxTmc5MTZqMjhzSmYyZEtQeUtIMmRtX2FYNHRGWkF2SUFJV2RnbTg2TWxaWklRSXpmNk9zUlZmVFRFcXdVcnhFaTZDZzc0UnJB?oc=5"
+            "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNLWpsWUlwcmc4SXcyVHNMakdKbldBcEQwZDc5dllUWXhtZU8zZHExdGFwNmltVWF1em9NSUxIYTFuSXBjTjNjUEMyMC0zLUkwbDRjbDY4VGNYaFBqLVNVT09SNWpWV3JhVzVfZ255VTFKNXB5UTU4WFB0TEFkdmZyLXdQX3A3SzhWMHRNVVUzeHhTSG8yYTh5T3A1OHV0N0VjTWVCTThOeVFNTk9LTy0zRWQ5T2txd0k?oc=5"
           },
           {
-            "title": "Air pollution needs a Covid-like response: Dr Soumya Swaminathan",
-            "source": "India Today",
-            "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPWU9YWGRKOXRyMEduVnJNS3duRkdlOXB1VWVBaGxReks5ckNzLTlNUnlhNEdoVThMTGQ1U0dlY1RIY093d2J0eUQ0bU1uMXJYRlgwdlpROFV3ek1LRl9sWkRYUWpYTTgzcXdKRTVVY2Nxam1jMkpMd1QwTzdhOGFxbDg4YXE0cE9pcFVtTDdTM0FNZ0paSGVwYy03eHNkZGNrSG1nQjFyYzBib0tiZEd0Z2RhUzY5SldCN3QzYVBKRVQ?oc=5"
+            "title": "Nvidia hires top US law firm to investigate affair between CEO Jensen Huang and Chinese spy",
+            "source": "The Times of India",
+            "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxNODcxc2U1QTVQekxIMDV6RlB2SGV3c2RJTXVxcEFlMVF4SXlXSjlucms5aWstMllrVTBPRzF5N3ZpbHpPOWRjV3haY3A1MEVNREhKU1cxbGF1QlVoWGVMU2dKWW5FRGM2cWkycW4wVFlRWUNRLWhKOGF6SzItVm43UGltaUxEUDc2TC1BU3FYY3U5OXhhSHl6RXRSZlhyU2xkN1ZRT3hXSHZ6bmdvQUhOdElXZDgwalFKZHR4ZnRqcl9IdWZKZWxaanJ0UVVXV2s1b1BMLXI0Ym5QU0RXX1dkSXlnYzg2cVVpU2haVzQwblVjdW9N?oc=5"
+          },
+          {
+            "title": "Who Is Alice Huang, the Woman in the Middle of Nvidia’s Spy Scandal?",
+            "source": "The New York Times",
+            "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOcjc1by1leTRWYW54TVpxR0N3aVB5ZkdWNHBQM2liZjN3YjJXaE1FNW5rUWRjdDJENHU0cGhZSDA0MEgtWl9JV3FIeXAzZ21BdVg4dzlnZUx0aVQ3OFBnNUd4WkJiRDlVV19HMXl3M19uNXpEdWoyYVVmcXZILTZnRm1MSzN3cFRWX25QUXZPVzNtVThEWUlr?oc=5"
+          },
+          {
+            "title": "Statement From NVIDIA Board of Directors",
+            "source": "NVIDIA Newsroom",
+            "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPX05fcHd3NkVsdkZVVzlqcG5iVjdhZFBiYmlDTjVNUnhkTEo3VlVMVXYxWDBFdVhnSzRJbzVHRjBCc2xsaWFid2FGNUxoWEE2MHRkOTBwUjRZaEFpSFJOMmY1OUhMLUEtSXl0bVJ5bE9CZFZwWHVQcENiVnNvRlVWTg?oc=5"
           }
         ],
-        "url": "https://www.newindianexpress.com/cities/delhi/2026/Nov/10/kharge-asks-why-delhi-is-becoming-vishwaguru-in-air-pollution-dares-pm-modi-to-give-hawa-ka-hisaab",
-        "image": "https://cf-images.assettype.com/newindianexpress%2F2024-04%2Ffbf8b4ad-e333-40bd-861d-978de85635db%2FKharge.jpg?rect=0%2C0%2C1200%2C630&w=1200&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100",
-        "summary": "Amid worsening air pollution in the national capital, Congress president Mallikarjun Kharge on Tuesday questioned the BJP-led Centre over Delhi emerging as a 'v",
-        "photo": "assets/news/2b39e8f174.jpg"
+        "url": "https://www.koreajoongangdaily.com/business/nvidia-shareholders-sue-jensen-huang-after-affair-with-suspected-chinese-spy/12965129",
+        "image": "https://image.koreajoongangdaily.com/12965143.jpg?imageId=12965143&x=0&y=0&cropw=100&croph=100&panox=0&panoy=0&panow=100&panoh=100&width=1200&height=683",
+        "summary": "The class action was filed after the tech powerhouse’s shares fell 4.27 percent in the wake of the revelations, wiping out $192.1 billion in market value.",
+        "photo": "assets/news/10ca579695.jpg"
       },
       {
-        "id": "71d71cebe3",
-        "title": "Pannun’s civil lawsuit: U.S. court allows Pannun to serve NSA Doval and former intelligence chief Goyal",
-        "source": "The Hindu",
-        "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOR19YVE5nYkxSekoxX2xLbmNUR0laSV9Uc0g1ZGE3ZnczcG5MRHliSnFVWEU1RUN2MHhBOVdrMU9KQmlVZ3RaY2VfMEM3cHRlX0toLVk4YjRPLVo0SWxTS1YtVXJfWVd3dHJtUjRQRWMwUEhJZWpOYWhwR3ExR2RIV1ZxQXFfSEh3WFN0M3FJbUZqSjgwS2ltdFZKM0FvUGlEZ2ZWNjhrelpRSEJzdlhnTjdRRWk4bEVDRkhWU0ZXUEZUa3VqSUtHYkhzUjg5UF90OGtB?oc=5",
+        "id": "fdedb3c7f7",
+        "title": "'This is not UCC, but Hindu Civil Code': Owaisi targets Maharashtra govt, says move seeks to 'snatch' Mus",
+        "source": "The Times of India",
+        "link": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxNZ3ZTTms4OTNDNm9wNUZXbDhCYTRTckdvMWs2Qm42WFl2cHpLTXdrOGxNMlgxSnlGeDYyTk1pZGpvdTJaZDlYLWEydkszTDIyZS1YbENNVUFiOUJUUkY5Wk1GVW5UTElwZmhuY3g3UmU1V19WX1dEcmx5R2VrQ1doXzNscGRKVm1udjczRV9LMWtLS2dacTFqQ2VEMTJVN19fR0tPUDVvcUJHNVlnYjlsX2NnWFloblB3TjFIX1NsV05WaHJRdU9NR1llTG5INjV5Z3g4NXJxYmJmZEd5b05xQU9FMTBWRllXVWRvM2Rvd3B1X2I1NW1KSXAxWlBUUHA3aHRFT3lJVm4zOTA?oc=5",
         "date": "Nov 10, 2026",
         "longDate": "Tuesday, November 10, 2026",
         "related": [
           {
-            "title": "MEA slams US court summons to Doval, RAW ex-chief Goel",
-            "source": "The Times of India",
-            "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNUWpUX0VBYkY0empBa1phRkIzV2FxdloxX0FnY1YxakFXeC1pT29KN0xqZzVQNURJTkVoR2s1amtqSjBDd0hiQTJSbmRFUDFzX0ZJaXVlOHM3dDJTNm1HVXdjWUtqRzk4eG50TUlhNU51bFdaSmFyQmNUYzJ3ZU5telpFVVUzWHUxaDg1TklTUVluLTJVQUZuSGRYMXJ1bFNzQ1U5Y2tUTnRfNGlPVkJpYUhZeFZDYXZIYkpYUXV3?oc=5"
+            "title": "Fadnavis defends UCC decision, accuses Oppn of provoking street protests",
+            "source": "ThePrint",
+            "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQdE1DNEJQa2dpb2tOalJyM254Sk1lbEx4X1ExMlhOWFFUVWQza3R0OGtEY3R2bGRpLTF2SUhIM05rQ2JYQ0UyZ2x2V0JmNEJFQzNWUHMzcWJLU0RqWng1MFhVYTFSSktFeWVhRnlXRVh2dDMyc2t5Z1pKaElETV9OOGJrdGFTS2ZiWnRRbm8wRmM5TFJvQ2xWZzBURnBEZTdoUHcwZEFWUlhTZ9IBrwFBVV95cUxNN2RpbS1odlJKVjEyX2VpRVVVdzlLUVgxZEhlbng2VGNESXlEYTV2a2xjNkhqQkhNODF0YWgxdjhGTU1yMzZ4MGJCYXVrLVhYRXM1dl9MU3EyeDhaUENWNk5RZWpSZVpRRUtSRlU2X0xmdGRoRHN6YkpMb3BlV2hxRjdNU2FLVDNfTDk4Q0VLeWp4Q2VNWDlBbHl5N1JwaTI2MWs0THBXVGE1RElCZ19j?oc=5"
           },
           {
-            "title": "US ‘delivers summonses’ for NSA Ajit Doval, ex-RAW chief in lawsuit by Sikh separatist Pannun",
-            "source": "Telegraph India",
-            "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPcjBiVXBtcGdZVGFqWW9ZajhNSERsdlRzVE5mSE9LR2V0aGh1MlNIOXU1bng4d2JzdHAwc25mSEwzZy1HZkFjdUNqWVFZak9ScXV4UnJlY3c5VTlNYy1EbUtIcEdkTmUtSHRIMVd4U0hKeW5Xa0JPVERlckNwbjR4eGJlQlRKeEV4bkcwSDRpYlRPdHB0djdUU05OQU9DWmlGTTNaQUVaajUxaWlTbTAtWHhEVjZDRGRxZmNCUEMwRlVsOG16UDNmRUZMZXB1VEdXRG1OWtIB2gFBVV95cUxNUTV0YWNTbU5fYzctTmV5eTF5QVI2aGVXdS1HQkZsaG84TlBiMnhSbXZmSjNYbmVzQTEwVzZFZUJmNEY2RmRvNlVJSlAyNS1TYjQxclN3Q3AzbHBicFdUQ1VXZVlTMjlQWlF1ZFlBaUY5cFJnbGlHZHJPVll3WGxBSlpqamtHNDRQMlhJWUticDlkQlgyS0ZzSHJPN1AxakZmSXNTVDRRaUVacEdOcnRWcEJoSUNKOU80UEl3Z2ZnR2lKX1B0VWRmUFNDWjZnVktJSXZzMVRFRGh6dw?oc=5"
+            "title": "‘A Constitutional responsibility’: Devendra Fadnavis backs UCC, says plan on to introduce it in state soon",
+            "source": "The Indian Express",
+            "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOR0RwbkVFdHZfZERHakJVQURYeHNkMnNLMG1STWRQcTQ4R1BGZ216dW9BVU9TV0FQM1E0dUs1b1NpQjJ6b3FDSUxYY0otZjdRR2FBVWtkWThMYUNDUFhkQktZRzBvM05HOW1GOEdIMjlYUlM1QWZSdVdlZGxtVkhaakFYTllzVVE2OC1FWjlZR0d3YTF6Tzhla2ZqcmlHeFdEMXNtOTM1R2N0MngxaXNvYnNn?oc=5"
           },
           {
-            "title": "After Failed Attempts, US Court Clears Way to Send Summons Through Indian Courts to NSA, Ex-RAW Chief on Pannuns Lawsuit",
-            "source": "TheWire.in",
-            "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPNFVMTkpWUkJ0Nk0zbmdlcEVnSGhBby1UZ1dSQUJrcVM4bFNsSTVOUTNZQjZsODVQMzAzSTlzaFhoaWdxMXZsTHNaUGFpUkRPUjl0ZndUWlNJVWdjVDBtNFRNY1hucEh0RkVxcHFGVjk5Wm1XZ0RaaFJXQXFGLWV2LVgwcFpLVXJma2NXWmswZWJBLTN1cUpkakFsVWxVX2VERTJfd0xWMnhFMjNxRENLetIBwAFBVV95cUxPNGwwcEhkSTRVZHZJZlhyaDlqcWV3X0FsS192VERMNllGdjYzM3pHVUNOejR4SkJEeDM0M1FrSGFSaUVheWpMWkt1bkpwMzJXdGVBQklqN0FKaENydFNKWFl5aHRFSVFVQ2pCdG5EYkpJYkttSk5xMWNkSmtxX0xIeXhBbFJ6UTBPNjlTbG91MzAzc0JpOGZyMlVNaUMtcmlScGcwMlFKQ2xvajBWb2lRTVhUOGZGWngwbjBFZ0U3dXM?oc=5"
+            "title": "Owaisi calls Maharashtra's UCC draft a 'Hindu Civil Code' | Tap to know more | Inshorts",
+            "source": "Inshorts",
+            "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOWm8xNUVJdE1UbkZram8xQ2plVy1Sa1ppZzlSVHExMmNPbl9rcXlRNHZXNDVwU01GOVNDZmV2UmtCNExIcVZjVmhMM2U2OFUySDNyWWhtU0VENlM4NkI0aV9QUTFHR1VTNmYtWWxIZHN0WkJiY1R1U0IwOEQ0TTJZQXZRUlpYblVwQ2N1SS1rcFhTLUxmSUJ2U3ktaXhRbi1rb2fSAacBQVVfeXFMTUh6TURudFpZSUhpeFNUWDFuNnBCQmZwOUdjNlJqTUM4YU1PZ3JDNkZkRW1YTnVxOEVxYXM2VzVQemNyM1o4MWRuSWp6OU5yUVQ3YWZBRzZXbUdPUzlHOUlIbi1YNTNCbjN3N1l0VkZjQXBqTTRicHdNRG52ejl5ekRwdzZYNklIYXNOX0g2ZWRqemo4Y0g0bS0yZlEzemVDanptek5iTUU?oc=5"
           },
           {
-            "title": "Rush Hour: US serves India summons in Pannun case, 2026 to be one of warmest years and more",
-            "source": "Scroll.in",
-            "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNUW5tazBOekpzMVBhMkJfMVhjbWhDTEZINGpVWmhTVG9YRGlMMTQ3WEFSN2ZMQkREYUdzUlZpSTNjUTJSNDVTNTIySGhrUWlQbkN1ZzRHaExmY3BPaEQ1dHhhVW01LVlqNkhLUU9FQ0Z2SW1SUVZxTVJ5SVJCbUxSSmVmM2kxR2R5VmJhSGFwZVZpNVRWY1ZFd3hPbEE1dnpEWWExTmVOTjM5UkFxNGVXdklRWGhfQUIyTTBtd1dCMA?oc=5"
+            "title": "Fadnavis defends UCC decision; says up to Sharad Pawar and Sunetra to take call on NCP merger",
+            "source": "Press Trust of India",
+            "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQenlZNEhnMWM5NGlwUkl5QW9lRVNUMjc3dVRhSXl2QUFnUk5vdW1EMTAyRVJ5R1Z4bGpzbnc4OVZYMG9YOE8tcEVLaEFEdzcySWc5dXpBazBYSlVncXRCam55TTBkQUNUYTNScm1PN0FpX1BTeEQ2aXVobmltVzd3TGhXWGd2aEswbHVuZDNOOHl1Q1V0bi1pQzMwX21SaVJhUk9tVWZ2TWd5QW90cnY5WFNKcHlKSVNfYk5IRl9RSHg5X3pXSzNEZG1QNThNNklpb2dEN3VmSQ?oc=5"
           }
         ],
-        "url": "https://www.thehindu.com/news/international/pannuns-civil-lawsuit-us-state-department-formally-serves-notice-to-india/article71685482.ece",
-        "image": "https://th-i.thgim.com/public/incoming/hop5hz/article71685489.ece/alternates/LANDSCAPE_1200/India_Sikh_Assassination_Plot_65459.jpg",
-        "summary": "U.S. State Department formally serves India notice in Khalistan activist Gurpatwant Pannun’s civil lawsuit, while declining stance on the case.",
-        "photo": "assets/news/71d71cebe3.jpg"
+        "url": "https://timesofindia.indiatimes.com/india/this-is-not-ucc-but-hindu-civil-code-owaisi-targets-maharashtra-govt-says-move-seeks-to-snatch-muslims-identity/articleshow/135709488.cms",
+        "image": "https://static.toiimg.com/thumb/msid-135710467,width-1280,height-720,resizemode-6,overlay-toi_sw,pt-32,y_pad-600/photo.jpg",
+        "summary": "AIMIM president Asaduddin Owaisi on Tuesday slammed the Maharashtra government's proposed Uniform Civil Code (UCC), alleging that it was aimed at targeting Muslims and imposing a \"Hindu Civil Code\" on non-Hindu communities.",
+        "photo": "assets/news/fdedb3c7f7.jpg"
       },
       {
-        "id": "27002e1144",
-        "title": "After Netanyahu's \"Unity\" Call, Eisenkot's \"Delusional, Outgoing PM\" Jab",
+        "id": "f359372211",
+        "title": "Satellite Images Capture Thick Smog Over Northern India 2 Days After Diwali",
         "source": "NDTV",
-        "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNcjN6SmkwUGFpeTVMWVN6NVRpVFMtRHBSVGowY2JrOXhOX1JEcjRmMXlyVnYwYWRZcjZOVTZZa2FSSkdlX1RyVFJOZEJ6XzhqYXJBVDM0My1OaEtzbVgtREdhQ2hPTzR3MERFc2tGT3N5MkJwdk9YR3JVUWdCWHBkWFdzUVB5MnBSUndKaXRwQXBSVldHNUY1WGFYR0N0bjBQdE9FdFl5bzRaQkQ5V1RhZjZFUE5LQ2RGVHp3UHBudw?oc=5",
-        "date": "Nov 11, 2026",
-        "longDate": "Wednesday, November 11, 2026",
+        "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQekxaSUUzQmNBU1k0Z1kwWmRSZlpmYlo5ODZoRVo4dTctZk52ZTVlNVBGRkF1RFZsTWg5T1JYODU5aHowRlN4TDdXa1Fmc255YlN6Xzh2MjJKYWhsb21jTmNsMnQxS0h0OEFhblp2WlpoRUpmaFZQQTdCenZOTE5YWEpmMzkwZ2N6Q0xtSEQyYUNMbTFqMjB3R0JTYmEzVld1dk1sd0pCSzE3NVZlT2phOW0xTFZhYWc?oc=5",
+        "date": "Nov 10, 2026",
+        "longDate": "Tuesday, November 10, 2026",
         "related": [
           {
-            "title": "Ohana says vote to elect new Knesset speaker to be held next Tuesday after majority of MKs demand it",
-            "source": "The Times of Israel",
-            "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1uWmNhMk0zYU5FVERIbTlHSXlOU3FUdlFzQTliUGdTeWlyd0pxZExmR3NBNTlJdk1LNVhTR01ZT0FJbURWeE8yTlY3bzVBVXNOd0lGZHc0Q09idHhmcDNoOS04MmtfNm_SAWxBVV95cUxOT3VmS2NKT0pHMmt0Um1JbnBCVWZ4ZVRmUTVSRU1tb01UYkZMRTB5TG9vOURpaGtaSUg2M2otVDBaRjEwNTZ5Ymxrc3NfUF9ROF83aWN5RmVUazdDdklYTW9XMWs2S3VPUDFCbWo?oc=5"
-          },
-          {
-            "title": "Israel Election 2026 live updates: Eisenkot begins coalition building process",
-            "source": "The Jerusalem Post",
-            "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE93UkNXMGJkdFM2dm1raDRlMXBKTG5DWEswMDlRUXZVZVcxVkxFZG5kWHFlUW1XdXp6ek9JNS1WOTVzcV9aZ1JXdUhpMF81UjFqWnVaMUl6TkJJU19ZQnlSa1JwZFJpR3NUR3V1a1l5ckMta0ZXVTlRUlZMcjJ5QQ?oc=5"
-          },
-          {
-            "title": "Unfit to remain in office: Eisenkot hits out at Netanyahu over divisive speech",
+            "title": "Nasa satellite captures thick smog blanketing India, Pakistan as pollution peaks",
             "source": "India Today",
-            "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNQnd1MFFkVTVTUHRnQlBZVlpqbWtXdklUZ1NpZ0JCUnhaY1RhU3pzZ01rVXVKLXUzSTk5RW5WRGd3bnRTVFJvNG90Nl9ncDNWZ0o5OTRCam1YWlNxSllXY1E5Ym85eDNLbzJ0Z2ZqenFZeTVDR19sWUx2SWNRLW1pRjRkRHNsanptWlpwNFNENWctMmNWX2RCLUpmNk1GU1EzNXY5a1pXZThreVBLeXRMUHFoNy0wYUk?oc=5"
+            "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPMWZiUkRuMVl2VXBJUnBMOEdQTE1GSEk3RGJCM3dsX2R0ZFV0aHJLSFgyYjFMY1J0TnJmcFNEeTlYUmtSMjMxUkZkeC10ZlJJMzV4ZEFIcHY2akh6WFFZS3JhYWxycFBfdTFUX1A0ODVaRUVPekJmTFpYWkV6Zms5T1RDeWFkanlLVVNlX1kwaWdmbUw0ajhJTkVFM3BmSkNuX3RBZkNtRW1yNTBmOTdqcHNqeVlhQmtOUEU3MndPOG83NGN5XzFSMHBhU1hycHNPV3BYNw?oc=5"
           },
           {
-            "title": "'Unfit to remain in office': Eisenkot targets Netanyahu, pushes for emergency government in Israel",
-            "source": "Firstpost",
-            "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQcHpKdk5HUERQSzkwdnBEWGVGQ3JMNmlsWXlmZi1fRmN5Y1NjbkM0cHI2aGhwdmRGN3NxdVFRaG03NmQ4OGFBdTdQVnN4V3loaUFsSldZcmdTWFZ5QTc0NjVzUzRSZVZJUFhqcW1xSllGb204MGJ3cjBsSGVOekJHREV2XzRaTU1pUkMxSExFT1dDU3prUWMyU09rNG83ZXVMdGdkazI2ZWhDdlEzZUxrd3NLWVRBLTkybUk1aEtCcHlzdHloWUZfMTRwT1NLY2lNOXZCbWFwUdIB3AFBVV95cUxPZk9FekpZSTJHLTJ2eDIzNWVjeXlKdnpmUXJ5TTZNdzhsM0RLWjZHSXlDLVJ3S3ZqN1loTWQyTk9ocG5KVWpRYkRteEVqb29qLWlzb3lSRnZQRFE0eFVNckRFUWlpMDFVQ2lyZWVsRHVZNUhDQ1BieEZnZ21jQWRiWm9OUlE5QlBObVFXSFNCQ0dYM3dseDBvWUlkRlB2djQwaURWMldkcGhieFZtd3ZjSzI3Rk5qZk5EbWt2VzZ2Tmc3OVlscVJxQkFnTVlldWlZSjVITkJ3cnJIcExN?oc=5"
+            "title": "New estimates show farm fires may be vastly undercounted in Punjab, Haryana",
+            "source": "Hindustan Times",
+            "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOOVNRWWsySl9vak5vYWpiakVUbHVWXzdwUGdDMUI4U1hKZHhoZ1d6UEkwcEZtcVc5a2VNaHFId2didnZiNlBlRjRxX3g1Zi0yV0NsWURPcHdBcnlOR3hPZWk3RTVaaU5wc1plMFRZMDQzSUpLTGQxYThFLVBzWXg3WnRmSHNhbmxOWkhTdjdSZlN4U1BzWUNJRXN1LTg5Q0k0eHl2N3JZMS1tbXc3S2ZGUzFFV2I0bUNrc092cGF3WVluQnZrWXdVNmZHVG5hQl96Sldv?oc=5"
+          },
+          {
+            "title": "NASA Images Reveal Thick Post-Diwali Smog Over North India as Delhi AQI Hits 376",
+            "source": "Deccan Chronicle",
+            "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQOWMtSkMwRlNZeUhtYm9yTmN4WU5CQU5SRldoSFBaZ0sxekIyYk5DQU9MMVExR3RtaW5HY3ZqODZXY2tjMjN2V0UzQTgwdFBUZ1FJdlgwTXU2ZUtpbFlPdlZTcFItX1BNdW9vQkcwcW5KaDBOUU5CMGZBamdnbUJSX3NSaDFVck5IQjBDNEItZFBZMkk0cDhESUxGZUFVeC1oMVNPMGlTallRRk1MR2dPZ3RPb3gyeVRIYzZBWUNHZnNuY0lid0HSAcsBQVVfeXFMTVFRV2tRRFZNZ1BzZFk4MzRjNWp5TzNCbm96RWVJQzlHNmIyWkhDZlExMGZCWTh3RUUxYThGVnRKNzI4aWg2a3RiTEs0aEkyYUh5TXFrRHQ0VXA2ZmUyMG9xNU56MWNYM002dTdTZHNQNnZLNzZVcE1kVDJGSU53V2oza1I2a1ByU0VSb0NiRWUyVHRGT2ZRRFFiQVdGU1JZamc1YzNhcmRkeF9mSVZ6YXM2R1cxbUZlcHNTNTZaUnV0OUZIcEVoNGJ6ZFk?oc=5"
+          },
+          {
+            "title": "NASA captures thick smog over North India after Diwali: 5 ways to protect your lungs",
+            "source": "THE WEEK",
+            "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNS2JPTEE0aVFmX2g5OFVyOHY0VzE0M19sWnNNajJSN2tFamxyeXBpeVFieldIUHRLRGFfOXFyQ3ZXVWVVTmlmdDZSdHNsUGs0NUI0eG1PVUxXOUI3aVpGY19aWE55OTlXLXVodlNjbDJiYV9KQXBVNEVxZ1NXaFB4R1FVX3pXMEROT250T3JqN1lDSGNCd2ZPZU41R2lXMkh2bjNxTXo3NE9yamJxZUN1dHB4TGtmMHV1NHlQbnpVcVp5NTRRd3U0cWMtaElRWms?oc=5"
           }
         ],
-        "url": "https://www.ndtv.com/world-news/after-benjamin-netanyahus-unity-call-rival-gadi-eisenkots-shameful-delusional-jab-12309964",
+        "url": "https://www.ndtv.com/india-news/satellite-images-capture-thick-smog-over-northern-india-2-days-after-diwali-12308490",
         "image": null,
         "summary": null,
         "photo": null
       },
       {
-        "id": "3a8e742b6c",
-        "title": "COP31 opens in Antalya: Can climate promises finally deliver results?",
-        "source": "UN News",
-        "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5MN1JOZTg3Z0x6NklydFpaUkF0Wk5EdjBfSUUzelZidDZQMXhiZ0pTZDZ2elZJVDQzdGpHOFM1VnQ5TUJyMTM2YVlQZHI4eWl6NVZLaWFBMA?oc=5",
-        "date": "Nov 9, 2026",
-        "longDate": "Monday, November 9, 2026",
+        "id": "2b3ec079f5",
+        "title": "Examining allegations of separatism against Waris Punjab De: ECI to Delhi High Court",
+        "source": "Bar and Bench",
+        "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNR3NsMmtSYzlZbDRnTmtYaWo4TXU5bVBmcFJmUjA3ZHpEU3BiMEg2REZGYnEzdUk0dkdZcWI3OW5vV2pMMXBWMWx1bDRxVkJTcUhvUk1GSnlab3dvZnFrY3FlMzFKNm4zck9PR0hwRmtNSGhDTzEtek5zbG5GMFpSYzI1cjkzelZSSWY3U0tSaEU3eXI1LVdIU1F6bUFqSTNnNFNOQjFiUURiM205VzJQSS0zb3ltWVXSAcQBQVVfeXFMUHlsNEFjTEdoNnYySWN4Mi1CWGx2UTRyQjAtRDBrQ3lCb19Rd1ZhSElUSGNvWVJnRzN6R1BQUEExOW5ldHAzZEZfRUlHMS1CVi0wbl9SYldjZGVNMlFtT0llSXJCS3NmLXVHZnpZQ3hVZHJWbHFOUmtldmJrckowR0J0dE5ZVVhIY0pJLXZVRU5mdjZCTkFxUjFIYlNtTXk3eklZMk56d3FNUjYySHRMS3VvMkJxSHRoTXVHRFJsZ0hYOUdLMQ?oc=5",
+        "date": "Nov 10, 2026",
+        "longDate": "Tuesday, November 10, 2026",
         "related": [
           {
-            "title": "COP31 adopts climate finance work programme; proposals for adaptation funding, trade measures dropped",
-            "source": "Down To Earth",
-            "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxObzg3U2J6X0t3bHhNQXZUemVzZDJnN3NGejdIOEV6NkxndU85dDhDR0M5MGV3cVRxNEF3V0ZlektPLVBNSkFKTXJhdnF5LVpSZS1hb01LTUduY0tJMHdwRi1qU3drbmFVMmJGQTMyaHZQaU0xSXNJZTE5WU9YOGJxV19NZWMteG5yb1VQbEZZMC1iMlMydmVyakJ4eGlldklRSS1DbTlUU1BTSmxyM1h4R0lwWEdUTkkzbzVoNk5qWkdFRVhHQmYzS25VYUZtYnowOFdpcDZkNEpnMmRiUHfSAesBQVVfeXFMTnhPcTJlTmhGMEVaZDJhSG04LU9oYXIzRGp6VUhac3JfNEdEdE1zaklWT3p3U0JjM3I3N3c4WEVuOVNlNkhmemJYN29veXprU0JDeDdNbGdTQjlGMjQ1ZkN0UmhaMWVSN253NEdDVWthMEFrSHBmcklhQ0hjelM2Wm50VHlRV1N1Z0tvamprdTRheF8tSUp3aG5MdTVtczdKY0NTX3dxeTNUV0x1cUV2YkZjRDl1VWJMa0RvRDNHX1o0WmZKSDhZbzVGVGhBeDFvaE1NUS1hcERUM2JiRkU0NTJTdmxNZkN1T2VQbw?oc=5"
+            "title": "ECI got grave, sensitive objection on registration of Akali Dal (Waris Punjab De), Delhi HC told",
+            "source": "ThePrint",
+            "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPOWpGdVpqVExNSTNJXy1TcXhoWVY2MlV6NTk4ZTd2cnJ2RGM4cFZZUFlCZ0tWbmNOUjVrdDhWaWp2dzJNellrMVdLVGkybmFLMXBTT2g5Q2c5VzluSk9sWVpCRzZuM1p3ZDgyYnYwZzQ4UFl5dXZJdlRtYUdTQ1JYSUIyLUdwN09ZTVFEbzNmWVlLRWNpTTd6NGhEdFVrREpIWWVucDdob3ZWY2xGZ0JnR05TRmJCMDhvZGl1R2JCUndRcm1ERXfSAcsBQVVfeXFMT19pZ0tYXzU1VVhOZEZWeEZ5SjRsMXU3Ti0yTElWZUNEZ25vRHZVbXRfS2JaVzdBNy1LZXRKMUtIU01TdjVBajc2Q2ZiNEcxMGhzSzF0VHVTODJhQm5tVWdKTDhUdVRpV2p4QlFCeVU1TUVQSklsTXppY1JuRWZHSXZiaDZfckwyN2ZXRjFNcUF4bHd3bTNpUTdSTlgzbjBYYzFyejczT0dCOS1KQzVObHFBeWxTaGFpX3RHS2JyMHdBQl92S3laR2lpalE?oc=5"
           },
           {
-            "title": "UN chief urges Cop31 hosts Turkey and Australia to turn fossil fuel promises into action",
-            "source": "The Guardian",
-            "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOWl9pcWFDTWxOY0ZkdnhDdnZXU1I5R1NRWEdCY3JtVV9WQ21hM29XRzJhNGtfbGFHeGFXYjN5NlZvcjByUXQ1OUVJTDFIZ0pPRHBHSmN4N0VIdDRwUzVENUhvLXZLX19PYlZtSm4tVmFIOVlaZ3RwLTdfY1ZXUnZuY1dNUVpSX3MwV0ROckJ6YW5vMl9hR0Q4V2xZVmcxOGNjUkpzUlJnS296Ync?oc=5"
+            "title": "ECI tells Delhi HC Waris Punjab De registration could threaten India's sovereignty and integrity",
+            "source": "The New Indian Express",
+            "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOV3cwd1ZoUHlLMGpZZ0Z6UXVpVUdTckFVbjljRDA0Vkp5cmpMRlRRU2NfckdQTGo2Unl6Q3BfN3hTZHZxek1FUmVlZF9lUGFpT2JzcW82bV9NeUd0VXV5ZHR6MUx4SlBxeHNYdkFqeHNJNXFGY0ttLVg2SmFQX0hTOHppeHI3MDYzeTY5VnJmY2RXZ040dUdCMGlLV0dHVzFIczBkVVJMa2FoY09KdHVZaHBxQnJqeVhaSWg2Q3QxbzhOcEltRzNKUlVJUFp0WnNuS05pTzNzNnpYMUF6LXZwUDdTcDBYczM10gH2AUFVX3lxTE82ZlNMZ3FrUE5fbXQ4anJ3R2VKUDNvbmRlanJTcEhreElLNHNkcG1nQXc5dndxdVlSUUNxMUFCc1daZmZkUklDMi0xdUh0STMwWXUzazNfdXVUVU1NU2ZkcUlVQ3FBaXJha2MtVXY4UnprbjJsZm1zbFZPNzZTUFFNLUR1VkpDV2h5T2drcHVHZm9BN09PTkhRMjV6SGNaU3ZqeDlkck9kaG1jLXZJZWNmakRyWk9Cb2p6bW00MS1ISktJczB2ejVSSWw2TTdVS1BTaldnUVpBeUVCT2Uxb0hFTXk4d1dCWU9ieHo0RXFieFU3Y0hCQQ?oc=5"
           },
           {
-            "title": "EU climate chief Wopke Hoekstra warns 'expectations low' from COP31 summit",
-            "source": "The Hindu",
-            "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOLTM1WHBxWGV6b25ENWF1X1hTYUhldmJSMzAyUEs4YW11SjdLTDJjSERnRWlhNnlWelcwUWtxYU1zd1VsOFQ0U21wSk1mOHhHSUtnZHRXTWNsT25NU3JFZ0pGa2ZVMnlRZklhLUlFUjgyZzZzdGZvcEJiS2hGRVUxQkRCQVJzaVpBMlU1N3FQSGU1aWxQbXRiVVJYMGs3TDZ4ZkdUUVBCbjhWSmNhYnhmY2tqQVJobFluUlJSUVhBaTZwX013VV9nN0NTR0JSZDFmSGfSAdgBQVVfeXFMTkRTbE1GdHZsZlhrYzVoTTlvcDk4V1A5OFViZ05LYWZJQUtLcE9HcGtsczdLaVZfaUFneW5pckFFVVlrdkxxclozUG9oSDBqb2EtbGliUlBqR05EQW9zdlNzYll1dnBNc3JYdjVyUU1Lc2s4QlVMczdUUk9yWmJONGxITzFkTko4cERVdk5lRnprYmU2NDNnSXB0dFc4cmNRU2ZTTzBObG1RRzdkM1NNZU5sLTZDVG9XUHVmV1lHMXQ2Y3RuSS1TZGJla3dFNzdHUC1qSVkyTThC?oc=5"
+            "title": "Awaiting report on Waris Punjab de’s separatist link claims: Election Commission of India",
+            "source": "Hindustan Times",
+            "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNZTluV3lDaHBoTjUwdkE3Q21zZWtZTjNQZ2YwV0YwM2IxTnFmZXk2VFdKVURsRTFGYkpaNXppUWRlYW8ybi1Cem9pNTdOV3psbVhrOE5ZMTBuclNSZXJWZWYwSmxUS19ESGVsMzJJeWdYLTQ1NV9BeHhwVHptV1hJM2NLc3lKWHNsM1JXQ1FmelAxSXQzZVRkbEhHWmN2YTFDM3h6LTBUQmxHOEVQdmZ3OW5tanhCQW1zcHBHbzRPWlJxSEJRZlgySlhwYk5YeklSRC05VkNCcDFfNUR2ZmpVT3I2ZzVsUQ?oc=5"
           },
           {
-            "title": "COP31 – Climate Overshoot, Carbon Budget and Climate Justice",
-            "source": "Vajiram & Ravi",
-            "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBuOG5wZGV4eVA2X2sxcW0wSGduUTFZZXdVbndRbGh5eFQ4aVAyVFYyVGNXZ1JpOFFxaU0wVXVtajlDeVFwZHgwOWhvY1luOVFkR25kam4zUk9QV1ptaHpXS29wVXd2a0s0dHl5YVhLRWxjTUxBaFE?oc=5"
+            "title": "Registration of Akali Dal (Waris Punjab De) as political party can risk national sovereignty: EC",
+            "source": "The Tribune",
+            "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQWEZ5U2F2WWpKUWNObHhaUE1kQXJZTVhvQ0h2clZpTmY3QlB4WE9QbzhDUHB0VUROU2czVFlCaXJjS3VGbUlhODBzWU5ieW9uWm5OS1JKNHdMUTUwakxaRGdVOG5qbjViNTBITEs2c0xHVjNQRldINDFpZHNnZjBVTUtFbTlGYzNObXBwNVdLSlZpNmtGZzdnNWt3ejdPSWNpck9hUUR1Vk5McTNoSmlDTXY5aFNkN3k4RVJmWmpDWXozS1ZjdEQySGRuOGgxd0xC?oc=5"
           }
         ],
-        "url": "https://news.un.org/en/story/2026/11/1168763",
-        "image": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/11/9-11-26_COP31-opening-Stiell_UNFCCC.jpg/image770x420cropped.jpg",
-        "summary": "Nearly 200 countries have arrived on Türkiye's Mediterranean coast for a climate summit with a different ambition: fewer grand declarations and more concrete decisions. With a powerful El Niño threatening to worsen extreme weather, negotiators face difficult questions over climate finance, clean energy and how to prote",
-        "photo": "assets/news/3a8e742b6c.jpg"
-      }
-    ],
-    "world": [
-      {
-        "id": "27002e1144",
-        "title": "After Netanyahu's \"Unity\" Call, Eisenkot's \"Delusional, Outgoing PM\" Jab",
-        "source": "NDTV",
-        "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNcjN6SmkwUGFpeTVMWVN6NVRpVFMtRHBSVGowY2JrOXhOX1JEcjRmMXlyVnYwYWRZcjZOVTZZa2FSSkdlX1RyVFJOZEJ6XzhqYXJBVDM0My1OaEtzbVgtREdhQ2hPTzR3MERFc2tGT3N5MkJwdk9YR3JVUWdCWHBkWFdzUVB5MnBSUndKaXRwQXBSVldHNUY1WGFYR0N0bjBQdE9FdFl5bzRaQkQ5V1RhZjZFUE5LQ2RGVHp3UHBudw?oc=5",
-        "date": "Nov 11, 2026",
-        "longDate": "Wednesday, November 11, 2026",
-        "related": [
-          {
-            "title": "Ohana says vote to elect new Knesset speaker to be held next Tuesday after majority of MKs demand it",
-            "source": "The Times of Israel",
-            "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1uWmNhMk0zYU5FVERIbTlHSXlOU3FUdlFzQTliUGdTeWlyd0pxZExmR3NBNTlJdk1LNVhTR01ZT0FJbURWeE8yTlY3bzVBVXNOd0lGZHc0Q09idHhmcDNoOS04MmtfNm_SAWxBVV95cUxOT3VmS2NKT0pHMmt0Um1JbnBCVWZ4ZVRmUTVSRU1tb01UYkZMRTB5TG9vOURpaGtaSUg2M2otVDBaRjEwNTZ5Ymxrc3NfUF9ROF83aWN5RmVUazdDdklYTW9XMWs2S3VPUDFCbWo?oc=5"
-          },
-          {
-            "title": "Israel Election 2026 live updates: Eisenkot begins coalition building process",
-            "source": "The Jerusalem Post",
-            "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE93UkNXMGJkdFM2dm1raDRlMXBKTG5DWEswMDlRUXZVZVcxVkxFZG5kWHFlUW1XdXp6ek9JNS1WOTVzcV9aZ1JXdUhpMF81UjFqWnVaMUl6TkJJU19ZQnlSa1JwZFJpR3NUR3V1a1l5ckMta0ZXVTlRUlZMcjJ5QQ?oc=5"
-          },
-          {
-            "title": "Unfit to remain in office: Eisenkot hits out at Netanyahu over divisive speech",
-            "source": "India Today",
-            "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNQnd1MFFkVTVTUHRnQlBZVlpqbWtXdklUZ1NpZ0JCUnhaY1RhU3pzZ01rVXVKLXUzSTk5RW5WRGd3bnRTVFJvNG90Nl9ncDNWZ0o5OTRCam1YWlNxSllXY1E5Ym85eDNLbzJ0Z2ZqenFZeTVDR19sWUx2SWNRLW1pRjRkRHNsanptWlpwNFNENWctMmNWX2RCLUpmNk1GU1EzNXY5a1pXZThreVBLeXRMUHFoNy0wYUk?oc=5"
-          },
-          {
-            "title": "'Unfit to remain in office': Eisenkot targets Netanyahu, pushes for emergency government in Israel",
-            "source": "Firstpost",
-            "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQcHpKdk5HUERQSzkwdnBEWGVGQ3JMNmlsWXlmZi1fRmN5Y1NjbkM0cHI2aGhwdmRGN3NxdVFRaG03NmQ4OGFBdTdQVnN4V3loaUFsSldZcmdTWFZ5QTc0NjVzUzRSZVZJUFhqcW1xSllGb204MGJ3cjBsSGVOekJHREV2XzRaTU1pUkMxSExFT1dDU3prUWMyU09rNG83ZXVMdGdkazI2ZWhDdlEzZUxrd3NLWVRBLTkybUk1aEtCcHlzdHloWUZfMTRwT1NLY2lNOXZCbWFwUdIB3AFBVV95cUxPZk9FekpZSTJHLTJ2eDIzNWVjeXlKdnpmUXJ5TTZNdzhsM0RLWjZHSXlDLVJ3S3ZqN1loTWQyTk9ocG5KVWpRYkRteEVqb29qLWlzb3lSRnZQRFE0eFVNckRFUWlpMDFVQ2lyZWVsRHVZNUhDQ1BieEZnZ21jQWRiWm9OUlE5QlBObVFXSFNCQ0dYM3dseDBvWUlkRlB2djQwaURWMldkcGhieFZtd3ZjSzI3Rk5qZk5EbWt2VzZ2Tmc3OVlscVJxQkFnTVlldWlZSjVITkJ3cnJIcExN?oc=5"
-          }
-        ],
-        "url": "https://www.ndtv.com/world-news/after-benjamin-netanyahus-unity-call-rival-gadi-eisenkots-shameful-delusional-jab-12309964",
-        "image": null,
-        "summary": null,
-        "photo": null
+        "url": "https://www.barandbench.com/news/examining-allegations-of-separatism-against-waris-punjab-de-eci-to-delhi-high-court",
+        "image": "https://media.assettype.com/barandbench%2F2026-11-10%2Fn4tgp0in%2FSupreme-Court-copy.jpg?w=1200&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100",
+        "summary": "The Election Commission of India (ECI) told the Delhi High Court that it received a “grave and serious” objection to registering ‘Waris Punjab De’ as a politica",
+        "photo": "assets/news/2b3ec079f5.jpg"
       },
       {
-        "id": "3a8e742b6c",
-        "title": "COP31 opens in Antalya: Can climate promises finally deliver results?",
-        "source": "UN News",
-        "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5MN1JOZTg3Z0x6NklydFpaUkF0Wk5EdjBfSUUzelZidDZQMXhiZ0pTZDZ2elZJVDQzdGpHOFM1VnQ5TUJyMTM2YVlQZHI4eWl6NVZLaWFBMA?oc=5",
-        "date": "Nov 9, 2026",
-        "longDate": "Monday, November 9, 2026",
+        "id": "6a6faa24b4",
+        "title": "CPCB explains why official AQI is capped at 500 despite private apps showing higher readings",
+        "source": "The Times of India",
+        "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxPQTYwNDItZVNQNnpJQXRRbUR3N3NHbmJKeXFtdnVMaFMtNmszVXhCWlBvSFYtTENqeTA1RkVLalE1ZFFYXzFnaXM0LTdrV0lWVzc5Q1FsNWEza21mTFg2b3EyQWlWWWlNNGo1RXF0WHZvdWFiaFhKVmxpN0xaNzNsSEdoZm9rSzJQZE1KRnJxVjFHWk4taUNsbGZXVUx6SlV5UnBpUmNCNHBrX08yVmNrYmt1SGxld0VCa3lHUFd6LUE0dUZHQ2kyNV9ibnVjVDBfTnFqN0haWU40clBDeVNULVptVk1pOFR3bGJLbHd3VXFRZw?oc=5",
+        "date": "Nov 10, 2026",
+        "longDate": "Tuesday, November 10, 2026",
         "related": [
           {
-            "title": "COP31 adopts climate finance work programme; proposals for adaptation funding, trade measures dropped",
-            "source": "Down To Earth",
-            "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxObzg3U2J6X0t3bHhNQXZUemVzZDJnN3NGejdIOEV6NkxndU85dDhDR0M5MGV3cVRxNEF3V0ZlektPLVBNSkFKTXJhdnF5LVpSZS1hb01LTUduY0tJMHdwRi1qU3drbmFVMmJGQTMyaHZQaU0xSXNJZTE5WU9YOGJxV19NZWMteG5yb1VQbEZZMC1iMlMydmVyakJ4eGlldklRSS1DbTlUU1BTSmxyM1h4R0lwWEdUTkkzbzVoNk5qWkdFRVhHQmYzS25VYUZtYnowOFdpcDZkNEpnMmRiUHfSAesBQVVfeXFMTnhPcTJlTmhGMEVaZDJhSG04LU9oYXIzRGp6VUhac3JfNEdEdE1zaklWT3p3U0JjM3I3N3c4WEVuOVNlNkhmemJYN29veXprU0JDeDdNbGdTQjlGMjQ1ZkN0UmhaMWVSN253NEdDVWthMEFrSHBmcklhQ0hjelM2Wm50VHlRV1N1Z0tvamprdTRheF8tSUp3aG5MdTVtczdKY0NTX3dxeTNUV0x1cUV2YkZjRDl1VWJMa0RvRDNHX1o0WmZKSDhZbzVGVGhBeDFvaE1NUS1hcERUM2JiRkU0NTJTdmxNZkN1T2VQbw?oc=5"
-          },
-          {
-            "title": "UN chief urges Cop31 hosts Turkey and Australia to turn fossil fuel promises into action",
-            "source": "The Guardian",
-            "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOWl9pcWFDTWxOY0ZkdnhDdnZXU1I5R1NRWEdCY3JtVV9WQ21hM29XRzJhNGtfbGFHeGFXYjN5NlZvcjByUXQ1OUVJTDFIZ0pPRHBHSmN4N0VIdDRwUzVENUhvLXZLX19PYlZtSm4tVmFIOVlaZ3RwLTdfY1ZXUnZuY1dNUVpSX3MwV0ROckJ6YW5vMl9hR0Q4V2xZVmcxOGNjUkpzUlJnS296Ync?oc=5"
-          },
-          {
-            "title": "EU climate chief Wopke Hoekstra warns 'expectations low' from COP31 summit",
+            "title": "Delhi: CPCB mulls raising monitoring cap after readings go blank",
             "source": "The Hindu",
-            "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOLTM1WHBxWGV6b25ENWF1X1hTYUhldmJSMzAyUEs4YW11SjdLTDJjSERnRWlhNnlWelcwUWtxYU1zd1VsOFQ0U21wSk1mOHhHSUtnZHRXTWNsT25NU3JFZ0pGa2ZVMnlRZklhLUlFUjgyZzZzdGZvcEJiS2hGRVUxQkRCQVJzaVpBMlU1N3FQSGU1aWxQbXRiVVJYMGs3TDZ4ZkdUUVBCbjhWSmNhYnhmY2tqQVJobFluUlJSUVhBaTZwX013VV9nN0NTR0JSZDFmSGfSAdgBQVVfeXFMTkRTbE1GdHZsZlhrYzVoTTlvcDk4V1A5OFViZ05LYWZJQUtLcE9HcGtsczdLaVZfaUFneW5pckFFVVlrdkxxclozUG9oSDBqb2EtbGliUlBqR05EQW9zdlNzYll1dnBNc3JYdjVyUU1Lc2s4QlVMczdUUk9yWmJONGxITzFkTko4cERVdk5lRnprYmU2NDNnSXB0dFc4cmNRU2ZTTzBObG1RRzdkM1NNZU5sLTZDVG9XUHVmV1lHMXQ2Y3RuSS1TZGJla3dFNzdHUC1qSVkyTThC?oc=5"
+            "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOdTNseERSZk9uVmc4cWl4enVzNGhQa3h2Tksxdk1sQzQtNGUxVE9LaTBVb2RSWTlBWHVfdU10WmFCVmlBaFJOZVV4ZG5wb3BxVUpJaUx2a0VuY2NvLWh6U2U5RW5zWGpiTThORS0zeHozaTJ2MTdMeFg1NW1CaGVFNjBFenZrTGlQYnQ4MjZDemxhU1FZamstQ2YwVnVqWDFkVmhnWEhVLXZHRFdWeUZldFJMQXNxT2djSmcxaXlwQ3pqTHNr0gHLAUFVX3lxTE5ydVVjMXQzVjBUSXE2UXJ1cTdqNHZZY1gzQWdjYU90ZU1iTE1EX3NjLTVEY3RBSDNIUWZ2NWhWYUYtTHRuMllBc2VleGZ0V2FXZVk2cXZ5cThwcWlyYzRlUmFONXlLcGZ6ZlUzWEdmckJtTzZ0U2wxdjBuX0NtV2p4WmEtWXJjZ0Jva3FUTnc2MkRPQzJqUzRmS0h0ZHRlVmRDenNycElIWm5ON3IyQWZuRkpBNHdscWJoNV9MUEFlYXotVHg3TUFaMFY4?oc=5"
           },
           {
-            "title": "COP31 – Climate Overshoot, Carbon Budget and Climate Justice",
-            "source": "Vajiram & Ravi",
-            "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBuOG5wZGV4eVA2X2sxcW0wSGduUTFZZXdVbndRbGh5eFQ4aVAyVFYyVGNXZ1JpOFFxaU0wVXVtajlDeVFwZHgwOWhvY1luOVFkR25kam4zUk9QV1ptaHpXS29wVXd2a0s0dHl5YVhLRWxjTUxBaFE?oc=5"
+            "title": "Central Pollution Body Explains Data Gaps On Diwali Night",
+            "source": "NDTV",
+            "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNcW9VTDhObWl0aEdTeXhIbmdNcWYyclNSS1RjX2pfS2tZdVdRUU96eHlOakhzcE9McW1JWm1ieElZX1cxdVJROWZGVnlIYnFCd2ZYUmF4NmRvb1N2dXZXcGxmT1hzR015bk1ndGczLW8zU3dmVTlwVENmVHhjVmpwTDVjdHJPbXlNeU9vb05ON0VEUDg1enR3VTVOQUNsYUnSAacBQVVfeXFMTTRVX2Jpc2JHRk5ENmF0TGVfbVFQdFlLSk81ZzlzYm9zQXRwNXI4c3I5RGJCZzFUNzBKT1JFTjdFYmpoaDlFWV80QkI3WjVmbFZhZGRLR2xPWFAwazBfcmJMTTNBMWlEREdEemF6OUlpUEU3RWxFMW5zT051REFXRzFYcGFBc1M0NVVza0xqZ2h6aU1FbU54anRiMzcyMUlhTHdBWTNDRkE?oc=5"
+          },
+          {
+            "title": "AQI differences with private apps due to methodology, not under-reporting: CPCB",
+            "source": "The New Indian Express",
+            "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPWmpRV1l6cWxiclZMbjAwN0I2TGk0QjVvbXlIeWY1MUl4eG1KYkNpYzF5Q2xhajVNYmcwckhYRzRTa19scTAxMmVKUzYxeTZhdzl3U21ubTJkMzNEemNvNXFpbFdIMncxTWtQdFVmRVlTSlRKWXVaRjhqbzZwcFRzb08xRjFCdXdsS0VGX0lwNGZVbXMzaTVqOGFzTE1hNERVVmpna2JuRElHWU9qVHlQdTg4OEJPT1BaUlROYzduZW9wYloyX0xlSHNUSDlUelRG0gHeAUFVX3lxTFBQV25ZNWhIazlOeXY0bjhKSU9VWmxlYS1uNzFvR2JxMHNPdVhvYVk1blA4RDhMRVlBYnZkNVRoOS0yQXU5NjllUzlXQ09xSV84dG4xdktYQ2dUX2hQWGY0dzhTQ0QtZVFydmZQejd5SkxlTVJMWXkySkY4Q3pDc2lRTzI4eUdlMjNDODQteHdDNm9Sb0NSWWI2SEY0MVRlc2JxVG5XZ1MzUzJiaXpIQVUwZkxFMm53NmJBVTZON0ZjbUdPeTBTOGNFOUFwWlNMaU5mMG5oN0E3bzJGbTB5Zw?oc=5"
+          },
+          {
+            "title": "Beyond Delhi’s AQI Ceiling",
+            "source": "MillenniumPost",
+            "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBQQktNOGRJaUNQTVM5UjZDQ3NZdjZSYmJUY3NwOHhvSl9PRUJhUjM4bURtNFpOMjdGWGZxVUVSUDlmZnRjaUxmU0ppLUpJM0NOOGdTa3ZIcm9vZkZWRk1uQy1tdjdYQ2JMaXN0QlRhb1B2YVNSLVhpUWh30gF_QVVfeXFMUEN0b2NQb01LODhjSXFpbnJoNjFsbTN0cUltdmU4bXh0SXBuWTI0eEZNdTY1em1ITWV0ZzVNb1U3a3I5dUdlbFlURGR5ZDJHR08wUm42ODRudWZPR3ZsMUFvRWRFc2gwdThyQ0swTUppaE9uZ1E1aEh2OWJYZUxjUQ?oc=5"
           }
         ],
-        "url": "https://news.un.org/en/story/2026/11/1168763",
-        "image": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/11/9-11-26_COP31-opening-Stiell_UNFCCC.jpg/image770x420cropped.jpg",
-        "summary": "Nearly 200 countries have arrived on Türkiye's Mediterranean coast for a climate summit with a different ambition: fewer grand declarations and more concrete decisions. With a powerful El Niño threatening to worsen extreme weather, negotiators face difficult questions over climate finance, clean energy and how to prote",
-        "photo": "assets/news/3a8e742b6c.jpg"
+        "url": "https://timesofindia.indiatimes.com/india/cpcb-explains-why-official-aqi-is-capped-at-500-despite-private-apps-showing-higher-readings/articleshow/135715891.cms",
+        "image": "https://static.toiimg.com/thumb/msid-135715926,width-1280,height-720,resizemode-6,overlay-toi_sw,pt-32,y_pad-600/photo.jpg",
+        "summary": "The Central Pollution Control Board on Tuesday defended its air quality monitoring methodology, explaining why official AQI readings are capped at 500 even as private monitoring apps reported levels as high as 1,800 in Delhi after Diwali.",
+        "photo": "assets/news/6a6faa24b4.jpg"
       },
       {
         "id": "e9a64b273a",
@@ -489,9 +351,14 @@
         "longDate": "Wednesday, November 11, 2026",
         "related": [
           {
-            "title": "Iran war live: Tehran’s security chief says no talks with US taking place",
-            "source": "Al Jazeera",
-            "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNb1BpVEpoUXk0dVZTcEVneEYyZVJuVHUwT2E5b1VobkVINDNGeHdwcTRsSzlaMlp6WU1MUFU0N05ucXRlQk1yclZnZGM1Z0dwOEZDcTNXOTlzdzBkQ1NCNVZyRTFNYWh0Z0ZtQXJNS1NvY2tBbFpDejBFZlVhMmlkRXM1MU1WQjJrVFp0eERuUE5mWG55dVdULW9xZ3I5SzZGeXZ5ZDhfNGRnX3ZNdjZUcU9MSmhLbXI2U3fSAb8BQVVfeXFMTUNBbmhtNUIyWFg4OXQ1U25TaXVzVGxKbWloNWoyQ2NVMDFLcHJRY1VnUTVyaTB6dHVHbEs5QTFtQ1QyYXUxRFpFTHpVMGg0Zi1TS2N1TUg0UW85Q2ZOOHk4c2I1aWo0UzNsc2hOYW8yU1lObzJaYzhpVkU0a3I4VWx2aWhxMGc4dTdQamNIZEJaM0t4ZlZzQ21pMWdHN0JiZml1RG9kd25lbktCSWxFc3prd3VmT2FZdzhJMWJPVDg?oc=5"
+            "title": "'Almost all of Iran's oil revenue will dry up': Rubio warns as US tightens sanctions",
+            "source": "The Times of India",
+            "link": "https://news.google.com/rss/articles/CBMiwgJBVV95cUxNenRCejhndFJzSjAyVjlFbm1hTVZzZFd3Y0NwdnFCenhyQTdIS0dRajMtWEpKbTdCN2hYR3diSFVPUlJvUlhONXJxckFGV3FNbHpnTXVGVnR5V05zOWJtVW0teHhsTW9Kakg2ZWRYYlNlTGNEM2w0MV9JblF5X0dtaEh4RHRURWJPc2ZpTDNXVEgtTW9CbXdobmR5aFhNTGlsN09OZkpjaVo4UTMwNTVEWWIxUTlpV1hqWXpYMl9VZkxiSEVROTVlSHRqODd0RWVuMElRWHZsNzNoWEU3MzRDMllCLW9CaGNnTlRiR21zRFE0dzh5VjNHaE5xRF9GUXpWTzFsWjBYb0g4ckVubkxHMzYwM1FnNUNNeXVnVkhHUVVGcFVLUUUzMGxvZnNkVEcyQ1JLRGNsWldNRmI1ZDNidXdn?oc=5"
+          },
+          {
+            "title": "Rubio says Trump's war against Iran not 'necessarily popular' but needed to stop a nuclear threat",
+            "source": "The Hindu",
+            "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNX1FTa1JDOXk2NklqdEdrUjRKd05qU0QwX2pobFNZdGpOWG5tQWJDcy1DYWVmS1ZuT0hQOGZCa1lnU2M1Nzl5Qjk2OEphaGp1QjZXSnFwY2JsWHhER1FYb05MTy1DcmMzZDJmOUc4QmQyOWU2c2FxanM1eGpYdHgwN3pjeHpETVdRSFVxWHNHNXExMlpwODZtRzZSRk9rU1JnOTdaNTdYZExyTUc1U0l2MVJmREFzaHBSa0ZqNEs2WjNkNHBSWWYtOGpFNlZoNU91bGlGRXdwakZCUVMyc3JIb2d0UGFKZEVHU0puR0d3SdIB9gFBVV95cUxObWpPMHc0UFZZYXpmaTQ2dUxVbHNtdkRpMUVBYUpVeVppWmhfekRiWlgxdnZrNEpaT3A0NnFsX1VWYVFfSHFHWHJVcmNFTDJBX0hJM2lWVGVqclJvdFhaZndCNmhZTUxxbkdkNGxVN05raGI5TzV4dEVranJUQTU5VHR6VWFqSDAwN3AtUno3aDRzOEtyUjFxY1BDZW9VaWpqTWstUVQzdE9qUS1BeW0wektEYzRZYUdLcTc0N1FHZXl5QTZvUnVXLWpKNDZzTXY0QlFPQWhiUGMtUzlTczZ4Z09uMmlpZnBQZU55bTdOcFIwMWJ2OEE?oc=5"
           },
           {
             "title": "\"No Need For Major Combat\": Marco Rubio Says Iran Ops Were 'Devastating'",
@@ -499,14 +366,9 @@
             "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPYVhGV2FJSUs4T0RFNUo1N0tid3FTWTRqaUxzZVhmbFNiZzF1TFpMYkpTZHVlazF1Mk12WFpUWHROS184MG5wTW5DaHpRNUpoVzNabWVVaFFaUHJGSGtJSllyZ2g5SVVrZXNvUVhiU3U2eXgxbXZ3c1NhRzFfN1FJMl9aQ1luZ3pScEVlVFdFemFlWlZLcnhrdE0zYW9La3llanY2am5VckVpOVp50gG0AUFVX3lxTFB3T0VwQjRualRDX2tucXdhem80VjVsT2l5RnVaU214ZFNWMlNlaUFOVllwSHhJSG5BUUdGbEJMTk5UVUF2RjBubDNEdGxIQndsNENITmZjdV9zY0RDczlXVFU3RHlfR1N1VHZTdEUzTVFHZFRYdVl3UEtzaWNNQkwzZ2pLU0FBdW5SVTlPRG9YM2VtT2w4N1A0bXhaUFNlR01uNWNFRFBSY3o1dlhYNWJIbFlQWA?oc=5"
           },
           {
-            "title": "US sanctions inflicting ‘extraordinary economic pain’ on Iran, no need for major combat ops: Rubio",
-            "source": "Hindustan Times",
-            "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxOdngwbjlSSXR3RXJWYms5OEtWTTZPYkgzbkRHS1N6VjlCNFVzRGVvMGs2RFNrb3duTm84RWVoZFVFV1VxM2Zub09YLUo3WU5XdGVkcTJZZDNFbUFIVTJqbE9lVlRVNXhWX3k2ZUMtTnZSSDBpYnNRTG1zYWhjYWh0QXNBX05ZZXFXanVwRVZ1WGpFczVnaU1ydkhITU9ha1h5T0ZvS2FkUDZqZ21kSG1jSXNzaVdBVENtUjB3aUhpM1A2dUlmWkZscFd6NmgzcE12Z2lHaExjVGNSWVpwUm5HQ0REVDNCSWRVRThibHlEbk96Tk9FaFduc2dieEQ?oc=5"
-          },
-          {
-            "title": "'Almost all of Iran's oil revenue will dry up': Rubio warns as US tightens sanctions",
-            "source": "The Times of India",
-            "link": "https://news.google.com/rss/articles/CBMiwgJBVV95cUxNenRCejhndFJzSjAyVjlFbm1hTVZzZFd3Y0NwdnFCenhyQTdIS0dRajMtWEpKbTdCN2hYR3diSFVPUlJvUlhONXJxckFGV3FNbHpnTXVGVnR5V05zOWJtVW0teHhsTW9Kakg2ZWRYYlNlTGNEM2w0MV9JblF5X0dtaEh4RHRURWJPc2ZpTDNXVEgtTW9CbXdobmR5aFhNTGlsN09OZkpjaVo4UTMwNTVEWWIxUTlpV1hqWXpYMl9VZkxiSEVROTVlSHRqODd0RWVuMElRWHZsNzNoWEU3MzRDMllCLW9CaGNnTlRiR21zRFE0dzh5VjNHaE5xRF9GUXpWTzFsWjBYb0g4ckVubkxHMzYwM1FnNUNNeXVnVkhHUVVGcFVLUUUzMGxvZnNkVEcyQ1JLRGNsWldNRmI1ZDNidXdn?oc=5"
+            "title": "Live Updates: Rubio says U.S. has \"no need\" to restart combat operations in Iran",
+            "source": "CBS News",
+            "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE0zN0FDMkRwcDVyZGFpV0dvRnhidUVyU1hrc2pKQzJZMmlLZDF1bHZ0dzBtMDJLOXc5T0xNYmRuS2Q4eU1QQmFqaHJ1cVg0VGkxcWN3dEZLVlo1UlQ0ckZCaW52b0lHQzVZN2N6UElySjhIWDdXWVh5T24xcmh4Zw?oc=5"
           }
         ],
         "url": "https://www.reuters.com/world/rubio-says-no-need-major-combat-operations-iran-given-us-economic-campaign-2026-11-10/",
@@ -514,6 +376,42 @@
         "summary": null,
         "photo": null
       },
+      {
+        "id": "27002e1144",
+        "title": "After Netanyahu's \"Unity\" Call, Eisenkot's \"Delusional, Outgoing PM\" Jab",
+        "source": "NDTV",
+        "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNcjN6SmkwUGFpeTVMWVN6NVRpVFMtRHBSVGowY2JrOXhOX1JEcjRmMXlyVnYwYWRZcjZOVTZZa2FSSkdlX1RyVFJOZEJ6XzhqYXJBVDM0My1OaEtzbVgtREdhQ2hPTzR3MERFc2tGT3N5MkJwdk9YR3JVUWdCWHBkWFdzUVB5MnBSUndKaXRwQXBSVldHNUY1WGFYR0N0bjBQdE9FdFl5bzRaQkQ5V1RhZjZFUE5LQ2RGVHp3UHBudw?oc=5",
+        "date": "Nov 11, 2026",
+        "longDate": "Wednesday, November 11, 2026",
+        "related": [
+          {
+            "title": "Netanyahu: The Arab parties seek to destroy the Jewish state. They must not be part of a government",
+            "source": "The Times of Israel",
+            "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPVzN6eDB0ZTdFMUtua1RzaXNPb2Z1eGxteEk2cWZKVG53VTFFY3kyTTZHUnAxamI2WWFqbTNhYXA5MHNMeWhaT3ExOFIxM29ITHBJaUV6dkFyVm1jLUVFX0dxbGdTcFZzaUZaMXYzTjc2YXNxUjJiakNraHhPcE5hZG9fSmhZa1E4WVFvdmNfRWw3QU1jaTRnemtJSzVNdWk0NE9TQUZTbDcwLWJOQnUyZGtiMWFTV1JrX2M1b1B4ZnVGYUo4WWww0gHMAUFVX3lxTFBPUThLWEQ5RHUzNlAwYnBGLTRIbWZxX3dMN3ZVeE9JVjFpTEtNd0FPSm5sNkFBbG0yYjBMcWhfcXhJWVpNdkRXTC1UR2VDNXZxYTZDQ25xQnhNbFctd3FSdnB4SUFyU3lGR0lCUU9sU3NBa0ptdXlYSXZJTXlxZW1aRFFiNWd6SkFod0JBQXhaajUxOXF6R2xGakJMLTgxX3pKVnJ4TFp3Nzk1RHNWOUQ2RnE2NUN3Rm1oTktPUUZYRkExZnNQZWRyQmFlUw?oc=5"
+          },
+          {
+            "title": "Unfit to remain in office: Eisenkot hits out at Netanyahu over divisive speech",
+            "source": "India Today",
+            "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNQnd1MFFkVTVTUHRnQlBZVlpqbWtXdklUZ1NpZ0JCUnhaY1RhU3pzZ01rVXVKLXUzSTk5RW5WRGd3bnRTVFJvNG90Nl9ncDNWZ0o5OTRCam1YWlNxSllXY1E5Ym85eDNLbzJ0Z2ZqenFZeTVDR19sWUx2SWNRLW1pRjRkRHNsanptWlpwNFNENWctMmNWX2RCLUpmNk1GU1EzNXY5a1pXZThreVBLeXRMUHFoNy0wYUk?oc=5"
+          },
+          {
+            "title": "Netanyahu cites Iran 'nuclear threat' at Israel parliament opening day; Eisenkot slams 'shameful' remark",
+            "source": "WION",
+            "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQc1FDVVA1cFAwa0t1Y0NmQ2IxX285dFVBOW9GYlg1VnVBaVZfTExpWGpxQWVMVUtSV2l1VXVyVThxdmRicDFqYXVncFk2b1c2eWcwN0lMRlRIRzRoSUR1TE03N05KSjhyU2xCeEpFZVRKSS1kMXZmSjRGU2hKREJYNU1nVE4xWmp4RlFNNHhHUzVrT3VicDRBUHFjR3NWRFE4YU5HaEh4dVo4ZTh0OWxONHJiNzlSWGtRSFZXUUliQmFKV3Y5aUo0N2NZRnpuSzJYMXBsU3QxRW4zV2PSAeABQVVfeXFMUFIwbkhnZEVzTnhqZTZZOW9EUWpPVTh0MU1rekwySldOS2lZUDJjXzMyTU9Zb0tXWkdWZUFhYXM3TWgwcTdGVXJtUk91aFJRMmJyd0dDb0lnczN0Y29PUHdiMGtnLWtyQ1JCcExKODh0enhKOUs3UXpmVVFUODZQV1pPZHhOR1I1LTM3bHVvaERKWGxnTWI4Z3BKazdnZVJWeWxBYlJnV1FJb1B0RDItTXhQcWJ6NzVkbUhYMElfa1B0eGRWdktCT0VhYXBxNmhCWlEtU1BlNjNJSEVXTHRCYmw?oc=5"
+          },
+          {
+            "title": "Gadi Eisenkot cancels unity coaltion talks with Benjamin Netanyahu following 'divisive' speech",
+            "source": "The Jerusalem Post",
+            "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9sWEVNZUMxQl9reldfTUlJSG5GdEFBNzVmdVc4VTVXVmpDOVFzalFxTmg2OUZ0TkU2LWJNNC1kQ0RBOFNuaFlscDlZZGVpQTgzRVBYZW8zWkRPeFI2YlB6alBobjZNQ3I1dzZicjZrcFpGUDRQWGdSZkxYOA?oc=5"
+          }
+        ],
+        "url": "https://www.ndtv.com/world-news/after-benjamin-netanyahus-unity-call-rival-gadi-eisenkots-shameful-delusional-jab-12309964",
+        "image": null,
+        "summary": null,
+        "photo": null
+      }
+    ],
+    "world": [
       {
         "id": "db47222300",
         "title": "Pentagon chief Hegseth calls moves to impeach him a farce that will fail",
@@ -523,24 +421,24 @@
         "longDate": "Tuesday, November 10, 2026",
         "related": [
           {
-            "title": "\"We Didn't Start Iran War\": Pete Hegseth's Defence Amid Impeachment Threat",
-            "source": "NDTV",
-            "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOSGNDdzJIX3NzLTllNzU0UUZUMHFOY1VLeWNsRGlzS0RtNFFnMENHb2hmaWJ2M2pmekJ1R1NxUW5WajlTTkltOTZ3dWNKU1ZBNHhEMW5FRlM4RDQ3UmdaUlJoOG1DLU4wbFU3UVZId2czV0w5ZEdWYXRIMkdMY3ZUeWNxZk9aaUJISklxR3lHcU54S29USFVCX2pGNDNGUHJ3WE9OTXNYd2hlLUE?oc=5"
+            "title": "US House blocks bid to impeach war secretary Pete Hegseth",
+            "source": "The Times of India",
+            "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPdjl1c1JZSk1fTGc5bkRZZi00a3ItSW14MVNUaUkzeVQwRjR4UGNKV3RBMmd2em85QXBPc0RLbUlMdGZDSE80bWdhZVJFeE8zOWZCaGp5WmR0dk9HWWI0T29nX014aFNZU3BrV3VXYzd6ek10aGtqQW42ZU9McDljWkwxamg2Ml94Nml1ZTgtMTViUW1VcW9VcE81cXZCU0gwaWdrMWJXa3NBV3d0THU0dUxtUWd4dDU2Q1hzaGNpai1XUDF6WFdn?oc=5"
           },
           {
-            "title": "Impeachment Live Updates: House to Read Accusations Against Hegseth",
-            "source": "The New York Times",
-            "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTFA3aFh0N1I3eXV5VHBNTkx3MEhtTnRKSmNtZXFNaVI3a0V5SUF2T2VfaC1SRnp0Uk5xOWt4Y0hZajRjTHp0bGhKS3RVbFd0b2pPaTJzT0JtbDhGVUc0V2FDTGFiZS1HaFFOdG5IejdJTUlMTGZlUExfZDEyc2c0dw?oc=5"
+            "title": "Morning Digest: U.S. Republicans derail bid to impeach Hegseth; Pranab Mukherjee hinted at desire to become PM, writes Sonia Gandhi in memoir, and more",
+            "source": "The Hindu",
+            "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOR0dMSzhkX3F1bW53TFNmdXpxejZacVA2WnFLcEpXdHVwQXJWZUNrckxVYzQ0WXUxUlZ6S2ZER3RwVWZvZlM4b01yQjdkbWhfYm9tQ2lyWGQxLUVIdElKUXMyZ2ExNEt1WnozbWsxUHNYMFIzWklUbkhCSHdoWko1b3BGdkZSUkhIZmRfVNIBkwFBVV95cUxPSWRXTGF4dFNzcXpmYU5rQVdJaEpEemhjcEhMdXJUNmhoRzA2T3dLeEZOUkRORXRSTFI5eno4LUtHcTI4c1FkMnNsaEVfU3NjTGdkS2xPWE1XSjRjb0ZGWGcxdl9WNkNCSTRyOHpnRENoMy01UkdWdmdfWmhjWDNrX3ZHdk1ERVFhbmNrUmVJX0tHUGc?oc=5"
           },
           {
-            "title": "Live updates: Pete Hegseth defends record after Republican begins impeachment effort",
+            "title": "Iran war live: Hegseth survives impeachment bid; Iran denies US talks",
+            "source": "Al Jazeera",
+            "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQcnQtOFhJLVdPd0NQa0NZVW5INzNFMF9ySUJlQlpXMEVCaGJYYl94dnJDeTFQU2VHbGd1VUZZNDNLUlNnX2g2Q0hENTZMMDlDX1plUTJSOEUtalZ0NWpGTDEwVE9rNlR4UFdpRi15R2NhQUEyRlpSdlZfTWdOZ3dDQl9kNTJjRDFzdDU5T1ZJRi1mNnNMcVBMWXhKTS1ENFBWM0pTOW9lS21UTGx5aU5ISXlwM2xoaFdqSUHSAb8BQVVfeXFMTmNPdEc3dmtNRm95cTBJSWtONzhKOHJ6X21BaXF4QklNdkU0WUdzMjhyeUJKNTNpdkJqSXZ0cm9wS0FscGstUmNDcFYyZjc4a0kxbVBEVXpOSTNoS2dVODN4WnlmOWZKdG9WdGJ6dk4tS3MzMWNsREluZ2VORV92ZFZEdVFteUNtUnpwWm96bkVjMFBmSmdhN2ZaaVRPR1hXTGtVTG1SNl9seWxjYnVVRFVJNFpMUEstZFRVQ01Da3c?oc=5"
+          },
+          {
+            "title": "Analysis: Hegseth fights for his political life with appeal to Trump",
             "source": "BBC",
-            "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE90QzhLd2lDckVuRlVEYjc0QU9vUkktcXFfcXpELUVXZTVuYW5NSnFZVlZJS3hkcllTNkVaZmFQa3locHVyZjN1eS1fRjZRaExiZmNoZi13?oc=5"
-          },
-          {
-            "title": "The trap in Trump’s Hegseth defense",
-            "source": "CNN",
-            "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNblBVR3V5SktCUTBGSE5IUHRzSEZubUFybXEwMm15RXJfNEVpVW9raXFwcVk1RXNLMVlnZFlVLUVIR2lkZlVIQzFBMXl4OUZuX09Xd1Q0RktJSzIyMUtpUHh2UXJiX3NrUkItVVZRaThQaXVaZlFvYmc5a0REdFFlQUNBTXQ?oc=5"
+            "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBqT0ZaTEk5THF3NDFvWFdQQTdjaEZkd1FiYW5sbG0zYS1USEEwNXBPTmdEN3ZLSXIxM3d5LUt1LU4xMDlEZHVpVHJEWnRvVHhiVnlJdUk1WFBIdUk?oc=5"
           }
         ],
         "url": "https://www.thehindu.com/news/international/pentagon-chief-hegseth-calls-moves-to-impeach-him-a-farce-that-will-fail/article71686563.ece",
@@ -549,51 +447,221 @@
         "photo": "assets/news/db47222300.jpg"
       },
       {
-        "id": "fd9ee2a21e",
-        "title": "Bank collapse leaves half of Paraguay without funds, economist-president under house arrest",
-        "source": "India Today",
-        "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNOXJrc3BiVHJJaHhHSVVlUzc3YTc4UkcteDkxOUEwRnV5aGJfbGdoakRwSm9wWmtRdFpGeUU0MXRFMUtoQUEyUHhic3FKSXpUMzhaSHlaTkxqTTFxWVQ4OGNxbXB6RnpvTlEtZ1hlZGprOTJlZEpPVGVoMGx1RzVLTVNhbUc4cXJNdVJiZXRuaHd6MTFoa0xERnlsZ3B2Qk5hZmJCTW84bENwX21CX1VmSF92T0lOajNWS0JhYnB3R1VvdU9oX0pR?oc=5",
-        "date": "Nov 7, 2026",
-        "longDate": "Saturday, November 7, 2026",
+        "id": "e9a64b273a",
+        "title": "Rubio says no need for major combat operations against Iran given US economic campaign",
+        "source": "Reuters",
+        "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOek5yNnd3UkRRS2RHYjY5MlR1NU9KQnFWcW43RGV1VHI5Yzhxc3RseUstNnVCbXVlUTN3T1hTcE9RUEFGT0R6Q0JUTmQxNW1aX2lZM0RXZkNjLTgwdWQ5aFN1OGM2LTBLcV91MlBkdDE0a2VCQk5nNUdDOGo1ZHI2TW9Pa010QjlrcjQwU0htVjlTMlVOUXJ2cThHQ0JHY09rSHFyYVgtNzNhMXNVVzJ3UTZTb1R6cmM?oc=5",
+        "date": "Nov 11, 2026",
+        "longDate": "Wednesday, November 11, 2026",
         "related": [
           {
-            "title": "Police raid home of ex-President of Paraguay",
+            "title": "'Almost all of Iran's oil revenue will dry up': Rubio warns as US tightens sanctions",
+            "source": "The Times of India",
+            "link": "https://news.google.com/rss/articles/CBMiwgJBVV95cUxNenRCejhndFJzSjAyVjlFbm1hTVZzZFd3Y0NwdnFCenhyQTdIS0dRajMtWEpKbTdCN2hYR3diSFVPUlJvUlhONXJxckFGV3FNbHpnTXVGVnR5V05zOWJtVW0teHhsTW9Kakg2ZWRYYlNlTGNEM2w0MV9JblF5X0dtaEh4RHRURWJPc2ZpTDNXVEgtTW9CbXdobmR5aFhNTGlsN09OZkpjaVo4UTMwNTVEWWIxUTlpV1hqWXpYMl9VZkxiSEVROTVlSHRqODd0RWVuMElRWHZsNzNoWEU3MzRDMllCLW9CaGNnTlRiR21zRFE0dzh5VjNHaE5xRF9GUXpWTzFsWjBYb0g4ckVubkxHMzYwM1FnNUNNeXVnVkhHUVVGcFVLUUUzMGxvZnNkVEcyQ1JLRGNsWldNRmI1ZDNidXdn?oc=5"
+          },
+          {
+            "title": "Rubio says Trump's war against Iran not 'necessarily popular' but needed to stop a nuclear threat",
             "source": "The Hindu",
-            "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOWlNUcjU4SjdnUW5pV1FsSkxndGtBN1NwTDFyZ1duTzE0d2ozZlVBUTVFQnpqclQza1RNSElpMkJaMkNDT205amRfenI1TGFrWFdEdXdjaHU0dVpIWDIwT1JQV0Y0MG5IUHYwOWdwTnJzV2lZNVZYaEY5ZU5iaE5uU25FV0llOWJRbE9PUWZoUkRScTNNa2xXV3lHOTdhemQyOTFfWnk4Nl9va3kz0gGzAUFVX3lxTE5BY2RPS0hCbW1sV0JHMnFydFF4ZFF2NFdfT25HelBLU1I0dVMxeTdqR1lDMGk2b2JvWVdXZ0R6UURxSmdraFFVSFdqeHBGS2JHVWtvU29fVW0zS291R2kwQ01OUk1lc3NVSE8xTl9DcHRCVmxKT1FXZmdwQURyanNqaGRvRHVkZEpIN1JfLVZ1TXoxZVE0SUJTRDQzNlh1Sms1a2k2LTZSZmNvdUp3anZCbFlN?oc=5"
+            "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNX1FTa1JDOXk2NklqdEdrUjRKd05qU0QwX2pobFNZdGpOWG5tQWJDcy1DYWVmS1ZuT0hQOGZCa1lnU2M1Nzl5Qjk2OEphaGp1QjZXSnFwY2JsWHhER1FYb05MTy1DcmMzZDJmOUc4QmQyOWU2c2FxanM1eGpYdHgwN3pjeHpETVdRSFVxWHNHNXExMlpwODZtRzZSRk9rU1JnOTdaNTdYZExyTUc1U0l2MVJmREFzaHBSa0ZqNEs2WjNkNHBSWWYtOGpFNlZoNU91bGlGRXdwakZCUVMyc3JIb2d0UGFKZEVHU0puR0d3SdIB9gFBVV95cUxObWpPMHc0UFZZYXpmaTQ2dUxVbHNtdkRpMUVBYUpVeVppWmhfekRiWlgxdnZrNEpaT3A0NnFsX1VWYVFfSHFHWHJVcmNFTDJBX0hJM2lWVGVqclJvdFhaZndCNmhZTUxxbkdkNGxVN05raGI5TzV4dEVranJUQTU5VHR6VWFqSDAwN3AtUno3aDRzOEtyUjFxY1BDZW9VaWpqTWstUVQzdE9qUS1BeW0wektEYzRZYUdLcTc0N1FHZXl5QTZvUnVXLWpKNDZzTXY0QlFPQWhiUGMtUzlTczZ4Z09uMmlpZnBQZU55bTdOcFIwMWJ2OEE?oc=5"
           },
           {
-            "title": "Paraguay’s president names Schreiner to head central bank",
-            "source": "ThePrint",
-            "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPdDRGN0JRN1dvcFBuOGJoR19lS3B4dW0yeEpIaXZNSTQwRExCSmtmdi1ZTDQxMzJ1MzluLVJVQkZMVGZfeFNoa04xc2dyTmhrVmV6dWduOGxUeHpzcnRDSk5yU2R6TTI2M3A3eEV5NFRxbWU1WWpPenFzUHdUNjlJdWltQUlvTW9TTlRLWWJvN0ZndFQ5RWfSAZsBQVVfeXFMTkJOSlFZMVk4ZGtJUjZGZVZxVk5IbFFIV2E2a0FrckhIMWxOaDNoOGdhMl9qVW9BbEpJZThzVnlrQ2YwUkRMcmdPYlpMTHJmb0xvdGhmOUVQQTNxT3EwWTAzbFA5SEc3T3JtbEpuN0hKRl9GNWxmMkt3ZGtXSzY3NkZIbWlLeTI0RW1Fay03ZEE4a1RzanBwbEgxWGM?oc=5"
+            "title": "\"No Need For Major Combat\": Marco Rubio Says Iran Ops Were 'Devastating'",
+            "source": "NDTV",
+            "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPYVhGV2FJSUs4T0RFNUo1N0tid3FTWTRqaUxzZVhmbFNiZzF1TFpMYkpTZHVlazF1Mk12WFpUWHROS184MG5wTW5DaHpRNUpoVzNabWVVaFFaUHJGSGtJSllyZ2g5SVVrZXNvUVhiU3U2eXgxbXZ3c1NhRzFfN1FJMl9aQ1luZ3pScEVlVFdFemFlWlZLcnhrdE0zYW9La3llanY2am5VckVpOVp50gG0AUFVX3lxTFB3T0VwQjRualRDX2tucXdhem80VjVsT2l5RnVaU214ZFNWMlNlaUFOVllwSHhJSG5BUUdGbEJMTk5UVUF2RjBubDNEdGxIQndsNENITmZjdV9zY0RDczlXVFU3RHlfR1N1VHZTdEUzTVFHZFRYdVl3UEtzaWNNQkwzZ2pLU0FBdW5SVTlPRG9YM2VtT2w4N1A0bXhaUFNlR01uNWNFRFBSY3o1dlhYNWJIbFlQWA?oc=5"
           },
           {
-            "title": "Paraguayan president asks all ministers to offer resignations",
-            "source": "China Daily Global Edition",
-            "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNOFdIckFYWk5zVHNuS1pZZEpXVjRsZ2xzRkxBY20wa0RIVlQ2N1ZiS1pkeHpFNmM1aW9kTU9oMFptNkpRcEpVc1RiYVd2MmpkdjhrMEN2ZmRWTlVsWEdEX0Fzajd2Q2owUDVlWDZjdXNYVXkxU2ppLTZESUM5emJWWWVn?oc=5"
-          },
-          {
-            "title": "A Country’s President Led to a Bank’s Stunning Rise, and Its Fall",
-            "source": "The New York Times",
-            "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPQUJUZVl4bGtfQm91SzZQanIyMWxIdHdVYklvcElyRElSY2ZLSXZQcTktMnFaTzZTemkyWk1BSjVkb1ZpUGhrTmk0b0RHVFV6emtETTBFN1QyNERWbFcxclRPMERFSGtPWFRhaEtMN1BIZS1BcFdUbEEyX0wydG1YMDNuVHd3NGs1Zm1n?oc=5"
+            "title": "Live Updates: Rubio says U.S. has \"no need\" to restart combat operations in Iran",
+            "source": "CBS News",
+            "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE0zN0FDMkRwcDVyZGFpV0dvRnhidUVyU1hrc2pKQzJZMmlLZDF1bHZ0dzBtMDJLOXc5T0xNYmRuS2Q4eU1QQmFqaHJ1cVg0VGkxcWN3dEZLVlo1UlQ0ckZCaW52b0lHQzVZN2N6UElySjhIWDdXWVh5T24xcmh4Zw?oc=5"
           }
         ],
-        "url": "https://www.indiatoday.in/world/story/ueno-bank-collapse-paraguay-santiago-pena-resignation-impeachment-itspc-3033647-2026-11-07",
-        "image": "https://akm-img-a-in.tosshub.com/indiatoday/images/story/202611/demonstrators-protest-near-the-paraguayan-congress-in-asuncion-november-5-following-the-collapse-of-061114501-16x9_0.jpg?VersionId=aU4iQ.jY6khN9ChAm.59vnekrsmKgibS",
-        "summary": "A bank serving nearly half of Paraguay's population has collapsed, leaving millions of customers struggling to access their savings and putting public funds at risk. President Santiago Pena, a former economist with the IMF, has been impeached and placed under house arrest.",
-        "photo": "assets/news/fd9ee2a21e.jpg"
+        "url": "https://www.reuters.com/world/rubio-says-no-need-major-combat-operations-iran-given-us-economic-campaign-2026-11-10/",
+        "image": null,
+        "summary": null,
+        "photo": null
       },
       {
-        "id": "361aeff80b",
-        "title": "Israel govt formation: Netanyahu in 'panic' as Eisenkot-led bloc agree on key Knesset positions",
-        "source": "The Times of India",
-        "link": "https://news.google.com/rss/articles/CBMiggJBVV95cUxQMHRfSzZWRy1IUldvT2hiVXVDVDRpRVh2d2I0aFhTdm5DV2REXzkzLVBUZFR1ZlZKXzF3SjlkNFB2VDVLVXlMUUhUWmpZZmFheHM3bFdnQmxpWjFUMGRabjB0aWVBdk00aHN1VDhrR1RIcDZYazY2NVZiZEhfTUVXdklvUXdwMi12aHhpUjc3ekREVnMxYXF6UFpjd0piZ2JFc3QyMTctMUVLRlJwYzJBclRIYjJ5NExKVGd1dFY1b3R4X0owekZMbDhYQUZPNU1iQkk0aVc0TEd0M1M3Rk5MRU8zdGw4SGNhX1VrNE9DdUJoUk9ReVc5T2YySXlGMTV1c2c?oc=5",
+        "id": "27002e1144",
+        "title": "After Netanyahu's \"Unity\" Call, Eisenkot's \"Delusional, Outgoing PM\" Jab",
+        "source": "NDTV",
+        "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNcjN6SmkwUGFpeTVMWVN6NVRpVFMtRHBSVGowY2JrOXhOX1JEcjRmMXlyVnYwYWRZcjZOVTZZa2FSSkdlX1RyVFJOZEJ6XzhqYXJBVDM0My1OaEtzbVgtREdhQ2hPTzR3MERFc2tGT3N5MkJwdk9YR3JVUWdCWHBkWFdzUVB5MnBSUndKaXRwQXBSVldHNUY1WGFYR0N0bjBQdE9FdFl5bzRaQkQ5V1RhZjZFUE5LQ2RGVHp3UHBudw?oc=5",
+        "date": "Nov 11, 2026",
+        "longDate": "Wednesday, November 11, 2026",
+        "related": [
+          {
+            "title": "Netanyahu: The Arab parties seek to destroy the Jewish state. They must not be part of a government",
+            "source": "The Times of Israel",
+            "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPVzN6eDB0ZTdFMUtua1RzaXNPb2Z1eGxteEk2cWZKVG53VTFFY3kyTTZHUnAxamI2WWFqbTNhYXA5MHNMeWhaT3ExOFIxM29ITHBJaUV6dkFyVm1jLUVFX0dxbGdTcFZzaUZaMXYzTjc2YXNxUjJiakNraHhPcE5hZG9fSmhZa1E4WVFvdmNfRWw3QU1jaTRnemtJSzVNdWk0NE9TQUZTbDcwLWJOQnUyZGtiMWFTV1JrX2M1b1B4ZnVGYUo4WWww0gHMAUFVX3lxTFBPUThLWEQ5RHUzNlAwYnBGLTRIbWZxX3dMN3ZVeE9JVjFpTEtNd0FPSm5sNkFBbG0yYjBMcWhfcXhJWVpNdkRXTC1UR2VDNXZxYTZDQ25xQnhNbFctd3FSdnB4SUFyU3lGR0lCUU9sU3NBa0ptdXlYSXZJTXlxZW1aRFFiNWd6SkFod0JBQXhaajUxOXF6R2xGakJMLTgxX3pKVnJ4TFp3Nzk1RHNWOUQ2RnE2NUN3Rm1oTktPUUZYRkExZnNQZWRyQmFlUw?oc=5"
+          },
+          {
+            "title": "Unfit to remain in office: Eisenkot hits out at Netanyahu over divisive speech",
+            "source": "India Today",
+            "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNQnd1MFFkVTVTUHRnQlBZVlpqbWtXdklUZ1NpZ0JCUnhaY1RhU3pzZ01rVXVKLXUzSTk5RW5WRGd3bnRTVFJvNG90Nl9ncDNWZ0o5OTRCam1YWlNxSllXY1E5Ym85eDNLbzJ0Z2ZqenFZeTVDR19sWUx2SWNRLW1pRjRkRHNsanptWlpwNFNENWctMmNWX2RCLUpmNk1GU1EzNXY5a1pXZThreVBLeXRMUHFoNy0wYUk?oc=5"
+          },
+          {
+            "title": "Netanyahu cites Iran 'nuclear threat' at Israel parliament opening day; Eisenkot slams 'shameful' remark",
+            "source": "WION",
+            "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQc1FDVVA1cFAwa0t1Y0NmQ2IxX285dFVBOW9GYlg1VnVBaVZfTExpWGpxQWVMVUtSV2l1VXVyVThxdmRicDFqYXVncFk2b1c2eWcwN0lMRlRIRzRoSUR1TE03N05KSjhyU2xCeEpFZVRKSS1kMXZmSjRGU2hKREJYNU1nVE4xWmp4RlFNNHhHUzVrT3VicDRBUHFjR3NWRFE4YU5HaEh4dVo4ZTh0OWxONHJiNzlSWGtRSFZXUUliQmFKV3Y5aUo0N2NZRnpuSzJYMXBsU3QxRW4zV2PSAeABQVVfeXFMUFIwbkhnZEVzTnhqZTZZOW9EUWpPVTh0MU1rekwySldOS2lZUDJjXzMyTU9Zb0tXWkdWZUFhYXM3TWgwcTdGVXJtUk91aFJRMmJyd0dDb0lnczN0Y29PUHdiMGtnLWtyQ1JCcExKODh0enhKOUs3UXpmVVFUODZQV1pPZHhOR1I1LTM3bHVvaERKWGxnTWI4Z3BKazdnZVJWeWxBYlJnV1FJb1B0RDItTXhQcWJ6NzVkbUhYMElfa1B0eGRWdktCT0VhYXBxNmhCWlEtU1BlNjNJSEVXTHRCYmw?oc=5"
+          },
+          {
+            "title": "Gadi Eisenkot cancels unity coaltion talks with Benjamin Netanyahu following 'divisive' speech",
+            "source": "The Jerusalem Post",
+            "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9sWEVNZUMxQl9reldfTUlJSG5GdEFBNzVmdVc4VTVXVmpDOVFzalFxTmg2OUZ0TkU2LWJNNC1kQ0RBOFNuaFlscDlZZGVpQTgzRVBYZW8zWkRPeFI2YlB6alBobjZNQ3I1dzZicjZrcFpGUDRQWGdSZkxYOA?oc=5"
+          }
+        ],
+        "url": "https://www.ndtv.com/world-news/after-benjamin-netanyahus-unity-call-rival-gadi-eisenkots-shameful-delusional-jab-12309964",
+        "image": null,
+        "summary": null,
+        "photo": null
+      },
+      {
+        "id": "91c323c27f",
+        "title": "Iran's top security official says no talks underway with US",
+        "source": "Reuters",
+        "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOcXVfMkI3S19RUFdwVWNlT3EyYkFfVUpBOW5ldjdoaUNXREN6OW8yaEVMb2Fwbkhhcm1seVYzR0FjMFQxTGt2NFZ6enpxaXFBSE0wQThJT2dRQ0E0aFhyamc5Y1g5djFKaE52OUJ6cTZOOFVYMGFEMWpuRHZVMGVCS18tYmo0NVFBT0tFRHlVNExEVnluNndNSnJkRk5IN0lyWlJ4VFduZTFhRzZIX0EtU2VB?oc=5",
         "date": "Nov 10, 2026",
         "longDate": "Tuesday, November 10, 2026",
         "related": [
           {
-            "title": "Point of no return: On Israel’s next government",
+            "title": "Iran war updates: Tehran’s security chief says no talks with US ongoing",
+            "source": "Al Jazeera",
+            "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNb1BpVEpoUXk0dVZTcEVneEYyZVJuVHUwT2E5b1VobkVINDNGeHdwcTRsSzlaMlp6WU1MUFU0N05ucXRlQk1yclZnZGM1Z0dwOEZDcTNXOTlzdzBkQ1NCNVZyRTFNYWh0Z0ZtQXJNS1NvY2tBbFpDejBFZlVhMmlkRXM1MU1WQjJrVFp0eERuUE5mWG55dVdULW9xZ3I5SzZGeXZ5ZDhfNGRnX3ZNdjZUcU9MSmhLbXI2U3fSAb8BQVVfeXFMTUNBbmhtNUIyWFg4OXQ1U25TaXVzVGxKbWloNWoyQ2NVMDFLcHJRY1VnUTVyaTB6dHVHbEs5QTFtQ1QyYXUxRFpFTHpVMGg0Zi1TS2N1TUg0UW85Q2ZOOHk4c2I1aWo0UzNsc2hOYW8yU1lObzJaYzhpVkU0a3I4VWx2aWhxMGc4dTdQamNIZEJaM0t4ZlZzQ21pMWdHN0JiZml1RG9kd25lbktCSWxFc3prd3VmT2FZdzhJMWJPVDg?oc=5"
+          },
+          {
+            "title": "'Surrender to Iran's 7 conditions': Tehran after Trump's call to end war",
+            "source": "Rediff",
+            "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxORjF6cXdnXzZSM19CVTlSMzhrenpBTVpWRk9hRUVyVnIzQWxrd3VCcl9xMU10MnlCTU9OT3MtU1pmRVFzbkQxVUdjcFN0Y1Q5Rmo5QTUtUzIyeF9UdkFjVEZHQzl4SUU1ZnlWNUljREhMRjg2TVNuSF92ZUF6c3JXTjZ0b1Q4b0xfNUQ0X1gwVmhKUEgzamtlOFpvOF9WMGpuTlFlajEzbVJxaHZZdzhtQlRIcDcwWWJCbFdha0FKQ1VaR0FfUzYzR0RidWFPWFXSAdQBQVVfeXFMTmRjdDFOakRfcHF0RHBqVFpoZTJjRW84UklfZzRUeGdGcE93N2VWdUEzR2llSFhYN3B2amtlZVZtQWg5TkJsV0pqaDRJZFBTWFJ4b3U1RWVPd3o0ZGtGVkdtUENmenNUMmh2c3Z6aEdRVWhRUWdRb1E3YXJiUWlLdGVJZzktR3FWQnlhZFRYRFN5Qk15em5hRDFCdFdTWFlIS3h5TDl1MDFDNmpYeElTYnZaaHE1cWNlSHI5STZQSGN4VXBiVE1DRFZwSHdaWnMxVndVXzA?oc=5"
+          },
+          {
+            "title": "Iran says 2-day plan to reopen Hormuz Strait still on table",
+            "source": "Xinhua",
+            "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE93Zl93Z0o3NGRCMmViaFB5dlpCU05LV3dmbGMzZ2hDTXdlTS0tdGhsX3pnYlBRLVFVU1AzdEFsU0NhSjF4Zm1KX1Z3ZXJXdFpBZ0pzWlJySEN3bUpqSS1OWXdBcEdVOVA5Ukc5WnNQNlZQYTdDaFZlYnhkZlQ?oc=5"
+          },
+          {
+            "title": "\"Engage In Diplomacy\": Iran Calls On US To Meet Its Demands To End War",
+            "source": "NDTV",
+            "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQSm0xVFRpdFJJbHREY29XUFRVWktfZzlWdmlSRjkxOGZuRWp1WUVMZlgzbHptbFpUdHJHeGJsdWZlOWZnZUoyaW9oZGVxSHNQamw0T0s3N0poTE9IaHd2TUwyLTVKdUZYSVljZ1IyWmdycWYzbWs2SlBFd1dKVnZTcFBGbURjRGk2VE8yOWNNTElxd9IBmgFBVV95cUxNbFdvZmRuY3hFYl9fX2J2ckhLbGhwbm9XVUtkWWhUNVprWW4zTWQ4RVYyWUMyS3ZJUzJRZVZNM2ZBMFR1cnR6ZFZqRk1tSTk1amhwWTNFZEJLNm1DM1V0LTZiZGNYcHlab25kQmEtXzU1STllZ0xnZF9samlMTHRSdFlzYVVMaFhGWnNhcnZ0aHd3STR3Y1J1dnVR?oc=5"
+          }
+        ],
+        "url": "https://www.reuters.com/world/middle-east/irans-top-security-official-says-no-talks-underway-with-us-2026-11-10/",
+        "image": null,
+        "summary": null,
+        "photo": null
+      },
+      {
+        "id": "ffeb2f5d22",
+        "title": "'Ceding territory for peace is absurd': Zelenskyy warns Donbas deal won't stop Putin's war",
+        "source": "The Times of India",
+        "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxOUUZXdTQ5VGNYRmU0QXA2QlRnY0xFOGMzSy1JXzVjUEF4QkVOUjVsUVJUeEVhVUFvSmxfb0ktTjVqOWVXZ05Ga2U5WVhvT2hMWFF2YUVmYVBMMV93dXhieXFjQVk3WWg0bHhtVFBPOWhaTzRWUkF3QU5Fa3Y4NzlrMjlnYU1jWjVfSWNyWURreWhsSmhsN3hlX056d3VHU1NLNkI0QmlubWNOYVd0WFVDMkJLbndZTHhsT1lOVGV0UUdmaHFBM0RBWjVsWWtrVnFabFV3RGxJYXJtR3dNNFdhOVVOVWY2Wl9oV2ExcjdBLS1iQQ?oc=5",
+        "date": "Nov 10, 2026",
+        "longDate": "Tuesday, November 10, 2026",
+        "related": [
+          {
+            "title": "Ukraine’s Zelenskiy says he is pleased with messages from US envoys on diplomatic efforts to end war",
+            "source": "ThePrint",
+            "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNZVlqM3ZDbnpDcjJJNzhqU3dISWxpY0dRSi1lb3BjQ2V0WVRKcThqa0EtXzlhUGNaSWxVWUNhZDBwWEhBUkFVazVHaVZJaVVJWDFvcHo0WU5LYkI1UFFqNFU3d0tJOHM2akxyNlczR2M3ZWRNT3YtNDNsWUFZOEw5RFA3aEJsMzBPaExBVWpZSVBpM29kNmZubkdnNWMyZUhHVzYtS3dYQW8wU3JaUWphMlB1M3RVX09aQzJXU2hHTkN6bk9qZkZJNmJheVBKNkXSAdQBQVVfeXFMUFl1NFBnM2EwWHNRRXBqX1NmUmNtaWRnc2xDdUJ6Ni1ZWF9ZSXh1eGdvZm0wUVdoaVdyTXBfeDV4OHk5YWRfYV9oaVVha0lZQ2lIUUMyQ2JhYmNlMnpyVUVWRzlwWFExa1Y1OEQ1RjVkNWswamUzeE1Lc2QzZ2FQVlE3WGNfQTJYZmEwa243NWowYk9SaFRKVXMwSGNWLV80WXFlUDdDcHpnZmxzenpSUHBTQWJFNWk5Sk12dU5rcjR5QXJsWjUwLTB5X1VJSkRISVRMYng?oc=5"
+          },
+          {
+            "title": "Ukraine war briefing: Zelenskyy says Putin 'lives in a different reality' as Abu Dhabi talks get under way",
+            "source": "The Guardian",
+            "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOaDF0RG9vblhsZXZRZTNwWFRYU285N2dfTHhFbzdnR21Vc2dPTjVMOEV5djBRdzhqZlNIZ2hCZ0hwVGVPcWZQNGFJdERxTW9pbVdqd3hYMml4YVpEcXZsTk0zYUZkWVJldlBFZ2pmeVFEMWNabUU3TkNzQU45aER2OE91RDFqM19Pemp2dWp0cTFIeUVvMEcwWDVEZDBUV3pzcy1uc2pFUzFjUXQ1VWUtWXRRdG5RZVZkdC1wbzB3VC1zLVVNQzhTWTlKX0ZLbFpaU0VFR251MTJyZXozTVdrdXZ2RQ?oc=5"
+          },
+          {
+            "title": "Zelensky: Putin Will Return in 1, 2 or 5 Years if Ukraine Gives Up Donbas",
+            "source": "Kyiv Post",
+            "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9xcFNKc3ZPd2VKUUZtRXpfNmFLQzBzQmFlSVpkMk1lNVZETzZIUFo4bFJyWnBVMmlQMXlqNFBZYnJMLUxfdXB6dE9Taw?oc=5"
+          },
+          {
+            "title": "'Putin lives in a different reality': Zelenskyy mocks Russia's claims of capturing Ukrainian territory",
+            "source": "Firstpost",
+            "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNZmZRaWJ6XzZzMkVPd2hrVVVsOGs0eWRGeE9xcW84YjF0cXV4OEtPenJzM3JneXhBZlZpVF9YTXBvZmlKSlZsckVSYWlINUdTQ3pLdXBpSWY0SGdQRUpPS2JucXRHdFNsdlNOc3ljRTdtQkVxWllwRW1zVlN4UGZVX1p2MkNSUk1yeC1BaDVpcTBSbWF2QUtYMzZ5dEI4N1k4SVNVX3MtRDIxeldac1ZHRnVJbk5yUExzYTJ1akV5eVVxOC1XN1pEWC10QnNScjVGYzlTWTN3STRkX05T0gHiAUFVX3lxTE9TVXFpSFdJSXlJSzNzUkhwdUIxN2ZtRFlsY3hlNGRyWlhQc1FHMk8zLXNueEd0c0Q1TEFGMElMRnprMF9fUVZsaTB2VF9TcExVaVI4RTVIRUpSMXdpSU5ORWJ0OExkMXFlZnZZZWtnQndCS1dyMjlvbUVWSDFQQl9UaFl6dGZ1NGtFaW9leTR3VFZiSFhWaXdGSjctQndnZzdxak1HQlQzOFVURGV0eHpXSVRYeDljZm1LVjFqcjF6MGxQWFF0RlZzOEt5OGJmc0VQSDNhcEJxemV3Qjl6aUxaVGc?oc=5"
+          }
+        ],
+        "url": "https://timesofindia.indiatimes.com/world/europe/ceding-territory-for-peace-is-absurd-zelenskyy-warns-donbas-deal-wont-stop-putins-war/articleshow/135712420.cms",
+        "image": "https://static.toiimg.com/thumb/msid-135712448,width-1280,height-720,resizemode-6,overlay-toi_sw,pt-32,y_pad-600/photo.jpg",
+        "summary": "Giving up Donbas will not end Putin's war against Ukraine, but only give him time to prepare for another invasion, President Volodymyr Zelenskyy has warned, predicting that Russian forces could return in a year, two years or even five.",
+        "photo": "assets/news/ffeb2f5d22.jpg"
+      },
+      {
+        "id": "70868a90a5",
+        "title": "Trump reportedly pressing Netanyahu to advance Gaza plan in wake of election",
+        "source": "The Times of Israel",
+        "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPdzlqZmpWZEd3WlR2ZUZiMmdnbnJsZk50VnVkUTRmT0h4YlRfZjJGTWctMmVQMnhSZ1FsaHoyQzFiVzk1X251RnlKYjNUSG03ajYzb1lES0VfQ2FUdEY3LWZjMWJyZ2xtUmhqTFhDekk0SllPbUpHNTZXRWtybnl5UWVKUlpBYmYtN3p5YjFvRnZWM0g3TU9id1hDejh3TnBrTUl1UW85Smt1TEXSAbABQVVfeXFMTy1GdmZOM3YwVllNN0p5d2ZCV1dQNTRtZmhvcmdLdXc0UGsyaU9yTXpKdmdrbDV2TGY4SEpCVEFXbWFwQTF2cm9YSFAtUXR3eXdSM0pQUXBxNWZiYUFiV1J0MEkxU1dvVUdvbzhybTBmZFhMZDVVZWZPRjBMV2RzZmFCc3o4V3MyVGhRUzVJNDFOeHFaOW1PbXAxLXhBNU8xWUxZRjdQekJ1R20zSmtLaUs?oc=5",
+        "date": "Nov 9, 2026",
+        "longDate": "Monday, November 9, 2026",
+        "related": [
+          {
+            "title": "Israel Says Hamas Must Disarm Before Gaza Reconstruction",
+            "source": "Deccan Chronicle",
+            "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPS2VhZXNFa0VBRHBWdUpuUnZLWUVNb1l3eXlWTlZTUkIyT0dDYWxLV2gwaUNWS1pudGJ5aVU0VHhRdDlIWGZkclp6a1U5UXdNMVRKNkhSNDlYX1J1LTFaOTFwMHBhZUZ6M2JsamZscWxXSmt3a2VXVGJOSFNwdXg0YmNiRHFoaWFOLVhPZnl2NWFCdUk4eExVcks0SHg2aGplOHZ4d2h4TVlqd9IBrwFBVV95cUxPd2tPVWFUWkI5eGpib1paWk8xNVgtNTR2SXhQY1d3ODJlSXhQbk1CYlRuVFdJXzM5QU5KR3dWbTNpNDFtd2pXekt0Q2JFTkxqRkVib0U1VTduVVhHTGVuaExuTlc5M0U5d0gzdG53UElHOGlYUUV4XzlseHNqaWE1Nzk4a1FxM2lVM2l5QjdidU5tdGpIYkNPU3NGSEwxcnhSNHFmTmxuV0xQVTUydDRZ?oc=5"
+          },
+          {
+            "title": "Analysis • Israeli split screen: The sport of coalition building vs. daily misery in Gaza",
+            "source": "Haaretz",
+            "link": "https://news.google.com/rss/articles/CBMipgJBVV95cUxNVDJhYVd0dHFhZDhFWjVBajRDMHg3QkwyemJseHJyRWZsNmtjOFBSc2VRTnpiNEhSMWxkYzN4UnZiTnlKR3lPcmFmVWIwZU9JNUo0QkE4T3NUMVJzcDFmUVlRTWRaZWhudTlYRzAyU0NfZGJvLUEyVmJ1UXBkU2Q4ejEwR3puM2ZnUnpnWmpiazFENXF0SFVRaVpEQURlWDNodjBwLUNjNEpsSDB4QmhnVlZ1SHVWZjAycWsxcUxIQnJaai1fZE9ENkdUNlI5cHRXN0VaMlNaYzJJMzRhTWJ4UTAza3RCY0hKVF9ZQkVOejc2Y2o4a2NweWhOY2otZnVZMGQ3RTdzM3lWeF9OYUxVbUR4dFQ0OFo4RGpzWElHVzRCQ0hwSlE?oc=5"
+          },
+          {
+            "title": "The Gaza Peace Plan Has Stalled. Trump Reportedly Urged Netanyahu to Advance It.",
+            "source": "Yahoo",
+            "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPVFZzaldBckpYQVJZR0ItMGVucjc0Q0ZIbWpqMTdpc0FUSkRCemJHTWpTbDFUY2s2ZUVMSmVyS0pJTXZaelBMM2pWME1lbm9SQ2pvc1E2c2x0NWV4ZmpwcEdlTE90eFV1WVB3UmF6NWZlNVlIOXdfakE4ZlhsMEdodG00Vy1rRzZpS0pVdERQdw?oc=5"
+          },
+          {
+            "title": "Aramco skyscraper damaged in Houthi attack on Riyadh: Trump asks Netanyahu to move on Gaza peace plan in post-election call",
+            "source": "The News Pakistan",
+            "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQQ01ZcFdHQTZLQ2xHQzZ1dGppVnJLN0Y0SlQzVXpGUVAyQnNLUFBkQjZ2S2U3Q2xmRnBrcjNMeUU1RWllT3NxbEJHS0w4eUxrdmlETHVkQ1NPWV9DcmFSajNVcXJ2di1KNU1rS1RHZ2M0LTNIX0JKY1B5bGtQZlRWOTZKaHlQRHNUVlltbkJiNHRsbDQyUUJheDZoYmdUQ2g0OC1PN3NKNTIzZWxtdFZQeklvSkw1bGM0VmpEM0FiSDV1R1RCNUlKVG5PSzJXa0pDSU50SmtKelJOUXFPMy1Xd0dFelVFT2pmaDZIQjZFRXY?oc=5"
+          }
+        ],
+        "url": "https://www.timesofisrael.com/trump-reportedly-pressing-netanyahu-to-advance-gaza-plan-in-wake-of-election/",
+        "image": null,
+        "summary": null,
+        "photo": null
+      },
+      {
+        "id": "3a8e742b6c",
+        "title": "COP31 opens in Antalya: Can climate promises finally deliver results?",
+        "source": "UN News",
+        "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5MN1JOZTg3Z0x6NklydFpaUkF0Wk5EdjBfSUUzelZidDZQMXhiZ0pTZDZ2elZJVDQzdGpHOFM1VnQ5TUJyMTM2YVlQZHI4eWl6NVZLaWFBMA?oc=5",
+        "date": "Nov 9, 2026",
+        "longDate": "Monday, November 9, 2026",
+        "related": [
+          {
+            "title": "COP31 adopts climate finance work programme; proposals for adaptation funding, trade measures dropped",
+            "source": "Down To Earth",
+            "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxObzg3U2J6X0t3bHhNQXZUemVzZDJnN3NGejdIOEV6NkxndU85dDhDR0M5MGV3cVRxNEF3V0ZlektPLVBNSkFKTXJhdnF5LVpSZS1hb01LTUduY0tJMHdwRi1qU3drbmFVMmJGQTMyaHZQaU0xSXNJZTE5WU9YOGJxV19NZWMteG5yb1VQbEZZMC1iMlMydmVyakJ4eGlldklRSS1DbTlUU1BTSmxyM1h4R0lwWEdUTkkzbzVoNk5qWkdFRVhHQmYzS25VYUZtYnowOFdpcDZkNEpnMmRiUHfSAesBQVVfeXFMTnhPcTJlTmhGMEVaZDJhSG04LU9oYXIzRGp6VUhac3JfNEdEdE1zaklWT3p3U0JjM3I3N3c4WEVuOVNlNkhmemJYN29veXprU0JDeDdNbGdTQjlGMjQ1ZkN0UmhaMWVSN253NEdDVWthMEFrSHBmcklhQ0hjelM2Wm50VHlRV1N1Z0tvamprdTRheF8tSUp3aG5MdTVtczdKY0NTX3dxeTNUV0x1cUV2YkZjRDl1VWJMa0RvRDNHX1o0WmZKSDhZbzVGVGhBeDFvaE1NUS1hcERUM2JiRkU0NTJTdmxNZkN1T2VQbw?oc=5"
+          },
+          {
+            "title": "UN chief urges Cop31 hosts Turkey and Australia to turn fossil fuel promises into action",
+            "source": "The Guardian",
+            "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOWl9pcWFDTWxOY0ZkdnhDdnZXU1I5R1NRWEdCY3JtVV9WQ21hM29XRzJhNGtfbGFHeGFXYjN5NlZvcjByUXQ1OUVJTDFIZ0pPRHBHSmN4N0VIdDRwUzVENUhvLXZLX19PYlZtSm4tVmFIOVlaZ3RwLTdfY1ZXUnZuY1dNUVpSX3MwV0ROckJ6YW5vMl9hR0Q4V2xZVmcxOGNjUkpzUlJnS296Ync?oc=5"
+          },
+          {
+            "title": "EU climate chief Wopke Hoekstra warns 'expectations low' from COP31 summit",
             "source": "The Hindu",
-            "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNZ0JCY2tRejJJVGtIZF9NNlpPRDRzV1dnc3V6bVc3R0FtS0J6Q05OMC1KVUdSTUNOYVd0d0RqamZqaFdDSDhJdV9MMkxKMDVRMU00dk1wSGlBZFdnd3JfQk1JakU0VU5wWkx5UVJlejllS2ZMSHVqaVU0MGJGLTZtSnhkbk5JWDE4ODdNdzVZcmtZZUg4T1dyX19DQ0JtdGZwdFlrTHFWcHpjb2c00gGzAUFVX3lxTE1ILWlTa1dvc3ZaQXdIV2xWYmlhbzZVdE1oSXBKMEFUUlhIa1ktcmJzSEVLU3FEV0tPM2pqdXR0emQ2eTNPTnljY0s2VWZRX0d4Q2hDcVB1STVGbF9rYWdQSlNDODNjcm1ibEgxTkpseWxPUlBEMFU1MjNGNk50NENpbzBFYWZjdFBiQS0td0VfZU4xZVAtOW9wMHc3TEttMG1ReURpVTcxUm1YMEp3LWRXVjZz?oc=5"
+            "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOLTM1WHBxWGV6b25ENWF1X1hTYUhldmJSMzAyUEs4YW11SjdLTDJjSERnRWlhNnlWelcwUWtxYU1zd1VsOFQ0U21wSk1mOHhHSUtnZHRXTWNsT25NU3JFZ0pGa2ZVMnlRZklhLUlFUjgyZzZzdGZvcEJiS2hGRVUxQkRCQVJzaVpBMlU1N3FQSGU1aWxQbXRiVVJYMGs3TDZ4ZkdUUVBCbjhWSmNhYnhmY2tqQVJobFluUlJSUVhBaTZwX013VV9nN0NTR0JSZDFmSGfSAdgBQVVfeXFMTkRTbE1GdHZsZlhrYzVoTTlvcDk4V1A5OFViZ05LYWZJQUtLcE9HcGtsczdLaVZfaUFneW5pckFFVVlrdkxxclozUG9oSDBqb2EtbGliUlBqR05EQW9zdlNzYll1dnBNc3JYdjVyUU1Lc2s4QlVMczdUUk9yWmJONGxITzFkTko4cERVdk5lRnprYmU2NDNnSXB0dFc4cmNRU2ZTTzBObG1RRzdkM1NNZU5sLTZDVG9XUHVmV1lHMXQ2Y3RuSS1TZGJla3dFNzdHUC1qSVkyTThC?oc=5"
+          },
+          {
+            "title": "COP31 – Climate Overshoot, Carbon Budget and Climate Justice",
+            "source": "Vajiram & Ravi",
+            "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBuOG5wZGV4eVA2X2sxcW0wSGduUTFZZXdVbndRbGh5eFQ4aVAyVFYyVGNXZ1JpOFFxaU0wVXVtajlDeVFwZHgwOWhvY1luOVFkR25kam4zUk9QV1ptaHpXS29wVXd2a0s0dHl5YVhLRWxjTUxBaFE?oc=5"
+          }
+        ],
+        "url": "https://news.un.org/en/story/2026/11/1168763",
+        "image": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/11/9-11-26_COP31-opening-Stiell_UNFCCC.jpg/image770x420cropped.jpg",
+        "summary": "Nearly 200 countries have arrived on Türkiye's Mediterranean coast for a climate summit with a different ambition: fewer grand declarations and more concrete decisions. With a powerful El Niño threatening to worsen extreme weather, negotiators face difficult questions over climate finance, clean energy and how to prote",
+        "photo": "assets/news/3a8e742b6c.jpg"
+      },
+      {
+        "id": "7224bb3800",
+        "title": "Eisenkot reaches agreement with Opposition leaders on Israel’s Knesset posts, names Matan Kahana as speaker | World News",
+        "source": "Hindustan Times",
+        "link": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxOSEhnc1hGR0g3aUhOYnV4RFlkYXJ4cW5oN2hleFFyV0xuU0NxSEVsNDYzVUJxdDcxTjFqbEloZGdXTG5WUEhxMHdUVkotMjRubklMVXV4RGo2WExMRzUtT25RTmRNTFRVMGpvWHlndDdoZmIxaFNwMGVtdXo0aGM0YXdMTmNsOW05V1JZcmNoTl9pZHlKSnV1OEF0eTZSYm8xUy1lRTNLS215dWhIcmJGY3FQRnlVUVk0RGZWLVc0QzFPT29Cclh3SnBqdjdoVm9HNEpybmQ3SzMwY3R1cjFQLW00bk80bWs3bF9zLV9NdGVGQ0lpX1ZkOUgwUGFrZ9IBgwJBVV95cUxOVGptMUxoaWpLaEdFSzZIRmZiVktTNnBtUXNSd29VX3prMkJRUVFzODVyVkM1Tldhbm41czR6eTAxaVFQSWxqcmdGZ09vNUpkWUZoUVVia05PR2V1bW5DYmZIbDJRMDFIYlJqZEtZTm1XV2daQ3F6MU5nSnRCQzlzWDY5d09YamplZVY3THlKd2d0b19aM0tyVkw3ZXNhNy0wX1ZZNzZFaTNzdmZRcnQ0TU5YRFlSY2txNk9HZ09WbXk0bVpFbERHS3hiNmw0U3dRVGlQMXQxS2M5NjIyYWpBYmdvXy0zeDVvTGthdlVyTllCUU9vNUV0Sl8xaW1CUmdfMzdz?oc=5",
+        "date": "Nov 10, 2026",
+        "longDate": "Tuesday, November 10, 2026",
+        "related": [
+          {
+            "title": "Israel's parliament sworn in as Eisenkot tries to forge a government",
+            "source": "Reuters",
+            "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNVXZKMU1sQ21EaElhUnNZblNweVZxQWFZNFJUZVRNVzBRMW42WF8wY0k2YnRTSmRVVlFsYTZOcHhMOTVERUJuQUFlM3BfcVpJa01aMTFvdXg5ZEFJcWoyQndmS2UwcDI0a3ZKdEhwRXJadHZIRnFjLUIza1g5V2U1TmRzVWcxSUh1bEZENThRMDZnZUVJTFJSTW9qd2FSLVU?oc=5"
           },
           {
             "title": "Amid Israel Deadlock, Netanyahu Opponents Agree On Key Parliament Posts",
@@ -601,20 +669,20 @@
             "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNWXYxaFAySlNidUoya1JwWVNnbm5lZlJuTEMzejE0LWJqTnliY1dRak01STU2TlJMM0RmT3lnbWM0X0ZnWEU5Tk94cXZ5TW5oM2pyWDM1VWRyWEl5dGtNSUQ5TjFKbW9leUhzRFByOFFPTVFibWppdkhXM09qQXZNZE5uR2gwWHAwajMzRDk2WnRoYldaOGlkc3JSRElhNkpYRE9uTVJnX0pNWUFWbUl5aDI5aklLSmU5aXBYZA?oc=5"
           },
           {
-            "title": "On 1st day of Knesset, Eisenkot bloc submits bills to form Oct. 7 state inquiry, nix judicial overhaul",
-            "source": "The Times of Israel",
-            "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNaUQzcHV6b2Y1Q0k3MEpSc1NOZ0p0cjFPTXhBOUREMy1sS3pkYjh4R1VBeWxjeTN1a0FwbVNoazJnZ3llbTZLQjFaNWVwcGUtMUUzNFc5elctN0cyZXpjd29veU9IOFFOdGdaenRYdjVEZjVGRkd3MS1QMWlIYUFlMHdzYnlQbzVnQ1ZfeEdwM2dydk1iUDVrSFFfY3E0Z0xRM2NmZXRhX1VYTEcyUE9GRXp6V2stcVNmT0d4bS1JMEkzblZmNHo2bGJn0gHPAUFVX3lxTFByNTVTVDFTakl2ZThocFVKMHJ3X29kdHlNREp3bmhVRlRVbTFhRGhxMzhTRHJkR0xCUU84YkVMc29TTzF6dEF1VkJkRTdKYkdvNHhwZ2ZCMW5nc1lhRkFTR1BLQ3VST2dhaWRPTzZFUWNWZ1hkMjJOODVpMVhJMnVDWVNVcTVwZ0I2M2toeTN3NDlhSHRqa2REOG9mbFlTTnNfOEs5ZmY1ZnlqN3NQUE9nMGpId3BQMXp4amJ0OGg0S2NnOEZuVlpYYWd2d2p2aw?oc=5"
+            "title": "Israeli opposition hurries to seize control as new Knesset is sworn in",
+            "source": "The Guardian",
+            "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPSkxCMEkzT2JWVkI4c2JzZEdUTkRmbU90UF9xcHdENVh3VGZPQU11eUtSRkQ3YkdyUV8xY0dZMG5NMDZ6cWpoaUI0SklHVlhWcXFxeTBpOEhmVVFxR05XRzVJMFdSeFl5eE9xcE9TWUktdlJOS3hSMnJjLVhEcEd3YVF2VlFBREgyX3ZxU2lwVWhURW1QdjhjMEFUVzdra0tYdS1HS2xBQVpDeS1HcWpoVHNPUDh6cVU?oc=5"
           },
           {
-            "title": "Israeli Opposition Pushes for Oct. 7 Inquiry at First Session of New Parliament",
-            "source": "The New York Times",
-            "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQOWx0cFJheG84S0ZKX3paNU9OS292REJLX05WcUNTV3g0eEZ4Q1ZMdW91Yk9YNk05ZWZzbE5yZ1VMYjhITkFkM2d5ZW5PRUpFMmVLU3R5UnJCWWFRY3hoVlkyeXppcnRJOVJ5VW5RRDNyMXp6THdDMGwyUy05dXFkSGpDb3Bta2VORG5Z?oc=5"
+            "title": "Point of no return: On Israel’s next government",
+            "source": "The Hindu",
+            "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNZ0JCY2tRejJJVGtIZF9NNlpPRDRzV1dnc3V6bVc3R0FtS0J6Q05OMC1KVUdSTUNOYVd0d0RqamZqaFdDSDhJdV9MMkxKMDVRMU00dk1wSGlBZFdnd3JfQk1JakU0VU5wWkx5UVJlejllS2ZMSHVqaVU0MGJGLTZtSnhkbk5JWDE4ODdNdzVZcmtZZUg4T1dyX19DQ0JtdGZwdFlrTHFWcHpjb2c00gGzAUFVX3lxTE1ILWlTa1dvc3ZaQXdIV2xWYmlhbzZVdE1oSXBKMEFUUlhIa1ktcmJzSEVLU3FEV0tPM2pqdXR0emQ2eTNPTnljY0s2VWZRX0d4Q2hDcVB1STVGbF9rYWdQSlNDODNjcm1ibEgxTkpseWxPUlBEMFU1MjNGNk50NENpbzBFYWZjdFBiQS0td0VfZU4xZVAtOW9wMHc3TEttMG1ReURpVTcxUm1YMEp3LWRXVjZz?oc=5"
           }
         ],
-        "url": "https://timesofindia.indiatimes.com/world/middle-east/israel-govt-formation-netanyahu-in-panic-as-eisenkot-led-bloc-agree-on-key-knesset-positions/articleshow/135713023.cms",
-        "image": "https://static.toiimg.com/thumb/msid-135713359,width-1280,height-720,resizemode-6,overlay-toi_sw,pt-32,y_pad-600/photo.jpg",
-        "summary": "Benjamin Netanyahu is gripped by \"panic\" over the possibility of opposition leader Gadi Eisenkot ousting him as Prime Minister, former Bibi adviser Nir Hefetz claimed on Tuesday during an interview with 103FM.",
-        "photo": "assets/news/361aeff80b.jpg"
+        "url": null,
+        "image": null,
+        "summary": null,
+        "photo": null
       },
       {
         "id": "f368d347ed",
@@ -625,9 +693,9 @@
         "longDate": "Tuesday, November 10, 2026",
         "related": [
           {
-            "title": "First day of Ukraine peace talks constructive, Zelensky says",
-            "source": "BBC",
-            "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5nOTZJMmkxOUs1TDloQTA0bGctdEpXVmotNVFaZ3dIYjFmbnJ1MmFVY3AxM3QzeE9lRUM0WXZPZnpnVzNCWU1EbzZkeDBqOTlQQTV2d3E2ckNvWG8?oc=5"
+            "title": "US, Russia and Ukraine start talks in Abu Dhabi",
+            "source": "DW.com",
+            "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQNlBMV3g5end3aF9namhLRUF1YzRGNUM5VWJvN0REaVJ2NWtFN0Utc0oyRHFYb3lOMmU3eWFrcmEtT2xsTGdna1FYNHVSWGF1V0RZbkdVdV83TlRYZVZvSHE4RmVETDJqUFVJeVBXdV9SOEhKdEY0VjNldV9FYzJNNUwxUHFQcUo0WGc?oc=5"
           },
           {
             "title": "First day of Russia-Ukraine talks in Abu Dhabi ‘constructive’: Zelenskyy",
@@ -635,14 +703,14 @@
             "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPSGhONWNmUnBCZjBHMWNrSU5JYjRDbVZ2UVZkcjFaNWVfZEJJS2dSQVd4NTdITjhZaHdUbHFQbDQ1VmhHVXVVLTd4UENvTXNxZUhBZTVsUTExYmJTaktacjUwQ0lpcUY3UU0yMGVSanVodTJYLVJjeERfVUxfTjlhSy12YkRnQ2Qwclp5RnJrRU5BY25wV1NZYlpKaHdZWHF4VnJfajc2ZV9qOXBmMmFCMEtmQdIBuAFBVV95cUxOZWZVY2FpTk0xWS1GSEkwUThabWJYMmQyeVBqWWlLUzh2ZFJOTzhoWEFXRHh1WmxQbE5BaHQyeTEycnlUUFJselphQ2dWVFJMcUdxblYzZ1JOd1VZdmQ2NFRESzRJUVRUWmlLeFZBalVhcHMweXNncnFQcFRLUDhOd2pkLVVMMWdwUDQyZDRiSUtaUWxCQW93TkdJZUdZX1Q1RUlaZzRHRW82OGNNS0EzejVvcTMxeGpL?oc=5"
           },
           {
+            "title": "First day of Ukraine peace talks constructive, Zelensky says",
+            "source": "BBC",
+            "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5nOTZJMmkxOUs1TDloQTA0bGctdEpXVmotNVFaZ3dIYjFmbnJ1MmFVY3AxM3QzeE9lRUM0WXZPZnpnVzNCWU1EbzZkeDBqOTlQQTV2d3E2ckNvWG8?oc=5"
+          },
+          {
             "title": "Russia-Ukraine talks ‘very productive,’ says US’s Rubio – as it happened",
             "source": "The Guardian",
             "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQalNPd0doV3p1V2YwTW1VeUlUU2p6dk1TS1pLdFhLTG0tcDZjWnNNbVpPazhqQUZ5RTVvb1FZMmVGNWhDcmFlY1FlR0tpLU1xT2FrMTR3ak02b0RxOTd5bXNiaTBzaFFzcEIwUDRpNDdXdTg5a0h2R0JndllvbE9MU0VYQ2lYNUE1ZFphNDhwb2E2djZhSHdBVm5WSlNjMm5kbTFHMEFjYnVWcktlVDJDUnYzNkQzUQ?oc=5"
-          },
-          {
-            "title": "U.S. Overture to Russia on European Security Sparks Alarm",
-            "source": "WSJ",
-            "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNeVFtd0lNM0RtZTF3dS02UWtsTkl5dWdBajh4YkY0TmFsSnVfSGlqQk9aOUVwUloxMjc0QVVWeDBNSGFzSmNyQUpURFpXel85Wmszb0JhUWtYQ2xiMktHU2hoMFBBbHd4RVN0TENHcndLZXZxYTdaXzNOdk9JM2gzN0t4dXcxQno4YUNjNG5hM19uTGt3OGtqcFdoc0lkSDg?oc=5"
           }
         ],
         "url": "https://www.thehindu.com/news/international/us-brokered-talks-are-set-to-start-in-abu-dhabi-to-discuss-ukraine-russia-peace-deal/article71685183.ece",
@@ -659,9 +727,9 @@
         "longDate": "Tuesday, November 10, 2026",
         "related": [
           {
-            "title": "After meeting Qatar PM, Trump calls Iran war ‘effectively over’ militarily",
-            "source": "Al Jazeera",
-            "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPQk10al9Za09KSVdSOEJFak01MEtXS0I0bHg2Q2wzSmUzSDlEVlpObU41Mjg0aUZhQU5zR1NIbzdTMHJLV1FDbEk5WExHLUF0aUlHVU9CSlpEMXozNVFzSm5PTm4zekxYVmR6YlZLYUtHVUEzREp3UEIzSW1NTksyMWJXZTFiWTRvNW5oSGtQOVY3ZW1uOHdNYXJuWUtnWmhkVTRQWEsxRdIBrAFBVV95cUxOeDVLZnJwdDZ1b2dWamRIanBpZXUtQXE1dVhQeXVmY0haLVRFUDFwa2Zicl9FQTEyUXhFaE40dldBQmR1amhrSkFqd2U3Z1d4RXhSZ1VFTGpmeHpMNERLc2syWFZYLVk3aGtvQk5WZFRYWlRLODE3NEs4UGF4amM2ZEVFSmZJcElHaEpQSlJ2Z2ZsTFh4TUhhb3BqblV2ZHBHaTRPWXNpcDJMeTdG?oc=5"
+            "title": "Oil Futures Slide as Trump Says New Strikes on Iran Unlikely",
+            "source": "WSJ",
+            "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOVFNfSjlGZWFOd01laGhIaG9idVhwaUxEOXctN1hkb1E2Qkd6YXEyaE5DUHFzMEdoT3dqWXNQbkxScXRFb3o2aGU4SEpWdnU5SGdKQUJXTUFMdS1kcHJKVnJPVnBUZk1XUjd6NXRLcnJwSGhXMFZVa2hqQ1VvVWkzM2FxT2tCNlhGN1VYYjgwRTdiY2Z6SElpNmtfMXRmTjF0RW5fX0JVVWhuZVlsX1lWdDBMU1g1ZzBFeXlGT2tZbUNyQjlLUFE?oc=5"
           },
           {
             "title": "US-Iran war: Trump says more US attacks on Iran 'highly unlikely'",
@@ -669,54 +737,20 @@
             "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBZVGlrZGdkVXQyRXBjbUdDMVliNVZPR2l1eFFud2tLMnRGSlRmbmYtbnBpVGFfX1FqRkh0WGpMbHlfT1U3WjVkR21hNnJmRFdTcndqS2F1OE5EYXM?oc=5"
           },
           {
-            "title": "Oil Futures Slide as Trump Says New Strikes on Iran Unlikely",
-            "source": "WSJ",
-            "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOVFNfSjlGZWFOd01laGhIaG9idVhwaUxEOXctN1hkb1E2Qkd6YXEyaE5DUHFzMEdoT3dqWXNQbkxScXRFb3o2aGU4SEpWdnU5SGdKQUJXTUFMdS1kcHJKVnJPVnBUZk1XUjd6NXRLcnJwSGhXMFZVa2hqQ1VvVWkzM2FxT2tCNlhGN1VYYjgwRTdiY2Z6SElpNmtfMXRmTjF0RW5fX0JVVWhuZVlsX1lWdDBMU1g1ZzBFeXlGT2tZbUNyQjlLUFE?oc=5"
-          },
-          {
             "title": "Trump tells Reuters that Qatar, Saudi Arabia want peaceful Iran deal, US ready for strikes if needed",
             "source": "Reuters",
             "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOZ2o4T2dDT1ZqQmlqM0JxZEViaHZzWjRPeGtRd2N5MEZweXhTWXV1b0RybWgxNzZrMUJmOXFDMGMtTGE1RzJCMHBNdkctTVZpWXhBUUcxYUhnOTRqOEpQZUpPWjdsZHgtTWc4cWYxYnRtZEgzb191X2tlOUVVYXh4SFpnejMxYXRidEhFalZMeDlSSlhmUm5IR0Nyd2hybHhWVjVrcXA1ODVaYWo1ODhFSEhNMFZxdmdaN3VLTEc0dE1MZ21pVGxFMFh0TQ?oc=5"
+          },
+          {
+            "title": "After meeting Qatar PM, Trump calls Iran war ‘effectively over’ militarily",
+            "source": "Al Jazeera",
+            "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPQk10al9Za09KSVdSOEJFak01MEtXS0I0bHg2Q2wzSmUzSDlEVlpObU41Mjg0aUZhQU5zR1NIbzdTMHJLV1FDbEk5WExHLUF0aUlHVU9CSlpEMXozNVFzSm5PTm4zekxYVmR6YlZLYUtHVUEzREp3UEIzSW1NTksyMWJXZTFiWTRvNW5oSGtQOVY3ZW1uOHdNYXJuWUtnWmhkVTRQWEsxRdIBrAFBVV95cUxOeDVLZnJwdDZ1b2dWamRIanBpZXUtQXE1dVhQeXVmY0haLVRFUDFwa2Zicl9FQTEyUXhFaE40dldBQmR1amhrSkFqd2U3Z1d4RXhSZ1VFTGpmeHpMNERLc2syWFZYLVk3aGtvQk5WZFRYWlRLODE3NEs4UGF4amM2ZEVFSmZJcElHaEpQSlJ2Z2ZsTFh4TUhhb3BqblV2ZHBHaTRPWXNpcDJMeTdG?oc=5"
           }
         ],
         "url": "https://www.ndtv.com/world-news/iran-war-war-on-iran-is-effectively-over-says-donald-trump-after-meeting-with-qatari-pm-12305624",
         "image": null,
         "summary": null,
         "photo": null
-      },
-      {
-        "id": "735e75a6a4",
-        "title": "Iran Says Two Tankers On Fire In Strait After Hitting Mines",
-        "source": "Forex Factory",
-        "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOODNLV0N2SFY2S3RTZ3JYejlvSHNXMEtjXzRLWjF4VjRDLVJiQ3dQQTU0ZmJuSEEwa005ZG80UllnLTdXUHItQkNlMmVFamxlckNTNlliZ2hiNHMxYjBuMnBwelpuVnFObkpLSG5hbVpQNEtrYlU1cWMxUjNWNElLaXV1OVZnUDJJ0gGOAUFVX3lxTE1YTXhsQW9FQU03bFYtNEJacjFiMXdSTmxKVmd5TjYyZWRoa24wZWM4Y1JNSW1hWGp4ZWsyX3NRUFlCS3YwSzFJeVVTbFVjVXp1RER4azM5Vk5abVQwM3pMMU1pV28tVWhZd2Y1akVjRFdGblZaMXIxS09fUVh5T3g1VFltZUVQVWMwbW02dUE?oc=5",
-        "date": "Nov 5, 2026",
-        "longDate": "Thursday, November 5, 2026",
-        "related": [
-          {
-            "title": "Iran Guards Say 2 Oil Tankers On Fire In Strait Of Hormuz",
-            "source": "NDTV",
-            "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPeVVsVHhYOE1tOWYzWmJVYzFlMmxrX2QzSnVTV0FJaTFmX2pFblFubVNlWWVWS0s4dllub2JVSEJla08wQkR2NVV1Tjh2czJPdFEtRW1SSmJ6bkZGQVdMS3k4djVVMnFoZk5ZY2hjZk5iU1d1dFJzQmg4VERDZExFR1Vpc3BmQjc2SDhZZ09IWWJLVThXczRPSW50WnlFaFXSAacBQVVfeXFMUE1XTGNFNDV5N1d1VHBVSWNabzByX2x6SmVJNnlZaWN6UGZHN3U2Ymd3NENSWklnY1YtZDh2dUp4TVJ6UDVEcC0wWXh6LVRYcFRCLW5sY2FRZVZyY1Z4VWVGMWctelZKZGt6VWtMc1RLeDBFUV8zMGppWl95OFNOdlZpTm5JMVM0VzFaZzYwX1V2ZDRTbVY4cG1YSlJUY21Cb2MxUTlkUDA?oc=5"
-          },
-          {
-            "title": "IRGC claims to destroy US navigation systems south of Hormuz and prevent ships from crossing",
-            "source": "CGTN",
-            "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE80Zk91SHhNajlsM29KaEJ2ZWZCSHFwV1lGSjdBc1ZlSHk4czNQSmVaNW1nLUVaV2o2M0YyOUxJRF9obW9oX1JUQmptZnlyVjBLbDBVUzJSaUVfVU5xV2tiMXlTOEcwbmdUV09ycWRn?oc=5"
-          },
-          {
-            "title": "Iran says no unauthorised vessels transited Strait of Hormuz overnight after navigation aids destroyed",
-            "source": "ThePrint",
-            "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQSklwbHUxNHBOc0pnSzdiOTBOaVpyUE4wVVREUmNLeE9uU2d0TUYwYmpLWl9pakFmaE5OQzZacXBqajJ4dWo2RzFkeVE2ZVlkaWxSdmRWOXdya0Q0YklwOFk5VU1WQnVTc0N4YTZHVUNSc25VNjZZVjlYX0lhQUhaVkc4enNOcVoyanhmZ3ViV3hYay1fN09vd0RmeGNiZzVjelJqaUo4REYzSUI0eHRJaEpOWkxBa1dnOS1BUzUwd3p1THJWRWpvNzFVWW1OSWlNTmp30gHYAUFVX3lxTE0zR09TdmNSV2hIaU1LVE95OC0xZVRxQlJUUTFJVy1hWE9wNXJUU0FFWUlMdERVZkZ2VUIyc3l4RVQ4dktCeVJNVnpZUGpOSWVSQWo0NmR6RXFiQTU2Qzh5Z1JfeVVxSW1VS2Rrbk0xNjMyUUU3YWNuYW5TSDZfb21tV09sSkR1aXVzLTZGYWlFeFQzLVNwQkQwcl9Qa2ZiQUliSXF0Zkhsa3JZV2lzcVFnWEUxRmlfSHQzZ0daY1dybTRMU3k1b2luRnJmZzZ6X0JNSE1kd1F4cg?oc=5"
-          },
-          {
-            "title": "Iran's top security official says US should stop manufacturing 'fake news about imaginary talks'",
-            "source": "The Times of Israel",
-            "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOb3V6OUd1ajluR2JjUnRQUVJvOHlRNEkzYi04MkhraUpIQnE2cWJkZm5naDJXdXdVdDJFbnJVYktLeFJwRVBiQzlvVUhZNzhTalhVTlpjR1pLd2hPcU9pb2loSV9QQ3R2T0E5MlVmVWJkUTJVLTVMRkdsbEVtdWh4bGYzZmFhWkRzSmhVMkVKSmRzZHRfdi1VeUREMGl5T0NCdktfT0pJYzBXQnJuSmdzWFFmOXZ0Z1lWSFlRX0FOX2paR1pTT21rX0F5aUFlTUE2UWlGV2FB?oc=5"
-          }
-        ],
-        "url": "https://www.forexfactory.com/news/1435055-iran-says-two-tankers-on-fire-in-strait",
-        "image": "https://www.forexfactory.com/news/1435055-iran-says-two-tankers-on-fire-in-strait/image",
-        "summary": "Iran Says Two Tankers On Fire In Strait After Hitting Mines",
-        "photo": "assets/news/735e75a6a4.jpg"
       },
       {
         "id": "7dc59b30e2",
@@ -742,28 +776,15 @@
             "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQTF9CR1Vhcm1xemdoYXVBc0J6RXY4WVlkQ29kRXQxemVvODAySzlfUUNUelFqazhDelR2dUtaVEVmTFBOZVFROUpiRHhjbzFHdDd0WkZfTzU3QlRLNkw4T09JTlZvLV91QzE0SDhUMWx4R0h2WDRfQVpuQncyUTd4LV9mTE00elpSTkhiMy1OSEVPMWtlcVpJU2puZndFbXNQNGd4QTIzd3l6dUJLVEQ4VXE0SXV2a2NMVUNkbmh4WTVwM0J3R25aRWFubENhS2hkNHE2d0M5RllIeFltV0V5LQ?oc=5"
           },
           {
-            "title": "US-Israel-Iran war: GCC approves military command headquarters in Kuwait; Qatar PM joins G7 talks on Iran; ADNOC vessel sustains damage following attack",
-            "source": "Gulf News",
-            "link": "https://news.google.com/rss/articles/CBMikwJBVV95cUxOdWtfX0FrWXFvWnpvNXd3NURNczAydGR6YTZ1UTJsQndyUEI0eDRKTzBZM0dxUHR4OWxMbkdiZURkQktOaG00NzUzM1BPaDdzR09KUWlhTEd2Q3c1bEotdEVrTkluMWY3eXFHSE1SeDZCRFN5N1p1amRhX3RRaFE2MlN5TXRtUGFiYVZCQXRsbDhNUGRtem1ON0s1R1ZMd2JSN3VhWEVqRFJxQjJqNFhUT3FZVVJoRVRqNkFZNmVsYkhVdDlpRGFWbXJnaUhRaW9RRmtjdzhmOUpZQklFLWg4UVpyZDhBRWk3NVNQdVJabmFEeWR1RVJHWUQ3NXZwSUxmcXYtQkZfVkVEbzl6dmtlMlJhd9IBpgJBVV95cUxQdUxMTnBMd0J1eGl4NHJCTkRLam95OVdsZXllaVUxYndKaUptLThwa2RTT2h6SzhWTXp5WHZLbVNfM1BVWVNMT2JZckJCbFZRejJsQnRjQld4VWcwVHcwNDZSaFd1d0NaclBVZWFtdThVN1oxaGJha3lwN196dEdxTk5NbXJKY0JXRjl0Z21Ga1g3cFkxbXpRMjhuS1NoNFptWU91cVNLeEhJVlI2aXNNa0RVT3dpNnVfemt3aXBiR2poLXJBN1VMWnhLZFBkWGVROGlhdmNhc21TZjdib29GMW1TSG5xT1BfZ3BJWnJtNzdZN1lKS1hUZUdaRmhuQjhTX0o4UUQ4blJkeXZkaEx0U1RURmdvQmhrMkVXbEpaUHpWUDl2VEE?oc=5"
+            "title": "Houthis: 'The third operation targeted gatherings supervised by the Saudi officer Bader Al-Harbi in Al-Mudariba and Ras Al-Ara, resulting in a large number of casualties. The fourth operation targeted the financial center in the Saudi capital, Riyadh'",
+            "source": "CGTN",
+            "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE53dHc3QTRmenJQWV9WSmdGbDdmYnpiV0NpQ2Zub3BfbHpWT2VOUVRuZDU1aUVPd1liN2FnVFhJdmtvRnIwRTFVdWgxNGNZUFlBeTVyQWVKSnZQVHBGQTYzejBNWG9ZWXRNSnY3cjNn?oc=5"
           }
         ],
         "url": "https://www.aljazeera.com/news/2026/11/10/saudi-arabia-downs-missiles-fired-at-riyadh-after-houthi-attack-on-pipeline",
         "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/AP26287636573938-1794279573.jpg?resize=1920%2C1440",
         "summary": "Saudi forces intercept two missiles fired towards Riyadh, hours after reporting damage to key East-West pipeline.",
         "photo": "assets/news/7dc59b30e2.jpg"
-      },
-      {
-        "id": "91c323c27f",
-        "title": "Iran's top security official says no talks underway with US",
-        "source": "Reuters",
-        "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOcXVfMkI3S19RUFdwVWNlT3EyYkFfVUpBOW5ldjdoaUNXREN6OW8yaEVMb2Fwbkhhcm1seVYzR0FjMFQxTGt2NFZ6enpxaXFBSE0wQThJT2dRQ0E0aFhyamc5Y1g5djFKaE52OUJ6cTZOOFVYMGFEMWpuRHZVMGVCS18tYmo0NVFBT0tFRHlVNExEVnluNndNSnJkRk5IN0lyWlJ4VFduZTFhRzZIX0EtU2VB?oc=5",
-        "date": "Nov 10, 2026",
-        "longDate": "Tuesday, November 10, 2026",
-        "related": [],
-        "url": "https://www.reuters.com/world/middle-east/irans-top-security-official-says-no-talks-underway-with-us-2026-11-10/",
-        "image": null,
-        "summary": null,
-        "photo": null
       },
       {
         "id": "dd3f313037",
@@ -794,17 +815,30 @@
         "photo": null
       },
       {
-        "id": "35bcff7811",
-        "title": "Sheikh Hasina’s return to Bangladesh: the hurdles, the risks and the politics | Explained",
-        "source": "The Hindu",
-        "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPUWwzN2QxSXE3V2NJdjhQeW5VblVOM1hteXNkc05RYXhJc3oxNl9TaXlZZm5kT3hsU3lpYmhjbzE3SWo1OTFYNk91TEpsODlBRWtiYkY0QXJKZFVGTnMzTjg3bG44WUR4TTZnUE00NGdUWnA1c2hIZnk2NDBpSG05Wkl6QU5UWkpCYnFpNEFqZE9sQ2R2dVlYRkJxWUNseFR0a2xCWTM0d0xwXzZXOTRoUEVwdUNEWHRVZ3J5MnFrWVoxS3pvYzlvVWlKNzBWa1ZuaDJQcXhjWFpXbzJlR05rZHdB0gHoAUFVX3lxTE44RkdpYm9kdG43anFkamN3SUMzN3owOHAxQ2RpY3pYaERZZkJqV0trZi1oT3ZfVTJwekZhaEZJRm45Ql9nZ1NZYTNzYk5MR1VfRlcweV9JU3dwRWNqaVA5dXFERW5hRFZ3bHVfeXRrd2ZpMUNISG5zNGxyREJ4QTFHZTNtVF9FeV9OUms2ZkNmeU41OVZ5T1FTNEVnTkd1aFdJT05aNUdJdmtiYmdqRldXbnJoZXlWY095TkJmSVZlbHdYTmNoNGJDR2JMM0N0VV9wMTFfc29mNE05NWx1aXB6MU9pcVRYbUQ?oc=5",
+        "id": "7854ec0912",
+        "title": "'They will kill you too': Sonia Gandhi's turbulent journey in Indian politics",
+        "source": "BBC",
+        "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9hWmlyME5NYXlJaGtJZU5NSllZdjBWb1ViZlh0bnhNcjdpVHhvdV9NeEMtdDFUcmdyM0pHYzdieXdGMTlRUl9jREJKUXktQVI4NUVQaW1aaTdwWkk?oc=5",
+        "date": "Nov 11, 2026",
+        "longDate": "Wednesday, November 11, 2026",
+        "related": [],
+        "url": "https://www.bbc.com/news/articles/c687z7g4xr97o",
+        "image": "https://ichef.bbci.co.uk/news/1024/branded_news/d424/live/bb3e8330-dbf6-11f1-8471-ffe15ac7c066.jpg",
+        "summary": "Sonia Gandhi's memoir revisits love, loss and political inheritance, offering a deeply personal defence of her family and its legacy.",
+        "photo": "assets/news/7854ec0912.jpg"
+      },
+      {
+        "id": "7ac8d1d733",
+        "title": "\"Not 2029 Elections\": N Ram On The Timing Of Sonia Gandhi's Book, Its Politics",
+        "source": "NDTV",
+        "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQSDJPYS1lR2J5VkNUMXU5T2ZfTEo3NmU3MFR4eFlXUjFscG1TdVN0cGRRVlJkcmlNd0U2Mm1ESHBSd0IwaTBQbHYxbTM2M1NPS05odVg3ZWpOam5SNG9CTFh1bElEejJrak5ydGdzTU93RWhiZmhWNnJjTExjLU40S3Y4eXpzR1pZTldLMUNwdWFwdDBCYTd4TGNmMHVzbnRpMnBLUHA1NHlKSUJGQWtsaF8xbm5aaTAybmpYVkxhWGZKY1J3Q09MTm8ya1lPTGxOTXVRdWcxTS1lN2JRT0VoVnYyQktBaDNncXZveElhQdIB9wFBVV95cUxQU1JyWFNvNkEwTU9GZzhzbC1Id1ljZ2haT2tzb0NCNXRMcjhNb2x2d3dhbFAtOGVRd1BQdkV6Qi1MZk1vMU1YWHRpVFg0Tm41VlM0eHg2QXM2V193RGFGS2tHVDdra2RQNHdaZ2NEUzYySEFNUUxFWVZIalVpTGZRUDRDZkM3d3Z2d01OVWNNRHRkVjZQdmxSMnRDa29jUThLODdMdFN1T3V6VU9TaENCNWJsSUtqV3VycTk3Szg0Y1JTVFBYSnZzd18zZjhGYkVQYmRjdTVlc00yUmJLdVFidGxsYWtkT2hhVURrUkZlZ1EzazBNY2JZ?oc=5",
         "date": "Nov 10, 2026",
         "longDate": "Tuesday, November 10, 2026",
         "related": [],
-        "url": "https://www.thehindu.com/news/international/sheikh-hasinas-return-to-bangladesh-the-hurdles-the-risks-and-the-politics-explained/article71685349.ece",
-        "image": "https://th-i.thgim.com/public/incoming/kqae48/article71685405.ece/alternates/LANDSCAPE_1200/2026-07-10T073720Z_325317006_RC2PF5AF7JPN_RTRMADP_3_BANGLADESH-HASINA.JPG",
-        "summary": "Explains Hasina’s potential return to Bangladesh, extradition hurdles, political turmoil, and security risks amid a charged, polarised landscape.",
-        "photo": "assets/news/35bcff7811.jpg"
+        "url": "https://www.ndtv.com/india-news/sonia-gandhi-memoir-belonging-a-journey-of-love-not-2029-elections-n-ram-on-timing-of-sonia-gandhis-book-its-politics-12308197",
+        "image": null,
+        "summary": null,
+        "photo": null
       },
       {
         "id": "9e690e0fe1",
@@ -818,6 +852,19 @@
         "image": "https://i.guim.co.uk/img/media/d2e894a22b72fea95ed08e3a70d3924f4ca19359/2314_387_3859_3088/master/3859.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=e7055e8e7b58e2eb275fd500ab37f43b",
         "summary": "From the assassinations of her husband and mother-in-law to press stonewalling under Modi, Belonging offers an insider’s account of India’s political evolution",
         "photo": "assets/news/9e690e0fe1.jpg"
+      },
+      {
+        "id": "35bcff7811",
+        "title": "Sheikh Hasina’s return to Bangladesh: the hurdles, the risks and the politics | Explained",
+        "source": "The Hindu",
+        "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPUWwzN2QxSXE3V2NJdjhQeW5VblVOM1hteXNkc05RYXhJc3oxNl9TaXlZZm5kT3hsU3lpYmhjbzE3SWo1OTFYNk91TEpsODlBRWtiYkY0QXJKZFVGTnMzTjg3bG44WUR4TTZnUE00NGdUWnA1c2hIZnk2NDBpSG05Wkl6QU5UWkpCYnFpNEFqZE9sQ2R2dVlYRkJxWUNseFR0a2xCWTM0d0xwXzZXOTRoUEVwdUNEWHRVZ3J5MnFrWVoxS3pvYzlvVWlKNzBWa1ZuaDJQcXhjWFpXbzJlR05rZHdB0gHoAUFVX3lxTE44RkdpYm9kdG43anFkamN3SUMzN3owOHAxQ2RpY3pYaERZZkJqV0trZi1oT3ZfVTJwekZhaEZJRm45Ql9nZ1NZYTNzYk5MR1VfRlcweV9JU3dwRWNqaVA5dXFERW5hRFZ3bHVfeXRrd2ZpMUNISG5zNGxyREJ4QTFHZTNtVF9FeV9OUms2ZkNmeU41OVZ5T1FTNEVnTkd1aFdJT05aNUdJdmtiYmdqRldXbnJoZXlWY095TkJmSVZlbHdYTmNoNGJDR2JMM0N0VV9wMTFfc29mNE05NWx1aXB6MU9pcVRYbUQ?oc=5",
+        "date": "Nov 10, 2026",
+        "longDate": "Tuesday, November 10, 2026",
+        "related": [],
+        "url": "https://www.thehindu.com/news/international/sheikh-hasinas-return-to-bangladesh-the-hurdles-the-risks-and-the-politics-explained/article71685349.ece",
+        "image": "https://th-i.thgim.com/public/incoming/kqae48/article71685405.ece/alternates/LANDSCAPE_1200/2026-07-10T073720Z_325317006_RC2PF5AF7JPN_RTRMADP_3_BANGLADESH-HASINA.JPG",
+        "summary": "Explains Hasina’s potential return to Bangladesh, extradition hurdles, political turmoil, and security risks amid a charged, polarised landscape.",
+        "photo": "assets/news/35bcff7811.jpg"
       },
       {
         "id": "a31f9927a2",
@@ -846,95 +893,69 @@
         "photo": "assets/news/b2059d9082.jpg"
       },
       {
-        "id": "8759a3c8f3",
-        "title": "NC's history of sacrifices cannot be undermined by political rhetoric: Tanvir Sadiq",
-        "source": "Rising Kashmir",
-        "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPZk9XdmpLSll4OGQzUmRiTGNkc3pZU2ttenRiMlNmejY3VW9udENoTlVEbGQ2N09nNUhQN1paSXRheE5BQUw3NTdLY2xwcENPU0xJcW0xd3VRYURHS0Jnb2RxUmdDUmszZC1GbGVLTm01cXdpTF9ORktPdVBkU1kwMUd4UGpQaVlRNlA1Ukxic2xvazFYekhnMGQ4ZXJ0X2ZXbWpjR1RIWS1TQjdlVHlIb3I3WGtGLXRzREcwaDY4S3pRcU0?oc=5",
+        "id": "f5ad004e71",
+        "title": "After sweeping Odisha in 2024, why BJP failed to build on its momentum",
+        "source": "The Indian Express",
+        "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxObmFnY3FDQWQ0bHIya1lOcTR0eFY0QnR5ODlGLWNyd1JjaV9GeVFrTERKbVNNOVZxREF2Um9QdTVzUVNkanRhNmtGeWV5bzczWHJHdzZHMnhfc1NGWklQV0RuMmpsdnJ1eUR4NkQ0YzVKLVBsSGhJRUVVbzQzdktRZnZtaWpyR1phQ0FSbERzR3FtWWVHaXJ1cHcwWE5vZ0ZDc2ljNEt1aUxIMERXZEdkSkNPcXZYLTdZREpnMDhzcU1sQdIByAFBVV95cUxOY25xcWhHa05PS0MyQjJyZnNCZXMtWi1TaFFJeHA4dGU3YTc0RWtNZVZuNk0zMkFRUmd6UElBSUh1Z3JEYkhtOGpLN2ZncDRhTk9FWlJzZjBoejhvUFFzOVFHRElMNF9LZEdpaFhrWmpBVUJ1N3JhcGVHWHBjVl83VW1UV2NkVE4tUkZDZWhBN2tlUHpiVTNBU1NfQUpERzBmcjE2UVZtM0UycGZ3N3hySWdUaTZEcGdvZ1Zudjl4NDZlTGF0b2t2ag?oc=5",
+        "date": "Nov 10, 2026",
+        "longDate": "Tuesday, November 10, 2026",
+        "related": [],
+        "url": "https://indianexpress.com/article/political-pulse/bjp-odisha-mohan-charan-majhi-government-naveen-patnaik-politics-10956944/",
+        "image": null,
+        "summary": null,
+        "photo": null
+      },
+      {
+        "id": "a876a6e195",
+        "title": "'Political agenda': India slams USCIRF on Sikh gurdwara attack remarks",
+        "source": "Rediff",
+        "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPUnh3dWwwQTlzdkQtc19SbHdFcmNmWXp1WFNLandEZGRaT2hjaWlSSXBId0g1cnM5N3psN29KWUNZakpzNGNqQU5GaHEyYU1SR2JWZHNUUHpwVGFubEpoMkl4cVZONEo0b0JGU2dVOWlSNDR0WG80bkhhTW5BajBkT3ZDTW4wX0xETjBZNm1NZTJLR1lGd1pFc3hQZUZUemhxSUxvVVRYV1BCM3JUcnlCRDc3TGlnZ9IBuAFBVV95cUxQWVU1WlVZcFdPVkFfUk9TaWx0aGZXbU93STlCTmJ6eVJuUzhvTjhTRWpNWXJZX3hnYW5kejM3V1RKTjJiMDBYV1FuNHB5UFN4NEpVclhMdjdNMVpYUkJGT2pjME1KdWtOaXJHMGs5SWdTRzhMZWh2amlMM0psOERGdkQ3QlZ5aTctRzd4Z2ZpZW5PTlU4Zl95QnZtS1JQRW8tTnBVekIzNTUyTld2ZV9Td2VTU2tvMVV1?oc=5",
+        "date": "Nov 10, 2026",
+        "longDate": "Tuesday, November 10, 2026",
+        "related": [],
+        "url": "https://www.rediff.com/news/report/political-agenda-india-slams-uscirf-on-sikh-gurdwara-attack-remarks/20261110.htm",
+        "image": "https://im.rediff.com/1200-630/news/2026/nov/10gurdwara.jpg",
+        "summary": "India has strongly criticised the US Commission on International Religious Freedom (USCIRF), labelling it a",
+        "photo": "assets/news/a876a6e195.jpg"
+      },
+      {
+        "id": "d815e93ef1",
+        "title": "Sonia recalls strained ties with Maneka, family tensions during Sanjay’s political rise",
+        "source": "The Tribune",
+        "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxONko0UlZKNFU0dFN3bmVfMWRZb0Q2RXN5TGlIUnZQNk5rTUVveVpJZFUxcUpad3BlWkJ0NkJlbWRvSlNfRjc0VlI0QlVmUmZQYndac0NFMVA4ZnZYQjRzZmZURTZ6SGIyRmU4Q1VsbDVGOGszejVHeGcyYllUaEJqWFVpUEI0dG9RVXlWYjVZWDdpblJyMUxBSC1WdlR1WjJsYm1ZMk5Qbks2ZF9sODJBVWNvQkJ4M2R5MXQ4eUxzdVQ2blB20gHIAUFVX3lxTFBIc1dOUUdialhyU2V5MWtqMDR3bmVnOTJjcjFsY2lOdEJ2cFNuWG5ISldFbGJiMlozZ1Y4M1FWUHZXZ3YzdlUwUGtYU1dmeTQ3RHozWWhWVGVyR0gtemVCLVZDYUpLZlFPWV9Zd0FrYUtQbzdMbEEyNGpqMWZLMGt1azJJUmZILVRFazM3Z2lab083NTl2ZVZ0RGp3dmxWOUJJcjlXVTBvOTd6RDV4UkVJbm9UdVNnSC1pY0FJQUpEQko5WmxSVE9x?oc=5",
         "date": "Nov 11, 2026",
         "longDate": "Wednesday, November 11, 2026",
         "related": [],
-        "url": "https://risingkashmir.com/politics/ncs-history-of-sacrifices-cannot-be-undermined-by-political-rhetoric-tanvir-sadiq-12799517",
-        "image": "https://img-cdn.publive.online/fit-in/1200x675/rising-kashmir/media/media_files/wp-content/uploads/2025/11/1849523-tanvirsadiq.webp",
+        "url": null,
+        "image": null,
         "summary": null,
-        "photo": "assets/news/8759a3c8f3.jpg"
+        "photo": null
       },
       {
-        "id": "d5ff513b9f",
-        "title": "Pentagon chief rips his own party's impeachment threat as farce, gets A+++ from Trump",
-        "source": "India Today",
-        "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPNFRPd0ppektMSWNmaElDSFZxOElmX2NIQ2FRVElkZGVpbFN5Yk42eXoxUllQWGpVN002c1dKZjJ2UWUwc1FaTVpDamFJMExQSk9aRmtOR0ZUbUdOdzRHcWk3V0tCbjdOX3dSLVJac3JodjJPd0dPeEtIOGRvLUtfajQtbTJSREJja1hlOTNZb0YwMEVyTUNzeEhNZ1pnRFowRUNmejFyOXRmWFdEZmZqeGxsaVcxd293SGpvMXFPcHhBRnJ1dUNPV3NxSlN4YnJBSS11SVIyaVRQaXgzdUtRdnI5MGQ0aTNnblZrVXZUUTnSAfYBQVVfeXFMTmtYMklnUk5oQm1tckZXQldYSGR5ZWdrLXRqWUctLWF4NzVLQ19Qbmc0Q2JvYUZoODF3Q012ZlNoSGs2ZjlpcVR4cTRwMkplWjlwcmt2ZFRSRlpndlN5OEpUSHlqMWpFNjREY3hwRFF2VWpjM1NHYW1pYVhEWDVTYzRYUGR4WmIzRHpORjd1aFRMRGE3cVNqSGk2cEhpSTY1YnZGWS1nZEU2Skx5cmNXVHllQjFBSHpta0xsNGJNeGgtc19wMkswUGcxVDVPbU1BZU5oMTlzdHNYUWJMeUhDRlhzdFlma25UcU94ZjZoeGxNTWdNdVJR?oc=5",
+        "id": "ddf5764bb6",
+        "title": "\"Who Has The First Question\": Dana White Brings UFC Energy To White House",
+        "source": "NDTV",
+        "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQTTlkRXFfamxMU3RVQU0tb0U2YktWWnFJYlc4S3JZSlVFd1BHZGlXRlRCQXlDa3hGSzJZSWVRbDFYWnhpS1VEOHhxd0RrM0JtRk1ndXlRTDRUS0xOVWwtdFlEUk1RM0VpUzdRU0VCdzQyZHE1NTUwbnpYUVZqeEFoZ3FTSE9sUjlDaXJsZnVvY0dJX0xVODBJR2ZJRzRqUDM0UmItRG5qME1ybnYyUUx5U0FRVzlPVEl5LU83RndtaHAtSmZBUUFpWDZlY0czUXNETXljS3FsdkNhN3fSAeMBQVVfeXFMT3Uwa3Vlc2w3eGM3aXg1WVJEYndvSVA2eTFRd080QUNvbWZxTmJ0em1vd2ViUlE0dE14NkxHTmFIWkp0SXp0MXcxZG1KNUpUcGhqRGc0eTNCSDJ6aFVQN1ZlamJhOHVJNm1vRFktckFLX2xLYVJyNlJMRG9KTkdCZVFtaEJ4ZDRtTUJ5WGJTYjlGWGIxdVBaM3UxeVVfTmpOdzl4dHYtM2Q5cF91alBfM0I1Unp5SHl2Z2dWSmdlWXlTR2ZtbEF3MlRwYjJ1NUpjSWtfdUxyYmowVTJuSzRxdFk4MDg?oc=5",
         "date": "Nov 10, 2026",
         "longDate": "Tuesday, November 10, 2026",
         "related": [],
-        "url": "https://www.indiatoday.in/world/story/this-is-all-politics-us-defence-secretary-pete-hegseth-calls-impeachment-threat-stunt-at-rare-briefing-3036233-2026-11-10",
-        "image": "https://akm-img-a-in.tosshub.com/indiatoday/images/story/202611/hegseth--trump-105714397-16x9_0.png?VersionId=kWiwKXScaGrJAENYrFMO8ttGvL9blfV7",
-        "summary": "US Defence Secretary Pete Hegseth, speaking at the rare briefing, said the impeachment effort was not a genuine attempt at congressional oversight but a personal attack by a \"disgruntled and defeated congressman\".",
-        "photo": "assets/news/d5ff513b9f.jpg"
-      },
-      {
-        "id": "336a3cf490",
-        "title": "Former SATS chairman alleges political interference in Telangana sports",
-        "source": "Telangana Today",
-        "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNZXdiY1lXQzRQcVNsRUF4Zm9uXzdnRXphaEtiRkdNZnVKTkJKSWhfdnFKSnBjSWtQX0RRNlV2cmNMY1dwTUVrUXlRNG5rUmN0dTVNbURURkx6NEhucmRFOURUVHBwYUtITkt3T2RCbGhaMk1vVUtqRUFUOHc2ZEY5VW1uQXZMdzUyNDR6c1BPRlVZUG4zbmtOZnpLazl6TE0?oc=5",
-        "date": "Nov 10, 2026",
-        "longDate": "Tuesday, November 10, 2026",
-        "related": [],
-        "url": "https://telanganatoday.com/former-sats-chairman-alleges-political-interference-in-telangana-sports",
-        "image": "https://media.telanganatoday.com/wp-content/uploads/2026/11/SAG.jpg",
-        "summary": "Former SATS chairman A. Venkateshwar Reddy has criticised sports administration in Telangana, alleging political interference, negligence and factional disputes. He has demanded a white paper on SATS expenditure and questioned the handling of Telangana Olympic Association elections",
-        "photo": "assets/news/336a3cf490.jpg"
-      },
-      {
-        "id": "8a1c837884",
-        "title": "Indian Citizen Creates History In Australian Politics",
-        "source": "Gulte",
-        "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNTEpnc0dGTUQzRWRlZjVXeDVfckZYa1hFdUZJZlpmV2JacTlRcW10M0hCNkZhaUM3Zi1MYS1aNzZuT3ZpMDZ3Z0Y4TUFTNTJnWDc5eFVPVDZVZTVFeWNtVFBBN1M2R3NDMEI3RUdLZC1GbnM4UnE4REZLbS1saUdCSU1rRnEwR2VvaWJEeU5STDlUenlUN1HSAZsBQVVfeXFMTU9TQy0xS21lb0ZCOThTTmJqVC1QdjFuSnhfWEJQSVVYR29aVW1kMGFQNVZiOS1lSlhwbWhaY2tjX0VBWXpGelk3NmxJR2cwREJkcWRCWDVjWnFPeGxhc1ZMMW9va1VleEd6QldDSjlUa2ZkWHRjWkM0cUNlT1l2eVFrODNvUURWTU1INzg4M2JYcVlnZm5pMHdMMUU?oc=5",
-        "date": "Nov 10, 2026",
-        "longDate": "Tuesday, November 10, 2026",
-        "related": [],
-        "url": "https://www.gulte.com/overseas/441017/indian-citizen-creates-history-in-australian-politics",
-        "image": "https://cdn.gulte.com/wp-content/uploads/2026/11/awasthi-australia-mayor-.jpg",
-        "summary": "Indian origin citizens often make headlines after getting elected to coveted positions in foreign co",
-        "photo": "assets/news/8a1c837884.jpg"
-      },
-      {
-        "id": "1bb9dfb19a",
-        "title": "Sonia Gandhi's memoir is making political waves. Can Congress capitalise?",
-        "source": "The Daily Star",
-        "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNV3VxTEFjTU9CNWt0eHFBVWxQZzdVUHRnRi1IT1MySm9wdUtrak9SeXBWamhfb2RVMVN4Wk9JUjRHUGxpVUdVMDV1WDJMaHNmdEdpMEZpRVFENjZkZUhDSS1MQklXRHJxTzRGNmxUWnFKUm91NUxkZVNqY2xFMzRJZkFSTGdkQ09VYTdSdVhRQXk5TGFoaXJTUlM4a0xDX05sTHhyZks3TllRWW5FY1RqaDd6cGpTSTFhT3pxcG5qMFozMDFrUnVRRkFweXBGd1F3elQ2MW4zN2hYUQ?oc=5",
-        "date": "Nov 10, 2026",
-        "longDate": "Tuesday, November 10, 2026",
-        "related": [],
-        "url": "https://www.thedailystar.net/slow-reads/geopolitical-insights/news/sonia-gandhis-memoir-making-political-waves-can-congress-capitalise-4319416",
-        "image": "https://www.thedailystar.net/sites/default/files/styles/social_share/public/2026-11/feature_SoniaGandhi_RahulGandhi_PriyankaGandhi.png",
-        "summary": "Sonia Gandhi’s memoir has renewed political attention, but can Congress translate her visibility into lasting electoral success?",
-        "photo": "assets/news/1bb9dfb19a.jpg"
-      },
-      {
-        "id": "1c25f37906",
-        "title": "Regulating Social Media Influencers in Politics",
-        "source": "International IDEA",
-        "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1UMW5oMGlQTVZyRnBiY1JQam4zdWhIVTl0WjhlNjZTM0xxUmJkM3VSMmhsYi1fZWFncFdlVkY0eWVfRHB2YUNDc1FnOWtZZmJybUM4Sy0wRVhiUEdWY3lxV291LVNMbGNGaTQtTE8xbVc4Z2lyT1VwbUNB?oc=5",
-        "date": "Nov 11, 2026",
-        "longDate": "Wednesday, November 11, 2026",
-        "related": [],
-        "url": "https://www.idea.int/news/regulating-social-media-influencers-politics",
-        "image": "https://www.idea.int/sites/default/files/2026-11/Influencer%20report%20e-banner_0.jpg",
+        "url": "https://www.ndtv.com/world-news/dana-white-uf-chief-turns-down-trumps-offer-of-white-house-press-secretary-dont-want-to-be-in-politics-12305843",
+        "image": null,
         "summary": null,
-        "photo": "assets/news/1c25f37906.jpg"
+        "photo": null
       },
       {
-        "id": "d9f3dc8548",
-        "title": "Sonia opposed Rajiv Gandhi’s decision to become PM, but not Rahul’s entry into politics",
-        "source": "ThePrint",
-        "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQb1U2X0RlRXhvM2RRN09ZMkp1UHRRdVNYTTdsQWVscXduSlFjejlWTEhha0tqVUVidTNBNGtOdmFKV2p4YjAwdG5ER1ZxbjV4Q2NnajVjZzBaV3NXa2Vld1VoaXZPeUQzNFk2cGc3cmlGU3d2UFl0aENkbVhGTVRYRlJqWTN1V3B0NjliV2hiT0VuSEUzUTA1M1ZWMTNtaFpwQXV4bnZuaDdUMDlsX2Npa0k5bEl1SlpDZjc40gHAAUFVX3lxTE1tOE5RUm5rZXZyZXkyRGx1NTZhdVJiNWI1a2pweGxqSVBYYmsxODI3Y0lod1FwTFBOcE1QMzljOC1yXzYwUm9ieDJBRXFnTmZBcEpyNnd0SWVqWVFRcHZnMThBNUNvcGpSTWk2eXZ4MUtjblFUVnJRZUc5N3BfTjJVcks4Z19QYUdMNVpJYWNlS2J0MG5rczlqTkk1RW44QkJaS3ZyQm9FUXhScUxKd0hxRXowT19XaXRRUnVJclppaA?oc=5",
+        "id": "a9a3bf7087",
+        "title": "Poland’s political rivals join ‘March of Silence’ for shooting victims",
+        "source": "Al Jazeera",
+        "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQbHpidnVDRld6eDdybl9sYk9SRjB3WGtoWEgtckotTzVaNTRGNmpIa1dydXMzVjFuQXNENFRfNGtrbEtibDZ3VTJ4OWxiYUhkWHVtaGY5TVdlajZGVXl1Z1VyZ0VidWJOTGx2OTk5S0FtUWoxSHpvU0F4SW44UEJ1cGdnUE9ydldhYy1jMkE1VjczZTlPVFJTMkp3ajlvRTVZVmZlWjNDa0lEVjhETC0wc1Q1bjB6QmhrQ0dz0gHAAUFVX3lxTE4wMXZMMlJYczBzTVJsNmtMemVqNDc0YnV2QlRVNm5xMlVWOTRKbXkxSkJ2Z1dIdGEzc2hONldyWHowdE1RODdUbURHMUVnRjY0MGl5M0dGMVgwZ1lvQkh0S2d1TURfT3p4RmxRTURTWC1QVVg4Z1g1VmFLbE94NnZ5aUVhelRxSlgtcjBjb2dOYTNsM1Vwd1JpM0x1eVJJTGdQUVlEd2hFekV1aGpPZjExWVBlSkYzeEJOSGZXbFVJWQ?oc=5",
         "date": "Nov 10, 2026",
         "longDate": "Tuesday, November 10, 2026",
         "related": [],
-        "url": "https://theprint.in/india/sonia-opposed-rajiv-gandhis-decision-to-become-pm-but-not-rahuls-entry-into-politics/3095074/",
-        "image": "https://staticprintenglish.theprint.in/wp-content/uploads/2024/05/Untitled-design-2024-05-15T145921.403.jpg",
-        "summary": "Sonia Gandhi also mentions attacks aimed at portraying Rahul as an entitled politician with little understanding of the political world.",
-        "photo": "assets/news/d9f3dc8548.jpg"
+        "url": "https://www.aljazeera.com/video/newsfeed/2026/11/10/polands-political-rivals-join-march-of-silence-for-shooting-victims",
+        "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/image-1794287518.jpg?resize=1620%2C1080&quality=80",
+        "summary": "President Karol Nawrocki and Prime Minister Donald Tusk joined thousands in Krakow’s ‘March of Silence’.",
+        "photo": "assets/news/a9a3bf7087.jpg"
       }
     ],
     "business": [
@@ -1349,13 +1370,52 @@
     ],
     "technology": [
       {
-        "id": "bdedd1589f",
-        "title": "Grand Theft Auto VI Comes to XBOX One and XBOX Series X|S Through XBOX Cloud Gaming on November 19",
-        "source": "XBOX Wire",
-        "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPcHNkQ3h6dFZOTXM1Wk04SzN6dUtuTEZWZ3VRc1AzaHhWcUgybUR4TmZ0a2Q3TktGajhoSUZLZm9nVUwxQjQyeXQ1SGVDQ3hqaXB4Q1FaaFVBanpYTXZPSWFLNFRRR25fVmhFU3JOYWRVUzVBQlZxRE9kSGtQR2ZRSzVZb1NDN0pneUEzWEh3OEdjMkUweTdVRFlIUFBqQdIBowFBVV95cUxPcEoyQ19NMjF5Mkpra0NRVWg5SUUwWDE1QXh0Tllfbm8tU2RoeklfaE9jOFhOeU13VUNVcHJfckVpSVpfUzR2SUdJMWlGaGdlUEVXakNlUDVjMUtHT1FZMlA2T1NDYWt5QWJDVlZhTHhzd3E5VXNnV3dzUnNMcDVjYjE0WW1WNlY3bHdkSVVZWG5wQlBZSEVtWU83SVNhTFltbFhZ?oc=5",
-        "date": "Nov 10, 2026",
-        "longDate": "Tuesday, November 10, 2026",
+        "id": "5472926250",
+        "title": "Don’t Call Them Smart Glasses: Snap Specs On The Perv Glasses Backlash",
+        "source": "Forbes",
+        "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQeU5TVWVKUGJOcFZpeWk1TnZBdkluTC1ROWNQUGNKbVBmOUl6SVRSX1hNMFFsZ1I3S25wZ2F4ZXE4QThxUTJtdmtGM09TbnBPWTJSa2plSnJZb21Sb3pCY3dDUHpkZ2VKUzFrdDZyaG9VOU14YWhmVURHZDhoU01PaXdzZzlDY0g1eHZyTUc2ZXh5SUlBbFZnVHh3TGs4eVFEN2VFc1NmdFBJWTVWYUFmY2JSWXFkMTFQRUhqaHdXa0hfUQ?oc=5",
+        "date": "Nov 4, 2026",
+        "longDate": "Wednesday, November 4, 2026",
         "related": [
+          {
+            "title": "If Snap's Specs are still ridiculously expensive, they're also a lot more comfortable than they used to be",
+            "source": "TechCrunch",
+            "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPMzc5MUVtNzJkTmVhU19jMVpTMktPZWhQMGdGOEJiSE0yY0FlV1BfMEFSSjJxdktOMHlONjZuaHR6VWZ3RVF6dzlFRjZsLVVWU1Q0OUFIMGtCZWgxT0FRWmtNY3dYUjNwMmFZRjRpYWotRUZiRjBmZnQtdGpPQWNvU2JKdVR0dC1aQWdHYmJQQVY1SFVDc3hlcVM1ZlZ6MVdRR19lcHpsTVQxSmxGaXZZOWJTVXVJOUJ5MmVlNTAxM29iNmhCY1lrdkpud29PTkZHMmpFWQ?oc=5"
+          },
+          {
+            "title": "Snap Specs are big, bold, and quirky, but now that I’ve tried them, I don’t see them turning me into Tony Stark",
+            "source": "TechRadar",
+            "link": "https://news.google.com/rss/articles/CBMihgJBVV95cUxPbC1CYmhVVzc2NTNPTnF2LVZlb09vT0VWRGVsbkJFeWRXTHZmdHJIaHRIUThMN1VyNy1nOEdoLWVyeGMtTEd3QnR3eUQxOS1DTWpnSld5dXJkRkNINlMtckR3NU5reXMyaEdBM05HTGJvclFtVy1OWEZidW9mcTlrYVpJbDFWUzFEYm4xQ1dzeDBCTVREWWNFbmRCWEl2b1M5SjRtY2hPSE9YN2lJZGRQczZEN3J1LVFUblFESVZXS0JyMlNPZVByOVI5LVVYeWxkd0tGd19oNkptX3pwS1Vkc0ZZeC1OazB4RVRPX1Fna3RQbE1ONlNZaS0tQzcxemdvdVluLVl3?oc=5"
+          },
+          {
+            "title": "Snap’s $2,200 Specs Get Lighter, but Hands-On Leaves Everyday Value Unclear",
+            "source": "The Eastern Herald",
+            "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPYXJpQmpnRTRRRG5DOV9TbWRpOXk0OVhzckVfUmUyS3ljRzFTbzFBTnZpdGp2c3lIbHJuVEpNNm5tQ1BRUXNxNm1IcGsweFh0RGdncmNpaWg0UUl2cXRvSlQwZHZja2NHWUNsMXF5dWluVDhSNjFoZEgya0dGVnB3bVNHb0k4WGlKamwxbHdVOTFHWlBPTmkzUmhueGJfeWVZbE5DRjJQNnJEVzdzTlE?oc=5"
+          },
+          {
+            "title": "Honey, they shrunk the headset",
+            "source": "Tech Brew",
+            "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1fa2pPQkFuSTJ0RnVYWERzWktRZUFiSVkwQkEzQTdRMzlRN0xRX0oxNVgwVEFFaGtpTExTQ1pJZUtJSmpVOFhCNUtPdnZIbWZHNUhvYkphSDBrM1kzQ0F2ZGxoeUVfSW0wY0dpNy15SQ?oc=5"
+          }
+        ],
+        "url": "https://www.forbes.com/sites/andrewwilliams/2026/11/04/dont-call-them-smart-glasses-snap-specs-on-the-perv-glasses-backlash/",
+        "image": null,
+        "summary": null,
+        "photo": null
+      },
+      {
+        "id": "4aafe7af38",
+        "title": "GTA 6 will technically be playable on Xbox One at launch",
+        "source": "Mashable",
+        "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9lSGVROUVwbzRkandoNlo1Qmh4cmg4Rk56aDNVcGxOZlRhaTVlSFdRVy03YWotNlhhQ1lVU1ZackxQUFZpWXppaEl3Z3N4MjNEUGs4R0RZRWV2X0R5U0NrRzhFVWZjakFRcm1pQWxwcTg5cTlG?oc=5",
+        "date": "Nov 11, 2026",
+        "longDate": "Wednesday, November 11, 2026",
+        "related": [
+          {
+            "title": "Grand Theft Auto VI Comes to XBOX One and XBOX Series X|S Through XBOX Cloud Gaming on November 19",
+            "source": "XBOX Wire",
+            "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPcHNkQ3h6dFZOTXM1Wk04SzN6dUtuTEZWZ3VRc1AzaHhWcUgybUR4TmZ0a2Q3TktGajhoSUZLZm9nVUwxQjQyeXQ1SGVDQ3hqaXB4Q1FaaFVBanpYTXZPSWFLNFRRR25fVmhFU3JOYWRVUzVBQlZxRE9kSGtQR2ZRSzVZb1NDN0pneUEzWEh3OEdjMkUweTdVRFlIUFBqQdIBowFBVV95cUxPcEoyQ19NMjF5Mkpra0NRVWg5SUUwWDE1QXh0Tllfbm8tU2RoeklfaE9jOFhOeU13VUNVcHJfckVpSVpfUzR2SUdJMWlGaGdlUEVXakNlUDVjMUtHT1FZMlA2T1NDYWt5QWJDVlZhTHhzd3E5VXNnV3dzUnNMcDVjYjE0WW1WNlY3bHdkSVVZWG5wQlBZSEVtWU83SVNhTFltbFhZ?oc=5"
+          },
           {
             "title": "Pre-load Grand Theft Auto VI on PS5 starting today",
             "source": "PlayStation.Blog",
@@ -1367,33 +1427,33 @@
             "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPWjVPVDVCTGJsc0FZR1NZeTNEU0lZS1hIVTctbDZ5dmFIVC1EYWtTZWhvVC16TmY4M0xZU2RHUnUzT3NmcE5YS2tac25mdXFQRGpyVkQwUkVJRlVHLWc1ZGw3VUF4ZEQ2aUp2WEZlUlp6eTliZUFlcWFibmFoNk5NSldMbVYzbDE4R0dVR0VuRHJmMkRyeHM5RVJBSEtBSEdJMkJtVVkxdzQ3MlBHX2lqZGRSYjVKOE5sazFGSkpKUHh0aThyUFdNcXdZWUI?oc=5"
           },
           {
-            "title": "GTA 6 Ultimate Edition vs Standard Edition: Price, contents, and differences",
-            "source": "The Times of India",
-            "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOdHN3TXF5bS16bHN3VnRhaFpBZHVCSnZmeGtXOUVJWDNuVGVkOEkyamJfUzRZd3UxNlJrUzNuSXd4UnphU1FrbFFJQmhuMGlkRk5abnR1NjJ5aFZocEFyTmZSZEtxd1FmT2ktNmF5YTFNTXNHczlEZnBvUy1lSWs0SFF3RlF6aWpmX3J4eHpoQmNOWG9rZEhjS0lvZ2x1clpPNUQ0aGtMNUFZbWZGZ2w3QmwzYVVtVEYxZnZMLW8zWmkyajdpazVIZlBvTWZXMVVQY3ZJT2JjN0tkazZPb2N2LU9FYWdZV3JldlE?oc=5"
-          },
-          {
             "title": "GTA 6 performance on PS5, PS5 Pro and Xbox Series X & S: Why 30 FPS on all consoles?",
             "source": "The Economic Times",
             "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQRHBXb0JxZDgzNFpCRXlYdENOZFdRdk51dWlrTFc0VHEtZV9aazJBTkFPVWpiUXZZUXV1VHRTSUVfOHRqak9zbWMtSkJjN1gzM3VxOEhkb3dGUHJJMk9YTkNybC1SamJlWktkNmJUZHZSdFNBMmdPOXJLVjRUMURsU0I1VGI1WW5iOWNNYVpXWHNFWlUwb3pvQUhWUmY3Z1BOcG5kd2hLbnhiTVlQaGhtUVRxWTVtbjFNZFdlblhmNzdaM3FvT3MzQWxjdjlrb2YwU3FRRnNUMV9VMHo0anQyUlF5a0hEMTFfU3kw0gHwAUFVX3lxTE40WjktNzcyUFlMcklScWZlWEEyZ00taUhuc18wNTFMR0tpQnpxcENYM09FZWhYTDN2NTcweXZOZDhDWGlPQ3A0MjVXU0U5VVoxYU9TeDdTOFRoWXp5cERFcHl1UTZsRlJMdWFKLTNxN1p4LVFoTlFWTHhZRlVpdk16RTZ6UmNZNF9NeHU4dWJsWnhmZ1JhMzFsVV9ZSmdBQ0RZTURRbHpNZ3hRTTVFVEVtOVFlY3h2SjUzVGF3U3g4ejU3NEt6WDNhamd1TUhjcUZWemp4OFJSNkNydC1lZnZLaWEyY09QcE42akJFQzJxUQ?oc=5"
           }
         ],
-        "url": "https://news.xbox.com/en-us/2026/11/10/grand-theft-auto-6-comes-to-xbox-cloud-gaming-november-19/",
-        "image": "https://xboxwire.thesourcemediaassets.com/sites/2/2026/06/GTA-6-Official_Cover_Art_landscape-c3e36df9ed6c80b13d50.jpg",
-        "summary": "Grand Theft Auto VI, the most pre-ordered title of all time on the Microsoft Store, launches November 19. Considering the unprecedented demand, we Grand Theft Auto VI is coming to XBOX Cloud Gaming at launch! Starting November 19 at 1am ET, you can stream it on XBOX One and XBOX Series X|S.",
-        "photo": "assets/news/bdedd1589f.jpg"
+        "url": "https://mashable.com/tech/gta-grand-theft-auto-6-xbox-cloud-gaming",
+        "image": "https://helios-i.mashable.com/imagery/articles/02YVZhiRkzmWT28odLFFrlb/hero-image.fill.size_1200x675.v1794340468.jpg",
+        "summary": "Perhaps not in the way you're thinking, though.",
+        "photo": "assets/news/4aafe7af38.jpg"
       },
       {
-        "id": "86a980c6a6",
-        "title": "Samsung Galaxy S27 series' cameras detailed, Pro to get a lower resolution telephoto than previously rumored - GSMArena.com news",
-        "source": "GSMArena.com",
-        "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOS0Y0N1U0aXRveFlpcW03blJnYS1nLVBBOHZXUzJPOF9aWkpobkZIQ3M2TDVJN3V6b29qNUdIdm9hWjVzeVAwdDg4b2ozemJ4eEVhYXlLNEtnU1RELUhXSWF4bWdWdW1TWS1hSTh2Tk92S1FzX3hyX2FPM2psLVMzX0I5bVFDUGVQTVJqUm5seU3SAYwBQVVfeXFMTWtCMlRFR3RkQklKT19Wc3FyQmRETVhvdVhJRWNiTDVGUWJUR2pseGY1U1VweDFEY01ZZy1VRHZ1Um9rMGlDVE5CdlVQenJhcWpPcjd0VHU5MTRmdFhMNUtvWXRZWk1FaTdVUEF2aU42d0Z5dkduV2lSNzR6NzBfWkdlSWhYYzhmaUtNTFQ?oc=5",
-        "date": "Nov 10, 2026",
-        "longDate": "Tuesday, November 10, 2026",
+        "id": "ba54e8f50a",
+        "title": "Samsung's Galaxy S27 lineup takes shape with new dummy unit leak",
+        "source": "Android Police",
+        "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5mb1d3YWJqMDcyREl3cDlvaFVjcExrM2w1aEtfMWRLUklySEowNE9wVlhvZ2htTFFmVkZzY1FGWVNfVkdWX19DWkNIVDJRcHpJSjJNR3BQUng5TFF6RFNaN2xSc24zOVZXTGJzSWM5SFhDaThFOU5NX21TcFo?oc=5",
+        "date": "Nov 11, 2026",
+        "longDate": "Wednesday, November 11, 2026",
         "related": [
           {
             "title": "Exclusive: Galaxy S27, S27+, S27 Pro, S27 Ultra Camera Sensors Revealed",
             "source": "SammyGuru",
             "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE16UllqWXZ3ZDBoWkpEc0o2ZzZNUDQ3Ri05eXpJRHdVLXJiRUhjc3EtQ3cyVHNSOEdURWozTkVIb0h1bFFIN1ZCRWw4eFJyenpLWEw1cDN6SzZ0ZHQyQXVwcER2LVp1ZDk3MUx5ZGhQV1Fjenc?oc=5"
+          },
+          {
+            "title": "Samsung Galaxy S27 series dummy units surface in new leak - GSMArena.com news",
+            "source": "GSMArena.com",
+            "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOaXVGWDFiYjgzcUlOUHpYTGpEbjRoUjE2YkI5akFkYVp4U0QxNG9IZmJ6dnVyY1R0UWJQbm5WSjJ1aDVVYXU0Ulc2aGE2XzhnNW96RlNZejNRQ2tSUDQ4bTM1MzVJTEFRZHdtemk0YU9SMkdUMUtEb2R6YTFkdGVObTZSZWo2YUNtNVpnejgyc0VCTHN2S3dSUkZlSTVQZ9IBmgFBVV95cUxNQTJ0N2dNUUF4WTZOcm9ReFZwQTR3VlZmdnNXX0hWR2FZSTQ1Q3o5ZWtucENMdnhoS1JsRHZ0NmVmd0RDMDViUEJLaXh1Vm1RSUlBa3JIcExlQXNwaTZZWkZjTFdNNjJKMFdKd0JtemNCRV9QelRuWFJDQ0Q2RmxZT3BmWXhqQ0FCbWZEdld2cFFRS1V4QXVBTkR3?oc=5"
           },
           {
             "title": "Galaxy S27 series chipset details leak with a surprising entry for the Pro",
@@ -1404,25 +1464,20 @@
             "title": "Samsung is focusing 70% of its Galaxy S27 production on the Ultra and Pro",
             "source": "Android Authority",
             "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQN2NUbHkxN0o4ZF9JTTJJbThaaDdGWlNETDJZcFlFSUpXN2xWb1VaeWpzbkJBT2EtWnVlMVkxZ1hFc1dQTDJYajVDdkdJSlM5MU1faVRKbjljb3BfY0ZXSWIwNWUxUWdOTUk4alUwaFEtVExUQjVveXF1eGpnY2FuWUVIay10R0k?oc=5"
-          },
-          {
-            "title": "Galaxy S27 redesign leak shows off Pro vs Ultra size difference, with just a bit of controversy",
-            "source": "9to5Google",
-            "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE13SlZFb0JFR2RyUzZsS25IVEI5UFhMck1vVlIyZnB1R1FCbWEwWHJOOE1SUFh0UlE4dV94TFdKX0R6czBCcDE5Ti1USGUtZ1RBZ1hVRExJcmQ1NFJUM3FWalgxd2wtQTBQWmZwX2hiYWM3NXoxRW1Jci1wcy0?oc=5"
           }
         ],
-        "url": "https://www.gsmarena.com/samsung_galaxy_s27_series_camera_setup_detailed-news-75416.php",
-        "image": "https://fdn.gsmarena.com/imgroot/news/26/11/samsung-galaxy-s27-series-camera-setup-detailed/-952x498w6/gsmarena_001.jpg",
-        "summary": "The Galaxy S27 series reportedly includes four models - S27, S27+, S27 Pro, and S27 Ultra. We've heard multiple rumors about the Samsung Galaxy S27...",
-        "photo": "assets/news/86a980c6a6.jpg"
+        "url": "https://www.androidpolice.com/galaxy-s27-series-phones-dummy-units-leak/",
+        "image": "https://static0.anpoimages.com/wordpress/wp-content/uploads/wm/2026/05/samsung-galaxy-s26-ultra-finder-article.jpg?w=1600&h=900&fit=crop",
+        "summary": "But is this really what's coming?",
+        "photo": "assets/news/ba54e8f50a.jpg"
       },
       {
-        "id": "1e58a03fb8",
-        "title": "Google Chrome 0-Day Vulnerability in the Wild to Execute Malicious Code Remotely",
-        "source": "CyberSecurityNews",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE8wQjZiLTgzcks3NzBQa0pTRWtKSFNpYWN0Qld0dndhbkhGR1pKdElZWG9MdFhueVgtWnRtVTFKdjlDTHl2bWhXMklaUWxRWnRqUW12WWRSemNiNnZsWl9YcjYzaTRHZXFWS0RuSNIBckFVX3lxTE5qZVNkS3U4TW5ndnZmbk5IRVdJTnZXSzZrR1dzckV3VTdUWmtPNkhUUW1LbE9VUTg3by03M2wtdU9pY0hiVHNuUi10bkZIc1lhRGlHLXlfX1VSMWNQSDRFQ2NORncyUjlUcFFZeU9wcWNiZw?oc=5",
-        "date": "Nov 10, 2026",
-        "longDate": "Tuesday, November 10, 2026",
+        "id": "5193701ab3",
+        "title": "Google Patches Critical Chrome Zero-Day Exploiting XML Vulnerability",
+        "source": "LinkedIn",
+        "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQUkxBVWZQTjEyS1hoV2oybG1DNGNXWkd6XzlWS3ZJOFBYRlVlR1kwYk1FZGxBX25lRFRReFhSS3NkSlc3dkI2YUNpYXE3YmQzSWJOZG1ZaFdDQlNZSmdobU1weVVZTTRqTU5ydGpRS3d4dXd4ZkZ1c2xYRkdDX3ZQNndyUlM5OGlsTTZuYXNIZGw?oc=5",
+        "date": "Nov 11, 2026",
+        "longDate": "Wednesday, November 11, 2026",
         "related": [
           {
             "title": "Google Issues Chrome Security Update for Eighth Actively Exploited Zero-Day of 2026",
@@ -1445,16 +1500,84 @@
             "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9PcWdJSnJIT2xKRGhlSTBBM1doTmpEUmJDMlBtR09SR25aYmZldmJPYkVKQ1BfQVdDNG44eE9LRWstQzFUM3lSakZvVVdXWHc1S2Q3SmlVWXNLd2JDV3NPeXdFYVBFcGZmenNUaFhmLXU?oc=5"
           }
         ],
-        "url": "https://cybersecuritynews.com/google-chrome-0-day-exploited/",
+        "url": "https://www.linkedin.com/pulse/google-patches-critical-chrome-zero-day-exploiting-ksake",
+        "image": "https://media.licdn.com/dms/image/v2/D4E12AQEQdqGu3I_5ew/article-cover_image-shrink_720_1280/B4EaHF_3hLGkAQ-/0/1794323225505?e=2147483647&v=beta&t=89ecZBxD7ukdrugRn0xb-8GBNtx8p8zkKbSgAjlTipQ",
+        "summary": "Google has released a Chrome security update addressing an actively exploited vulnerability in the browser’s XML component, bringing the number of Chrome zero-days patched this year to eight. The disclosure places renewed pressure on organisations to accelerate browser updates and verify that users",
+        "photo": "assets/news/5193701ab3.jpg"
+      },
+      {
+        "id": "55a0bf6a1f",
+        "title": "Today’s Quordle Hints, Answers for November 10, 2026 (Puzzle #1751)",
+        "source": "Analytics Insight",
+        "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPejVuWHlZWW42ejRuSEg2VGZpWFZQcjVwdTlsYWtOX0ZyMUpTejJWQUhiQ1NJLVhscEliQ0JNUVU0Z1ZodlF3QW1ZcVctdmMyVDltWkdMTWJhekZ1cWdocHlOR3JpTVdTb1NyOHVNQU9RYk56N1JQNF9ncWtqVWl6VXdrN3BVejNFR2ZucmtkM21rSEQ5UGFCYjhUYW5SbmhJcEpGWDRQb19FOVNX0gG6AUFVX3lxTFBZTmlZY3B2U2lEVG1raFhrZDRtZ1Fiam50cWZSQkRTc3BPU3JuMFU2RmFkWThHZlg5ZExsTTh2ZEh4X2M2QTFSRE9Lc2ZMTXVYZllZbC1DWHAyVFVDWEFQWnAtSUFXVnhCUm95TThIUnR3aVJ2a1Y0SUxleGZBMnlNSHdhbzdmSXN1TUx1MTVvdGZMT0VFMnViR3hlOHROOTczZlNpZFFNMWktdHBFLTM3Y3BrME5jYWk0QQ?oc=5",
+        "date": "Nov 10, 2026",
+        "longDate": "Tuesday, November 10, 2026",
+        "related": [
+          {
+            "title": "Quordle Hint Today: Wednesday, November 11 Clues And Answers",
+            "source": "Yahoo Tech",
+            "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQWW5UQUNEZXU5VFNtTW1vWDBXbGJGMWpjY2RuOXNHVC1LakNMZkNGRFpyTUYwajh5c0dHNTJsNlhOdkZZcm1wVkQtalN2SC1pUWNoZ1NwWUNocDAtTDg3RHd0bDdyeUEwaEpnd2pyN3FZdGY2QkhnTDV6WFREdy01YTNmVTduN2RBZHZPSHQ4aVF5aTV0VXVDOS1QVmhIdnFXU0E?oc=5"
+          },
+          {
+            "title": "Quordle hints and answers for Tuesday, November 10 (game #1751)",
+            "source": "TechRadar",
+            "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNQnFHMHhYNE1ERURCMEtFZkhFNXpvbFB0T1g4LTBCdHUtUUI1Q1NJQURybmMwZjZoeGVZRF8zaklnX2VWYmFmb0M5dnRzR1o3VGd5a3JqelBHYkpXZVktWXJrVGJVbVc1YTV5TTJwVnQzYnhUdDNxWnZqRjYya3hoZE5LZU9tUFJ4RG93NklJRlJMcXdwZUdtT3FB?oc=5"
+          },
+          {
+            "title": "Today's Extreme Quordle Hints, Clues and Answers for Wednesday, November 11, 2026",
+            "source": "Technobezz",
+            "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQSHdoUGw2REFJcmpzN3hWVkZXMkhJV2dYWG9OMU9KR0ZPczlVS1RWOTVfcWlTMlRIVjVKT3JBZ2dpTGsxSmpWczFYaDZuLXhydnYydmNXTDBVaEpTVVFSU0VkblpQYTBUR3p2RTg5NVh4QnNORzVRdlpLTVJBUVM4dA?oc=5"
+          },
+          {
+            "title": "Quordle Answers Today: SHIRE, DOPEY, FICUS, RIDGE – November 10, 2026 (#1751)",
+            "source": "The Eastern Herald",
+            "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE53R3NPbWlHNGZKd2FETHQ3RzR2akFYTFFxVUdBdEo0eW5DaHdBTm9fZlc4dE02TFdPanhtOGlMWmhRbVQ5bjBPRFR1ZzBMUS1JazVOb3pwb3FOMnFYUHUyVktWWF9GY0pIVlpGS0dIZGNnVVRtN0lONU9LNA?oc=5"
+          }
+        ],
+        "url": null,
         "image": null,
-        "summary": "Google has fixed a Chrome zero-day that attackers are already using. The flaw is tracked as CVE-2026-125350, and it lets a remote attacker run malicious code in the browser.",
+        "summary": null,
         "photo": null
       },
       {
-        "id": "141a5a4f64",
-        "title": "iPhone 18 and 18e Battery Leak Hints at 4,430 mAh Upgrade",
-        "source": "TechRepublic",
-        "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBKck5odjl3ZktZZGRjclViYXhGR1Z0ZThMVjkyOFZxT1h0YVFKVVlVQ0tTWTVmVjd4M0diRGZOV3N1TFRXSlpoLUxYWHMzV0RUQ3F1QWY5WVgwUVBfZS1HY3lmaGRidmZqY1pWTy1XZEJxX0s5Skxvdg?oc=5",
+        "id": "a42d7cc30c",
+        "title": "Gemini 4 Carbon Available In Google Search AI Mode",
+        "source": "Search Engine Roundtable",
+        "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQeU1TdlZqOVJZbDFVTzdSMjJzc3NxNnhCd3N0bkRxakJETEZTSm05MHJYUzFNenIxeDkxNzR0ODJudHlCUldRR3J3QWU3bWZIcjQtakx3TXdES2NqVUtLTTJ4c1pULWN2TnpwbHlEQ00tT3VCMHctaU1fbkFZVTkxZnVsZw?oc=5",
+        "date": "Nov 10, 2026",
+        "longDate": "Tuesday, November 10, 2026",
+        "related": [
+          {
+            "title": "Gemini 4 Carbon is now available",
+            "source": "blog.google",
+            "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNcFFDTTNsamEzRWp6RmVZemczQjAwQTlCMGhneldpY0gwUnpsS1JQY3o4NnZiSDd3bm56ZkZfM1lEZ1Y1WFN1MUNoTjV3cGNMOHdPc1NfcEhtbVNyMVlTdVpFYjlEZjczN29BUzdOdl9rUDhkNVZHY3ZIUjd1b0lOSEVhN3dMcWgxaVprSDAySnpIZWItVjhRcUg4c3NhbjBmRmh1dw?oc=5"
+          },
+          {
+            "title": "Gemini 4 Carbon in GitHub Copilot",
+            "source": "The GitHub Blog",
+            "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQVzk1bkR5U3l3enJYS2Qza01vd1E2Sy1fUjhtZWJnR0tVMjdwMnhlcDllalZLdF9QaldXdXZrMkFkMzA5aFJTVGd2UExlWTgyRWhrN1Vad1VpcUg2SzJPRlgycDZmczRCVWxYb0gtaF9LbEtjYkRxTThPbFlIU0dLNQ?oc=5"
+          },
+          {
+            "title": "Google releases Gemini 4 Carbon with agent ‘swarm’ feature",
+            "source": "The Verge",
+            "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOS1FMM2Rhc1RaOWNteEpIRDZLV2RNanAxOEtlY25LQ0tLejhndUQ1M1lpRFdXQjdkMnJ1SGxQSFhSODByVDhrWHp4dzdqM01pTzhTTVBpY2swLTZncWFJU1NaeXlTYk0tbFFzOVFISWFuamYzaXhiNlFfQmZoekk4YXkyaHdBRDhLMF9DSmo4UEZUV0pWcEVYZUNGci1iZw?oc=5"
+          },
+          {
+            "title": "Gemini 4 Carbon rolling out to Gemini app for AI Ultra, Argon remains",
+            "source": "9to5Google",
+            "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBVeWZWY3NFRDNZeUk5TGtkdWNRRGJDZDdBVURvN2Vjek9wWDdGXzhkQW1hNWpZTW45V1JDcmtmSWVEbW5zeGZnbDQ0eXdoak5qVnFqUDRGUG9ERDlQMjdLd2NPMDI?oc=5"
+          }
+        ],
+        "url": "https://www.seroundtable.com/gemini-4-carbon-google-search-ai-mode-42502.html",
+        "image": "https://images.seroundtable.com/google-search-4-carbon-KmcmkkdC.jpg",
+        "summary": "Google released Gemini 4 Carbon, its \"strongest model with frontier performance in cybersecurity capabilities and long-horizon agentic workflows across complex knowledge work, software engineering, and scientific reasoning,\" and it is now available in Google Search via AI Mode for subscribers.",
+        "photo": "assets/news/a42d7cc30c.jpg"
+      },
+      {
+        "id": "ce9c488acb",
+        "title": "iPhone Air 2 and iPhone 18 dummy models leak - GSMArena.com news",
+        "source": "GSMArena.com",
+        "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNUzZfOTMtQ1J5TVpSelNsN2VaVlRBLUpuaVEzd3VOVDNPT3ZscWZvZE1zR2ZXSnlCTEk2dTgtb3dnWHEwN3VhUUM4YzQ3QXlCX0dLMXd3TGF6eXo0NUpVMU94ekFncnh4TmEwemQweUIzbm9tX29hbzk5UUozUXNlbFRESTVONnpWcV83YtIBiAFBVV95cUxNT1F5TkdtSjd0bUczZDY2SnYtNXBueE5Rb0M4di03YUR5R0F1VXpkd05yOVlZWmkyM0hUMk9YbnB6SVUzMWNxczNMc1ZBQTFDazhPM3dJMzk2eFpHdFhXaWdVa0NUQ3lSUzZ3YlpjVG5PSUkwZUpTWGxob1FJSlJHOWJIWTNfTlFw?oc=5",
         "date": "Nov 10, 2026",
         "longDate": "Tuesday, November 10, 2026",
         "related": [
@@ -1479,57 +1602,23 @@
             "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPenhkdUVIQm9FVXpMaVJBRFlrTTNORVFsWnVmOVU4ay04UTRDTElsWUpqR2NNU0hlNTBNU0QyZWdpSmxPSGl0YnhkQjFabDU3Tmx6bWFhYUNjSmdoT0ZqTlptYWRrdFI1TUM0RnRxVjFtRTNiUDJpaTNGaTJyOTFkRk9HS2gtVzQwdTNyTE52LV9ITldfMWRtOTdmZm9sRWpZUXBrUjRtNHdEcXFJaEJUMg?oc=5"
           }
         ],
-        "url": "https://www.techrepublic.com/article/news-iphone-18-18e-battery-leak/",
-        "image": null,
-        "summary": null,
-        "photo": null
+        "url": "https://www.gsmarena.com/iphone_air_2_and_iphone_18_dummy_models_leak-news-75421.php",
+        "image": "https://fdn.gsmarena.com/imgroot/news/26/11/iphone-18-air-2-dummy-units-leak/-952x498w6/gsmarena_00.jpg",
+        "summary": "The new iPhones are expected to be unveiled next Spring. Apple is expected to launch the standard iPhone 18 and the iPhone Air 2 in spring 2027. While...",
+        "photo": "assets/news/ce9c488acb.jpg"
       },
       {
-        "id": "5ece87d257",
-        "title": "Canada assesses its space reactor capabilities",
-        "source": "American Nuclear Society",
-        "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPMXpxM1d5bjFNNkpOZERfVHJQa0F4b2RDSnpZX05JWjFPdWZQOUVjbUJVbjNDX3FQbXZGaTdfQ1R3VzdsOUhxQkFGVWpoOE5icWhjdko3T3JPMzI2cWVDNVM0ajZDTUo1VVFfVmJ2ajd0UmxiLXI2QlNnS2ZaMGJpZ0RBdHlVaDR6Rmd4RF9B?oc=5",
-        "date": "Nov 9, 2026",
-        "longDate": "Monday, November 9, 2026",
+        "id": "9c1fd15261",
+        "title": "Ye olde server consolidation has made Cisco push top-of-rack switching to 100G",
+        "source": "The Register",
+        "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNRlVBSllzS3ktaWpER2U2d1lWU3ZmRFhsbF9NTDE0OFhPbmp3dmFVcVdYZENhaXhoSmNnRXB6MnR3d29iWkRDSDBmdXYwalR4a3RGOWJvYVlEcWVON05aWHM2VnVuYVZwUjNqTVRJbmtBZ2VSd0RWaHUyNXp4TW0ybnlIVkF1UDlFSnRfNmNfeGhCNWd3aWQxNDFOMXBjVjZLc3VKcUVMblFKQW1YUl93b2JwX1ZJQzlFNERUT2k5cGxEM0lOUmtsTktHV0tTUzg?oc=5",
+        "date": "Nov 11, 2026",
+        "longDate": "Wednesday, November 11, 2026",
         "related": [],
-        "url": "https://www.ans.org/news/article-8567/canada-assesses-its-space-reactor-capabilities/",
-        "image": null,
-        "summary": null,
-        "photo": null
-      },
-      {
-        "id": "efc3d11f78",
-        "title": "Google Releases Gemini 4 Argon for Robotics Control, Simulation, and Policy Improvement",
-        "source": "infoq.com",
-        "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9JSUE2NjRhaHA4V1hYSGdWRXhNWllHLXZlY0VBZVR4U01HZmJlNEFfVGZMeE9CRXVUaTJucFZKSnpOMkVBZ1V2ZE5KREhlMWQwNXRQOWxhU084eW1LcEY4bFhERnlGQQ?oc=5",
-        "date": "Nov 9, 2026",
-        "longDate": "Monday, November 9, 2026",
-        "related": [
-          {
-            "title": "Gemini 4 Carbon is now available",
-            "source": "blog.google",
-            "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNcFFDTTNsamEzRWp6RmVZemczQjAwQTlCMGhneldpY0gwUnpsS1JQY3o4NnZiSDd3bm56ZkZfM1lEZ1Y1WFN1MUNoTjV3cGNMOHdPc1NfcEhtbVNyMVlTdVpFYjlEZjczN29BUzdOdl9rUDhkNVZHY3ZIUjd1b0lOSEVhN3dMcWgxaVprSDAySnpIZWItVjhRcUg4c3NhbjBmRmh1dw?oc=5"
-          },
-          {
-            "title": "Gemini 4 Carbon rolling out to Gemini app for AI Ultra, Argon remains",
-            "source": "9to5Google",
-            "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBVeWZWY3NFRDNZeUk5TGtkdWNRRGJDZDdBVURvN2Vjek9wWDdGXzhkQW1hNWpZTW45V1JDcmtmSWVEbW5zeGZnbDQ0eXdoak5qVnFqUDRGUG9ERDlQMjdLd2NPMDI?oc=5"
-          },
-          {
-            "title": "Google unveils Gemini 4 Carbon with upgraded agentic coding and cybersecurity capabilities",
-            "source": "Firstpost",
-            "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPV3lyX2NoX1FKekhJbTZwZXl1WFllWVF2YTBRdTdPRHExTWdvMnVyQ2stdlh5dktNQ1lWSzVaME1mczJKMVNWSVIxS0dPT1JkYWFfOG5lYmFUQ1dUdUNGWW5IUkJlOUhGRnFnUTlzNGlUMGRvbGUxUzVfYkhqUk5rMEFUZTlJOS1VNWpXaERpblU5SFd2cWxLSDU5aG5fVHRuaHhCU0YzQnFUaVRFS2htVkZmcWI5SlhWS0lFbzFsZ05iRktRVWV3djlfcmtfN0pw?oc=5"
-          },
-          {
-            "title": "Gemini 4 Carbon in GitHub Copilot",
-            "source": "The GitHub Blog",
-            "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQVzk1bkR5U3l3enJYS2Qza01vd1E2Sy1fUjhtZWJnR0tVMjdwMnhlcDllalZLdF9QaldXdXZrMkFkMzA5aFJTVGd2UExlWTgyRWhrN1Vad1VpcUg2SzJPRlgycDZmczRCVWxYb0gtaF9LbEtjYkRxTThPbFlIU0dLNQ?oc=5"
-          }
-        ],
-        "url": "https://www.infoq.com/news/2026/11/google-gemini-argon/",
-        "image": "https://res.infoq.com/news/2026/11/google-gemini-argon/en/headerimage/generatedHeaderImage-1794224974378.jpg",
-        "summary": "Google has released Gemini 4 Argon framing it as a general-purpose physical-reasoning model for robot control, Real2Sim scene construction, multimodal labeling of robot video, and iterative policy improvement, rather than as a single end-effector policy.",
-        "photo": "assets/news/efc3d11f78.jpg"
+        "url": "https://www.theregister.com/networks/2026/11/10/ye-olde-server-consolidation-has-made-cisco-push-top-of-rack-switching-to-100g/5308970",
+        "image": "https://image.theregister.com/5308975.jpg?imageId=5308975&x=0&y=0&cropw=100&croph=100&panox=0&panoy=0&panow=100&panoh=100&width=1200&height=683",
+        "summary": "Newer server processors pack more cores into fewer boxes, creating a need for network speed",
+        "photo": "assets/news/9c1fd15261.jpg"
       },
       {
         "id": "4f969964e5",
@@ -1550,20 +1639,33 @@
             "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPUW1IemlOZURKME5FbDZ2WTR3UG5fVm9CSWJncHFhRUJQUkNNeEdBQk9Sd3QxSTFsMVphbGdFTU4zQTJTM2dCMVBmLWtoWk1ESXVJeDVZOXVZaXdKMU5lcGV3RkU0ZmtnU0p5RU9kek1UOTlpZGl0MTMwSDRaSmZLSGI5T1dwN3ZHUFBZZzVVZmRyZFlQYVZCQ21ZQW5ucFdoY2NoVFpIWUZhVzF0X2FYc3FZVQ?oc=5"
           },
           {
-            "title": "Samsung announces Google Photos backup integration for its Gallery app",
-            "source": "SamMobile",
-            "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQekpfYWk3eVNHN29MMTJYc01aQklQMjE2aHp2c1g4TjcxTWFtd2VOSlEyTlZGN2sxWm1McDRMNnR0Rk9oeWR1enVwYUI5ZzBwWkNZeGhqNHdSaFhNQTA3eUtsdjFZT09pNTU1dkxGdDdhc1MxMG9NLXloUVRsMFpjeGs4ZWp6eUZHdUNjbDRoSEVTaVhQ?oc=5"
-          },
-          {
             "title": "Samsung Gallery officially adds Google Photos backup, but not for all Galaxy users",
             "source": "9to5Google",
             "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxONFFBcFZVNEhLbUJaZ1Npb21waWVzYTU5X2E4Vi1rWkFEVnhKT0gtcnZFZnF4NDZlUi1FYzJzbXdLa3lTQ0l2SnBLa0VTaE8tWlhhMDhSbS1MbThDSjYyQkFSbzRjY01ybE90VWQwMVZCRGZjSndlSXdPU1lwZlVEOUR2TG44Zw?oc=5"
+          },
+          {
+            "title": "Samsung Gallery can finally sync your photos directly to Google Photos",
+            "source": "Android Central",
+            "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPZVZrRUJTcVNkUDdWZV9hSE5tOFNDcWVpRm50c21yLWIyc3JwRnJkbGFOY05QcFNMRElKdDRnUWlXRnp1ZXpVRzd4LUhEU2Z5Z2VmQ1k3SDJwUE1PXzJSa3RBWDY4eUtOcUZFMmd6M3YzWEpvU2dsTGViVUl0QjM4Ml9lNW9DakRSU253VnRnM0tUWnQxS0lKUzR0SVZMejBrdUdUR2FuNW5RNkZ6RTJrbjlYYkxNZw?oc=5"
           }
         ],
         "url": "https://www.androidpolice.com/samsung-gallery-can-now-back-up-your-photos-straight-to-google-storage/",
         "image": "https://static0.anpoimages.com/wordpress/wp-content/uploads/wm/2026/08/samsung-galaxy-phone-with-its-home-screen-showing-gallery-and-photos-apps-with-chrome-and-messenger.jpg?w=1600&h=900&fit=crop",
         "summary": "Google storage replaces OneDrive for good",
         "photo": "assets/news/4f969964e5.jpg"
+      },
+      {
+        "id": "5ece87d257",
+        "title": "Canada assesses its space reactor capabilities",
+        "source": "American Nuclear Society",
+        "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPMXpxM1d5bjFNNkpOZERfVHJQa0F4b2RDSnpZX05JWjFPdWZQOUVjbUJVbjNDX3FQbXZGaTdfQ1R3VzdsOUhxQkFGVWpoOE5icWhjdko3T3JPMzI2cWVDNVM0ajZDTUo1VVFfVmJ2ajd0UmxiLXI2QlNnS2ZaMGJpZ0RBdHlVaDR6Rmd4RF9B?oc=5",
+        "date": "Nov 9, 2026",
+        "longDate": "Monday, November 9, 2026",
+        "related": [],
+        "url": "https://www.ans.org/news/article-8567/canada-assesses-its-space-reactor-capabilities/",
+        "image": null,
+        "summary": null,
+        "photo": null
       },
       {
         "id": "1a9332884a",
@@ -1574,64 +1676,30 @@
         "longDate": "Wednesday, November 11, 2026",
         "related": [
           {
-            "title": "Today’s NYT Strands answers, clues, and hints on November 5 (puzzle #977)",
-            "source": "PC Guide",
-            "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOa0NWUEpOSnZkRnRNZGRiOUR1WTN4cWFCbmRsQW02UVVPY0kxcWR6T3BsSG91ZDV4dm5HQmp0Y1lMWHduaGI0MVhlVzhxa28zdkx6OEpQVUVQSnAtOGg4a1ZGOEtrbUpDTDg4UXlBVjU1NlVxWGJyWE9NTS1vLVJpbWFXU0ZJdGdpVU8teUZaS0gxU3daZWNDdkZFU2drUQ?oc=5"
+            "title": "NYT Strands Hints for November 11, 2026",
+            "source": "The New York Times",
+            "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE4zXzZrSkI5a3dYbWdYai1vcXVpcXlYQThsbHlSMzdGanB5SGRWdUFqVGkxMFppOTNnc1RHRHoxeHFFeVQ0N1FaVVN1SzhIZ2p1Z3JMcmt4OWtQaUhhTEhtUEZ0NThyNEJ1TmEzNURkME9SdVRuTkc0S2tROA?oc=5"
           },
           {
-            "title": "NYT Strands hints and answers for Tuesday, November 10 (game #982)",
+            "title": "Today’s NYT Strands Hints, Spangram and Answers for Tuesday, Nov. 10, #982",
+            "source": "CNET",
+            "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOLVEycmhBV1EyLWdjYTJ3Y1JNOTA4TDJ3Y3d1V1MyTTdfZFB4Ni1GYkVXc2MxZVd5OVA1a0QtMXcyazd1azdtZGdqQnVVb0l6X1RISnc0eGZJY18zVy1uTFgyTXFCc0pTVDBSVl90V09QZnhidzl3aFpLR3kza2MxUWtPVElJTFpLSWVycU55aW5zQm44cnc?oc=5"
+          },
+          {
+            "title": "NYT Strands Puzzle for November 9: Hints and Answers Revealed",
+            "source": "Yahoo Tech",
+            "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNamFlN2h6QmJHQkt4VkI1cnRzeEUwNjhabHlrSmhvWDA3U2JFT0dDRWdtb3NaSFVOVURiX0Ewa2xyazRFNnJTUFc1bjdseDFrWTBGc3plWmZoWndrWGR0Q3FfTW5hVnBUSmpKb1ViWGlEMlZnMkl0RkRHTmVERF9BQlZhRk1YSndrMUtwb1dLVGxYNWpTNFdR?oc=5"
+          },
+          {
+            "title": "NYT Strands hints and answers for Wednesday, November 11 (game #983)",
             "source": "TechRadar",
-            "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQSlhTUUE3blNmMk1YQlhQeDZoT0x3VThKZzBSNFh1SUJvcy1GdE5zX2lqU0lFcl9Ha0ktQmxYSmtVYVRjeW9lQWJwRWNSandVaXpqeGwxR3FQWUJKNDVGNzA4ZG9NS2VXNG00WW80QV96T2E0ME9aa0tzM3ZPWVZ6TEZMUkQtVlFIaGJCLTgtZEp4Qnotd3prQlppZVJxMGc?oc=5"
-          },
-          {
-            "title": "NYT Strands Hints Today (Nov. 10, #982) Reveal an “Influentially Online” Theme",
-            "source": "Gadget Bridge",
-            "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPdC14NGlKQVVzeXpkdWhJVG42ZnY2OVRQZHRSTVViazVnQUpIa2ExM2pKZWptRXJHR3VMdE96ZW5aT3lIZlgyNkJ1U1J6Rkx6eUY0SFh5Z3lpSnRicE53d1RGZlEtVGxMeDdlN0NQTkhzUEktNTJOQVd3QURCUnFSZFRVTm50OXo4NnZqUEVONmNKbldKNHo1MzNFay1zU0tndVBz0gGoAUFVX3lxTFBUVnprMHAxWjljM0hJZTVEOWdXX3ZjMGpmQ2NIWGpSMmYtZ2Z6cTMzMWZXQUZPZ3J5bjJGcktzNlZFeFlEemY5V0l1dm05MExmeHNSRGJaQjM2R0kxSU5ZSkl6Um5YdnNhQ09iNjRxMTJDRnh2d29HOVBZVzl0QVpYVkFvVHFTazZsRGttdGhPa0czQTBwcVZZejMzTFF0Mkt6VzhRWWFJTA?oc=5"
-          },
-          {
-            "title": "NYT Strands Answers Today: CONTENTCREATOR Spangram – November 10, 2026 (#982)",
-            "source": "The Eastern Herald",
-            "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9yVkxFbjl0MFFnV19Tc3A2OUdRSTlPQkVZTGtJcnRvbnFQYWZSNm5wc0M1TGhYSXh2VU1udzhYQ1hYQl9nZzlZcnNtd2dRSkpkRE9hbUhILVhjd0ZLeXVTWldsQUc4c1VyMDZSdmZ6Uk1yZjhVM1o2R1VkNUJTNE0?oc=5"
+            "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxObVZkVmkzUFl6Q0JkVDdINHN3elVzQlA2dkVLTmJBQjM2M1k1X2NFdUFQSl9PQnVNbUVYX3c4S2hSalk3ZWVDZmVxYU1KM0lDaWZnTHVUNHdrajR4Q3FteVdnT2p3SFZJRlF1RmR3ZGV2N0RkdXV1NnhZNEROMnVGRzRMWW1HY2RaY3JhbFNFWXl0dXUxTkozSWJ2NmJMcWs?oc=5"
           }
         ],
         "url": "https://www.cnet.com/tech/gaming/todays-nyt-strands-hints-spangram-and-answers-for-wednesday-nov-11-983/",
         "image": "https://www.cnet.com/wp-content/uploads/sites/2/859c9110-e596-432b-8690-95e6102759c9.jpg",
         "summary": "Need a Strands hint today? Get the theme hint, the spangram and every answer for NYT Strands No. 983 on Wednesday, Nov. 11.",
         "photo": "assets/news/1a9332884a.jpg"
-      },
-      {
-        "id": "9622fabb58",
-        "title": "Meet the Dolby Atmos soundbar that looks like a cushion",
-        "source": "What Hi-Fi?",
-        "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQSE1iZnluSi1xNVplR1FpVXRydGhIM1ZHNUx2UjJnZHBybHYtb2xEY21GekV1aTVzVXE0UW51ekN3S1NHaUtDTFNHQ2ZQQmtsZVlVUE5tTzhMZjllS25hb2JUUlZIVm5RbFdGVEN5YWdGaTN1RzVmLU1rREhyeGVwcVF0LTh1ZTJMSEE2SjREdkpjUWEtUzdPNDFXOG1udVNqODAwTmJKRGdJTUhYM1ZzM3NseUlTQW5CZXZHUV9VVE5NeWZmWl9uNmpJRWtkamVoWVE?oc=5",
-        "date": "Nov 10, 2026",
-        "longDate": "Tuesday, November 10, 2026",
-        "related": [
-          {
-            "title": "Ada startup Knit Sound launches TV soundbar designed to look as good as it sounds",
-            "source": "Crain's Grand Rapids Business",
-            "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQZTVmMWxXNlpDY0MzVGJkRVJuMnZZZ2lvekpYLTlRZGlvdW9wdElkMU5MQV9GZVlQOGRUczFEOUlBSFRsOUEyeFFDTXBQTHpEQU40S2Q5ajFQX0dZOU5MOXY2NDNzV2xMQXlzMGY4cTRrcHRJd0xJcEF5UlpfbmRGZkN3?oc=5"
-          },
-          {
-            "title": "This New Nate Berkus-Backed Speaker Is Designed to Stand Out, Not Blend In",
-            "source": "www.domino.com",
-            "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5SWTNvQV9EMlpFaDRLNTBEYzBkSHB4NHpMZE95MzJvMzZvU29ITXk2Ul9QZ19fX0FrY3FjeHNwWlpMY0VxLS1Pd1l4Qkt5QmJzQXBaaER4NmY5VEFlVHBncnNhSExCdGhHb0dRN256SlNtc24yZGN3WA?oc=5"
-          },
-          {
-            "title": "'Designed to blend in, not stand out': This Dolby Atmos soundbar uses a fabric design to fit into your room's decor — and it has Denon and Marantz heritage behind it",
-            "source": "TechRadar",
-            "link": "https://news.google.com/rss/articles/CBMi2AJBVV95cUxPYXR2YmpaSTlrSnJ5VFZLakpLd2NmV2ItRXg5eWxPeklicmtpZGw3b3VwMm1XeHVQUXJ0TlFSX3dWWkgxVDU4cEw5cVFweDd5MHZXSFd3ejJPSFFhdFBrV1FtLWI3czNoWTR6bFM0Z09LZktWY0RIZXJ4V1BfVzZVSDJjU1RkbDN1cnQtRlg3YWR1OVFmR0RWblpHTldvQnhwdDJlNFZVc205bFRKUmVETWpMbHgzTlpvRTZKWWN0Y1BTZVBpZGl6RFc5UjFudXFIRF96QXRxbDY5bTR6bzVrQzg4ZTd1SHR1NGd2QTFZLWltNkg4ZERRRXdVYkhEVGs0eWVrVTZLV2NMcE9PcnZmdUZGMjJnVkZSdjZMMUtYblBzOFFwZzBYTEszOHhwbVVKQllCazliNS1fSmdabkp1bjVhbXVHZnFMaFZOMmtROVlCWjE1X01wTQ?oc=5"
-          },
-          {
-            "title": "This Nate Berkus-Approved Soundbar Proves That Home Audio Can Be Visually Stunning",
-            "source": "Apartment Therapy",
-            "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOWXRhR2VTTl84dEotalpMMUkxWTlXV2hoMk85R0JjMmNaMTFkb1NOWEVtQi1IaWNuOVRoVXltYlpQUFhldG43RWd5a1FCRXJjRXpYVlF5c1BQYnRWdElTUVB6OEcyYlNQcG52ZWJrRzA4LWJTeHQ2LTFCMjAwQmRSSEV2OUhGQQ?oc=5"
-          }
-        ],
-        "url": "https://www.whathifi.com/tv-home-cinema/soundbars/this-dolby-atmos-soundbar-is-designed-to-fit-in-with-your-homeware-but-i-see-a-problem",
-        "image": "https://cdn.mos.cms.futurecdn.net/Hx3fyhdzHe27MgDjew9NvH-2245-80.jpg",
-        "summary": "The Knit Form is the brainchild of a former Denon/Marantz executive",
-        "photo": "assets/news/9622fabb58.jpg"
       },
       {
         "id": "4f9450469c",
@@ -1666,74 +1734,6 @@
         "image": "https://s.yimg.com/lo/mysterio/api/9332b5306a5cc22c67c486c91f68d3bb8ecb369dd13d47337f156ec12aa27df9/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2F2026-11%2F9d0cca64-623f-4a57-aa83-55691bd9d5f7",
         "summary": "Take-Two Interactive reported earnings after hours on Monday. The studio said preorders for \"Grand Theft Auto VI\" will deliver \"historic\" gains.",
         "photo": "assets/news/4f9450469c.jpg"
-      },
-      {
-        "id": "ab13825077",
-        "title": "AI Software Clones Raise Trademark and Trade Dress Issues — Not Just a Copyright Problem",
-        "source": "JD Supra",
-        "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOS0hmV2t6S1JUdGpiRURJYlp3djFmbjN6OW45MnE3UnJwU1Y4VzV0X1JacDh5OTNUck5BZTlPbHZPc0FHZjZBU3pZUnpjd0xJWkhZYnBQRE5NTGJxMFpyNDdtQmtveUxSbkZoLUN0YjJUeGlmd2tIOGhMdWk4TWp3eFJYU3hqR182?oc=5",
-        "date": "Nov 10, 2026",
-        "longDate": "Tuesday, November 10, 2026",
-        "related": [
-          {
-            "title": "AI Makes Reverse Engineering Mainstream Software & Malware Far Easier",
-            "source": "Dark Reading",
-            "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxORGwzT3RXRHFndFZJbHkxN2gwbTNLRm9vRDg5LUdrM0xyUWh0WG9rbHU2enoyYjhSVDd1bjViSFdXOVJ0bF81X3dmWDFFOFlRUlZpaXZQYXB3UlliUDRIVGI0UHFOU0c3Ti1uTFl2dUJPZ2xJZWNCNDV2U0RKcWlFYXBB?oc=5"
-          },
-          {
-            "title": "Is AI-Powered Reverse Engineering the Death of Proprietary Software?",
-            "source": "Analytics India Magazine",
-            "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOXzB1X3Y4dm5OOENBakFGbVhVUWIyYjdnT3pDdHZzR3FRS3ZCT2hJbzdRXy1DU3NQbWlEeXVZLS1TT0NaaEtIWG56QlhxeS1LR2d3YnJtQk45MHVJcDR3NEZOTVl5bDFLOWpIR3ZMbnhORnJuMF9mcHMxQ0lGSGEzekU1eEdaWkstOFg2aVQwajBCRGp3MU1aaWpWWExXN1NiVVFRbnJiNGZfOF9Bc0E?oc=5"
-          },
-          {
-            "title": "How AI Models Could Recreate Photoshop Without the Source Code",
-            "source": "Geeky Gadgets",
-            "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE4tMV9LdWxWQmxYSzlsem1VQzlrbmtPOWoxMWVuZ3VqMXZrT1FSbVFyN2QzTXR4ZVRfNzhTN0ZmRWhSTmhCNVdYMnN3dmlOOTJMczRqcmoyYmxxQ3M4SFZR?oc=5"
-          },
-          {
-            "title": "To thwart reverse engineering by agents, dev proposes blinding them",
-            "source": "The Register",
-            "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOY3NqR0dabGNmRmpPNnQ4Qjk5c0I5TkxiVExHNjdJeXNUSE5fM2NSQ0lMVHRfbkdvZnpxZ1ktZUQyVDYxQXozX2xaVWVvUDd6YVF3eGNIUk5kRXpFNVpETHdteUtrOHJlcHBQX2g5SG5mX1VYVnY1UEVBX1dlRGdPMFNVVW85cDJlM2VoREgtSjd4TndqWkxJakVpc3RLQzlQeG1tR2FybTZOTDZJTE5aaUxTRVMybFduR25lc29aS0w?oc=5"
-          }
-        ],
-        "url": "https://www.jdsupra.com/legalnews/ai-software-clones-raise-trademark-and-4718023/",
-        "image": null,
-        "summary": null,
-        "photo": null
-      },
-      {
-        "id": "4300ad9c30",
-        "title": "Google’s beefing up Calculator with Pixel Solver and Unit Conversion tools",
-        "source": "Android Authority",
-        "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9FZlRPdk9yMlh0cFNrZC1ySmdRcHlZN1ZkbU42RmtxVmpodjU1YndxWU1aaTNIdG9STjU5OUZEX2JzSWx1Z0o5Q0tnUDRaRTV0ZW5WcF9Wdkdka0lIaTVGaXFoa1R5dVl4SFpsXzExN2xmd2t6d2syeUln?oc=5",
-        "date": "Nov 11, 2026",
-        "longDate": "Wednesday, November 11, 2026",
-        "related": [
-          {
-            "title": "Pixel 10 with Gemini Intelligence, custom widgets and more in our November Pixel Drop",
-            "source": "blog.google",
-            "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOQWJrU3pEaGk5RWNyVjVzdXZ6eGg1VEp0T3pBSHMxTHhwQlFrNm8tVm5ndFEzR0JBR3RKaUpiTWhTY2g5UmhFR01TdmVFZk1nRDctOTBBbFpnYXZCUFFGNkdGTHZBcEQzUnQ4Y1o2eWJsU296Q044Z3YxdjM3NHItMjRqWmZPcnVVTmc?oc=5"
-          },
-          {
-            "title": "November 2026 Pixel Drop: Create My Widget, HiLight for Google Messages, Pixel 10 Rambler, & more",
-            "source": "9to5Google",
-            "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5RX2U3T2Vsd2lXaktXRE1DcVdyc284REY4aGxhbm1DUHV2ckdlZHZsWFMxYjF5Z1JXSnE2RFROU1A2ZzZMbWJGa0x2dF9VWWN3aWlzS25idlJqVTE3TWNWTGwtQ2IySHZhTHFCTWxFNGVWR1I3LUE?oc=5"
-          },
-          {
-            "title": "Google is making Pixel HiLight slightly more useful",
-            "source": "The Verge",
-            "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQM2tydHFNMUJjMnQtUGYtMTV1SzFJeVFmUm15ZUZOUjBmQ1p3VVNBcGliNHFraU9EX2VXY2hRU3FzSzhkYUFMSEh3T0VSbjhqYXg4c0ZTZ1dJc1B0MU5XSFplUUxtSDZndDVZeGlONDk2bXZlbkxGc3RLZmxnVDJqRjdqYw?oc=5"
-          },
-          {
-            "title": "November Pixel Drop brings big changes and finally makes HiLight more useful",
-            "source": "Android Police",
-            "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9WRVZtRmdrbnppWjNvTk9HM3RuQU1ENm9lMmVqcE9sNUZTekRVaUJHUnNMdXJScllwb2V2aHNmaDJhYlJackpvUXQ1OGREYy1tZVdacEVKTHdaMnRFQThBdzBYd0RSdHcxSjZCRTFEZWo1ZTdxYUZVVkdEcEtETGM?oc=5"
-          }
-        ],
-        "url": "https://www.androidauthority.com/pixel-solver-unit-conversion-3733559/",
-        "image": "https://www.androidauthority.com/wp-content/uploads/2026/11/google_calculator_2.jpg",
-        "summary": "Learn how Google's improving its utilitarian Calculator app with a couple handy new additions to its bag of tricks.",
-        "photo": "assets/news/4300ad9c30.jpg"
       }
     ],
     "health": [
